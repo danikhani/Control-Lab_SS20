@@ -8,10 +8,13 @@ c_u = 885;
 
 
 s = tf('s');
-G_su = (m_u * s^2-c_u)/...
+G_su_falsch = (m_u * s^2-c_u)/...
     ((d_s^2 - m_s ) * s^2 + (2*d_s*c_s - d_s )*s + (c_s^2 - c_s))
+G_su = (m_u*s^2 + c_u)/...
+    ((d_s + c_s)^2 - (m_s*s^2 + d_s*s + c_s)*(m_u*s^2 + d_s*s + c_s + c_u))
 
-%Phasenreserve 30 mit P-Regler
+% skript seite 174
+%Phasenreserve -30 mit P-Regler
 G_r = 37.362
 G_o = G_su * G_r
 G_s = feedback(G_su, G_r)
@@ -20,14 +23,15 @@ m = allmargin(G_o)
 figure(1)
 margin(G_o)
 grid
+sisotool(G_o)
 
-%Phasenreserve 30 mit PI-Regler
+%Phasenreserve 30 mit I-Regler
 G_ri = 1/s
-G_oi = G_su * G_r
+G_oi = G_su * G_ri
 n = allmargin(G_oi)
 
 figure(2)
 margin(G_oi)
 grid
 
-%sisotool(G_su)
+sisotool(G_oi)
