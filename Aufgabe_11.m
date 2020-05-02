@@ -42,6 +42,7 @@ Gsz = c_u*(d_s*s+c_s)/((m_s*s^2+d_s*s+c_s)*(m_u*s^2+d_s*s+c_s+c_u)-(d_s*s+c_s)^2
 
 Gsu = (m_u*s^2 + c_u)/...
     ((d_s*s + c_s)^2 - (m_s*s^2 + d_s*s + c_s)*(m_u*s^2 + d_s*s + c_s + c_u))
+
 %--------------------------------------------
 % Reglerauslegung mit dem SISO-Tool
 %sisotool(Gsz);
