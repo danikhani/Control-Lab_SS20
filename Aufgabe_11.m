@@ -51,4 +51,11 @@ controlSystemDesigner(Gsu,1,1,Gsz);
 %controlSystemDesigner(plant,comp,sensor,prefilt) initializes the prefilter model, F, to the SISO LTI model prefilt.
 G_PID = -13844*(1+0.12*s)*(1+0.12*s)/s
 
+%Führungsübertragungsfunktion (wenn störgröße z = 0)
+%  Gw = G0/(1+G0) = GR*Gs/(1+GR*GS)
+%Störübertragungsfunktion (wenn führungsgröße w = 0)
+%  Gz = GS/(1+G0) = GS/(1+GR*GS)
+
+
+
 
