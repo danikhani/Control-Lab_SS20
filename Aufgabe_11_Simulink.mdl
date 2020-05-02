@@ -1,12 +1,12 @@
 Model {
-  Name			  "Aufgabe_11"
+  Name			  "Aufgabe_11_Simulink"
   Version		  9.2
   SavedCharacterEncoding  "windows-1252"
   GraphicalInterface {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.2"
+    ComputedModelVersion    "1.4"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -17,11 +17,23 @@ Model {
     PreCompExecutionDomainType "Unset"
     IsExportFunctionModel   0
     NumParameterArguments   0
-    NumExternalFileReferences 1
+    NumExternalFileReferences 3
     ExternalFileReference {
       Reference		      "simulink/Continuous/PID Controller"
-      Path		      "Aufgabe_11/PID Controller"
+      Path		      "Aufgabe_11_Simulink/PID Controller"
       SID		      "20"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "simulink/Continuous/PID Controller"
+      Path		      "Aufgabe_11_Simulink/PID Controller1"
+      SID		      "32"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "simulink/Continuous/PID Controller"
+      Path		      "Aufgabe_11_Simulink/PID Controller2"
+      SID		      "53"
       Type		      "LIBRARY_BLOCK"
     }
     OrderedModelArguments   1
@@ -75,8 +87,8 @@ Model {
 	ViewObjType		"SimulinkTopLevel"
 	LoadSaveID		"0"
 	Extents			[1875.0, 833.0]
-	ZoomFactor		[0.59999999999999987]
-	Offset			[-598.7252303574096, -179.84959179922234]
+	ZoomFactor		[0.24999999999999997]
+	Offset			[-2153.66950219558, -499.92134374603557]
       }
       Object {
 	$PropName		"DockComponentsInfo"
@@ -110,9 +122,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "danial"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Sat May 02 13:53:37 2020"
-  RTWModifiedTimeStamp	  510328383
-  ModelVersionFormat	  "1.%<AutoIncrement:2>"
+  LastModifiedDate	  "Sat May 02 17:00:59 2020"
+  RTWModifiedTimeStamp	  510339642
+  ModelVersionFormat	  "1.%<AutoIncrement:4>"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
   LibraryLinkDisplay	  "disabled"
@@ -169,12 +181,12 @@ Model {
     $PropName		    "DataLoggingOverride"
     $ObjectID		    7
     $ClassName		    "Simulink.SimulationData.ModelLoggingInfo"
-    model_		    "Aufgabe_11"
+    model_		    "Aufgabe_11_Simulink"
     overrideMode_	    [0.0]
     Array {
       Type		      "Cell"
       Dimension		      1
-      Cell		      "Aufgabe_11"
+      Cell		      "Aufgabe_11_Simulink"
       PropName		      "logAsSpecifiedByModels_"
     }
     Array {
@@ -1072,7 +1084,7 @@ Model {
     }
   }
   System {
-    Name		    "Aufgabe_11"
+    Name		    "Aufgabe_11_Simulink"
     Location		    [-7, -7, 1543, 831]
     Open		    on
     PortBlocksUseCompactNotation off
@@ -1088,9 +1100,9 @@ Model {
     TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
     TiledPageScale	    1
     ShowPageBoundaries	    off
-    ZoomFactor		    "60"
+    ZoomFactor		    "25"
     ReportName		    "simulink-default.rpt"
-    SIDHighWatermark	    "31"
+    SIDHighWatermark	    "72"
     Block {
       BlockType		      Gain
       Name		      "Gain"
@@ -1110,6 +1122,65 @@ Model {
       ZOrder		      69
       BlockMirror	      on
       Gain		      "14.2"
+      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "Gain10"
+      SID		      "39"
+      Position		      [3820, 822, 3860, 858]
+      ZOrder		      592
+      BlockMirror	      on
+      Gain		      "14.2"
+      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "Gain11"
+      SID		      "40"
+      Position		      [2535, 1175, 2565, 1205]
+      ZOrder		      582
+      BlockMirror	      on
+      Gain		      "177"
+      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "Gain12"
+      SID		      "41"
+      Position		      [3925, 555, 3955, 585]
+      ZOrder		      593
+      BlockMirror	      on
+      Gain		      "885"
+      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "Gain13"
+      SID		      "42"
+      Position		      [3715, 1000, 3765, 1030]
+      ZOrder		      597
+      Gain		      "1/4.5"
+      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "Gain14"
+      SID		      "43"
+      Position		      [3800, 905, 3830, 935]
+      ZOrder		      599
+      BlockMirror	      on
+      Gain		      "177"
       ParamDataTypeStr	      "Inherit: Inherit via internal rule"
       OutDataTypeStr	      "Inherit: Inherit via internal rule"
       SaturateOnIntegerOverflow	off
@@ -1139,12 +1210,69 @@ Model {
     }
     Block {
       BlockType		      Gain
+      Name		      "Gain4"
+      SID		      "34"
+      Position		      [2450, 972, 2500, 1008]
+      ZOrder		      574
+      Gain		      "1/0.9"
+      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "Gain5"
+      SID		      "35"
+      Position		      [2555, 1092, 2595, 1128]
+      ZOrder		      575
+      BlockMirror	      on
+      Gain		      "14.2"
+      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Gain
       Name		      "Gain6"
       SID		      "7"
       Position		      [650, 400, 680, 430]
       ZOrder		      76
       BlockMirror	      on
       Gain		      "177"
+      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "Gain7"
+      SID		      "36"
+      Position		      [2655, 855, 2685, 885]
+      ZOrder		      576
+      BlockMirror	      on
+      Gain		      "885"
+      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "Gain8"
+      SID		      "37"
+      Position		      [2450, 1270, 2500, 1300]
+      ZOrder		      580
+      Gain		      "1/4.5"
+      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "Gain9"
+      SID		      "38"
+      Position		      [3715, 702, 3765, 738]
+      ZOrder		      591
+      Gain		      "1/0.9"
       ParamDataTypeStr	      "Inherit: Inherit via internal rule"
       OutDataTypeStr	      "Inherit: Inherit via internal rule"
       SaturateOnIntegerOverflow	off
@@ -1167,6 +1295,22 @@ Model {
     }
     Block {
       BlockType		      Integrator
+      Name		      "Integrator10"
+      SID		      "50"
+      Ports		      [1, 1]
+      Position		      [3895, 1000, 3925, 1030]
+      ZOrder		      594
+    }
+    Block {
+      BlockType		      Integrator
+      Name		      "Integrator11"
+      SID		      "51"
+      Ports		      [1, 1]
+      Position		      [4085, 1000, 4115, 1030]
+      ZOrder		      595
+    }
+    Block {
+      BlockType		      Integrator
       Name		      "Integrator2"
       SID		      "10"
       Ports		      [1, 1]
@@ -1182,20 +1326,74 @@ Model {
       ZOrder		      72
     }
     Block {
+      BlockType		      Integrator
+      Name		      "Integrator4"
+      SID		      "44"
+      Ports		      [1, 1]
+      Position		      [2625, 975, 2655, 1005]
+      ZOrder		      571
+    }
+    Block {
+      BlockType		      Integrator
+      Name		      "Integrator5"
+      SID		      "45"
+      Ports		      [1, 1]
+      Position		      [2820, 975, 2850, 1005]
+      ZOrder		      572
+    }
+    Block {
+      BlockType		      Integrator
+      Name		      "Integrator6"
+      SID		      "46"
+      Ports		      [1, 1]
+      Position		      [2630, 1270, 2660, 1300]
+      ZOrder		      577
+    }
+    Block {
+      BlockType		      Integrator
+      Name		      "Integrator7"
+      SID		      "47"
+      Ports		      [1, 1]
+      Position		      [2820, 1270, 2850, 1300]
+      ZOrder		      578
+    }
+    Block {
+      BlockType		      Integrator
+      Name		      "Integrator8"
+      SID		      "48"
+      Ports		      [1, 1]
+      Position		      [3890, 705, 3920, 735]
+      ZOrder		      588
+    }
+    Block {
+      BlockType		      Integrator
+      Name		      "Integrator9"
+      SID		      "49"
+      Ports		      [1, 1]
+      Position		      [4085, 705, 4115, 735]
+      ZOrder		      589
+    }
+    Block {
       BlockType		      ManualSwitch
       Name		      "Manual Switch"
       SID		      "31"
-      Position		      [1190, -3, 1220, 33]
+      Position		      [1220, 12, 1250, 48]
       ZOrder		      524
-      CurrentSetting	      "0"
+    }
+    Block {
+      BlockType		      ManualSwitch
+      Name		      "Manual Switch1"
+      SID		      "52"
+      Position		      [4340, 502, 4370, 538]
+      ZOrder		      604
     }
     Block {
       BlockType		      Reference
       Name		      "PID Controller"
       SID		      "20"
       Ports		      [1, 1]
-      Position		      [725, 687, 765, 723]
-      ZOrder		      513
+      Position		      [240, 727, 280, 763]
+      ZOrder		      607
       BlockMirror	      on
       LibraryVersion	      "1.444"
       SourceBlock	      "simulink/Continuous/PID Controller"
@@ -1210,9 +1408,351 @@ Model {
       IntegratorMethod	      "Forward Euler"
       FilterMethod	      "Forward Euler"
       ControllerParametersSource "internal"
-      P			      "-346.7"
-      I			      "-888.9"
-      D			      "-32"
+      P			      "5.502e08"
+      I			      "2.765e09"
+      D			      "-3.987e07"
+      UseFilter		      on
+      N			      "100"
+      TunerSelectOption	      "Transfer Function Based (PID Tuner App)"
+      ZeroCross		      on
+      InitialConditionSource  "internal"
+      InitialConditionForIntegrator "0"
+      InitialConditionForFilter	"0"
+      DifferentiatorICPrevScaledInput "0"
+      ExternalReset	      "none"
+      IgnoreLimit	      off
+      TrackingMode	      off
+      Kt		      "1"
+      LimitOutput	      off
+      UpperSaturationLimit    "inf"
+      LowerSaturationLimit    "-inf"
+      LinearizeAsGain	      on
+      AntiWindupMode	      "none"
+      Kb		      "1"
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	off
+      LockScale		      off
+      PGainOutDataTypeStr     "Inherit: Inherit via internal rule"
+      PProdOutDataTypeStr     "Inherit: Inherit via internal rule"
+      POutMin		      "[]"
+      POutMax		      "[]"
+      IGainOutDataTypeStr     "Inherit: Inherit via internal rule"
+      IProdOutDataTypeStr     "Inherit: Inherit via internal rule"
+      IOutMin		      "[]"
+      IOutMax		      "[]"
+      DGainOutDataTypeStr     "Inherit: Inherit via internal rule"
+      DProdOutDataTypeStr     "Inherit: Inherit via internal rule"
+      DOutMin		      "[]"
+      DOutMax		      "[]"
+      NGainOutDataTypeStr     "Inherit: Inherit via internal rule"
+      NProdOutDataTypeStr     "Inherit: Inherit via internal rule"
+      NOutMin		      "[]"
+      NOutMax		      "[]"
+      SumOutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SumOutMin		      "[]"
+      SumOutMax		      "[]"
+      SaturationOutDataTypeStr "Inherit: Same as input"
+      SaturationOutMin	      "[]"
+      SaturationOutMax	      "[]"
+      PParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      PParamMin		      "[]"
+      PParamMax		      "[]"
+      IParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      IParamMin		      "[]"
+      IParamMax		      "[]"
+      DParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      DParamMin		      "[]"
+      DParamMax		      "[]"
+      NParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      NParamMin		      "[]"
+      NParamMax		      "[]"
+      KbParamDataTypeStr      "Inherit: Inherit via internal rule"
+      KbParamMin	      "[]"
+      KbParamMax	      "[]"
+      KtParamDataTypeStr      "Inherit: Inherit via internal rule"
+      KtParamMin	      "[]"
+      KtParamMax	      "[]"
+      KbOutDataTypeStr	      "Inherit: Inherit via internal rule"
+      KbOutMin		      "[]"
+      KbOutMax		      "[]"
+      KtOutDataTypeStr	      "Inherit: Inherit via internal rule"
+      KtOutMin		      "[]"
+      KtOutMax		      "[]"
+      IntegratorOutDataTypeStr "Inherit: Inherit via internal rule"
+      IntegratorOutMin	      "[]"
+      IntegratorOutMax	      "[]"
+      FilterOutDataTypeStr    "Inherit: Inherit via internal rule"
+      FilterOutMin	      "[]"
+      FilterOutMax	      "[]"
+      SumI1OutDataTypeStr     "Inherit: Inherit via internal rule"
+      SumI1OutMin	      "[]"
+      SumI1OutMax	      "[]"
+      SumI2OutDataTypeStr     "Inherit: Inherit via internal rule"
+      SumI2OutMin	      "[]"
+      SumI2OutMax	      "[]"
+      SumI3OutDataTypeStr     "Inherit: Inherit via internal rule"
+      SumI3OutMin	      "[]"
+      SumI3OutMax	      "[]"
+      SumI4OutDataTypeStr     "Inherit: Inherit via internal rule"
+      SumI4OutMin	      "[]"
+      SumI4OutMax	      "[]"
+      SumDOutDataTypeStr      "Inherit: Inherit via internal rule"
+      SumDOutMin	      "[]"
+      SumDOutMax	      "[]"
+      SumAccumDataTypeStr     "Inherit: Inherit via internal rule"
+      SumI1AccumDataTypeStr   "Inherit: Inherit via internal rule"
+      SumI2AccumDataTypeStr   "Inherit: Inherit via internal rule"
+      SumI3AccumDataTypeStr   "Inherit: Inherit via internal rule"
+      SumI4AccumDataTypeStr   "Inherit: Inherit via internal rule"
+      SumDAccumDataTypeStr    "Inherit: Inherit via internal rule"
+      DifferentiatorOutDataTypeStr "Inherit: Inherit via internal rule"
+      DifferentiatorOutMin    "[]"
+      DifferentiatorOutMax    "[]"
+      FilterDiffNumProductOutputDataTypeStr "Inherit: Inherit via internal rule"
+      FilterDiffDenProductOutputDataTypeStr "Inherit: Inherit via internal rule"
+      FilterDiffNumAccumDataTypeStr "Inherit: Inherit via internal rule"
+      FilterDiffDenAccumDataTypeStr "Inherit: Inherit via internal rule"
+      FilterDiffOutCoefDataTypeStr "Inherit: Inherit via internal rule"
+      FilterDiffOutCoefMin    "[]"
+      FilterDiffOutCoefMax    "[]"
+      ReciprocalOutDataTypeStr "Inherit: Inherit via internal rule"
+      ReciprocalOutMin	      "[]"
+      ReciprocalOutMax	      "[]"
+      SumDenOutDataTypeStr    "Inherit: Inherit via internal rule"
+      SumDenOutMin	      "[]"
+      SumDenOutMax	      "[]"
+      SumNumOutDataTypeStr    "Inherit: Inherit via internal rule"
+      SumNumOutMin	      "[]"
+      SumNumOutMax	      "[]"
+      SumDenAccumDataTypeStr  "Inherit: Inherit via internal rule"
+      SumNumAccumDataTypeStr  "Inherit: Inherit via internal rule"
+      DivideOutDataTypeStr    "Inherit: Inherit via internal rule"
+      DivideOutMin	      "[]"
+      DivideOutMax	      "[]"
+      IntegratorContinuousStateAttributes "''"
+      IntegratorStateMustResolveToSignalObject off
+      IntegratorRTWStateStorageClass "Auto"
+      FilterContinuousStateAttributes "''"
+      FilterStateMustResolveToSignalObject off
+      FilterRTWStateStorageClass "Auto"
+      ParallelPVariant	      "InternalParameters"
+      IdealPVariant	      "Disabled"
+      IVariant		      "InternalParameters"
+      DVariant		      "InternalParameters"
+      IntegratorVariant	      "Continuous"
+      SatVariant	      "Disabled"
+      AWVariant		      "Passthrough"
+      PCopyVariant	      "Disabled"
+      TRVariant		      "Disabled"
+      FdbkBlocksVariant	      "Forward"
+      IdealPFdbkVariant	      "Disabled"
+      SatFdbkVariant	      "Disabled"
+      DerivativeFilterVariant "ContFilter"
+      NVariant		      "InternalParameters"
+      NCopyVariant	      "Disabled"
+      FilterICVariant	      "InternalICsFilter"
+      IntegratorICVariant     "InternalICs"
+      ExternalResetVariant    "Disabled"
+      TRSumVariant	      "Passthrough"
+      SumFdbkVariant	      "Disabled"
+      SumVariant	      "Sum_PID"
+      InitialConditionSetting "Auto"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "PID Controller1"
+      SID		      "32"
+      Ports		      [1, 1]
+      Position		      [725, 687, 765, 723]
+      ZOrder		      525
+      BlockMirror	      on
+      LibraryVersion	      "1.444"
+      SourceBlock	      "simulink/Continuous/PID Controller"
+      SourceType	      "PID 1dof"
+      SourceProductName	      "Simulink"
+      SourceProductBaseCode   "SL"
+      ContentPreviewEnabled   on
+      Controller	      "PID"
+      Form		      "Parallel"
+      TimeDomain	      "Continuous-time"
+      SampleTime	      "-1"
+      IntegratorMethod	      "Forward Euler"
+      FilterMethod	      "Forward Euler"
+      ControllerParametersSource "internal"
+      P			      "-2528"
+      I			      "-12639"
+      D			      "-182"
+      UseFilter		      on
+      N			      "100"
+      TunerSelectOption	      "Transfer Function Based (PID Tuner App)"
+      ZeroCross		      on
+      InitialConditionSource  "internal"
+      InitialConditionForIntegrator "0"
+      InitialConditionForFilter	"0"
+      DifferentiatorICPrevScaledInput "0"
+      ExternalReset	      "none"
+      IgnoreLimit	      off
+      TrackingMode	      off
+      Kt		      "1"
+      LimitOutput	      off
+      UpperSaturationLimit    "inf"
+      LowerSaturationLimit    "-inf"
+      LinearizeAsGain	      on
+      AntiWindupMode	      "none"
+      Kb		      "1"
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	off
+      LockScale		      off
+      PGainOutDataTypeStr     "Inherit: Inherit via internal rule"
+      PProdOutDataTypeStr     "Inherit: Inherit via internal rule"
+      POutMin		      "[]"
+      POutMax		      "[]"
+      IGainOutDataTypeStr     "Inherit: Inherit via internal rule"
+      IProdOutDataTypeStr     "Inherit: Inherit via internal rule"
+      IOutMin		      "[]"
+      IOutMax		      "[]"
+      DGainOutDataTypeStr     "Inherit: Inherit via internal rule"
+      DProdOutDataTypeStr     "Inherit: Inherit via internal rule"
+      DOutMin		      "[]"
+      DOutMax		      "[]"
+      NGainOutDataTypeStr     "Inherit: Inherit via internal rule"
+      NProdOutDataTypeStr     "Inherit: Inherit via internal rule"
+      NOutMin		      "[]"
+      NOutMax		      "[]"
+      SumOutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SumOutMin		      "[]"
+      SumOutMax		      "[]"
+      SaturationOutDataTypeStr "Inherit: Same as input"
+      SaturationOutMin	      "[]"
+      SaturationOutMax	      "[]"
+      PParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      PParamMin		      "[]"
+      PParamMax		      "[]"
+      IParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      IParamMin		      "[]"
+      IParamMax		      "[]"
+      DParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      DParamMin		      "[]"
+      DParamMax		      "[]"
+      NParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      NParamMin		      "[]"
+      NParamMax		      "[]"
+      KbParamDataTypeStr      "Inherit: Inherit via internal rule"
+      KbParamMin	      "[]"
+      KbParamMax	      "[]"
+      KtParamDataTypeStr      "Inherit: Inherit via internal rule"
+      KtParamMin	      "[]"
+      KtParamMax	      "[]"
+      KbOutDataTypeStr	      "Inherit: Inherit via internal rule"
+      KbOutMin		      "[]"
+      KbOutMax		      "[]"
+      KtOutDataTypeStr	      "Inherit: Inherit via internal rule"
+      KtOutMin		      "[]"
+      KtOutMax		      "[]"
+      IntegratorOutDataTypeStr "Inherit: Inherit via internal rule"
+      IntegratorOutMin	      "[]"
+      IntegratorOutMax	      "[]"
+      FilterOutDataTypeStr    "Inherit: Inherit via internal rule"
+      FilterOutMin	      "[]"
+      FilterOutMax	      "[]"
+      SumI1OutDataTypeStr     "Inherit: Inherit via internal rule"
+      SumI1OutMin	      "[]"
+      SumI1OutMax	      "[]"
+      SumI2OutDataTypeStr     "Inherit: Inherit via internal rule"
+      SumI2OutMin	      "[]"
+      SumI2OutMax	      "[]"
+      SumI3OutDataTypeStr     "Inherit: Inherit via internal rule"
+      SumI3OutMin	      "[]"
+      SumI3OutMax	      "[]"
+      SumI4OutDataTypeStr     "Inherit: Inherit via internal rule"
+      SumI4OutMin	      "[]"
+      SumI4OutMax	      "[]"
+      SumDOutDataTypeStr      "Inherit: Inherit via internal rule"
+      SumDOutMin	      "[]"
+      SumDOutMax	      "[]"
+      SumAccumDataTypeStr     "Inherit: Inherit via internal rule"
+      SumI1AccumDataTypeStr   "Inherit: Inherit via internal rule"
+      SumI2AccumDataTypeStr   "Inherit: Inherit via internal rule"
+      SumI3AccumDataTypeStr   "Inherit: Inherit via internal rule"
+      SumI4AccumDataTypeStr   "Inherit: Inherit via internal rule"
+      SumDAccumDataTypeStr    "Inherit: Inherit via internal rule"
+      DifferentiatorOutDataTypeStr "Inherit: Inherit via internal rule"
+      DifferentiatorOutMin    "[]"
+      DifferentiatorOutMax    "[]"
+      FilterDiffNumProductOutputDataTypeStr "Inherit: Inherit via internal rule"
+      FilterDiffDenProductOutputDataTypeStr "Inherit: Inherit via internal rule"
+      FilterDiffNumAccumDataTypeStr "Inherit: Inherit via internal rule"
+      FilterDiffDenAccumDataTypeStr "Inherit: Inherit via internal rule"
+      FilterDiffOutCoefDataTypeStr "Inherit: Inherit via internal rule"
+      FilterDiffOutCoefMin    "[]"
+      FilterDiffOutCoefMax    "[]"
+      ReciprocalOutDataTypeStr "Inherit: Inherit via internal rule"
+      ReciprocalOutMin	      "[]"
+      ReciprocalOutMax	      "[]"
+      SumDenOutDataTypeStr    "Inherit: Inherit via internal rule"
+      SumDenOutMin	      "[]"
+      SumDenOutMax	      "[]"
+      SumNumOutDataTypeStr    "Inherit: Inherit via internal rule"
+      SumNumOutMin	      "[]"
+      SumNumOutMax	      "[]"
+      SumDenAccumDataTypeStr  "Inherit: Inherit via internal rule"
+      SumNumAccumDataTypeStr  "Inherit: Inherit via internal rule"
+      DivideOutDataTypeStr    "Inherit: Inherit via internal rule"
+      DivideOutMin	      "[]"
+      DivideOutMax	      "[]"
+      IntegratorContinuousStateAttributes "''"
+      IntegratorStateMustResolveToSignalObject off
+      IntegratorRTWStateStorageClass "Auto"
+      FilterContinuousStateAttributes "''"
+      FilterStateMustResolveToSignalObject off
+      FilterRTWStateStorageClass "Auto"
+      ParallelPVariant	      "InternalParameters"
+      IdealPVariant	      "Disabled"
+      IVariant		      "InternalParameters"
+      DVariant		      "InternalParameters"
+      IntegratorVariant	      "Continuous"
+      SatVariant	      "Disabled"
+      AWVariant		      "Passthrough"
+      PCopyVariant	      "Disabled"
+      TRVariant		      "Disabled"
+      FdbkBlocksVariant	      "Forward"
+      IdealPFdbkVariant	      "Disabled"
+      SatFdbkVariant	      "Disabled"
+      DerivativeFilterVariant "ContFilter"
+      NVariant		      "InternalParameters"
+      NCopyVariant	      "Disabled"
+      FilterICVariant	      "InternalICsFilter"
+      IntegratorICVariant     "InternalICs"
+      ExternalResetVariant    "Disabled"
+      TRSumVariant	      "Passthrough"
+      SumFdbkVariant	      "Disabled"
+      SumVariant	      "Sum_PID"
+      InitialConditionSetting "Auto"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "PID Controller2"
+      SID		      "53"
+      Ports		      [1, 1]
+      Position		      [2610, 1462, 2650, 1498]
+      ZOrder		      587
+      BlockMirror	      on
+      LibraryVersion	      "1.444"
+      SourceBlock	      "simulink/Continuous/PID Controller"
+      SourceType	      "PID 1dof"
+      SourceProductName	      "Simulink"
+      SourceProductBaseCode   "SL"
+      ContentPreviewEnabled   on
+      Controller	      "PID"
+      Form		      "Parallel"
+      TimeDomain	      "Continuous-time"
+      SampleTime	      "-1"
+      IntegratorMethod	      "Forward Euler"
+      FilterMethod	      "Forward Euler"
+      ControllerParametersSource "internal"
+      P			      "-2528"
+      I			      "-12639"
+      D			      "-182"
       UseFilter		      on
       N			      "100"
       TunerSelectOption	      "Transfer Function Based (PID Tuner App)"
@@ -1365,7 +1905,7 @@ Model {
       Name		      "Scope"
       SID		      "21"
       Ports		      [3]
-      Position		      [1340, 498, 1370, 532]
+      Position		      [1350, 493, 1380, 527]
       ZOrder		      514
       ScopeSpecificationString "Simulink.scopes.TimeScopeBlockCfg('CurrentConfiguration', extmgr.ConfigurationSet(extm"
       "gr.Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration('S"
@@ -1385,7 +1925,37 @@ Model {
       "5294117647 1 1;1 0.0745098039215686 0.650980392156863],'Title','%<SignalLabel>','LinePropertiesCache',{{}},'User"
       "DefinedChannelNames',{{}},'NumLines',0,'LineNames',{{[]}},'ShowContent',true,'Placement',1)),extmgr.Configuratio"
       "n('Tools','Plot Navigation',true,'OnceAtStop',false,'PreviousZoomMode','Pan'),extmgr.Configuration('Tools','Meas"
-      "urements',true,'Version','2018b')),'Version','2018b','Location',[1 67.8 1537 823])"
+      "urements',true,'Version','2018b')),'Version','2018b','Location',[1 74.1999999999999 1537 823])"
+      NumInputPorts	      "3"
+      Floating		      off
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Scope2"
+      SID		      "55"
+      Ports		      [3]
+      Position		      [4570, 1533, 4600, 1567]
+      ZOrder		      606
+      ScopeSpecificationString "Simulink.scopes.TimeScopeBlockCfg('CurrentConfiguration', extmgr.ConfigurationSet(extm"
+      "gr.Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration('S"
+      "ources','WiredSimulink',true,'DataLoggingSaveFormat','StructureWithTime','DataLoggingDecimation','1','DataLoggin"
+      "gDecimateData',true,'DataLoggingVariableName','ScopeData1'),extmgr.Configuration('Visuals','Time Domain',true,'S"
+      "erializedDisplays',{struct('MinYLimReal','-1.34409','MaxYLimReal','1.92784','YLabelReal','','MinYLimMag','0.0000"
+      "0','MaxYLimMag','1.92784','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0"
+      " 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.06666666666666"
+      "67;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.8313725490196"
+      "08 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980"
+      "392156863],'Title','%<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumLines',3,'Line"
+      "Names',{{'Channel 1','Sum10','Channel 3'}},'ShowContent',true,'Placement',1)},'DisplayPropertyDefaults',struct('"
+      "MinYLimReal','-1.34409','MaxYLimReal','1.92784','YLabelReal','','MinYLimMag','0.00000','MaxYLimMag','1.92784','L"
+      "egendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686"
+      "274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.0666666666666667;0.0745098039215686 0.6235"
+      "29411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.7176"
+      "47058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],'Title','%<Signal"
+      "Label>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumLines',0,'LineNames',{{[]}},'ShowContent',"
+      "true,'Placement',1)),extmgr.Configuration('Tools','Plot Navigation',true,'OnceAtStop',false,'PreviousZoomMode','"
+      "ZoomOut'),extmgr.Configuration('Tools','Measurements',true,'Version','2018b')),'Version','2018b','Location',[1 6"
+      "7.8 1537 823])"
       NumInputPorts	      "3"
       Floating		      off
     }
@@ -1394,8 +1964,17 @@ Model {
       Name		      "Sine Wave"
       SID		      "30"
       Ports		      [0, 1]
-      Position		      [1200, 130, 1230, 160]
+      Position		      [1510, 170, 1540, 200]
       ZOrder		      523
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Sin
+      Name		      "Sine Wave1"
+      SID		      "56"
+      Ports		      [0, 1]
+      Position		      [4110, 485, 4140, 515]
+      ZOrder		      603
       SampleTime	      "0"
     }
     Block {
@@ -1412,6 +1991,22 @@ Model {
       SID		      "29"
       Position		      [950, -25, 980, 5]
       ZOrder		      522
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Step
+      Name		      "Step2"
+      SID		      "72"
+      Position		      [3010, 1555, 3040, 1585]
+      ZOrder		      608
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Step
+      Name		      "Step3"
+      SID		      "58"
+      Position		      [4110, 415, 4140, 445]
+      ZOrder		      602
       SampleTime	      "0"
     }
     Block {
@@ -1436,6 +2031,101 @@ Model {
       ZOrder		      73
       ShowName		      off
       Inputs		      "---"
+      InputSameDT	      off
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Sum10"
+      SID		      "61"
+      Ports		      [2, 1]
+      Position		      [4285, 1355, 4325, 1395]
+      ZOrder		      605
+      BlockMirror	      on
+      ShowName		      off
+      InputSameDT	      off
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Sum11"
+      SID		      "62"
+      Ports		      [2, 1]
+      Position		      [4110, 550, 4150, 590]
+      ZOrder		      601
+      BlockMirror	      on
+      ShowName		      off
+      Inputs		      "-+"
+      InputSameDT	      off
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Sum12"
+      SID		      "65"
+      Ports		      [2, 1]
+      Position		      [2955, 1460, 2995, 1500]
+      ZOrder		      585
+      BlockMirror	      on
+      ShowName		      off
+      Inputs		      "-+"
+      InputSameDT	      off
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Sum13"
+      SID		      "66"
+      Ports		      [4, 1]
+      Position		      [3585, 675, 3655, 765]
+      ZOrder		      590
+      ShowName		      off
+      Inputs		      "-+++"
+      InputSameDT	      off
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Sum14"
+      SID		      "67"
+      Ports		      [3, 1]
+      Position		      [3585, 970, 3655, 1060]
+      ZOrder		      596
+      ShowName		      off
+      Inputs		      "---"
+      InputSameDT	      off
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Sum15"
+      SID		      "68"
+      Ports		      [2, 1]
+      Position		      [4045, 899, 4095, 941]
+      ZOrder		      598
+      BlockMirror	      on
+      ShowName		      off
+      Inputs		      "-+"
+      InputSameDT	      off
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Sum16"
+      SID		      "69"
+      Ports		      [2, 1]
+      Position		      [3915, 820, 3955, 860]
+      ZOrder		      600
+      BlockMirror	      on
+      ShowName		      off
+      Inputs		      "-+"
       InputSameDT	      off
       OutDataTypeStr	      "Inherit: Inherit via internal rule"
       SaturateOnIntegerOverflow	off
@@ -1489,6 +2179,60 @@ Model {
       Ports		      [2, 1]
       Position		      [960, 45, 1000, 85]
       ZOrder		      519
+      BlockMirror	      on
+      ShowName		      off
+      Inputs		      "-+"
+      InputSameDT	      off
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Sum6"
+      SID		      "59"
+      Ports		      [4, 1]
+      Position		      [2320, 945, 2390, 1035]
+      ZOrder		      573
+      ShowName		      off
+      Inputs		      "-+++"
+      InputSameDT	      off
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Sum7"
+      SID		      "60"
+      Ports		      [3, 1]
+      Position		      [2320, 1240, 2390, 1330]
+      ZOrder		      579
+      ShowName		      off
+      Inputs		      "---"
+      InputSameDT	      off
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Sum8"
+      SID		      "63"
+      Ports		      [2, 1]
+      Position		      [2780, 1169, 2830, 1211]
+      ZOrder		      581
+      BlockMirror	      on
+      ShowName		      off
+      Inputs		      "-+"
+      InputSameDT	      off
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Sum9"
+      SID		      "64"
+      Ports		      [2, 1]
+      Position		      [2650, 1090, 2690, 1130]
+      ZOrder		      583
       BlockMirror	      on
       ShowName		      off
       Inputs		      "-+"
@@ -1556,10 +2300,10 @@ Model {
       Points		      [97, 0]
       Branch {
 	ZOrder			35
-	Points			[121, 0; 0, 5]
+	Points			[121, 0]
 	Branch {
-	  ZOrder		  42
-	  Points		  [0, 180]
+	  ZOrder		  156
+	  Points		  [0, 185]
 	  DstBlock		  "Sum4"
 	  DstPort		  1
 	}
@@ -1662,32 +2406,15 @@ Model {
       }
     }
     Line {
-      ZOrder		      48
-      SrcBlock		      "Step"
-      SrcPort		      1
-      Points		      [78, 0; 0, -145]
-      Branch {
-	ZOrder			61
-	Points			[0, -190]
-	DstBlock		"Scope"
-	DstPort			3
-      }
-      Branch {
-	ZOrder			60
-	DstBlock		"Sum4"
-	DstPort			2
-      }
-    }
-    Line {
-      ZOrder		      53
+      ZOrder		      152
       SrcBlock		      "Sum4"
       SrcPort		      1
-      DstBlock		      "PID Controller"
+      DstBlock		      "PID Controller1"
       DstPort		      1
     }
     Line {
-      ZOrder		      54
-      SrcBlock		      "PID Controller"
+      ZOrder		      153
+      SrcBlock		      "PID Controller1"
       SrcPort		      1
       Points		      [-450, 0; 0, -165; 15, 0]
       Branch {
@@ -1714,7 +2441,7 @@ Model {
       ZOrder		      77
       SrcBlock		      "Sine Wave"
       SrcPort		      1
-      Points		      [24, 0; 0, 29; -85, 0; 0, -149]
+      Points		      [15, 0; 0, 41; -372, 0; 0, -186]
       DstBlock		      "Manual Switch"
       DstPort		      2
     }
@@ -1722,7 +2449,7 @@ Model {
       ZOrder		      79
       SrcBlock		      "Step1"
       SrcPort		      1
-      Points		      [100, 0; 0, 15]
+      Points		      [100, 0; 0, 30]
       DstBlock		      "Manual Switch"
       DstPort		      1
     }
@@ -1730,9 +2457,420 @@ Model {
       ZOrder		      82
       SrcBlock		      "Manual Switch"
       SrcPort		      1
-      Points		      [9, 0; 0, 40]
+      Points		      [23, 0; 0, 39; -211, 0; 0, -14]
       DstBlock		      "Sum5"
       DstPort		      1
+    }
+    Line {
+      ZOrder		      86
+      SrcBlock		      "Sum6"
+      SrcPort		      1
+      DstBlock		      "Gain4"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      87
+      SrcBlock		      "Gain8"
+      SrcPort		      1
+      DstBlock		      "Integrator6"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      88
+      SrcBlock		      "Gain7"
+      SrcPort		      1
+      Points		      [-481, 0; 0, 90]
+      DstBlock		      "Sum6"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      89
+      SrcBlock		      "Sum8"
+      SrcPort		      1
+      DstBlock		      "Gain11"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      92
+      SrcBlock		      "PID Controller2"
+      SrcPort		      1
+      Points		      [-450, 0; 0, -165; 15, 0]
+      Branch {
+	ZOrder			91
+	Points			[0, -335]
+	DstBlock		"Sum6"
+	DstPort			2
+      }
+      Branch {
+	ZOrder			90
+	DstBlock		"Sum7"
+	DstPort			3
+      }
+    }
+    Line {
+      ZOrder		      95
+      SrcBlock		      "Integrator5"
+      SrcPort		      1
+      Points		      [97, 0]
+      Branch {
+	ZOrder			94
+	Points			[0, -120]
+	DstBlock		"Gain7"
+	DstPort			1
+      }
+      Branch {
+	ZOrder			93
+	Points			[0, 190]
+	DstBlock		"Sum8"
+	DstPort			1
+      }
+    }
+    Line {
+      ZOrder		      98
+      SrcBlock		      "Integrator4"
+      SrcPort		      1
+      Points		      [71, 0]
+      Branch {
+	ZOrder			97
+	Points			[0, 110]
+	DstBlock		"Sum9"
+	DstPort			1
+      }
+      Branch {
+	ZOrder			96
+	DstBlock		"Integrator5"
+	DstPort			1
+      }
+    }
+    Line {
+      ZOrder		      101
+      SrcBlock		      "Gain11"
+      SrcPort		      1
+      Points		      [-308, 0]
+      Branch {
+	ZOrder			100
+	Points			[0, -190]
+	DstBlock		"Sum6"
+	DstPort			3
+      }
+      Branch {
+	ZOrder			99
+	Points			[0, 95]
+	DstBlock		"Sum7"
+	DstPort			2
+      }
+    }
+    Line {
+      ZOrder		      106
+      SrcBlock		      "Integrator7"
+      SrcPort		      1
+      Points		      [0, 5; 97, 0]
+      Branch {
+	ZOrder			105
+	Points			[0, -90]
+	DstBlock		"Sum8"
+	DstPort			2
+      }
+      Branch {
+	ZOrder			104
+	Points			[216, 0; 0, -15; 1172, 0]
+	DstBlock		"Sum10"
+	DstPort			1
+      }
+    }
+    Line {
+      ZOrder		      107
+      SrcBlock		      "Sum7"
+      SrcPort		      1
+      DstBlock		      "Gain8"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      110
+      SrcBlock		      "Gain5"
+      SrcPort		      1
+      Points		      [-247, 0]
+      Branch {
+	ZOrder			109
+	Points			[0, -90]
+	DstBlock		"Sum6"
+	DstPort			4
+      }
+      Branch {
+	ZOrder			108
+	Points			[0, 145]
+	DstBlock		"Sum7"
+	DstPort			1
+      }
+    }
+    Line {
+      ZOrder		      113
+      SrcBlock		      "Gain14"
+      SrcPort		      1
+      Points		      [-308, 0]
+      Branch {
+	ZOrder			112
+	Points			[0, -190]
+	DstBlock		"Sum13"
+	DstPort			3
+      }
+      Branch {
+	ZOrder			111
+	Points			[0, 95]
+	DstBlock		"Sum14"
+	DstPort			2
+      }
+    }
+    Line {
+      ZOrder		      116
+      SrcBlock		      "Integrator6"
+      SrcPort		      1
+      Points		      [68, 0]
+      Branch {
+	ZOrder			115
+	DstBlock		"Integrator7"
+	DstPort			1
+      }
+      Branch {
+	ZOrder			114
+	Points			[0, -165]
+	DstBlock		"Sum9"
+	DstPort			2
+      }
+    }
+    Line {
+      ZOrder		      117
+      SrcBlock		      "Step3"
+      SrcPort		      1
+      Points		      [90, 0; 0, 80]
+      DstBlock		      "Manual Switch1"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      120
+      SrcBlock		      "Gain10"
+      SrcPort		      1
+      Points		      [-247, 0]
+      Branch {
+	ZOrder			119
+	Points			[0, -90]
+	DstBlock		"Sum13"
+	DstPort			4
+      }
+      Branch {
+	ZOrder			118
+	Points			[0, 145]
+	DstBlock		"Sum14"
+	DstPort			1
+      }
+    }
+    Line {
+      ZOrder		      121
+      SrcBlock		      "Sum14"
+      SrcPort		      1
+      DstBlock		      "Gain13"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      122
+      SrcBlock		      "Sum16"
+      SrcPort		      1
+      DstBlock		      "Gain10"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      125
+      SrcBlock		      "Integrator11"
+      SrcPort		      1
+      Points		      [0, 5; 97, 0]
+      Branch {
+	ZOrder			124
+	Points			[137, 0; 0, 365]
+	DstBlock		"Sum10"
+	DstPort			2
+      }
+      Branch {
+	ZOrder			123
+	Points			[0, -90]
+	DstBlock		"Sum15"
+	DstPort			2
+      }
+    }
+    Line {
+      ZOrder		      126
+      SrcBlock		      "Gain9"
+      SrcPort		      1
+      DstBlock		      "Integrator8"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      127
+      SrcBlock		      "Manual Switch1"
+      SrcPort		      1
+      Points		      [9, 0; 0, 40]
+      DstBlock		      "Sum11"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      130
+      SrcBlock		      "Integrator8"
+      SrcPort		      1
+      Points		      [71, 0]
+      Branch {
+	ZOrder			129
+	Points			[0, 110]
+	DstBlock		"Sum16"
+	DstPort			1
+      }
+      Branch {
+	ZOrder			128
+	DstBlock		"Integrator9"
+	DstPort			1
+      }
+    }
+    Line {
+      ZOrder		      133
+      SrcBlock		      "Integrator9"
+      SrcPort		      1
+      Points		      [97, 0]
+      Branch {
+	ZOrder			132
+	Points			[0, 190]
+	DstBlock		"Sum15"
+	DstPort			1
+      }
+      Branch {
+	ZOrder			131
+	Points			[0, -140]
+	DstBlock		"Sum11"
+	DstPort			2
+      }
+    }
+    Line {
+      ZOrder		      134
+      SrcBlock		      "Gain12"
+      SrcPort		      1
+      Points		      [-486, 0; 0, 120]
+      DstBlock		      "Sum13"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      137
+      SrcBlock		      "Integrator10"
+      SrcPort		      1
+      Points		      [68, 0]
+      Branch {
+	ZOrder			136
+	DstBlock		"Integrator11"
+	DstPort			1
+      }
+      Branch {
+	ZOrder			135
+	Points			[0, -165]
+	DstBlock		"Sum16"
+	DstPort			2
+      }
+    }
+    Line {
+      ZOrder		      138
+      SrcBlock		      "Sum11"
+      SrcPort		      1
+      DstBlock		      "Gain12"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      139
+      SrcBlock		      "Sum15"
+      SrcPort		      1
+      DstBlock		      "Gain14"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      140
+      SrcBlock		      "Sum13"
+      SrcPort		      1
+      DstBlock		      "Gain9"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      141
+      SrcBlock		      "Sine Wave1"
+      SrcPort		      1
+      Points		      [47, 0; 0, 30]
+      DstBlock		      "Manual Switch1"
+      DstPort		      2
+    }
+    Line {
+      ZOrder		      142
+      SrcBlock		      "Sum12"
+      SrcPort		      1
+      DstBlock		      "PID Controller2"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      143
+      SrcBlock		      "Gain13"
+      SrcPort		      1
+      DstBlock		      "Integrator10"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      147
+      SrcBlock		      "Sum10"
+      SrcPort		      1
+      Points		      [-32, 0]
+      Branch {
+	ZOrder			175
+	Points			[0, 175]
+	DstBlock		"Scope2"
+	DstPort			2
+      }
+      Branch {
+	ZOrder			174
+	Points			[-53, 0; 0, -16; -583, 0; 0, 111]
+	DstBlock		"Sum12"
+	DstPort			1
+      }
+    }
+    Line {
+      ZOrder		      148
+      SrcBlock		      "Gain4"
+      SrcPort		      1
+      DstBlock		      "Integrator4"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      149
+      SrcBlock		      "Sum9"
+      SrcPort		      1
+      DstBlock		      "Gain5"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      151
+      SrcBlock		      "Step"
+      SrcPort		      1
+      Points		      [57, 0]
+      Branch {
+	ZOrder			177
+	Points			[0, -145]
+	DstBlock		"Sum4"
+	DstPort			2
+      }
+      Branch {
+	ZOrder			176
+	Points			[54, 0; 0, -340]
+	DstBlock		"Scope"
+	DstPort			3
+      }
+    }
+    Line {
+      ZOrder		      173
+      SrcBlock		      "Step2"
+      SrcPort		      1
+      Points		      [9, 0; 0, -80]
+      DstBlock		      "Sum12"
+      DstPort		      2
     }
     Annotation {
       SID		      "19"
@@ -1740,6 +2878,20 @@ Model {
       Position		      [1010, 200, 1028, 214]
       InternalMargins	      [0, 0, 0, 0]
       ZOrder		      -1
+    }
+    Annotation {
+      SID		      "70"
+      Name		      "z_u"
+      Position		      [2895, 975, 2913, 989]
+      InternalMargins	      [0, 0, 0, 0]
+      ZOrder		      -3
+    }
+    Annotation {
+      SID		      "71"
+      Name		      "z_u"
+      Position		      [4160, 705, 4178, 719]
+      InternalMargins	      [0, 0, 0, 0]
+      ZOrder		      -4
     }
   }
 }
