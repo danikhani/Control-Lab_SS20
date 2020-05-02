@@ -69,7 +69,6 @@ T_N = 4* T_V/((1 - (T1 - T2)^2 *(T_V^2)));
 
 
 KP = 1; 
-
 s = tf('s');
 G_r = KP*( 1+ 1/ (T_N*s) +s*T_V)
 [p, N] = pzmap(G_r) % überprüfe ob T_v und T_N richtig bestimmt wurden
@@ -78,15 +77,17 @@ G_r = KP*( 1+ 1/ (T_N*s) +s*T_V)
 %offene Regelkreis mit Go
 Go = Gsu*G_r
 sisotool(Go)
-%für -30 Grad Phasenreserve wäre Kp = -8.6783
-G_pid = -8.6783 *( 1+ 1/ (T_N*s) +s*T_V)
+%für 30 Grad Phasenreserve wäre Kp = -5.4219
+G_pid = -5.4219 *( 1+ 1/ (T_N*s) +s*T_V)
 Go=Gsu*G_pid
+figure(1)
 margin(Go)
-%Hier sieht man die -30 Grad phasenreserve
+%Hier sieht man die 30 Grad phasenreserve
 G = feedback(Go,1)
-%Schrittantwort von geschlossenen Regelkreis deutet auf einem Instabilen
-%verhalten.
+figure(2)
 step(G)
+%Schrittantwort von geschlossenen Regelkreis deutet auf einer höhen
+%Schwingungen.
 
 %% backup
 %G_rk =  feedback(G_su, G_r);
