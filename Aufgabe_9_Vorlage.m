@@ -41,4 +41,7 @@ Gsu = tf([b2_u,b1_u,b0_u],[a4_u,a3_u,a2_u,a1_u,a0_u])
 %sisotool(Gsu);
 s = tf('s');
 G_pid= -888.93 * (1+0.15*s)*(1+0.24*s)/s
-G = feedback(Gsu,G_pid)
+Go=Gsu*G_pid
+G = feedback(Go,1)
+
+step(G)

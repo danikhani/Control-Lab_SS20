@@ -45,8 +45,9 @@ Gsu = (m_u*s^2 + c_u)/...
 %--------------------------------------------
 % Reglerauslegung mit dem SISO-Tool
 %sisotool(Gsz);
-%sisotool(Gsu,1,1,Gsz);
+controlSystemDesigner(Gsu,1,1,Gsz);
 %sistool(g,c,h,f)
+%controlSystemDesigner(plant,comp,sensor,prefilt) initializes the prefilter model, F, to the SISO LTI model prefilt.
 G_PID = -13844*(1+0.12*s)*(1+0.12*s)/s
 
 
