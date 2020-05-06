@@ -1,0 +1,7825 @@
+Model {
+  Name			  "Aufgabe_4_Vorlage"
+  Version		  8.4
+  MdlSubVersion		  0
+  SavedCharacterEncoding  "windows-1252"
+  GraphicalInterface {
+    NumRootInports	    0
+    NumRootOutports	    0
+    ParameterArgumentNames  ""
+    ComputedModelVersion    "1.67"
+    NumModelReferences	    0
+    NumTestPointedSignals   0
+  }
+  ScopeRefreshTime	  0.035000
+  OverrideScopeRefreshTime off
+  DisableAllScopes	  off
+  DataTypeOverride	  "UseLocalSettings"
+  DataTypeOverrideAppliesTo "AllNumericTypes"
+  MinMaxOverflowLogging	  "UseLocalSettings"
+  MinMaxOverflowArchiveMode "Overwrite"
+  FPTRunName		  "Run 1"
+  MaxMDLFileLineLength	  120
+  InitFcn		  "Ts = 0.1;  % Nicht entfernen!!!"
+  Object {
+    $PropName		    "BdWindowsInfo"
+    $ObjectID		    1
+    $ClassName		    "Simulink.BDWindowsInfo"
+    Object {
+      $PropName		      "WindowsInfo"
+      $ObjectID		      2
+      $ClassName	      "Simulink.WindowInfo"
+      IsActive		      [1]
+      Location		      [225.0, 182.0, 1307.0, 825.0]
+      Object {
+	$PropName		"ModelBrowserInfo"
+	$ObjectID		3
+	$ClassName		"Simulink.ModelBrowserInfo"
+	Visible			[1]
+	DockPosition		"Left"
+	Width			[50]
+	Height			[50]
+	Filter			[9]
+      }
+      Object {
+	$PropName		"ExplorerBarInfo"
+	$ObjectID		4
+	$ClassName		"Simulink.ExplorerBarInfo"
+	Visible			[1]
+      }
+      Object {
+	$PropName		"EditorsInfo"
+	$ObjectID		5
+	$ClassName		"Simulink.EditorInfo"
+	IsActive		[1]
+	ViewObjType		"SimulinkTopLevel"
+	LoadSaveID		"0"
+	Extents			[1064.0, 651.0]
+	ZoomFactor		[1.0]
+	Offset			[135.875, -36.0]
+      }
+    }
+  }
+  Created		  "Wed May 14 11:10:20 2014"
+  Creator		  "ST"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "St"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Thu May 04 11:18:10 2017"
+  RTWModifiedTimeStamp	  415797488
+  ModelVersionFormat	  "1.%<AutoIncrement:67>"
+  ConfigurationManager	  "none"
+  SampleTimeColors	  off
+  SampleTimeAnnotations	  off
+  LibraryLinkDisplay	  "disabled"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowDesignRanges	  off
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  off
+  ShowTestPointIcons	  on
+  ShowSignalResolutionIcons on
+  ShowViewerIcons	  on
+  SortedOrder		  off
+  ExecutionContextIcon	  off
+  ShowLinearizationAnnotations on
+  ShowMarkup		  on
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  SimulationMode	  "normal"
+  PauseTimes		  "5"
+  NumberOfSteps		  1
+  SnapshotBufferSize	  10
+  SnapshotInterval	  10
+  NumberOfLastSnapshots	  0
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  TryForcingSFcnDF	  off
+  Object {
+    $PropName		    "DataLoggingOverride"
+    $ObjectID		    6
+    $ClassName		    "Simulink.SimulationData.ModelLoggingInfo"
+    model_		    "Aufgabe_4_Weiterarbeiten"
+    overrideMode_	    [0.0]
+    Array {
+      Type		      "Cell"
+      Dimension		      1
+      Cell		      "Aufgabe_4_Weiterarbeiten"
+      PropName		      "logAsSpecifiedByModels_"
+    }
+    Array {
+      Type		      "Cell"
+      Dimension		      1
+      Cell		      []
+      PropName		      "logAsSpecifiedByModelsSSIDs_"
+    }
+  }
+  RecordCoverage	  off
+  CovPath		  "/"
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  CovForceBlockReductionOff on
+  CovEnableCumulative	  on
+  covSaveCumulativeToWorkspaceVar on
+  CovSaveSingleToWorkspaceVar on
+  CovCumulativeVarName	  "covCumulativeData"
+  CovCumulativeReport	  off
+  CovReportOnPause	  on
+  CovModelRefEnable	  "Off"
+  CovExternalEMLEnable	  off
+  CovSFcnEnable		  off
+  CovBoundaryAbsTol	  0.000010
+  CovBoundaryRelTol	  0.010000
+  CovUseTimeInterval	  off
+  CovStartTime		  0
+  CovStopTime		  0
+  ExtModeBatchMode	  off
+  ExtModeEnableFloating	  on
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigDurationFloating "auto"
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  BufferReuse		  on
+  ShowModelReferenceBlockVersion off
+  ShowModelReferenceBlockIO off
+  Array {
+    Type		    "Handle"
+    Dimension		    1
+    Simulink.ConfigSet {
+      $ObjectID		      7
+      Version		      "1.14.3"
+      Array {
+	Type			"Handle"
+	Dimension		9
+	Simulink.SolverCC {
+	  $ObjectID		  8
+	  Version		  "1.14.3"
+	  StartTime		  "0"
+	  StopTime		  "100"
+	  AbsTol		  "auto"
+	  FixedStep		  "auto"
+	  InitialStep		  "auto"
+	  MaxNumMinSteps	  "-1"
+	  MaxOrder		  5
+	  ZcThreshold		  "auto"
+	  ConsecutiveZCsStepRelTol "10*128*eps"
+	  MaxConsecutiveZCs	  "1000"
+	  ExtrapolationOrder	  4
+	  NumberNewtonIterations  1
+	  MaxStep		  "auto"
+	  MinStep		  "auto"
+	  MaxConsecutiveMinStep	  "1"
+	  RelTol		  "1e-3"
+	  SolverMode		  "Auto"
+	  EnableConcurrentExecution off
+	  ConcurrentTasks	  off
+	  Solver		  "ode45"
+	  SolverName		  "ode45"
+	  SolverJacobianMethodControl "auto"
+	  ShapePreserveControl	  "DisableAll"
+	  ZeroCrossControl	  "UseLocalSettings"
+	  ZeroCrossAlgorithm	  "Adaptive"
+	  AlgebraicLoopSolver	  "TrustRegion"
+	  SolverResetMethod	  "Fast"
+	  PositivePriorityOrder	  off
+	  AutoInsertRateTranBlk	  off
+	  SampleTimeConstraint	  "Unconstrained"
+	  InsertRTBMode		  "Whenever possible"
+	}
+	Simulink.DataIOCC {
+	  $ObjectID		  9
+	  Version		  "1.14.3"
+	  Decimation		  "1"
+	  ExternalInput		  "[t, u]"
+	  FinalStateName	  "xFinal"
+	  InitialState		  "xInitial"
+	  LimitDataPoints	  on
+	  MaxDataPoints		  "1000"
+	  LoadExternalInput	  off
+	  LoadInitialState	  off
+	  SaveFinalState	  off
+	  SaveCompleteFinalSimState off
+	  SaveFormat		  "Array"
+	  SignalLoggingSaveFormat "Dataset"
+	  SaveOutput		  on
+	  SaveState		  off
+	  SignalLogging		  on
+	  DSMLogging		  on
+	  InspectSignalLogs	  off
+	  VisualizeSimOutput	  on
+	  SaveTime		  on
+	  ReturnWorkspaceOutputs  off
+	  StateSaveName		  "xout"
+	  TimeSaveName		  "tout"
+	  OutputSaveName	  "yout"
+	  SignalLoggingName	  "logsout"
+	  DSMLoggingName	  "dsmout"
+	  OutputOption		  "RefineOutputTimes"
+	  OutputTimes		  "[]"
+	  ReturnWorkspaceOutputsName "out"
+	  Refine		  "1"
+	}
+	Simulink.OptimizationCC {
+	  $ObjectID		  10
+	  Version		  "1.14.3"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    8
+	    Cell		    "BooleansAsBitfields"
+	    Cell		    "PassReuseOutputArgsAs"
+	    Cell		    "PassReuseOutputArgsThreshold"
+	    Cell		    "ZeroExternalMemoryAtStartup"
+	    Cell		    "ZeroInternalMemoryAtStartup"
+	    Cell		    "OptimizeModelRefInitCode"
+	    Cell		    "NoFixptDivByZeroProtection"
+	    Cell		    "UseSpecifiedMinMax"
+	    PropName		    "DisabledProps"
+	  }
+	  BlockReduction	  on
+	  BooleanDataType	  on
+	  ConditionallyExecuteInputs on
+	  InlineParams		  off
+	  UseDivisionForNetSlopeComputation "Off"
+	  UseFloatMulNetSlope	  off
+	  DefaultUnderspecifiedDataType	"double"
+	  UseSpecifiedMinMax	  off
+	  InlineInvariantSignals  off
+	  OptimizeBlockIOStorage  on
+	  BufferReuse		  on
+	  EnhancedBackFolding	  off
+	  CachingGlobalReferences off
+	  GlobalBufferReuse	  on
+	  StrengthReduction	  off
+	  ExpressionFolding	  on
+	  BooleansAsBitfields	  off
+	  BitfieldContainerType	  "uint_T"
+	  EnableMemcpy		  on
+	  MemcpyThreshold	  64
+	  PassReuseOutputArgsAs	  "Structure reference"
+	  ExpressionDepthLimit	  128
+	  FoldNonRolledExpr	  on
+	  LocalBlockOutputs	  on
+	  RollThreshold		  5
+	  SystemCodeInlineAuto	  off
+	  StateBitsets		  off
+	  DataBitsets		  off
+	  ActiveStateOutputEnumStorageType "Native Integer"
+	  UseTempVars		  off
+	  ZeroExternalMemoryAtStartup on
+	  ZeroInternalMemoryAtStartup on
+	  InitFltsAndDblsToZero	  off
+	  NoFixptDivByZeroProtection off
+	  EfficientFloat2IntCast  off
+	  EfficientMapNaN2IntZero on
+	  OptimizeModelRefInitCode off
+	  LifeSpan		  "inf"
+	  MaxStackSize		  "Inherit from target"
+	  BufferReusableBoundary  on
+	  SimCompilerOptimization "Off"
+	  AccelVerboseBuild	  off
+	  ParallelExecutionInRapidAccelerator on
+	}
+	Simulink.DebuggingCC {
+	  $ObjectID		  11
+	  Version		  "1.14.3"
+	  RTPrefix		  "error"
+	  ConsistencyChecking	  "none"
+	  ArrayBoundsChecking	  "none"
+	  SignalInfNanChecking	  "none"
+	  SignalRangeChecking	  "none"
+	  ReadBeforeWriteMsg	  "UseLocalSettings"
+	  WriteAfterWriteMsg	  "UseLocalSettings"
+	  WriteAfterReadMsg	  "UseLocalSettings"
+	  AlgebraicLoopMsg	  "warning"
+	  ArtificialAlgebraicLoopMsg "warning"
+	  SaveWithDisabledLinksMsg "warning"
+	  SaveWithParameterizedLinksMsg	"warning"
+	  CheckSSInitialOutputMsg on
+	  UnderspecifiedInitializationDetection	"Classic"
+	  MergeDetectMultiDrivingBlocksExec "none"
+	  CheckExecutionContextPreStartOutputMsg off
+	  CheckExecutionContextRuntimeOutputMsg	off
+	  SignalResolutionControl "UseLocalSettings"
+	  BlockPriorityViolationMsg "warning"
+	  MinStepSizeMsg	  "warning"
+	  TimeAdjustmentMsg	  "none"
+	  MaxConsecutiveZCsMsg	  "error"
+	  MaskedZcDiagnostic	  "warning"
+	  IgnoredZcDiagnostic	  "none"
+	  SolverPrmCheckMsg	  "warning"
+	  InheritedTsInSrcMsg	  "warning"
+	  DiscreteInheritContinuousMsg "warning"
+	  MultiTaskDSMMsg	  "error"
+	  MultiTaskCondExecSysMsg "error"
+	  MultiTaskRateTransMsg	  "error"
+	  SingleTaskRateTransMsg  "none"
+	  TasksWithSamePriorityMsg "warning"
+	  SigSpecEnsureSampleTimeMsg "warning"
+	  CheckMatrixSingularityMsg "none"
+	  IntegerOverflowMsg	  "warning"
+	  Int32ToFloatConvMsg	  "warning"
+	  ParameterDowncastMsg	  "error"
+	  ParameterOverflowMsg	  "error"
+	  ParameterUnderflowMsg	  "none"
+	  ParameterPrecisionLossMsg "warning"
+	  ParameterTunabilityLossMsg "warning"
+	  FixptConstUnderflowMsg  "none"
+	  FixptConstOverflowMsg	  "none"
+	  FixptConstPrecisionLossMsg "none"
+	  UnderSpecifiedDataTypeMsg "none"
+	  UnnecessaryDatatypeConvMsg "none"
+	  VectorMatrixConversionMsg "none"
+	  InvalidFcnCallConnMsg	  "error"
+	  FcnCallInpInsideContextMsg "EnableAllAsError"
+	  SignalLabelMismatchMsg  "none"
+	  UnconnectedInputMsg	  "warning"
+	  UnconnectedOutputMsg	  "warning"
+	  UnconnectedLineMsg	  "warning"
+	  SFcnCompatibilityMsg	  "none"
+	  FrameProcessingCompatibilityMsg "error"
+	  UniqueDataStoreMsg	  "none"
+	  BusObjectLabelMismatch  "warning"
+	  RootOutportRequireBusObject "warning"
+	  AssertControl		  "UseLocalSettings"
+	  EnableOverflowDetection off
+	  ModelReferenceIOMsg	  "none"
+	  ModelReferenceMultiInstanceNormalModeStructChecksumCheck "error"
+	  ModelReferenceVersionMismatchMessage "none"
+	  ModelReferenceIOMismatchMessage "none"
+	  ModelReferenceCSMismatchMessage "none"
+	  UnknownTsInhSupMsg	  "warning"
+	  ModelReferenceDataLoggingMessage "warning"
+	  ModelReferenceSymbolNameMessage "warning"
+	  ModelReferenceExtraNoncontSigs "error"
+	  StateNameClashWarn	  "warning"
+	  SimStateInterfaceChecksumMismatchMsg "warning"
+	  SimStateOlderReleaseMsg "error"
+	  InitInArrayFormatMsg	  "warning"
+	  StrictBusMsg		  "ErrorLevel1"
+	  BusNameAdapt		  "WarnAndRepair"
+	  NonBusSignalsTreatedAsBus "none"
+	  LoggingUnavailableSignals "error"
+	  BlockIODiagnostic	  "none"
+	  SFUnusedDataAndEventsDiag "warning"
+	  SFUnexpectedBacktrackingDiag "warning"
+	  SFInvalidInputDataAccessInChartInitDiag "warning"
+	  SFNoUnconditionalDefaultTransitionDiag "warning"
+	  SFTransitionOutsideNaturalParentDiag "warning"
+	  SFUnconditionalTransitionShadowingDiag "warning"
+	  SFUndirectedBroadcastEventsDiag "warning"
+	  SFTransitionActionBeforeConditionDiag	"warning"
+	  IntegerSaturationMsg	  "warning"
+	}
+	Simulink.HardwareCC {
+	  $ObjectID		  12
+	  Version		  "1.14.3"
+	  ProdBitPerChar	  8
+	  ProdBitPerShort	  16
+	  ProdBitPerInt		  32
+	  ProdBitPerLong	  32
+	  ProdBitPerLongLong	  64
+	  ProdBitPerFloat	  32
+	  ProdBitPerDouble	  64
+	  ProdBitPerPointer	  32
+	  ProdLargestAtomicInteger "Char"
+	  ProdLargestAtomicFloat  "None"
+	  ProdIntDivRoundTo	  "Undefined"
+	  ProdEndianess		  "Unspecified"
+	  ProdWordSize		  32
+	  ProdShiftRightIntArith  on
+	  ProdLongLongMode	  off
+	  ProdHWDeviceType	  "32-bit Generic"
+	  TargetBitPerChar	  8
+	  TargetBitPerShort	  16
+	  TargetBitPerInt	  32
+	  TargetBitPerLong	  32
+	  TargetBitPerLongLong	  64
+	  TargetBitPerFloat	  32
+	  TargetBitPerDouble	  64
+	  TargetBitPerPointer	  32
+	  TargetLargestAtomicInteger "Char"
+	  TargetLargestAtomicFloat "None"
+	  TargetShiftRightIntArith on
+	  TargetLongLongMode	  off
+	  TargetIntDivRoundTo	  "Undefined"
+	  TargetEndianess	  "Unspecified"
+	  TargetWordSize	  32
+	  TargetTypeEmulationWarnSuppressLevel 0
+	  TargetPreprocMaxBitsSint 32
+	  TargetPreprocMaxBitsUint 32
+	  TargetHWDeviceType	  "Specified"
+	  TargetUnknown		  off
+	  ProdEqTarget		  on
+	}
+	Simulink.ModelReferenceCC {
+	  $ObjectID		  13
+	  Version		  "1.14.3"
+	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
+	  CheckModelReferenceTargetMessage "error"
+	  EnableParallelModelReferenceBuilds off
+	  ParallelModelReferenceErrorOnInvalidPool on
+	  ParallelModelReferenceMATLABWorkerInit "None"
+	  ModelReferenceNumInstancesAllowed "Multi"
+	  PropagateVarSize	  "Infer from blocks in model"
+	  ModelReferencePassRootInputsByReference on
+	  ModelReferenceMinAlgLoopOccurrences off
+	  PropagateSignalLabelsOutOfModel off
+	  SupportModelReferenceSimTargetCustomCode off
+	}
+	Simulink.SFSimCC {
+	  $ObjectID		  14
+	  Version		  "1.14.3"
+	  SFSimEnableDebug	  on
+	  SFSimOverflowDetection  on
+	  SFSimEcho		  on
+	  SimBlas		  on
+	  SimCtrlC		  on
+	  SimExtrinsic		  on
+	  SimIntegrity		  on
+	  SimUseLocalCustomCode	  off
+	  SimParseCustomCode	  on
+	  SimBuildMode		  "sf_incremental_build"
+	  SimGenImportedTypeDefs  off
+	}
+	Simulink.RTWCC {
+	  $BackupClass		  "Simulink.RTWCC"
+	  $ObjectID		  15
+	  Version		  "1.14.3"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    15
+	    Cell		    "IncludeHyperlinkInReport"
+	    Cell		    "GenerateTraceInfo"
+	    Cell		    "GenerateTraceReport"
+	    Cell		    "GenerateTraceReportSl"
+	    Cell		    "GenerateTraceReportSf"
+	    Cell		    "GenerateTraceReportEml"
+	    Cell		    "PortableWordSizes"
+	    Cell		    "GenerateWebview"
+	    Cell		    "GenerateCodeMetricsReport"
+	    Cell		    "GenerateCodeReplacementReport"
+	    Cell		    "GenerateErtSFunction"
+	    Cell		    "CreateSILPILBlock"
+	    Cell		    "CodeExecutionProfiling"
+	    Cell		    "CodeProfilingSaveOptions"
+	    Cell		    "CodeProfilingInstrumentation"
+	    PropName		    "DisabledProps"
+	  }
+	  SystemTargetFile	  "grt.tlc"
+	  TLCOptions		  ""
+	  GenCodeOnly		  off
+	  MakeCommand		  "make_rtw"
+	  GenerateMakefile	  on
+	  PackageGeneratedCodeAndArtifacts off
+	  PackageName		  ""
+	  TemplateMakefile	  "grt_default_tmf"
+	  PostCodeGenCommand	  ""
+	  Description		  ""
+	  GenerateReport	  off
+	  SaveLog		  off
+	  RTWVerbose		  on
+	  RetainRTWFile		  off
+	  ProfileTLC		  off
+	  TLCDebug		  off
+	  TLCCoverage		  off
+	  TLCAssert		  off
+	  ProcessScriptMode	  "Default"
+	  ConfigurationMode	  "Optimized"
+	  ProcessScript		  ""
+	  ConfigurationScript	  ""
+	  ConfigAtBuild		  off
+	  RTWUseLocalCustomCode	  off
+	  RTWUseSimCustomCode	  off
+	  CustomSourceCode	  ""
+	  CustomHeaderCode	  ""
+	  CustomInclude		  ""
+	  CustomSource		  ""
+	  CustomLibrary		  ""
+	  CustomInitializer	  ""
+	  CustomTerminator	  ""
+	  Toolchain		  "Automatically locate an installed toolchain"
+	  BuildConfiguration	  "Faster Builds"
+	  IncludeHyperlinkInReport off
+	  LaunchReport		  off
+	  PortableWordSizes	  off
+	  CreateSILPILBlock	  "None"
+	  CodeExecutionProfiling  off
+	  CodeExecutionProfileVariable "executionProfile"
+	  CodeProfilingSaveOptions "SummaryOnly"
+	  CodeProfilingInstrumentation off
+	  SILDebugging		  off
+	  TargetLang		  "C"
+	  IncludeBusHierarchyInRTWFileBlockHierarchyMap	off
+	  IncludeERTFirstTime	  off
+	  GenerateTraceInfo	  off
+	  GenerateTraceReport	  off
+	  GenerateTraceReportSl	  off
+	  GenerateTraceReportSf	  off
+	  GenerateTraceReportEml  off
+	  GenerateCodeInfo	  off
+	  GenerateWebview	  off
+	  GenerateCodeMetricsReport off
+	  GenerateCodeReplacementReport	off
+	  RTWCompilerOptimization "Off"
+	  RTWCustomCompilerOptimizations ""
+	  CheckMdlBeforeBuild	  "Off"
+	  CustomRebuildMode	  "OnUpdate"
+	  DataInitializer	  ""
+	  SharedConstantsCachingThreshold 1024
+	  Array {
+	    Type		    "Handle"
+	    Dimension		    2
+	    Simulink.CodeAppCC {
+	      $ObjectID		      16
+	      Version		      "1.14.3"
+	      Array {
+		Type			"Cell"
+		Dimension		22
+		Cell			"IgnoreCustomStorageClasses"
+		Cell			"IgnoreTestpoints"
+		Cell			"InsertBlockDesc"
+		Cell			"InsertPolySpaceComments"
+		Cell			"SFDataObjDesc"
+		Cell			"MATLABFcnDesc"
+		Cell			"SimulinkDataObjDesc"
+		Cell			"DefineNamingRule"
+		Cell			"SignalNamingRule"
+		Cell			"ParamNamingRule"
+		Cell			"InternalIdentifier"
+		Cell			"InlinedPrmAccess"
+		Cell			"CustomSymbolStr"
+		Cell			"CustomSymbolStrGlobalVar"
+		Cell			"CustomSymbolStrType"
+		Cell			"CustomSymbolStrField"
+		Cell			"CustomSymbolStrFcn"
+		Cell			"CustomSymbolStrFcnArg"
+		Cell			"CustomSymbolStrBlkIO"
+		Cell			"CustomSymbolStrTmpVar"
+		Cell			"CustomSymbolStrMacro"
+		Cell			"ReqsInCode"
+		PropName		"DisabledProps"
+	      }
+	      ForceParamTrailComments off
+	      GenerateComments	      on
+	      CommentStyle	      "Auto"
+	      IgnoreCustomStorageClasses on
+	      IgnoreTestpoints	      off
+	      IncHierarchyInIds	      off
+	      MaxIdLength	      31
+	      PreserveName	      off
+	      PreserveNameWithParent  off
+	      ShowEliminatedStatement off
+	      OperatorAnnotations     off
+	      IncAutoGenComments      off
+	      SimulinkDataObjDesc     off
+	      SFDataObjDesc	      off
+	      MATLABFcnDesc	      off
+	      IncDataTypeInIds	      off
+	      MangleLength	      1
+	      CustomSymbolStrGlobalVar "$R$N$M"
+	      CustomSymbolStrType     "$N$R$M_T"
+	      CustomSymbolStrField    "$N$M"
+	      CustomSymbolStrFcn      "$R$N$M$F"
+	      CustomSymbolStrFcnArg   "rt$I$N$M"
+	      CustomSymbolStrBlkIO    "rtb_$N$M"
+	      CustomSymbolStrTmpVar   "$N$M"
+	      CustomSymbolStrMacro    "$R$N$M"
+	      CustomSymbolStrUtil     "$N$C"
+	      DefineNamingRule	      "None"
+	      ParamNamingRule	      "None"
+	      SignalNamingRule	      "None"
+	      InsertBlockDesc	      off
+	      InsertPolySpaceComments off
+	      SimulinkBlockComments   on
+	      MATLABSourceComments    off
+	      EnableCustomComments    off
+	      InternalIdentifier      "Shortened"
+	      InlinedPrmAccess	      "Literals"
+	      ReqsInCode	      off
+	      UseSimReservedNames     off
+	    }
+	    Simulink.GRTTargetCC {
+	      $BackupClass	      "Simulink.TargetCC"
+	      $ObjectID		      17
+	      Version		      "1.14.3"
+	      Array {
+		Type			"Cell"
+		Dimension		14
+		Cell			"GeneratePreprocessorConditionals"
+		Cell			"IncludeMdlTerminateFcn"
+		Cell			"SupportNonInlinedSFcns"
+		Cell			"SuppressErrorStatus"
+		Cell			"ERTCustomFileBanners"
+		Cell			"GenerateSampleERTMain"
+		Cell			"GenerateTestInterfaces"
+		Cell			"ModelStepFunctionPrototypeControlCompliant"
+		Cell			"CPPClassGenCompliant"
+		Cell			"GenerateAllocFcn"
+		Cell			"PurelyIntegerCode"
+		Cell			"SupportComplex"
+		Cell			"SupportAbsoluteTime"
+		Cell			"SupportContinuousTime"
+		PropName		"DisabledProps"
+	      }
+	      TargetFcnLib	      "ansi_tfl_table_tmw.mat"
+	      TargetLibSuffix	      ""
+	      TargetPreCompLibLocation ""
+	      GenFloatMathFcnCalls    "NOT IN USE"
+	      TargetLangStandard      "C89/C90 (ANSI)"
+	      CodeReplacementLibrary  "None"
+	      UtilityFuncGeneration   "Auto"
+	      ERTMultiwordTypeDef     "System defined"
+	      ERTMultiwordLength      256
+	      MultiwordLength	      2048
+	      GenerateFullHeader      on
+	      GenerateSampleERTMain   off
+	      GenerateTestInterfaces  off
+	      ModelReferenceCompliant on
+	      ParMdlRefBuildCompliant on
+	      CompOptLevelCompliant   on
+	      ConcurrentExecutionCompliant on
+	      IncludeMdlTerminateFcn  on
+	      GeneratePreprocessorConditionals "Disable all"
+	      CombineOutputUpdateFcns on
+	      CombineSignalStateStructs	off
+	      SuppressErrorStatus     off
+	      ERTFirstTimeCompliant   off
+	      IncludeFileDelimiter    "Auto"
+	      ERTCustomFileBanners    off
+	      SupportAbsoluteTime     on
+	      LogVarNameModifier      "rt_"
+	      MatFileLogging	      on
+	      MultiInstanceERTCode    off
+	      CodeInterfacePackaging  "Nonreusable function"
+	      SupportNonFinite	      on
+	      SupportComplex	      on
+	      PurelyIntegerCode	      off
+	      SupportContinuousTime   on
+	      SupportNonInlinedSFcns  on
+	      SupportVariableSizeSignals off
+	      EnableShiftOperators    on
+	      ParenthesesLevel	      "Nominal"
+	      CastingMode	      "Nominal"
+	      MATLABClassNameForMDSCustomization "Simulink.SoftwareTarget.GRTCustomization"
+	      ModelStepFunctionPrototypeControlCompliant off
+	      CPPClassGenCompliant    on
+	      AutosarCompliant	      off
+	      GRTInterface	      off
+	      GenerateAllocFcn	      off
+	      GenerateSharedConstants on
+	      UseMalloc		      off
+	      ExtMode		      off
+	      ExtModeStaticAlloc      off
+	      ExtModeTesting	      off
+	      ExtModeStaticAllocSize  1000000
+	      ExtModeTransport	      0
+	      ExtModeMexFile	      "ext_comm"
+	      ExtModeIntrfLevel	      "Level1"
+	      RTWCAPISignals	      off
+	      RTWCAPIParams	      off
+	      RTWCAPIStates	      off
+	      RTWCAPIRootIO	      off
+	      GenerateASAP2	      off
+	      MultiInstanceErrorCode  "Error"
+	    }
+	    PropName		    "Components"
+	  }
+	}
+	SlCovCC.ConfigComp {
+	  $ObjectID		  18
+	  Version		  "1.14.3"
+	  Description		  "Simulink Coverage Configuration Component"
+	  Name			  "Simulink Coverage"
+	  CovEnable		  off
+	  CovScope		  "EntireSystem"
+	  CovIncludeTopModel	  on
+	  RecordCoverage	  off
+	  CovPath		  "/"
+	  CovSaveName		  "covdata"
+	  CovMetricSettings	  "dw"
+	  CovNameIncrementing	  off
+	  CovHtmlReporting	  on
+	  CovForceBlockReductionOff on
+	  CovEnableCumulative	  on
+	  CovSaveCumulativeToWorkspaceVar on
+	  CovSaveSingleToWorkspaceVar on
+	  CovCumulativeVarName	  "covCumulativeData"
+	  CovCumulativeReport	  off
+	  CovSaveOutputData	  on
+	  CovOutputDir		  "slcov_output/$ModelName$"
+	  CovDataFileName	  "$ModelName$_cvdata"
+	  CovReportOnPause	  on
+	  CovModelRefEnable	  "Off"
+	  CovExternalEMLEnable	  off
+	  CovSFcnEnable		  on
+	  CovBoundaryAbsTol	  1e-05
+	  CovBoundaryRelTol	  0.01
+	  CovUseTimeInterval	  off
+	  CovStartTime		  0
+	  CovStopTime		  0
+	}
+	PropName		"Components"
+      }
+      Name		      "Configuration"
+      CurrentDlgPage	      "Solver"
+      ConfigPrmDlgPosition     [ 414, 165, 1510, 871 ] 
+    }
+    PropName		    "ConfigurationSets"
+  }
+  Simulink.ConfigSet {
+    $PropName		    "ActiveConfigurationSet"
+    $ObjectID		    7
+  }
+  Object {
+    $PropName		    "DataTransfer"
+    $ObjectID		    19
+    $ClassName		    "Simulink.GlobalDataTransfer"
+    DefaultTransitionBetweenSyncTasks "Ensure deterministic transfer (maximum delay)"
+    DefaultTransitionBetweenAsyncTasks "Ensure data integrity only"
+    DefaultTransitionBetweenContTasks "Ensure deterministic transfer (minimum delay)"
+    DefaultExtrapolationMethodBetweenContTasks "None"
+    AutoInsertRateTranBlk   [0]
+  }
+  ExplicitPartitioning	  off
+  BlockDefaults {
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+    BlockRotation	    0
+    BlockMirror		    off
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    UseDisplayTextAsClickCallback off
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  MaskDefaults {
+    SelfModifiable	    "off"
+    IconFrame		    "on"
+    IconOpaque		    "on"
+    RunInitForIconRedraw    "off"
+    IconRotate		    "none"
+    PortRotate		    "default"
+    IconUnits		    "autoscale"
+  }
+  MaskParameterDefaults {
+    Evaluate		    "on"
+    Tunable		    "on"
+    NeverSave		    "off"
+    Internal		    "off"
+    ReadOnly		    "off"
+    Enabled		    "on"
+    Visible		    "on"
+    ToolTip		    "on"
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      Constant
+      Value		      "1"
+      VectorParams1D	      on
+      SamplingMode	      "Sample based"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Inherit from 'Constant value'"
+      LockScale		      off
+      SampleTime	      "inf"
+      FramePeriod	      "inf"
+      PreserveConstantTs      off
+    }
+    Block {
+      BlockType		      Demux
+      Outputs		      "4"
+      DisplayOption	      "none"
+      BusSelectionMode	      off
+    }
+    Block {
+      BlockType		      Gain
+      Gain		      "1"
+      Multiplication	      "Element-wise(K.*u)"
+      ParamMin		      "[]"
+      ParamMax		      "[]"
+      ParamDataTypeStr	      "Inherit: Same as input"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Same as input"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Ground
+    }
+    Block {
+      BlockType		      Inport
+      Port		      "1"
+      OutputFunctionCall      off
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      LockScale		      off
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      VarSizeSig	      "Inherit"
+      SampleTime	      "-1"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      LatchByDelayingOutsideSignal off
+      LatchInputForFeedbackSignals off
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      Lookup
+      InputValues	      "[-4:5]"
+      Table		      " rand(1,10)-0.5"
+      LookUpMeth	      "Interpolation-Extrapolation"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Same as input"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+      LUTDesignTableMode      "Redesign Table"
+      LUTDesignDataSource     "Block Dialog"
+      LUTDesignFunctionName   "sqrt(x)"
+      LUTDesignUseExistingBP  on
+      LUTDesignRelError	      "0.01"
+      LUTDesignAbsError	      "1e-6"
+    }
+    Block {
+      BlockType		      Lookup2D
+      RowIndex		      "[0 1]"
+      ColumnIndex	      "[0 1]"
+      Table		      "[0 0;0 0]"
+      LookUpMeth	      "Interpolation-Extrapolation"
+      InputSameDT	      on
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Same as first input"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+      LUTDesignTableMode      "Redesign Table"
+      LUTDesignDataSource     "Block Dialog"
+      LUTDesignFunctionName   "sqrt(x)"
+      LUTDesignUseExistingBP  on
+      LUTDesignRelError	      "0.01"
+      LUTDesignAbsError	      "1e-6"
+    }
+    Block {
+      BlockType		      ManualSwitch
+      CurrentSetting	      "1"
+      varsize		      off
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Mux
+      Inputs		      "4"
+      DisplayOption	      "none"
+      UseBusObject	      off
+      BusObject		      "BusObject"
+      NonVirtualBus	      off
+    }
+    Block {
+      BlockType		      Outport
+      Port		      "1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      LockScale		      off
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      VarSizeSig	      "Inherit"
+      SampleTime	      "-1"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      SourceOfInitialOutputValue "Dialog"
+      OutputWhenDisabled      "held"
+      InitialOutput	      "[]"
+    }
+    Block {
+      BlockType		      S-Function
+      FunctionName	      "system"
+      SFunctionModules	      "''"
+      PortCounts	      "[]"
+      SFunctionDeploymentMode off
+    }
+    Block {
+      BlockType		      Scope
+      ModelBased	      off
+      TickLabels	      "OneTimeTick"
+      ZoomMode		      "on"
+      Grid		      "on"
+      TimeRange		      "auto"
+      YMin		      "-5"
+      YMax		      "5"
+      SaveToWorkspace	      off
+      SaveName		      "ScopeData"
+      DataFormat	      "Array"
+      LimitDataPoints	      on
+      MaxDataPoints	      "5000"
+      Decimation	      "1"
+      SampleInput	      off
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Step
+      Time		      "1"
+      Before		      "0"
+      After		      "1"
+      SampleTime	      "-1"
+      VectorParams1D	      on
+      ZeroCross		      on
+    }
+    Block {
+      BlockType		      SubSystem
+      ShowPortLabels	      "FromPortIcon"
+      Permissions	      "ReadWrite"
+      PermitHierarchicalResolution "All"
+      TreatAsAtomicUnit	      off
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      CheckFcnCallInpInsideContextMsg off
+      SystemSampleTime	      "-1"
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      FunctionInterfaceSpec   "void_void"
+      FunctionWithSeparateData off
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      SimViewingDevice	      off
+      DataTypeOverride	      "UseLocalSettings"
+      DataTypeOverrideAppliesTo	"AllNumericTypes"
+      MinMaxOverflowLogging   "UseLocalSettings"
+      Opaque		      off
+      MaskHideContents	      off
+      SFBlockType	      "NONE"
+      Variant		      off
+      GeneratePreprocessorConditionals off
+      ContentPreviewEnabled   off
+    }
+    Block {
+      BlockType		      Terminator
+    }
+    Block {
+      BlockType		      ToWorkspace
+      VariableName	      "simulink_output"
+      MaxDataPoints	      "1000"
+      Decimation	      "1"
+      SaveFormat	      "Array"
+      Save2DSignal	      "Inherit from input (this choice will be removed - see release notes)"
+      FixptAsFi		      off
+      NumInputs		      "1"
+      SampleTime	      "0"
+    }
+  }
+  System {
+    Name		    "Aufgabe_4_Vorlage"
+    Location		    [225, 182, 1532, 1007]
+    Open		    on
+    ModelBrowserVisibility  on
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "A4"
+    PaperUnits		    "centimeters"
+    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+    TiledPageScale	    1
+    ShowPageBoundaries	    off
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    SIDHighWatermark	    "365"
+    Block {
+      BlockType		      Constant
+      Name		      "Constant"
+      SID		      "76"
+      Position		      [260, 115, 290, 145]
+      ZOrder		      14
+      BackgroundColor	      "orange"
+      Value		      "70.7"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Constant1"
+      SID		      "85"
+      Position		      [260, 245, 290, 275]
+      ZOrder		      21
+      BackgroundColor	      "orange"
+      Value		      "43.3"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Constant2"
+      SID		      "78"
+      Position		      [260, 370, 290, 400]
+      ZOrder		      16
+      BackgroundColor	      "orange"
+      Value		      "44.7"
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Dreitank-System"
+      SID		      "67"
+      Ports		      [3, 4]
+      Position		      [470, 220, 685, 350]
+      ZOrder		      11
+      RequestExecContextInheritance off
+      Object {
+	$PropName		"MaskObject"
+	$ObjectID		20
+	$ClassName		"Simulink.Mask"
+	Array {
+	  Type			  "Simulink.MaskParameter"
+	  Dimension		  7
+	  Object {
+	    $ObjectID		    21
+	    Type		    "edit"
+	    Name		    "B101_Volumen"
+	    Prompt		    "Volumen im Behälter B101 in m^3"
+	    Value		    "80*10^-3"
+	    Tunable		    "off"
+	  }
+	  Object {
+	    $ObjectID		    22
+	    Type		    "edit"
+	    Name		    "B102_Initial_Volumen"
+	    Prompt		    "Initialvolumen im Behälter B102 in m^3"
+	    Value		    "8*10^-3"
+	    Tunable		    "off"
+	  }
+	  Object {
+	    $ObjectID		    23
+	    Type		    "edit"
+	    Name		    "B103_Initial_Volumen"
+	    Prompt		    "Initialvolumen im Behälter B103 in m^3"
+	    Value		    "6*10^-3"
+	    Tunable		    "off"
+	  }
+	  Object {
+	    $ObjectID		    24
+	    Type		    "edit"
+	    Name		    "B104_Initial_Volumen"
+	    Prompt		    "Initialvolumen im Behälter B104 in m^3"
+	    Value		    "5*10^-3"
+	    Tunable		    "off"
+	  }
+	  Object {
+	    $ObjectID		    25
+	    Type		    "edit"
+	    Name		    "Querschnitt_Rohr_B102_B103"
+	    Prompt		    "Rohrquerschnitt zwischen Behälter B102 und B103 in m^2"
+	    Value		    "500*10^-6"
+	    Tunable		    "off"
+	  }
+	  Object {
+	    $ObjectID		    26
+	    Type		    "edit"
+	    Name		    "Querschnitt_Rohr_B103_B104"
+	    Prompt		    "Rohrquerschnitt zwischen Behälter B103 und B104 in m^2"
+	    Value		    "500*10^-6"
+	    Tunable		    "off"
+	  }
+	  Object {
+	    $ObjectID		    27
+	    Type		    "edit"
+	    Name		    "Flaeche_Behaelter"
+	    Prompt		    "Fläche der Behälter in m^2"
+	    Value		    "0.045"
+	    Tunable		    "off"
+	  }
+	  PropName		  "Parameters"
+	}
+      }
+      System {
+	Name			"Dreitank-System"
+	Location		[225, 182, 1532, 1007]
+	Open			off
+	ModelBrowserVisibility	on
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "U_P101"
+	  SID			  "303"
+	  Position		  [25, 163, 55, 177]
+	  ZOrder		  47
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "U_V101 "
+	  SID			  "304"
+	  Position		  [205, 43, 235, 57]
+	  ZOrder		  46
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "U_V106"
+	  SID			  "305"
+	  Position		  [65, 373, 95, 387]
+	  ZOrder		  48
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "B101 Volumen"
+	  SID			  "306"
+	  Position		  [15, 230, 115, 260]
+	  ZOrder		  43
+	  Value			  "B101_Volumen"
+	  OutDataTypeStr	  "double"
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "B102"
+	  SID			  "307"
+	  Ports			  [2, 1]
+	  Position		  [450, 101, 555, 179]
+	  ZOrder		  38
+	  BackgroundColor	  "lightBlue"
+	  RequestExecContextInheritance	off
+	  Object {
+	    $PropName		    "MaskObject"
+	    $ObjectID		    28
+	    $ClassName		    "Simulink.Mask"
+	    Object {
+	      $PropName		      "Parameters"
+	      $ObjectID		      29
+	      $ClassName	      "Simulink.MaskParameter"
+	      Type		      "edit"
+	      Name		      "Initial_Volumen"
+	      Prompt		      "Initialvolumen"
+	      Value		      "B102_Initial_Volumen"
+	      Tunable		      "off"
+	    }
+	  }
+	  System {
+	    Name		    "B102"
+	    Location		    [225, 182, 1532, 1007]
+	    Open		    off
+	    ModelBrowserVisibility  on
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Q_zu [m^3/s]"
+	      SID		      "308"
+	      Position		      [70, 63, 100, 77]
+	      ZOrder		      -1
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Q_ab [m^3/s]"
+	      SID		      "309"
+	      Position		      [65, 123, 95, 137]
+	      ZOrder		      -2
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "V [m^3]"
+	      SID		      "312"
+	      Position		      [410, 63, 440, 77]
+	      ZOrder		      -5
+	      IconDisplay	      "Port number"
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "B103"
+	  SID			  "313"
+	  Ports			  [2, 1]
+	  Position		  [450, 226, 555, 304]
+	  ZOrder		  39
+	  BackgroundColor	  "lightBlue"
+	  RequestExecContextInheritance	off
+	  Object {
+	    $PropName		    "MaskObject"
+	    $ObjectID		    30
+	    $ClassName		    "Simulink.Mask"
+	    Object {
+	      $PropName		      "Parameters"
+	      $ObjectID		      31
+	      $ClassName	      "Simulink.MaskParameter"
+	      Type		      "edit"
+	      Name		      "Initial_Volumen"
+	      Prompt		      "Initialvolumen"
+	      Value		      "B103_Initial_Volumen"
+	      Tunable		      "off"
+	    }
+	  }
+	  System {
+	    Name		    "B103"
+	    Location		    [225, 182, 1532, 1007]
+	    Open		    off
+	    ModelBrowserVisibility  on
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Q_zu [m^3/s]"
+	      SID		      "314"
+	      Position		      [70, 63, 100, 77]
+	      ZOrder		      -1
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Q_ab [m^3/s]"
+	      SID		      "315"
+	      Position		      [65, 123, 95, 137]
+	      ZOrder		      -2
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "V [m^3]"
+	      SID		      "318"
+	      Position		      [455, 63, 485, 77]
+	      ZOrder		      -5
+	      IconDisplay	      "Port number"
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "B104"
+	  SID			  "319"
+	  Ports			  [2, 1]
+	  Position		  [450, 341, 555, 419]
+	  ZOrder		  41
+	  BackgroundColor	  "lightBlue"
+	  RequestExecContextInheritance	off
+	  Object {
+	    $PropName		    "MaskObject"
+	    $ObjectID		    32
+	    $ClassName		    "Simulink.Mask"
+	    Object {
+	      $PropName		      "Parameters"
+	      $ObjectID		      33
+	      $ClassName	      "Simulink.MaskParameter"
+	      Type		      "edit"
+	      Name		      "Initial_Volumen"
+	      Prompt		      "Initialvolumen"
+	      Value		      "B104_Initial_Volumen"
+	      Tunable		      "off"
+	    }
+	  }
+	  System {
+	    Name		    "B104"
+	    Location		    [225, 182, 1532, 1007]
+	    Open		    off
+	    ModelBrowserVisibility  on
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Q_zu [m^3/s]"
+	      SID		      "320"
+	      Position		      [70, 63, 100, 77]
+	      ZOrder		      -1
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Q_ab [m^3/s]"
+	      SID		      "321"
+	      Position		      [65, 123, 95, 137]
+	      ZOrder		      -2
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "V [m^3]"
+	      SID		      "324"
+	      Position		      [455, 63, 485, 77]
+	      ZOrder		      -5
+	      IconDisplay	      "Port number"
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Drossel B102 -> B103"
+	  SID			  "326"
+	  Ports			  [3, 1]
+	  Position		  [645, 157, 790, 243]
+	  ZOrder		  37
+	  BackgroundColor	  "yellow"
+	  RequestExecContextInheritance	off
+	  Object {
+	    $PropName		    "MaskObject"
+	    $ObjectID		    34
+	    $ClassName		    "Simulink.Mask"
+	    Array {
+	      Type		      "Simulink.MaskParameter"
+	      Dimension		      2
+	      Object {
+		$ObjectID		35
+		Type			"edit"
+		Name			"Querschnitt_Rohr"
+		Prompt			"Querschnitt des Rohrs in m^2"
+		Value			"Querschnitt_Rohr_B102_B103"
+		Tunable			"off"
+	      }
+	      Object {
+		$ObjectID		36
+		Type			"edit"
+		Name			"Flaeche_Behaelter"
+		Prompt			"Flaeche_Behaelter in m^2"
+		Value			"Flaeche_Behaelter"
+		Tunable			"off"
+	      }
+	      PropName		      "Parameters"
+	    }
+	  }
+	  System {
+	    Name		    "Drossel B102 -> B103"
+	    Location		    [225, 182, 1532, 1007]
+	    Open		    off
+	    ModelBrowserVisibility  on
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Stellwert Ventil [%]"
+	      SID		      "327"
+	      Position		      [100, 433, 130, 447]
+	      ZOrder		      -3
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "V_Zufluss[m^3]"
+	      SID		      "328"
+	      Position		      [100, 68, 130, 82]
+	      ZOrder		      -1
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "V_Abfluss [m^3]"
+	      SID		      "329"
+	      Position		      [100, 118, 130, 132]
+	      ZOrder		      -2
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Erdbeschleunigung m/s^2"
+	      SID		      "332"
+	      Position		      [100, 275, 130, 305]
+	      ZOrder		      -9
+	      Value		      "9.81"
+	      OutDataTypeStr	      "double"
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Fläche Behälter m^2"
+	      SID		      "333"
+	      Position		      [100, 210, 130, 240]
+	      ZOrder		      -10
+	      Value		      "Flaeche_Behaelter"
+	      OutDataTypeStr	      "double"
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Querschnitt Rohr m^2"
+	      SID		      "337"
+	      Position		      [100, 350, 130, 380]
+	      ZOrder		      -14
+	      Value		      "Querschnitt_Rohr"
+	      OutDataTypeStr	      "double"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Q [m^3/s]"
+	      SID		      "340"
+	      Position		      [645, 88, 675, 102]
+	      ZOrder		      -16
+	      IconDisplay	      "Port number"
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Drossel B103 -> B104"
+	  SID			  "341"
+	  Ports			  [3, 1]
+	  Position		  [645, 292, 790, 378]
+	  ZOrder		  40
+	  BackgroundColor	  "yellow"
+	  RequestExecContextInheritance	off
+	  Object {
+	    $PropName		    "MaskObject"
+	    $ObjectID		    37
+	    $ClassName		    "Simulink.Mask"
+	    Array {
+	      Type		      "Simulink.MaskParameter"
+	      Dimension		      2
+	      Object {
+		$ObjectID		38
+		Type			"edit"
+		Name			"Querschnitt_Rohr"
+		Prompt			"Querschnitt des Rohrs in m^2"
+		Value			"Querschnitt_Rohr_B102_B103"
+		Tunable			"off"
+	      }
+	      Object {
+		$ObjectID		39
+		Type			"edit"
+		Name			"Flaeche_Behaelter"
+		Prompt			"Flaeche_Behaelter in m^2"
+		Value			"Flaeche_Behaelter"
+		Tunable			"off"
+	      }
+	      PropName		      "Parameters"
+	    }
+	  }
+	  System {
+	    Name		    "Drossel B103 -> B104"
+	    Location		    [225, 182, 1532, 1007]
+	    Open		    off
+	    ModelBrowserVisibility  on
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Stellwert Ventil [%]"
+	      SID		      "342"
+	      Position		      [100, 433, 130, 447]
+	      ZOrder		      -3
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "V_Zufluss[m^3]"
+	      SID		      "343"
+	      Position		      [100, 68, 130, 82]
+	      ZOrder		      -1
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "V_Abfluss [m^3]"
+	      SID		      "344"
+	      Position		      [100, 118, 130, 132]
+	      ZOrder		      -2
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Erdbeschleunigung m/s^2"
+	      SID		      "347"
+	      Position		      [100, 280, 130, 310]
+	      ZOrder		      -9
+	      Value		      "9.81"
+	      OutDataTypeStr	      "double"
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Fläche Behälter m^2"
+	      SID		      "348"
+	      Position		      [100, 210, 130, 240]
+	      ZOrder		      -10
+	      Value		      "Flaeche_Behaelter"
+	      OutDataTypeStr	      "double"
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Querschnitt Rohr m^2"
+	      SID		      "352"
+	      Position		      [100, 350, 130, 380]
+	      ZOrder		      -14
+	      Value		      "Querschnitt_Rohr"
+	      OutDataTypeStr	      "double"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Q [m^3/s]"
+	      SID		      "355"
+	      Position		      [645, 88, 675, 102]
+	      ZOrder		      -16
+	      IconDisplay	      "Port number"
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Lookup2D
+	  Name			  "Lookup\nTable (2-D) P101"
+	  SID			  "356"
+	  Position		  [140, 194, 225, 261]
+	  ZOrder		  42
+	  RowIndex		  "[50,55,60,65,70,75,80,85,90,95,100]"
+	  ColumnIndex		  "[40,130]*10^-3"
+	  Table			  "reshape([0,0.0606,0.2450,0.3378,0.4184,0.5002,0.5801,0.6551,0.7138,0.7746,0.8206,0,0.2799,0.3497,0.4278,"
+	  "0.5053,0.5810,0.6481,0.7168,0.7695,0.8350,0.8786]*10^-3,11,2)"
+	  LookUpMeth		  "Interpolation-Use End Values"
+	  InputSameDT		  off
+	  SaturateOnIntegerOverflow off
+	  Port {
+	    PortNumber		    1
+	    Name		    "Q_zu_B102 [m^3/s]"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Lookup2D
+	  Name			  "Lookup\nTable (2-D) V106"
+	  SID			  "357"
+	  Position		  [130, 364, 215, 431]
+	  ZOrder		  45
+	  RowIndex		  "[15,20,25,30,35,40,45,50,55,60,65,70,75,80,85]"
+	  ColumnIndex		  "[2,2.8,10]*10^-3"
+	  Table			  "reshape([0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.032,0.097,0.179,0.262,0.361,0.475,0.604,0.902,1.089,1.318,1.5"
+	  "36,1.685,1.853,2.029,0,0.032,0.097,0.179,0.262,0.361,0.475,0.604,0.902,1.089,1.318,1.536,1.685,1.853,2.029]*10^-3,1"
+	  "5,3)"
+	  LookUpMeth		  "Interpolation-Use End Values"
+	  InputSameDT		  off
+	  SaturateOnIntegerOverflow off
+	  Port {
+	    PortNumber		    1
+	    Name		    "Q_ab_B104 [m^3/s]"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Lookup
+	  Name			  "Lookup Table V101"
+	  SID			  "358"
+	  Position		  [280, 16, 365, 84]
+	  ZOrder		  44
+	  InputValues		  "[0,20,25,30,35,40,45,50,55,60,65,70,75,80,85,90,100]"
+	  Table			  "[100,96,90,88,84,76,68,60,49,41,34,27,22,19,16,12,0]"
+	  LookUpMeth		  "Interpolation-Use End Values"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "V2 [m^3]"
+	  SID			  "359"
+	  Position		  [625, 43, 655, 57]
+	  ZOrder		  49
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "V3 [m^3]"
+	  SID			  "360"
+	  Position		  [695, 43, 725, 57]
+	  ZOrder		  50
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "V4 [m^3]"
+	  SID			  "361"
+	  Position		  [760, 43, 790, 57]
+	  ZOrder		  51
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Q_P101 [m^3/s]"
+	  SID			  "362"
+	  Position		  [320, 153, 350, 167]
+	  ZOrder		  53
+	  Port			  "4"
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  ZOrder		  90
+	  SrcBlock		  "B101 Volumen"
+	  SrcPort		  1
+	  DstBlock		  "Lookup\nTable (2-D) P101"
+	  DstPort		  2
+	}
+	Line {
+	  ZOrder		  96
+	  SrcBlock		  "U_P101"
+	  SrcPort		  1
+	  Points		  [37, 0; 0, 40]
+	  DstBlock		  "Lookup\nTable (2-D) P101"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  97
+	  SrcBlock		  "U_V106"
+	  SrcPort		  1
+	  DstBlock		  "Lookup\nTable (2-D) V106"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  103
+	  SrcBlock		  "U_V101 "
+	  SrcPort		  1
+	  DstBlock		  "Lookup Table V101"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "Q_zu_B102 [m^3/s]"
+	  ZOrder		  112
+	  SrcBlock		  "Lookup\nTable (2-D) P101"
+	  SrcPort		  1
+	  Points		  [12, 0]
+	  Branch {
+	    ZOrder		    121
+	    Labels		    [1, 1]
+	    Points		    [147, 0]
+	  }
+	  Branch {
+	    ZOrder		    120
+	    Points		    [0, -70]
+	    DstBlock		    "Q_P101 [m^3/s]"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  Name			  "Q_ab_B104 [m^3/s]"
+	  ZOrder		  119
+	  Labels		  [1, 1]
+	  SrcBlock		  "Lookup\nTable (2-D) V106"
+	  SrcPort		  1
+	  Points		  [109, 0]
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Einstellungen durch \nDoppelklick anpassen"
+      SID		      "365"
+      Ports		      []
+      Position		      [515, 17, 640, 98]
+      ZOrder		      526
+      BackgroundColor	      "yellow"
+      LibraryVersion	      "1.32"
+      InitFcn		      "tic"
+      ErrorFcn		      "Stateflow.Translate.translate"
+      PermitHierarchicalResolution "ExplicitOnly"
+      TreatAsAtomicUnit	      on
+      RequestExecContextInheritance off
+      SFBlockType	      "MATLAB Function"
+      Object {
+	$PropName		"MaskObject"
+	$ObjectID		40
+	$ClassName		"Simulink.Mask"
+	Initialization		"maskStr = get_param(gcb,'Auswahl');\n\nif strcmp(maskStr(1),'I')\n     assignin('base','Testen',0)\n"
+	"else if strcmp(maskStr(1),'M')\n        assignin('base','Testen',1)\n    else\n        assignin('base','Testen',2)\n "
+	"   end\nend\n"
+	IconOpaque		"off"
+	Object {
+	  $PropName		  "Parameters"
+	  $ObjectID		  41
+	  $ClassName		  "Simulink.MaskParameter"
+	  Type			  "popup"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    3
+	    Cell		    "Bearbeiten"
+	    Cell		    "In Echtzeit ausführen"
+	    Cell		    "Mit Lösung vergleichen"
+	    PropName		    "TypeOptions"
+	  }
+	  Name			  "Auswahl"
+	  Prompt		  "Auswahl"
+	  Value			  "Bearbeiten"
+	  Evaluate		  "off"
+	  Callback		  "maskStr = get_param(gcb,'Auswahl');\n\nif strcmp(maskStr(1),'I')\n     assignin('base','Testen',0)\nel"
+	  "se if strcmp(maskStr(1),'M')\n        assignin('base','Testen',1)\n    else\n        assignin('base','Testen',2)\n "
+	  "   end\nend\n"
+	}
+	Array {
+	  Type			  "Simulink.dialog.Control"
+	  Dimension		  2
+	  Object {
+	    $ObjectID		    42
+	    $ClassName		    "Simulink.dialog.Group"
+	    Prompt		    "%<MaskType>"
+	    Object {
+	      $PropName		      "DialogControls"
+	      $ObjectID		      43
+	      $ClassName	      "Simulink.dialog.Text"
+	      Prompt		      "Zum Vergleichen des Modells mit der Musterlösung für Aufgabe 6 wählen Sie bitte \"Mit Lösung ver"
+	      "gleichen\" aus. Möchten Sie das Modell in Echtzeit testen, dann wählen Sie \"In Echtzeit ausführen\". In allen "
+	      "anderen Fällen sollte \"Bearbeiten ausgewählt sein.\""
+	      Name		      "DescTextVar"
+	    }
+	    Name		    "DescGroupVar"
+	  }
+	  Object {
+	    $ObjectID		    44
+	    $ClassName		    "Simulink.dialog.parameter.Popup"
+	    Name		    "Auswahl"
+	  }
+	  PropName		  "DialogControls"
+	}
+      }
+      System {
+	Name			"Einstellungen durch \nDoppelklick anpassen"
+	Location		[227, 345, 838, 789]
+	Open			off
+	ModelBrowserVisibility	on
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	SIDHighWatermark	"34"
+	Block {
+	  BlockType		  Demux
+	  Name			  " Demux "
+	  SID			  "365::32"
+	  Ports			  [1, 1]
+	  Position		  [270, 100, 320, 140]
+	  ZOrder		  10
+	  Outputs		  "1"
+	}
+	Block {
+	  BlockType		  Ground
+	  Name			  " Ground "
+	  SID			  "365::34"
+	  Position		  [20, 111, 40, 129]
+	  ZOrder		  12
+	}
+	Block {
+	  BlockType		  S-Function
+	  Name			  " SFunction "
+	  SID			  "365::31"
+	  Tag			  "Stateflow S-Function Aufgabe_4_Vorlage 2"
+	  Ports			  [1, 1]
+	  Position		  [180, 100, 230, 140]
+	  ZOrder		  9
+	  FunctionName		  "sf_sfun"
+	  PortCounts		  "[1 1]"
+	  EnableBusSupport	  on
+	}
+	Block {
+	  BlockType		  Terminator
+	  Name			  " Terminator "
+	  SID			  "365::33"
+	  Position		  [460, 111, 480, 129]
+	  ZOrder		  11
+	}
+	Line {
+	  ZOrder		  1
+	  SrcBlock		  " Ground "
+	  SrcPort		  1
+	  DstBlock		  " SFunction "
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  2
+	  SrcBlock		  " Demux "
+	  SrcPort		  1
+	  DstBlock		  " Terminator "
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  3
+	  SrcBlock		  " SFunction "
+	  SrcPort		  1
+	  DstBlock		  " Demux "
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      ManualSwitch
+      Name		      "Manual Switch1"
+      SID		      "101"
+      Position		      [365, 267, 395, 303]
+      ZOrder		      30
+    }
+    Block {
+      BlockType		      ManualSwitch
+      Name		      "Manual Switch2"
+      SID		      "103"
+      Position		      [365, 377, 395, 413]
+      ZOrder		      32
+    }
+    Block {
+      BlockType		      ManualSwitch
+      Name		      "Manual Switch3"
+      SID		      "363"
+      Position		      [365, 147, 395, 183]
+      ZOrder		      513
+    }
+    Block {
+      BlockType		      Mux
+      Name		      "Mux"
+      SID		      "75"
+      Ports		      [3, 1]
+      Position		      [820, 228, 825, 312]
+      ZOrder		      13
+      ShowName		      off
+      Inputs		      "3"
+      DisplayOption	      "bar"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Scope"
+      SID		      "74"
+      Ports		      [1]
+      Position		      [870, 254, 900, 286]
+      ZOrder		      12
+      Floating		      off
+      Location		      [-6, 60, 1914, 1181]
+      Open		      off
+      NumInputPorts	      "1"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      List {
+	ListType		ScopeGraphics
+	FigureColor		"[0.5 0.5 0.5]"
+	AxesColor		"[0 0 0]"
+	AxesTickColor		"[1 1 1]"
+	LineColors		"[1 1 0;1 0 1;0 1 1;1 0 0;0 1 0;0 0 1]"
+	LineStyles		"-|-|-|-|-|-"
+	LineWidths		"[0.5 0.5 0.5 0.5 0.5 0.5]"
+	MarkerStyles		"none|none|none|none|none|none"
+      }
+      ShowLegends	      off
+      LimitDataPoints	      off
+      ScrollMode	      off
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Scope1"
+      SID		      "364"
+      Ports		      [1]
+      Position		      [870, 344, 900, 376]
+      ZOrder		      525
+      Floating		      off
+      Location		      [1, 48, 1921, 1169]
+      Open		      off
+      NumInputPorts	      "1"
+      ZoomMode		      "yonly"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      List {
+	ListType		ScopeGraphics
+	FigureColor		"[0.5 0.5 0.5]"
+	AxesColor		"[0 0 0]"
+	AxesTickColor		"[1 1 1]"
+	LineColors		"[1 1 0;1 0 1;0 1 1;1 0 0;0 1 0;0 0 1]"
+	LineStyles		"-|-|-|-|-|-"
+	LineWidths		"[0.5 0.5 0.5 0.5 0.5 0.5]"
+	MarkerStyles		"none|none|none|none|none|none"
+      }
+      ShowLegends	      off
+      LimitDataPoints	      off
+      ScrollMode	      off
+    }
+    Block {
+      BlockType		      Step
+      Name		      "Step"
+      SID		      "100"
+      Position		      [260, 170, 290, 200]
+      ZOrder		      29
+      BackgroundColor	      "orange"
+      Before		      "70.7"
+      After		      "80.7"
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Step
+      Name		      "Step1"
+      SID		      "102"
+      Position		      [260, 300, 290, 330]
+      ZOrder		      31
+      BackgroundColor	      "orange"
+      Time		      "2"
+      Before		      "43.3"
+      After		      "53.3"
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Step
+      Name		      "Step2"
+      SID		      "104"
+      Position		      [260, 445, 290, 475]
+      ZOrder		      33
+      BackgroundColor	      "orange"
+      Before		      "44.7"
+      After		      "54.7"
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      ToWorkspace
+      Name		      "To Workspace1"
+      SID		      "96"
+      Ports		      [1]
+      Position		      [930, 140, 990, 170]
+      ZOrder		      26
+      VariableName	      "V3sim"
+      MaxDataPoints	      "inf"
+      SampleTime	      "Ts"
+    }
+    Block {
+      BlockType		      ToWorkspace
+      Name		      "To Workspace2"
+      SID		      "97"
+      Ports		      [1]
+      Position		      [930, 195, 990, 225]
+      ZOrder		      27
+      VariableName	      "V2sim"
+      MaxDataPoints	      "inf"
+      SampleTime	      "Ts"
+    }
+    Block {
+      BlockType		      ToWorkspace
+      Name		      "To Workspace3"
+      SID		      "98"
+      Ports		      [1]
+      Position		      [930, 85, 990, 115]
+      ZOrder		      25
+      VariableName	      "V4sim"
+      MaxDataPoints	      "inf"
+      SampleTime	      "Ts"
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Visualisierung"
+      SID		      "109"
+      Ports		      [6]
+      Position		      [850, 404, 1075, 536]
+      ZOrder		      506
+      OpenFcn		      "system('Dreitank_Visualisierung_32bit\\Dreitank.blend.exe &')"
+      RequestExecContextInheritance off
+      System {
+	Name			"Visualisierung"
+	Location		[73, 70, 1746, 953]
+	Open			off
+	ModelBrowserVisibility	on
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"80"
+	Block {
+	  BlockType		  Inport
+	  Name			  "V2"
+	  SID			  "110"
+	  Position		  [370, 225, 400, 240]
+	  ZOrder		  499
+	  BlockRotation		  270
+	  BlockMirror		  on
+	  IconDisplay		  "Port number"
+	  PortDimensions	  "1"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "V3"
+	  SID			  "111"
+	  Position		  [305, 225, 335, 240]
+	  ZOrder		  500
+	  BlockRotation		  270
+	  BlockMirror		  on
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	  PortDimensions	  "1"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "V4"
+	  SID			  "112"
+	  Position		  [225, 225, 255, 240]
+	  ZOrder		  501
+	  BlockRotation		  270
+	  BlockMirror		  on
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	  PortDimensions	  "1"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "P101"
+	  SID			  "113"
+	  Position		  [50, 395, 80, 410]
+	  ZOrder		  502
+	  BlockRotation		  270
+	  BlockMirror		  on
+	  Port			  "4"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "V101"
+	  SID			  "114"
+	  Position		  [40, 500, 70, 515]
+	  ZOrder		  503
+	  BlockRotation		  270
+	  BlockMirror		  on
+	  Port			  "5"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "V106"
+	  SID			  "115"
+	  Position		  [40, 580, 70, 595]
+	  ZOrder		  504
+	  BlockRotation		  270
+	  BlockMirror		  on
+	  Port			  "6"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Simulation"
+	  SID			  "116"
+	  Ports			  [1]
+	  Position		  [380, 410, 420, 470]
+	  ZOrder		  496
+	  RequestExecContextInheritance	off
+	  System {
+	    Name		    "Simulation"
+	    Location		    [161, 111, 1767, 979]
+	    Open		    off
+	    ModelBrowserVisibility  on
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "PumpValue"
+	      SID		      "117"
+	      Position		      [20, 45, 50, 60]
+	      ZOrder		      487
+	      BlockRotation	      270
+	      BlockMirror	      on
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Constant1"
+	      SID		      "118"
+	      Position		      [205, 135, 235, 165]
+	      ZOrder		      504
+	      Value		      "0.99"
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Constant2"
+	      SID		      "119"
+	      Position		      [270, 202, 375, 238]
+	      ZOrder		      502
+	      Value		      "uint8('TTXP1')"
+	    }
+	    Block {
+	      BlockType		      Gain
+	      Name		      "Gain1"
+	      SID		      "120"
+	      Position		      [135, 75, 270, 105]
+	      ZOrder		      505
+	      Gain		      "1/(10*10^1)"
+	      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Scope
+	      Name		      "Scope"
+	      SID		      "121"
+	      Ports		      [1]
+	      Position		      [545, 34, 575, 66]
+	      ZOrder		      500
+	      Floating		      off
+	      Location		      [188, 365, 512, 604]
+	      Open		      off
+	      NumInputPorts	      "1"
+	      List {
+		ListType		AxesTitles
+		axes1			"%<SignalLabel>"
+	      }
+	      ShowLegends	      off
+	      ScrollMode	      off
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "UDP Send1"
+	      SID		      "122"
+	      Ports		      [1]
+	      Position		      [585, 140, 695, 200]
+	      ZOrder		      501
+	      LibraryVersion	      "1.105"
+	      FontName		      "arial"
+	      SourceBlock	      "dspnetwork/UDP Send"
+	      SourceType	      "UDP Send"
+	      remoteURL		      "'localhost'"
+	      remotePort	      "9999"
+	      localURL		      "'0.0.0.0'"
+	      localPortSource	      "Automatically determine"
+	      localPort		      "-1"
+	      sampletime	      "-1"
+	      blockPlatform	      "WINDOWS"
+	      separateLengthPort      "0"
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "XYZToUDP1"
+	      SID		      "123"
+	      Ports		      [4, 1]
+	      Position		      [410, 97, 555, 238]
+	      ZOrder		      503
+	      RequestExecContextInheritance off
+	      System {
+		Name			"XYZToUDP1"
+		Location		[-8, -8, 1928, 1048]
+		Open			off
+		ModelBrowserVisibility	on
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"A4"
+		PaperUnits		"centimeters"
+		TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "X"
+		  SID			  "124"
+		  Position		  [20, 43, 50, 57]
+		  ZOrder		  280
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "Y"
+		  SID			  "125"
+		  Position		  [20, 78, 50, 92]
+		  ZOrder		  283
+		  Port			  "2"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "Z"
+		  SID			  "126"
+		  Position		  [20, 113, 50, 127]
+		  ZOrder		  284
+		  Port			  "3"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "TypeAndName"
+		  SID			  "127"
+		  Position		  [20, 148, 50, 162]
+		  ZOrder		  281
+		  Port			  "4"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  SubSystem
+		  Name			  "PrepareUDP_XYZ"
+		  SID			  "128"
+		  Ports			  [4, 1]
+		  Position		  [160, 29, 470, 176]
+		  ZOrder		  279
+		  LibraryVersion	  "1.32"
+		  ErrorFcn		  "Stateflow.Translate.translate"
+		  PermitHierarchicalResolution "ExplicitOnly"
+		  TreatAsAtomicUnit	  on
+		  RequestExecContextInheritance	off
+		  SFBlockType		  "MATLAB Function"
+		  System {
+		    Name		    "PrepareUDP_XYZ"
+		    Location		    [223, 338, 826, 833]
+		    Open		    off
+		    ModelBrowserVisibility  on
+		    ModelBrowserWidth	    200
+		    ScreenColor		    "white"
+		    PaperOrientation	    "landscape"
+		    PaperPositionMode	    "auto"
+		    PaperType		    "A4"
+		    PaperUnits		    "centimeters"
+		    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+		    TiledPageScale	    1
+		    ShowPageBoundaries	    off
+		    ZoomFactor		    "100"
+		    SIDHighWatermark	    "68"
+		    Block {
+		    BlockType		    Inport
+		    Name		    "DataX"
+		    SID			    "128::1"
+		    Position		    [20, 101, 40, 119]
+		    ZOrder		    -1
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    Inport
+		    Name		    "DataY"
+		    SID			    "128::31"
+		    Position		    [20, 136, 40, 154]
+		    ZOrder		    11
+		    Port		    "2"
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    Inport
+		    Name		    "DataZ"
+		    SID			    "128::32"
+		    Position		    [20, 171, 40, 189]
+		    ZOrder		    12
+		    Port		    "3"
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    Inport
+		    Name		    "TnName"
+		    SID			    "128::21"
+		    Position		    [20, 206, 40, 224]
+		    ZOrder		    7
+		    Port		    "4"
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    Demux
+		    Name		    " Demux "
+		    SID			    "128::67"
+		    Ports		    [1, 1]
+		    Position		    [270, 230, 320, 270]
+		    ZOrder		    23
+		    Outputs		    "1"
+		    }
+		    Block {
+		    BlockType		    S-Function
+		    Name		    " SFunction "
+		    SID			    "128::66"
+		    Tag			    "Stateflow S-Function Aufgabe_4_Vorlage 8"
+		    Ports		    [4, 2]
+		    Position		    [180, 102, 230, 203]
+		    ZOrder		    22
+		    FunctionName	    "sf_sfun"
+		    PortCounts		    "[4 2]"
+		    EnableBusSupport	    on
+		    Port {
+		    PortNumber		    2
+		    Name		    "UDPData"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		    }
+		    }
+		    Block {
+		    BlockType		    Terminator
+		    Name		    " Terminator "
+		    SID			    "128::68"
+		    Position		    [460, 241, 480, 259]
+		    ZOrder		    24
+		    }
+		    Block {
+		    BlockType		    Outport
+		    Name		    "UDPData"
+		    SID			    "128::5"
+		    Position		    [460, 101, 480, 119]
+		    ZOrder		    -5
+		    IconDisplay		    "Port number"
+		    }
+		    Line {
+		    ZOrder		    8
+		    SrcBlock		    "DataX"
+		    SrcPort		    1
+		    DstBlock		    " SFunction "
+		    DstPort		    1
+		    }
+		    Line {
+		    ZOrder		    9
+		    SrcBlock		    "DataY"
+		    SrcPort		    1
+		    DstBlock		    " SFunction "
+		    DstPort		    2
+		    }
+		    Line {
+		    ZOrder		    10
+		    SrcBlock		    "DataZ"
+		    SrcPort		    1
+		    DstBlock		    " SFunction "
+		    DstPort		    3
+		    }
+		    Line {
+		    ZOrder		    11
+		    SrcBlock		    "TnName"
+		    SrcPort		    1
+		    DstBlock		    " SFunction "
+		    DstPort		    4
+		    }
+		    Line {
+		    Name		    "UDPData"
+		    ZOrder		    12
+		    Labels		    [0, 0]
+		    SrcBlock		    " SFunction "
+		    SrcPort		    2
+		    DstBlock		    "UDPData"
+		    DstPort		    1
+		    }
+		    Line {
+		    ZOrder		    13
+		    SrcBlock		    " Demux "
+		    SrcPort		    1
+		    DstBlock		    " Terminator "
+		    DstPort		    1
+		    }
+		    Line {
+		    ZOrder		    14
+		    SrcBlock		    " SFunction "
+		    SrcPort		    1
+		    DstBlock		    " Demux "
+		    DstPort		    1
+		    }
+		  }
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "UDPData"
+		  SID			  "129"
+		  Position		  [540, 98, 570, 112]
+		  ZOrder		  282
+		  IconDisplay		  "Port number"
+		}
+		Line {
+		  ZOrder		  1
+		  SrcBlock		  "PrepareUDP_XYZ"
+		  SrcPort		  1
+		  DstBlock		  "UDPData"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  2
+		  SrcBlock		  "X"
+		  SrcPort		  1
+		  DstBlock		  "PrepareUDP_XYZ"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  3
+		  SrcBlock		  "TypeAndName"
+		  SrcPort		  1
+		  DstBlock		  "PrepareUDP_XYZ"
+		  DstPort		  4
+		}
+		Line {
+		  ZOrder		  4
+		  SrcBlock		  "Z"
+		  SrcPort		  1
+		  DstBlock		  "PrepareUDP_XYZ"
+		  DstPort		  3
+		}
+		Line {
+		  ZOrder		  5
+		  SrcBlock		  "Y"
+		  SrcPort		  1
+		  DstBlock		  "PrepareUDP_XYZ"
+		  DstPort		  2
+		}
+	      }
+	    }
+	    Line {
+	      ZOrder		      1
+	      SrcBlock		      "XYZToUDP1"
+	      SrcPort		      1
+	      Points		      [6, 0]
+	      Branch {
+		ZOrder			2
+		Points			[0, -82; -51, 0; 0, -38]
+		DstBlock		"Scope"
+		DstPort			1
+	      }
+	      Branch {
+		ZOrder			3
+		DstBlock		"UDP Send1"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      ZOrder		      4
+	      SrcBlock		      "Constant1"
+	      SrcPort		      1
+	      Points		      [99, 0]
+	      Branch {
+		ZOrder			5
+		Points			[0, 35]
+		DstBlock		"XYZToUDP1"
+		DstPort			3
+	      }
+	      Branch {
+		ZOrder			6
+		DstBlock		"XYZToUDP1"
+		DstPort			2
+	      }
+	    }
+	    Line {
+	      ZOrder		      7
+	      SrcBlock		      "Constant2"
+	      SrcPort		      1
+	      DstBlock		      "XYZToUDP1"
+	      DstPort		      4
+	    }
+	    Line {
+	      ZOrder		      8
+	      SrcBlock		      "PumpValue"
+	      SrcPort		      1
+	      Points		      [0, 25]
+	      DstBlock		      "Gain1"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      9
+	      SrcBlock		      "Gain1"
+	      SrcPort		      1
+	      Points		      [99, 0; 0, 25]
+	      DstBlock		      "XYZToUDP1"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Simulation1"
+	  SID			  "130"
+	  Ports			  [1]
+	  Position		  [380, 590, 420, 650]
+	  ZOrder		  497
+	  RequestExecContextInheritance	off
+	  System {
+	    Name		    "Simulation1"
+	    Location		    [161, 111, 1767, 979]
+	    Open		    off
+	    ModelBrowserVisibility  on
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "ValveOne\nValue"
+	      SID		      "131"
+	      Position		      [20, 45, 50, 60]
+	      ZOrder		      487
+	      BlockRotation	      270
+	      BlockMirror	      on
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Constant1"
+	      SID		      "132"
+	      Position		      [205, 135, 235, 165]
+	      ZOrder		      504
+	      Value		      "0.99"
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Constant2"
+	      SID		      "133"
+	      Position		      [270, 202, 375, 238]
+	      ZOrder		      502
+	      Value		      "uint8('TTXV1')"
+	    }
+	    Block {
+	      BlockType		      Gain
+	      Name		      "Gain1"
+	      SID		      "134"
+	      Position		      [135, 75, 270, 105]
+	      ZOrder		      505
+	      Gain		      "1/(10*10^1)"
+	      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Scope
+	      Name		      "Scope"
+	      SID		      "135"
+	      Ports		      [1]
+	      Position		      [545, 34, 575, 66]
+	      ZOrder		      500
+	      Floating		      off
+	      Location		      [188, 365, 512, 604]
+	      Open		      off
+	      NumInputPorts	      "1"
+	      List {
+		ListType		AxesTitles
+		axes1			"%<SignalLabel>"
+	      }
+	      ShowLegends	      off
+	      ScrollMode	      off
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "UDP Send1"
+	      SID		      "136"
+	      Ports		      [1]
+	      Position		      [585, 140, 695, 200]
+	      ZOrder		      501
+	      LibraryVersion	      "1.105"
+	      FontName		      "arial"
+	      SourceBlock	      "dspnetwork/UDP Send"
+	      SourceType	      "UDP Send"
+	      remoteURL		      "'localhost'"
+	      remotePort	      "9999"
+	      localURL		      "'0.0.0.0'"
+	      localPortSource	      "Automatically determine"
+	      localPort		      "-1"
+	      sampletime	      "-1"
+	      blockPlatform	      "WINDOWS"
+	      separateLengthPort      "0"
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "XYZToUDP1"
+	      SID		      "137"
+	      Ports		      [4, 1]
+	      Position		      [410, 97, 555, 238]
+	      ZOrder		      503
+	      RequestExecContextInheritance off
+	      System {
+		Name			"XYZToUDP1"
+		Location		[-8, -8, 1928, 1048]
+		Open			off
+		ModelBrowserVisibility	on
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"A4"
+		PaperUnits		"centimeters"
+		TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "X"
+		  SID			  "138"
+		  Position		  [20, 43, 50, 57]
+		  ZOrder		  280
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "Y"
+		  SID			  "139"
+		  Position		  [20, 78, 50, 92]
+		  ZOrder		  283
+		  Port			  "2"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "Z"
+		  SID			  "140"
+		  Position		  [20, 113, 50, 127]
+		  ZOrder		  284
+		  Port			  "3"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "TypeAndName"
+		  SID			  "141"
+		  Position		  [20, 148, 50, 162]
+		  ZOrder		  281
+		  Port			  "4"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  SubSystem
+		  Name			  "PrepareUDP_XYZ"
+		  SID			  "142"
+		  Ports			  [4, 1]
+		  Position		  [160, 29, 470, 176]
+		  ZOrder		  279
+		  LibraryVersion	  "1.32"
+		  ErrorFcn		  "Stateflow.Translate.translate"
+		  PermitHierarchicalResolution "ExplicitOnly"
+		  TreatAsAtomicUnit	  on
+		  RequestExecContextInheritance	off
+		  SFBlockType		  "MATLAB Function"
+		  System {
+		    Name		    "PrepareUDP_XYZ"
+		    Location		    [223, 338, 826, 833]
+		    Open		    off
+		    ModelBrowserVisibility  on
+		    ModelBrowserWidth	    200
+		    ScreenColor		    "white"
+		    PaperOrientation	    "landscape"
+		    PaperPositionMode	    "auto"
+		    PaperType		    "A4"
+		    PaperUnits		    "centimeters"
+		    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+		    TiledPageScale	    1
+		    ShowPageBoundaries	    off
+		    ZoomFactor		    "100"
+		    SIDHighWatermark	    "68"
+		    Block {
+		    BlockType		    Inport
+		    Name		    "DataX"
+		    SID			    "142::1"
+		    Position		    [20, 101, 40, 119]
+		    ZOrder		    -1
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    Inport
+		    Name		    "DataY"
+		    SID			    "142::31"
+		    Position		    [20, 136, 40, 154]
+		    ZOrder		    11
+		    Port		    "2"
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    Inport
+		    Name		    "DataZ"
+		    SID			    "142::32"
+		    Position		    [20, 171, 40, 189]
+		    ZOrder		    12
+		    Port		    "3"
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    Inport
+		    Name		    "TnName"
+		    SID			    "142::21"
+		    Position		    [20, 206, 40, 224]
+		    ZOrder		    7
+		    Port		    "4"
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    Demux
+		    Name		    " Demux "
+		    SID			    "142::67"
+		    Ports		    [1, 1]
+		    Position		    [270, 230, 320, 270]
+		    ZOrder		    23
+		    Outputs		    "1"
+		    }
+		    Block {
+		    BlockType		    S-Function
+		    Name		    " SFunction "
+		    SID			    "142::66"
+		    Tag			    "Stateflow S-Function Aufgabe_4_Vorlage 9"
+		    Ports		    [4, 2]
+		    Position		    [180, 102, 230, 203]
+		    ZOrder		    22
+		    FunctionName	    "sf_sfun"
+		    PortCounts		    "[4 2]"
+		    EnableBusSupport	    on
+		    Port {
+		    PortNumber		    2
+		    Name		    "UDPData"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		    }
+		    }
+		    Block {
+		    BlockType		    Terminator
+		    Name		    " Terminator "
+		    SID			    "142::68"
+		    Position		    [460, 241, 480, 259]
+		    ZOrder		    24
+		    }
+		    Block {
+		    BlockType		    Outport
+		    Name		    "UDPData"
+		    SID			    "142::5"
+		    Position		    [460, 101, 480, 119]
+		    ZOrder		    -5
+		    IconDisplay		    "Port number"
+		    }
+		    Line {
+		    ZOrder		    8
+		    SrcBlock		    "DataX"
+		    SrcPort		    1
+		    DstBlock		    " SFunction "
+		    DstPort		    1
+		    }
+		    Line {
+		    ZOrder		    9
+		    SrcBlock		    "DataY"
+		    SrcPort		    1
+		    DstBlock		    " SFunction "
+		    DstPort		    2
+		    }
+		    Line {
+		    ZOrder		    10
+		    SrcBlock		    "DataZ"
+		    SrcPort		    1
+		    DstBlock		    " SFunction "
+		    DstPort		    3
+		    }
+		    Line {
+		    ZOrder		    11
+		    SrcBlock		    "TnName"
+		    SrcPort		    1
+		    DstBlock		    " SFunction "
+		    DstPort		    4
+		    }
+		    Line {
+		    Name		    "UDPData"
+		    ZOrder		    12
+		    Labels		    [0, 0]
+		    SrcBlock		    " SFunction "
+		    SrcPort		    2
+		    DstBlock		    "UDPData"
+		    DstPort		    1
+		    }
+		    Line {
+		    ZOrder		    13
+		    SrcBlock		    " Demux "
+		    SrcPort		    1
+		    DstBlock		    " Terminator "
+		    DstPort		    1
+		    }
+		    Line {
+		    ZOrder		    14
+		    SrcBlock		    " SFunction "
+		    SrcPort		    1
+		    DstBlock		    " Demux "
+		    DstPort		    1
+		    }
+		  }
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "UDPData"
+		  SID			  "143"
+		  Position		  [540, 98, 570, 112]
+		  ZOrder		  282
+		  IconDisplay		  "Port number"
+		}
+		Line {
+		  ZOrder		  1
+		  SrcBlock		  "PrepareUDP_XYZ"
+		  SrcPort		  1
+		  DstBlock		  "UDPData"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  2
+		  SrcBlock		  "X"
+		  SrcPort		  1
+		  DstBlock		  "PrepareUDP_XYZ"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  3
+		  SrcBlock		  "TypeAndName"
+		  SrcPort		  1
+		  DstBlock		  "PrepareUDP_XYZ"
+		  DstPort		  4
+		}
+		Line {
+		  ZOrder		  4
+		  SrcBlock		  "Z"
+		  SrcPort		  1
+		  DstBlock		  "PrepareUDP_XYZ"
+		  DstPort		  3
+		}
+		Line {
+		  ZOrder		  5
+		  SrcBlock		  "Y"
+		  SrcPort		  1
+		  DstBlock		  "PrepareUDP_XYZ"
+		  DstPort		  2
+		}
+	      }
+	    }
+	    Line {
+	      ZOrder		      1
+	      SrcBlock		      "XYZToUDP1"
+	      SrcPort		      1
+	      Points		      [6, 0]
+	      Branch {
+		ZOrder			2
+		Points			[0, -82; -51, 0; 0, -38]
+		DstBlock		"Scope"
+		DstPort			1
+	      }
+	      Branch {
+		ZOrder			3
+		DstBlock		"UDP Send1"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      ZOrder		      4
+	      SrcBlock		      "Constant1"
+	      SrcPort		      1
+	      Points		      [99, 0]
+	      Branch {
+		ZOrder			5
+		Points			[0, 35]
+		DstBlock		"XYZToUDP1"
+		DstPort			3
+	      }
+	      Branch {
+		ZOrder			6
+		DstBlock		"XYZToUDP1"
+		DstPort			2
+	      }
+	    }
+	    Line {
+	      ZOrder		      7
+	      SrcBlock		      "Constant2"
+	      SrcPort		      1
+	      DstBlock		      "XYZToUDP1"
+	      DstPort		      4
+	    }
+	    Line {
+	      ZOrder		      8
+	      SrcBlock		      "ValveOne\nValue"
+	      SrcPort		      1
+	      Points		      [0, 25]
+	      DstBlock		      "Gain1"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      9
+	      SrcBlock		      "Gain1"
+	      SrcPort		      1
+	      Points		      [99, 0; 0, 25]
+	      DstBlock		      "XYZToUDP1"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Simulation2"
+	  SID			  "144"
+	  Ports			  [1]
+	  Position		  [380, 510, 420, 570]
+	  ZOrder		  498
+	  RequestExecContextInheritance	off
+	  System {
+	    Name		    "Simulation2"
+	    Location		    [161, 111, 1767, 979]
+	    Open		    off
+	    ModelBrowserVisibility  on
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "ValveTwo\nValue"
+	      SID		      "145"
+	      Position		      [20, 45, 50, 60]
+	      ZOrder		      487
+	      BlockRotation	      270
+	      BlockMirror	      on
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Constant1"
+	      SID		      "146"
+	      Position		      [205, 135, 235, 165]
+	      ZOrder		      504
+	      Value		      "0.99"
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Constant2"
+	      SID		      "147"
+	      Position		      [270, 202, 375, 238]
+	      ZOrder		      502
+	      Value		      "uint8('TTXV2')"
+	    }
+	    Block {
+	      BlockType		      Gain
+	      Name		      "Gain1"
+	      SID		      "148"
+	      Position		      [135, 75, 270, 105]
+	      ZOrder		      505
+	      Gain		      "1/(10*10^1)"
+	      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Scope
+	      Name		      "Scope"
+	      SID		      "149"
+	      Ports		      [1]
+	      Position		      [545, 34, 575, 66]
+	      ZOrder		      500
+	      Floating		      off
+	      Location		      [188, 365, 512, 604]
+	      Open		      off
+	      NumInputPorts	      "1"
+	      List {
+		ListType		AxesTitles
+		axes1			"%<SignalLabel>"
+	      }
+	      ShowLegends	      off
+	      ScrollMode	      off
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "UDP Send1"
+	      SID		      "150"
+	      Ports		      [1]
+	      Position		      [585, 140, 695, 200]
+	      ZOrder		      501
+	      LibraryVersion	      "1.105"
+	      FontName		      "arial"
+	      SourceBlock	      "dspnetwork/UDP Send"
+	      SourceType	      "UDP Send"
+	      remoteURL		      "'localhost'"
+	      remotePort	      "9999"
+	      localURL		      "'0.0.0.0'"
+	      localPortSource	      "Automatically determine"
+	      localPort		      "-1"
+	      sampletime	      "-1"
+	      blockPlatform	      "WINDOWS"
+	      separateLengthPort      "0"
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "XYZToUDP1"
+	      SID		      "151"
+	      Ports		      [4, 1]
+	      Position		      [410, 97, 555, 238]
+	      ZOrder		      503
+	      RequestExecContextInheritance off
+	      System {
+		Name			"XYZToUDP1"
+		Location		[-8, -8, 1928, 1048]
+		Open			off
+		ModelBrowserVisibility	on
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"A4"
+		PaperUnits		"centimeters"
+		TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "X"
+		  SID			  "152"
+		  Position		  [20, 43, 50, 57]
+		  ZOrder		  280
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "Y"
+		  SID			  "153"
+		  Position		  [20, 78, 50, 92]
+		  ZOrder		  283
+		  Port			  "2"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "Z"
+		  SID			  "154"
+		  Position		  [20, 113, 50, 127]
+		  ZOrder		  284
+		  Port			  "3"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "TypeAndName"
+		  SID			  "155"
+		  Position		  [20, 148, 50, 162]
+		  ZOrder		  281
+		  Port			  "4"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  SubSystem
+		  Name			  "PrepareUDP_XYZ"
+		  SID			  "156"
+		  Ports			  [4, 1]
+		  Position		  [160, 29, 470, 176]
+		  ZOrder		  279
+		  LibraryVersion	  "1.32"
+		  ErrorFcn		  "Stateflow.Translate.translate"
+		  PermitHierarchicalResolution "ExplicitOnly"
+		  TreatAsAtomicUnit	  on
+		  RequestExecContextInheritance	off
+		  SFBlockType		  "MATLAB Function"
+		  System {
+		    Name		    "PrepareUDP_XYZ"
+		    Location		    [223, 338, 826, 833]
+		    Open		    off
+		    ModelBrowserVisibility  on
+		    ModelBrowserWidth	    200
+		    ScreenColor		    "white"
+		    PaperOrientation	    "landscape"
+		    PaperPositionMode	    "auto"
+		    PaperType		    "A4"
+		    PaperUnits		    "centimeters"
+		    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+		    TiledPageScale	    1
+		    ShowPageBoundaries	    off
+		    ZoomFactor		    "100"
+		    SIDHighWatermark	    "68"
+		    Block {
+		    BlockType		    Inport
+		    Name		    "DataX"
+		    SID			    "156::1"
+		    Position		    [20, 101, 40, 119]
+		    ZOrder		    -1
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    Inport
+		    Name		    "DataY"
+		    SID			    "156::31"
+		    Position		    [20, 136, 40, 154]
+		    ZOrder		    11
+		    Port		    "2"
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    Inport
+		    Name		    "DataZ"
+		    SID			    "156::32"
+		    Position		    [20, 171, 40, 189]
+		    ZOrder		    12
+		    Port		    "3"
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    Inport
+		    Name		    "TnName"
+		    SID			    "156::21"
+		    Position		    [20, 206, 40, 224]
+		    ZOrder		    7
+		    Port		    "4"
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    Demux
+		    Name		    " Demux "
+		    SID			    "156::67"
+		    Ports		    [1, 1]
+		    Position		    [270, 230, 320, 270]
+		    ZOrder		    23
+		    Outputs		    "1"
+		    }
+		    Block {
+		    BlockType		    S-Function
+		    Name		    " SFunction "
+		    SID			    "156::66"
+		    Tag			    "Stateflow S-Function Aufgabe_4_Vorlage 10"
+		    Ports		    [4, 2]
+		    Position		    [180, 102, 230, 203]
+		    ZOrder		    22
+		    FunctionName	    "sf_sfun"
+		    PortCounts		    "[4 2]"
+		    EnableBusSupport	    on
+		    Port {
+		    PortNumber		    2
+		    Name		    "UDPData"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		    }
+		    }
+		    Block {
+		    BlockType		    Terminator
+		    Name		    " Terminator "
+		    SID			    "156::68"
+		    Position		    [460, 241, 480, 259]
+		    ZOrder		    24
+		    }
+		    Block {
+		    BlockType		    Outport
+		    Name		    "UDPData"
+		    SID			    "156::5"
+		    Position		    [460, 101, 480, 119]
+		    ZOrder		    -5
+		    IconDisplay		    "Port number"
+		    }
+		    Line {
+		    ZOrder		    8
+		    SrcBlock		    "DataX"
+		    SrcPort		    1
+		    DstBlock		    " SFunction "
+		    DstPort		    1
+		    }
+		    Line {
+		    ZOrder		    9
+		    SrcBlock		    "DataY"
+		    SrcPort		    1
+		    DstBlock		    " SFunction "
+		    DstPort		    2
+		    }
+		    Line {
+		    ZOrder		    10
+		    SrcBlock		    "DataZ"
+		    SrcPort		    1
+		    DstBlock		    " SFunction "
+		    DstPort		    3
+		    }
+		    Line {
+		    ZOrder		    11
+		    SrcBlock		    "TnName"
+		    SrcPort		    1
+		    DstBlock		    " SFunction "
+		    DstPort		    4
+		    }
+		    Line {
+		    Name		    "UDPData"
+		    ZOrder		    12
+		    Labels		    [0, 0]
+		    SrcBlock		    " SFunction "
+		    SrcPort		    2
+		    DstBlock		    "UDPData"
+		    DstPort		    1
+		    }
+		    Line {
+		    ZOrder		    13
+		    SrcBlock		    " Demux "
+		    SrcPort		    1
+		    DstBlock		    " Terminator "
+		    DstPort		    1
+		    }
+		    Line {
+		    ZOrder		    14
+		    SrcBlock		    " SFunction "
+		    SrcPort		    1
+		    DstBlock		    " Demux "
+		    DstPort		    1
+		    }
+		  }
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "UDPData"
+		  SID			  "157"
+		  Position		  [540, 98, 570, 112]
+		  ZOrder		  282
+		  IconDisplay		  "Port number"
+		}
+		Line {
+		  ZOrder		  1
+		  SrcBlock		  "PrepareUDP_XYZ"
+		  SrcPort		  1
+		  DstBlock		  "UDPData"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  2
+		  SrcBlock		  "X"
+		  SrcPort		  1
+		  DstBlock		  "PrepareUDP_XYZ"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  3
+		  SrcBlock		  "TypeAndName"
+		  SrcPort		  1
+		  DstBlock		  "PrepareUDP_XYZ"
+		  DstPort		  4
+		}
+		Line {
+		  ZOrder		  4
+		  SrcBlock		  "Z"
+		  SrcPort		  1
+		  DstBlock		  "PrepareUDP_XYZ"
+		  DstPort		  3
+		}
+		Line {
+		  ZOrder		  5
+		  SrcBlock		  "Y"
+		  SrcPort		  1
+		  DstBlock		  "PrepareUDP_XYZ"
+		  DstPort		  2
+		}
+	      }
+	    }
+	    Line {
+	      ZOrder		      1
+	      SrcBlock		      "XYZToUDP1"
+	      SrcPort		      1
+	      Points		      [6, 0]
+	      Branch {
+		ZOrder			2
+		Points			[0, -82; -51, 0; 0, -38]
+		DstBlock		"Scope"
+		DstPort			1
+	      }
+	      Branch {
+		ZOrder			3
+		DstBlock		"UDP Send1"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      ZOrder		      4
+	      SrcBlock		      "Constant1"
+	      SrcPort		      1
+	      Points		      [99, 0]
+	      Branch {
+		ZOrder			5
+		Points			[0, 35]
+		DstBlock		"XYZToUDP1"
+		DstPort			3
+	      }
+	      Branch {
+		ZOrder			6
+		DstBlock		"XYZToUDP1"
+		DstPort			2
+	      }
+	    }
+	    Line {
+	      ZOrder		      7
+	      SrcBlock		      "Constant2"
+	      SrcPort		      1
+	      DstBlock		      "XYZToUDP1"
+	      DstPort		      4
+	    }
+	    Line {
+	      ZOrder		      8
+	      SrcBlock		      "ValveTwo\nValue"
+	      SrcPort		      1
+	      Points		      [0, 25]
+	      DstBlock		      "Gain1"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      9
+	      SrcBlock		      "Gain1"
+	      SrcPort		      1
+	      Points		      [99, 0; 0, 25]
+	      DstBlock		      "XYZToUDP1"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Visualisierung\n"
+	  SID			  "158"
+	  Ports			  [3]
+	  Position		  [740, 235, 780, 295]
+	  ZOrder		  493
+	  OpenFcn		  "Visualisierung/Dreitank.exe"
+	  RequestExecContextInheritance	off
+	  System {
+	    Name		    "Visualisierung\n"
+	    Location		    [241, 102, 1914, 985]
+	    Open		    off
+	    ModelBrowserVisibility  on
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "92"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "V2"
+	      SID		      "159"
+	      Position		      [45, 20, 75, 35]
+	      ZOrder		      490
+	      BlockRotation	      270
+	      BlockMirror	      on
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "V3"
+	      SID		      "160"
+	      Position		      [50, 80, 80, 95]
+	      ZOrder		      491
+	      BlockRotation	      270
+	      BlockMirror	      on
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "V4\n"
+	      SID		      "161"
+	      Position		      [25, 185, 55, 200]
+	      ZOrder		      492
+	      BlockRotation	      270
+	      BlockMirror	      on
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "UDP_OUT"
+	      SID		      "162"
+	      Ports		      [1]
+	      Position		      [355, 40, 395, 100]
+	      ZOrder		      487
+	      RequestExecContextInheritance off
+	      System {
+		Name			"UDP_OUT"
+		Location		[155, 97, 1761, 965]
+		Open			off
+		ModelBrowserVisibility	on
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"A4"
+		PaperUnits		"centimeters"
+		TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "H2"
+		  SID			  "163"
+		  Position		  [20, 45, 50, 60]
+		  ZOrder		  487
+		  BlockRotation		  270
+		  BlockMirror		  on
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant1"
+		  SID			  "164"
+		  Position		  [155, 380, 185, 410]
+		  ZOrder		  504
+		  Value			  "0.99"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant10"
+		  SID			  "165"
+		  Position		  [165, 35, 195, 65]
+		  ZOrder		  486
+		  Value			  "0.99"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant2"
+		  SID			  "166"
+		  Position		  [220, 447, 325, 483]
+		  ZOrder		  502
+		  Value			  "uint8('TTeX2')"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant9"
+		  SID			  "167"
+		  Position		  [195, 127, 300, 163]
+		  ZOrder		  483
+		  Value			  "uint8('DWaV2')"
+		}
+		Block {
+		  BlockType		  Gain
+		  Name			  "Gain"
+		  SID			  "168"
+		  Position		  [80, 95, 205, 125]
+		  ZOrder		  491
+		  Gain			  "1/(10*10^-3)"
+		  ParamDataTypeStr	  "Inherit: Inherit via internal rule"
+		  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+		  SaturateOnIntegerOverflow off
+		}
+		Block {
+		  BlockType		  Gain
+		  Name			  "Gain1"
+		  SID			  "169"
+		  Position		  [85, 320, 220, 350]
+		  ZOrder		  505
+		  Gain			  "1/(10*10^-3)"
+		  ParamDataTypeStr	  "Inherit: Inherit via internal rule"
+		  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+		  SaturateOnIntegerOverflow off
+		}
+		Block {
+		  BlockType		  Scope
+		  Name			  "Scope"
+		  SID			  "170"
+		  Ports			  [1]
+		  Position		  [495, 279, 525, 311]
+		  ZOrder		  500
+		  Floating		  off
+		  Location		  [188, 365, 512, 604]
+		  Open			  off
+		  NumInputPorts		  "1"
+		  List {
+		    ListType		    AxesTitles
+		    axes1		    "%<SignalLabel>"
+		  }
+		  ShowLegends		  off
+		  ScrollMode		  off
+		}
+		Block {
+		  BlockType		  Reference
+		  Name			  "UDP Send1"
+		  SID			  "171"
+		  Ports			  [1]
+		  Position		  [535, 385, 645, 445]
+		  ZOrder		  501
+		  LibraryVersion	  "1.105"
+		  FontName		  "arial"
+		  SourceBlock		  "dspnetwork/UDP Send"
+		  SourceType		  "UDP Send"
+		  remoteURL		  "'localhost'"
+		  remotePort		  "9999"
+		  localURL		  "'0.0.0.0'"
+		  localPortSource	  "Automatically determine"
+		  localPort		  "-1"
+		  sampletime		  "-1"
+		  blockPlatform		  "WINDOWS"
+		  separateLengthPort	  "0"
+		}
+		Block {
+		  BlockType		  Reference
+		  Name			  "UDP Send6"
+		  SID			  "172"
+		  Ports			  [1]
+		  Position		  [510, 65, 620, 125]
+		  ZOrder		  482
+		  LibraryVersion	  "1.105"
+		  FontName		  "arial"
+		  SourceBlock		  "dspnetwork/UDP Send"
+		  SourceType		  "UDP Send"
+		  remoteURL		  "'localhost'"
+		  remotePort		  "9999"
+		  localURL		  "'0.0.0.0'"
+		  localPortSource	  "Automatically determine"
+		  localPort		  "-1"
+		  sampletime		  "-1"
+		  blockPlatform		  "WINDOWS"
+		  separateLengthPort	  "0"
+		}
+		Block {
+		  BlockType		  SubSystem
+		  Name			  "XYZToUDP1"
+		  SID			  "173"
+		  Ports			  [4, 1]
+		  Position		  [360, 342, 505, 483]
+		  ZOrder		  503
+		  RequestExecContextInheritance	off
+		  System {
+		    Name		    "XYZToUDP1"
+		    Location		    [-8, -8, 1928, 1048]
+		    Open		    off
+		    ModelBrowserVisibility  on
+		    ModelBrowserWidth	    200
+		    ScreenColor		    "white"
+		    PaperOrientation	    "landscape"
+		    PaperPositionMode	    "auto"
+		    PaperType		    "A4"
+		    PaperUnits		    "centimeters"
+		    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+		    TiledPageScale	    1
+		    ShowPageBoundaries	    off
+		    ZoomFactor		    "100"
+		    Block {
+		    BlockType		    Inport
+		    Name		    "X"
+		    SID			    "174"
+		    Position		    [20, 43, 50, 57]
+		    ZOrder		    280
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    Inport
+		    Name		    "Y"
+		    SID			    "175"
+		    Position		    [20, 78, 50, 92]
+		    ZOrder		    283
+		    Port		    "2"
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    Inport
+		    Name		    "Z"
+		    SID			    "176"
+		    Position		    [20, 113, 50, 127]
+		    ZOrder		    284
+		    Port		    "3"
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    Inport
+		    Name		    "TypeAndName"
+		    SID			    "177"
+		    Position		    [20, 148, 50, 162]
+		    ZOrder		    281
+		    Port		    "4"
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    SubSystem
+		    Name		    "PrepareUDP_XYZ"
+		    SID			    "178"
+		    Ports		    [4, 1]
+		    Position		    [160, 29, 470, 176]
+		    ZOrder		    279
+		    LibraryVersion	    "1.32"
+		    ErrorFcn		    "Stateflow.Translate.translate"
+		    PermitHierarchicalResolution "ExplicitOnly"
+		    TreatAsAtomicUnit	    on
+		    RequestExecContextInheritance off
+		    SFBlockType		    "MATLAB Function"
+		    System {
+		    Name		    "PrepareUDP_XYZ"
+		    Location		    [223, 338, 826, 833]
+		    Open		    off
+		    ModelBrowserVisibility  on
+		    ModelBrowserWidth	    200
+		    ScreenColor		    "white"
+		    PaperOrientation	    "landscape"
+		    PaperPositionMode	    "auto"
+		    PaperType		    "A4"
+		    PaperUnits		    "centimeters"
+		    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+		    TiledPageScale	    1
+		    ShowPageBoundaries	    off
+		    ZoomFactor		    "100"
+		    SIDHighWatermark	    "68"
+		    Block {
+		    BlockType		    Inport
+		    Name		    "DataX"
+		    SID			    "178::1"
+		    Position		    [20, 101, 40, 119]
+		    ZOrder		    -1
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    Inport
+		    Name		    "DataY"
+		    SID			    "178::31"
+		    Position		    [20, 136, 40, 154]
+		    ZOrder		    11
+		    Port		    "2"
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    Inport
+		    Name		    "DataZ"
+		    SID			    "178::32"
+		    Position		    [20, 171, 40, 189]
+		    ZOrder		    12
+		    Port		    "3"
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    Inport
+		    Name		    "TnName"
+		    SID			    "178::21"
+		    Position		    [20, 206, 40, 224]
+		    ZOrder		    7
+		    Port		    "4"
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    Demux
+		    Name		    " Demux "
+		    SID			    "178::67"
+		    Ports		    [1, 1]
+		    Position		    [270, 230, 320, 270]
+		    ZOrder		    23
+		    Outputs		    "1"
+		    }
+		    Block {
+		    BlockType		    S-Function
+		    Name		    " SFunction "
+		    SID			    "178::66"
+		    Tag			    "Stateflow S-Function Aufgabe_4_Vorlage 7"
+		    Ports		    [4, 2]
+		    Position		    [180, 102, 230, 203]
+		    ZOrder		    22
+		    FunctionName	    "sf_sfun"
+		    PortCounts		    "[4 2]"
+		    EnableBusSupport	    on
+		    Port {
+		    PortNumber		    2
+		    Name		    "UDPData"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		    }
+		    }
+		    Block {
+		    BlockType		    Terminator
+		    Name		    " Terminator "
+		    SID			    "178::68"
+		    Position		    [460, 241, 480, 259]
+		    ZOrder		    24
+		    }
+		    Block {
+		    BlockType		    Outport
+		    Name		    "UDPData"
+		    SID			    "178::5"
+		    Position		    [460, 101, 480, 119]
+		    ZOrder		    -5
+		    IconDisplay		    "Port number"
+		    }
+		    Line {
+		    ZOrder		    8
+		    SrcBlock		    "DataX"
+		    SrcPort		    1
+		    DstBlock		    " SFunction "
+		    DstPort		    1
+		    }
+		    Line {
+		    ZOrder		    9
+		    SrcBlock		    "DataY"
+		    SrcPort		    1
+		    DstBlock		    " SFunction "
+		    DstPort		    2
+		    }
+		    Line {
+		    ZOrder		    10
+		    SrcBlock		    "DataZ"
+		    SrcPort		    1
+		    DstBlock		    " SFunction "
+		    DstPort		    3
+		    }
+		    Line {
+		    ZOrder		    11
+		    SrcBlock		    "TnName"
+		    SrcPort		    1
+		    DstBlock		    " SFunction "
+		    DstPort		    4
+		    }
+		    Line {
+		    Name		    "UDPData"
+		    ZOrder		    12
+		    Labels		    [0, 0]
+		    SrcBlock		    " SFunction "
+		    SrcPort		    2
+		    DstBlock		    "UDPData"
+		    DstPort		    1
+		    }
+		    Line {
+		    ZOrder		    13
+		    SrcBlock		    " Demux "
+		    SrcPort		    1
+		    DstBlock		    " Terminator "
+		    DstPort		    1
+		    }
+		    Line {
+		    ZOrder		    14
+		    SrcBlock		    " SFunction "
+		    SrcPort		    1
+		    DstBlock		    " Demux "
+		    DstPort		    1
+		    }
+		    }
+		    }
+		    Block {
+		    BlockType		    Outport
+		    Name		    "UDPData"
+		    SID			    "179"
+		    Position		    [540, 98, 570, 112]
+		    ZOrder		    282
+		    IconDisplay		    "Port number"
+		    }
+		    Line {
+		    ZOrder		    1
+		    SrcBlock		    "PrepareUDP_XYZ"
+		    SrcPort		    1
+		    DstBlock		    "UDPData"
+		    DstPort		    1
+		    }
+		    Line {
+		    ZOrder		    2
+		    SrcBlock		    "X"
+		    SrcPort		    1
+		    DstBlock		    "PrepareUDP_XYZ"
+		    DstPort		    1
+		    }
+		    Line {
+		    ZOrder		    3
+		    SrcBlock		    "TypeAndName"
+		    SrcPort		    1
+		    DstBlock		    "PrepareUDP_XYZ"
+		    DstPort		    4
+		    }
+		    Line {
+		    ZOrder		    4
+		    SrcBlock		    "Z"
+		    SrcPort		    1
+		    DstBlock		    "PrepareUDP_XYZ"
+		    DstPort		    3
+		    }
+		    Line {
+		    ZOrder		    5
+		    SrcBlock		    "Y"
+		    SrcPort		    1
+		    DstBlock		    "PrepareUDP_XYZ"
+		    DstPort		    2
+		    }
+		  }
+		}
+		Block {
+		  BlockType		  SubSystem
+		  Name			  "XYZToUDP3"
+		  SID			  "180"
+		  Ports			  [4, 1]
+		  Position		  [335, 22, 480, 163]
+		  ZOrder		  484
+		  RequestExecContextInheritance	off
+		  System {
+		    Name		    "XYZToUDP3"
+		    Location		    [-8, -8, 1928, 1048]
+		    Open		    off
+		    ModelBrowserVisibility  on
+		    ModelBrowserWidth	    200
+		    ScreenColor		    "white"
+		    PaperOrientation	    "landscape"
+		    PaperPositionMode	    "auto"
+		    PaperType		    "A4"
+		    PaperUnits		    "centimeters"
+		    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+		    TiledPageScale	    1
+		    ShowPageBoundaries	    off
+		    ZoomFactor		    "100"
+		    Block {
+		    BlockType		    Inport
+		    Name		    "X"
+		    SID			    "181"
+		    Position		    [20, 43, 50, 57]
+		    ZOrder		    280
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    Inport
+		    Name		    "Y"
+		    SID			    "182"
+		    Position		    [20, 78, 50, 92]
+		    ZOrder		    283
+		    Port		    "2"
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    Inport
+		    Name		    "Z"
+		    SID			    "183"
+		    Position		    [20, 113, 50, 127]
+		    ZOrder		    284
+		    Port		    "3"
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    Inport
+		    Name		    "TypeAndName"
+		    SID			    "184"
+		    Position		    [20, 148, 50, 162]
+		    ZOrder		    281
+		    Port		    "4"
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    SubSystem
+		    Name		    "PrepareUDP_XYZ"
+		    SID			    "185"
+		    Ports		    [4, 1]
+		    Position		    [160, 29, 470, 176]
+		    ZOrder		    279
+		    LibraryVersion	    "1.32"
+		    ErrorFcn		    "Stateflow.Translate.translate"
+		    PermitHierarchicalResolution "ExplicitOnly"
+		    TreatAsAtomicUnit	    on
+		    RequestExecContextInheritance off
+		    SFBlockType		    "MATLAB Function"
+		    System {
+		    Name		    "PrepareUDP_XYZ"
+		    Location		    [223, 338, 826, 833]
+		    Open		    off
+		    ModelBrowserVisibility  on
+		    ModelBrowserWidth	    200
+		    ScreenColor		    "white"
+		    PaperOrientation	    "landscape"
+		    PaperPositionMode	    "auto"
+		    PaperType		    "A4"
+		    PaperUnits		    "centimeters"
+		    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+		    TiledPageScale	    1
+		    ShowPageBoundaries	    off
+		    ZoomFactor		    "100"
+		    SIDHighWatermark	    "68"
+		    Block {
+		    BlockType		    Inport
+		    Name		    "DataX"
+		    SID			    "185::1"
+		    Position		    [20, 101, 40, 119]
+		    ZOrder		    -1
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    Inport
+		    Name		    "DataY"
+		    SID			    "185::31"
+		    Position		    [20, 136, 40, 154]
+		    ZOrder		    11
+		    Port		    "2"
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    Inport
+		    Name		    "DataZ"
+		    SID			    "185::32"
+		    Position		    [20, 171, 40, 189]
+		    ZOrder		    12
+		    Port		    "3"
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    Inport
+		    Name		    "TnName"
+		    SID			    "185::21"
+		    Position		    [20, 206, 40, 224]
+		    ZOrder		    7
+		    Port		    "4"
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    Demux
+		    Name		    " Demux "
+		    SID			    "185::67"
+		    Ports		    [1, 1]
+		    Position		    [270, 230, 320, 270]
+		    ZOrder		    23
+		    Outputs		    "1"
+		    }
+		    Block {
+		    BlockType		    S-Function
+		    Name		    " SFunction "
+		    SID			    "185::66"
+		    Tag			    "Stateflow S-Function Aufgabe_4_Vorlage 6"
+		    Ports		    [4, 2]
+		    Position		    [180, 102, 230, 203]
+		    ZOrder		    22
+		    FunctionName	    "sf_sfun"
+		    PortCounts		    "[4 2]"
+		    EnableBusSupport	    on
+		    Port {
+		    PortNumber		    2
+		    Name		    "UDPData"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		    }
+		    }
+		    Block {
+		    BlockType		    Terminator
+		    Name		    " Terminator "
+		    SID			    "185::68"
+		    Position		    [460, 241, 480, 259]
+		    ZOrder		    24
+		    }
+		    Block {
+		    BlockType		    Outport
+		    Name		    "UDPData"
+		    SID			    "185::5"
+		    Position		    [460, 101, 480, 119]
+		    ZOrder		    -5
+		    IconDisplay		    "Port number"
+		    }
+		    Line {
+		    ZOrder		    8
+		    SrcBlock		    "DataX"
+		    SrcPort		    1
+		    DstBlock		    " SFunction "
+		    DstPort		    1
+		    }
+		    Line {
+		    ZOrder		    9
+		    SrcBlock		    "DataY"
+		    SrcPort		    1
+		    DstBlock		    " SFunction "
+		    DstPort		    2
+		    }
+		    Line {
+		    ZOrder		    10
+		    SrcBlock		    "DataZ"
+		    SrcPort		    1
+		    DstBlock		    " SFunction "
+		    DstPort		    3
+		    }
+		    Line {
+		    ZOrder		    11
+		    SrcBlock		    "TnName"
+		    SrcPort		    1
+		    DstBlock		    " SFunction "
+		    DstPort		    4
+		    }
+		    Line {
+		    Name		    "UDPData"
+		    ZOrder		    12
+		    Labels		    [0, 0]
+		    SrcBlock		    " SFunction "
+		    SrcPort		    2
+		    DstBlock		    "UDPData"
+		    DstPort		    1
+		    }
+		    Line {
+		    ZOrder		    13
+		    SrcBlock		    " Demux "
+		    SrcPort		    1
+		    DstBlock		    " Terminator "
+		    DstPort		    1
+		    }
+		    Line {
+		    ZOrder		    14
+		    SrcBlock		    " SFunction "
+		    SrcPort		    1
+		    DstBlock		    " Demux "
+		    DstPort		    1
+		    }
+		    }
+		    }
+		    Block {
+		    BlockType		    Outport
+		    Name		    "UDPData"
+		    SID			    "186"
+		    Position		    [540, 98, 570, 112]
+		    ZOrder		    282
+		    IconDisplay		    "Port number"
+		    }
+		    Line {
+		    ZOrder		    1
+		    SrcBlock		    "PrepareUDP_XYZ"
+		    SrcPort		    1
+		    DstBlock		    "UDPData"
+		    DstPort		    1
+		    }
+		    Line {
+		    ZOrder		    2
+		    SrcBlock		    "X"
+		    SrcPort		    1
+		    DstBlock		    "PrepareUDP_XYZ"
+		    DstPort		    1
+		    }
+		    Line {
+		    ZOrder		    3
+		    SrcBlock		    "TypeAndName"
+		    SrcPort		    1
+		    DstBlock		    "PrepareUDP_XYZ"
+		    DstPort		    4
+		    }
+		    Line {
+		    ZOrder		    4
+		    SrcBlock		    "Z"
+		    SrcPort		    1
+		    DstBlock		    "PrepareUDP_XYZ"
+		    DstPort		    3
+		    }
+		    Line {
+		    ZOrder		    5
+		    SrcBlock		    "Y"
+		    SrcPort		    1
+		    DstBlock		    "PrepareUDP_XYZ"
+		    DstPort		    2
+		    }
+		  }
+		}
+		Line {
+		  ZOrder		  1
+		  SrcBlock		  "XYZToUDP3"
+		  SrcPort		  1
+		  DstBlock		  "UDP Send6"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  2
+		  SrcBlock		  "Constant10"
+		  SrcPort		  1
+		  Points		  [0, -10; 64, 0]
+		  Branch {
+		    ZOrder		    3
+		    DstBlock		    "XYZToUDP3"
+		    DstPort		    1
+		  }
+		  Branch {
+		    ZOrder		    4
+		    Points		    [0, 35]
+		    DstBlock		    "XYZToUDP3"
+		    DstPort		    2
+		  }
+		}
+		Line {
+		  ZOrder		  5
+		  SrcBlock		  "Constant9"
+		  SrcPort		  1
+		  DstBlock		  "XYZToUDP3"
+		  DstPort		  4
+		}
+		Line {
+		  ZOrder		  6
+		  SrcBlock		  "Gain"
+		  SrcPort		  1
+		  DstBlock		  "XYZToUDP3"
+		  DstPort		  3
+		}
+		Line {
+		  ZOrder		  7
+		  SrcBlock		  "XYZToUDP1"
+		  SrcPort		  1
+		  Points		  [6, 0]
+		  Branch {
+		    ZOrder		    8
+		    Points		    [0, -82; -51, 0; 0, -38]
+		    DstBlock		    "Scope"
+		    DstPort		    1
+		  }
+		  Branch {
+		    ZOrder		    9
+		    DstBlock		    "UDP Send1"
+		    DstPort		    1
+		  }
+		}
+		Line {
+		  ZOrder		  10
+		  SrcBlock		  "Constant1"
+		  SrcPort		  1
+		  Points		  [99, 0]
+		  Branch {
+		    ZOrder		    11
+		    Points		    [0, 35]
+		    DstBlock		    "XYZToUDP1"
+		    DstPort		    3
+		  }
+		  Branch {
+		    ZOrder		    12
+		    DstBlock		    "XYZToUDP1"
+		    DstPort		    2
+		  }
+		}
+		Line {
+		  ZOrder		  13
+		  SrcBlock		  "Constant2"
+		  SrcPort		  1
+		  DstBlock		  "XYZToUDP1"
+		  DstPort		  4
+		}
+		Line {
+		  ZOrder		  14
+		  SrcBlock		  "H2"
+		  SrcPort		  1
+		  Points		  [0, 45; 1, 0]
+		  Branch {
+		    ZOrder		    15
+		    Points		    [0, 225]
+		    DstBlock		    "Gain1"
+		    DstPort		    1
+		  }
+		  Branch {
+		    ZOrder		    16
+		    DstBlock		    "Gain"
+		    DstPort		    1
+		  }
+		}
+		Line {
+		  ZOrder		  17
+		  SrcBlock		  "Gain1"
+		  SrcPort		  1
+		  Points		  [99, 0; 0, 25]
+		  DstBlock		  "XYZToUDP1"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "UDP_OUT1"
+	      SID		      "187"
+	      Ports		      [1]
+	      Position		      [355, 130, 395, 190]
+	      ZOrder		      488
+	      RequestExecContextInheritance off
+	      System {
+		Name			"UDP_OUT1"
+		Location		[155, 97, 1761, 965]
+		Open			off
+		ModelBrowserVisibility	on
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"A4"
+		PaperUnits		"centimeters"
+		TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "H3"
+		  SID			  "188"
+		  Position		  [20, 45, 50, 60]
+		  ZOrder		  487
+		  BlockRotation		  270
+		  BlockMirror		  on
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant1"
+		  SID			  "189"
+		  Position		  [145, 365, 175, 395]
+		  ZOrder		  504
+		  Value			  "0.99"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant10"
+		  SID			  "190"
+		  Position		  [165, 35, 195, 65]
+		  ZOrder		  486
+		  Value			  "0.99"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant2"
+		  SID			  "191"
+		  Position		  [210, 432, 315, 468]
+		  ZOrder		  502
+		  Value			  "uint8('TTeX3')"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant9"
+		  SID			  "192"
+		  Position		  [195, 127, 300, 163]
+		  ZOrder		  483
+		  Value			  "uint8('DWaV3')"
+		}
+		Block {
+		  BlockType		  Gain
+		  Name			  "Gain1"
+		  SID			  "193"
+		  Position		  [65, 92, 220, 128]
+		  ZOrder		  492
+		  Gain			  "1/(10*10^-3)"
+		  ParamDataTypeStr	  "Inherit: Inherit via internal rule"
+		  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+		  SaturateOnIntegerOverflow off
+		}
+		Block {
+		  BlockType		  Gain
+		  Name			  "Gain2"
+		  SID			  "194"
+		  Position		  [75, 305, 210, 335]
+		  ZOrder		  505
+		  Gain			  "1/(10*10^-3)"
+		  ParamDataTypeStr	  "Inherit: Inherit via internal rule"
+		  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+		  SaturateOnIntegerOverflow off
+		}
+		Block {
+		  BlockType		  Scope
+		  Name			  "Scope"
+		  SID			  "195"
+		  Ports			  [1]
+		  Position		  [485, 264, 515, 296]
+		  ZOrder		  500
+		  Floating		  off
+		  Location		  [188, 365, 512, 604]
+		  Open			  off
+		  NumInputPorts		  "1"
+		  List {
+		    ListType		    AxesTitles
+		    axes1		    "%<SignalLabel>"
+		  }
+		  ShowLegends		  off
+		  ScrollMode		  off
+		}
+		Block {
+		  BlockType		  Reference
+		  Name			  "UDP Send1"
+		  SID			  "196"
+		  Ports			  [1]
+		  Position		  [525, 370, 635, 430]
+		  ZOrder		  501
+		  LibraryVersion	  "1.105"
+		  FontName		  "arial"
+		  SourceBlock		  "dspnetwork/UDP Send"
+		  SourceType		  "UDP Send"
+		  remoteURL		  "'localhost'"
+		  remotePort		  "9999"
+		  localURL		  "'0.0.0.0'"
+		  localPortSource	  "Automatically determine"
+		  localPort		  "-1"
+		  sampletime		  "-1"
+		  blockPlatform		  "WINDOWS"
+		  separateLengthPort	  "0"
+		}
+		Block {
+		  BlockType		  Reference
+		  Name			  "UDP Send6"
+		  SID			  "197"
+		  Ports			  [1]
+		  Position		  [510, 65, 620, 125]
+		  ZOrder		  482
+		  LibraryVersion	  "1.105"
+		  FontName		  "arial"
+		  SourceBlock		  "dspnetwork/UDP Send"
+		  SourceType		  "UDP Send"
+		  remoteURL		  "'localhost'"
+		  remotePort		  "9999"
+		  localURL		  "'0.0.0.0'"
+		  localPortSource	  "Automatically determine"
+		  localPort		  "-1"
+		  sampletime		  "-1"
+		  blockPlatform		  "WINDOWS"
+		  separateLengthPort	  "0"
+		}
+		Block {
+		  BlockType		  SubSystem
+		  Name			  "XYZToUDP1"
+		  SID			  "198"
+		  Ports			  [4, 1]
+		  Position		  [350, 327, 495, 468]
+		  ZOrder		  503
+		  RequestExecContextInheritance	off
+		  System {
+		    Name		    "XYZToUDP1"
+		    Location		    [-8, -8, 1928, 1048]
+		    Open		    off
+		    ModelBrowserVisibility  on
+		    ModelBrowserWidth	    200
+		    ScreenColor		    "white"
+		    PaperOrientation	    "landscape"
+		    PaperPositionMode	    "auto"
+		    PaperType		    "A4"
+		    PaperUnits		    "centimeters"
+		    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+		    TiledPageScale	    1
+		    ShowPageBoundaries	    off
+		    ZoomFactor		    "100"
+		    Block {
+		    BlockType		    Inport
+		    Name		    "X"
+		    SID			    "199"
+		    Position		    [20, 43, 50, 57]
+		    ZOrder		    280
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    Inport
+		    Name		    "Y"
+		    SID			    "200"
+		    Position		    [20, 78, 50, 92]
+		    ZOrder		    283
+		    Port		    "2"
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    Inport
+		    Name		    "Z"
+		    SID			    "201"
+		    Position		    [20, 113, 50, 127]
+		    ZOrder		    284
+		    Port		    "3"
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    Inport
+		    Name		    "TypeAndName"
+		    SID			    "202"
+		    Position		    [20, 148, 50, 162]
+		    ZOrder		    281
+		    Port		    "4"
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    SubSystem
+		    Name		    "PrepareUDP_XYZ"
+		    SID			    "203"
+		    Ports		    [4, 1]
+		    Position		    [160, 29, 470, 176]
+		    ZOrder		    279
+		    LibraryVersion	    "1.32"
+		    ErrorFcn		    "Stateflow.Translate.translate"
+		    PermitHierarchicalResolution "ExplicitOnly"
+		    TreatAsAtomicUnit	    on
+		    RequestExecContextInheritance off
+		    SFBlockType		    "MATLAB Function"
+		    System {
+		    Name		    "PrepareUDP_XYZ"
+		    Location		    [223, 338, 826, 833]
+		    Open		    off
+		    ModelBrowserVisibility  on
+		    ModelBrowserWidth	    200
+		    ScreenColor		    "white"
+		    PaperOrientation	    "landscape"
+		    PaperPositionMode	    "auto"
+		    PaperType		    "A4"
+		    PaperUnits		    "centimeters"
+		    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+		    TiledPageScale	    1
+		    ShowPageBoundaries	    off
+		    ZoomFactor		    "100"
+		    SIDHighWatermark	    "68"
+		    Block {
+		    BlockType		    Inport
+		    Name		    "DataX"
+		    SID			    "203::1"
+		    Position		    [20, 101, 40, 119]
+		    ZOrder		    -1
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    Inport
+		    Name		    "DataY"
+		    SID			    "203::31"
+		    Position		    [20, 136, 40, 154]
+		    ZOrder		    11
+		    Port		    "2"
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    Inport
+		    Name		    "DataZ"
+		    SID			    "203::32"
+		    Position		    [20, 171, 40, 189]
+		    ZOrder		    12
+		    Port		    "3"
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    Inport
+		    Name		    "TnName"
+		    SID			    "203::21"
+		    Position		    [20, 206, 40, 224]
+		    ZOrder		    7
+		    Port		    "4"
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    Demux
+		    Name		    " Demux "
+		    SID			    "203::67"
+		    Ports		    [1, 1]
+		    Position		    [270, 230, 320, 270]
+		    ZOrder		    23
+		    Outputs		    "1"
+		    }
+		    Block {
+		    BlockType		    S-Function
+		    Name		    " SFunction "
+		    SID			    "203::66"
+		    Tag			    "Stateflow S-Function Aufgabe_4_Vorlage 5"
+		    Ports		    [4, 2]
+		    Position		    [180, 102, 230, 203]
+		    ZOrder		    22
+		    FunctionName	    "sf_sfun"
+		    PortCounts		    "[4 2]"
+		    EnableBusSupport	    on
+		    Port {
+		    PortNumber		    2
+		    Name		    "UDPData"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		    }
+		    }
+		    Block {
+		    BlockType		    Terminator
+		    Name		    " Terminator "
+		    SID			    "203::68"
+		    Position		    [460, 241, 480, 259]
+		    ZOrder		    24
+		    }
+		    Block {
+		    BlockType		    Outport
+		    Name		    "UDPData"
+		    SID			    "203::5"
+		    Position		    [460, 101, 480, 119]
+		    ZOrder		    -5
+		    IconDisplay		    "Port number"
+		    }
+		    Line {
+		    ZOrder		    8
+		    SrcBlock		    "DataX"
+		    SrcPort		    1
+		    DstBlock		    " SFunction "
+		    DstPort		    1
+		    }
+		    Line {
+		    ZOrder		    9
+		    SrcBlock		    "DataY"
+		    SrcPort		    1
+		    DstBlock		    " SFunction "
+		    DstPort		    2
+		    }
+		    Line {
+		    ZOrder		    10
+		    SrcBlock		    "DataZ"
+		    SrcPort		    1
+		    DstBlock		    " SFunction "
+		    DstPort		    3
+		    }
+		    Line {
+		    ZOrder		    11
+		    SrcBlock		    "TnName"
+		    SrcPort		    1
+		    DstBlock		    " SFunction "
+		    DstPort		    4
+		    }
+		    Line {
+		    Name		    "UDPData"
+		    ZOrder		    12
+		    Labels		    [0, 0]
+		    SrcBlock		    " SFunction "
+		    SrcPort		    2
+		    DstBlock		    "UDPData"
+		    DstPort		    1
+		    }
+		    Line {
+		    ZOrder		    13
+		    SrcBlock		    " Demux "
+		    SrcPort		    1
+		    DstBlock		    " Terminator "
+		    DstPort		    1
+		    }
+		    Line {
+		    ZOrder		    14
+		    SrcBlock		    " SFunction "
+		    SrcPort		    1
+		    DstBlock		    " Demux "
+		    DstPort		    1
+		    }
+		    }
+		    }
+		    Block {
+		    BlockType		    Outport
+		    Name		    "UDPData"
+		    SID			    "204"
+		    Position		    [540, 98, 570, 112]
+		    ZOrder		    282
+		    IconDisplay		    "Port number"
+		    }
+		    Line {
+		    ZOrder		    1
+		    SrcBlock		    "PrepareUDP_XYZ"
+		    SrcPort		    1
+		    DstBlock		    "UDPData"
+		    DstPort		    1
+		    }
+		    Line {
+		    ZOrder		    2
+		    SrcBlock		    "X"
+		    SrcPort		    1
+		    DstBlock		    "PrepareUDP_XYZ"
+		    DstPort		    1
+		    }
+		    Line {
+		    ZOrder		    3
+		    SrcBlock		    "TypeAndName"
+		    SrcPort		    1
+		    DstBlock		    "PrepareUDP_XYZ"
+		    DstPort		    4
+		    }
+		    Line {
+		    ZOrder		    4
+		    SrcBlock		    "Z"
+		    SrcPort		    1
+		    DstBlock		    "PrepareUDP_XYZ"
+		    DstPort		    3
+		    }
+		    Line {
+		    ZOrder		    5
+		    SrcBlock		    "Y"
+		    SrcPort		    1
+		    DstBlock		    "PrepareUDP_XYZ"
+		    DstPort		    2
+		    }
+		  }
+		}
+		Block {
+		  BlockType		  SubSystem
+		  Name			  "XYZToUDP3"
+		  SID			  "205"
+		  Ports			  [4, 1]
+		  Position		  [335, 22, 480, 163]
+		  ZOrder		  484
+		  RequestExecContextInheritance	off
+		  System {
+		    Name		    "XYZToUDP3"
+		    Location		    [-8, -8, 1928, 1048]
+		    Open		    off
+		    ModelBrowserVisibility  on
+		    ModelBrowserWidth	    200
+		    ScreenColor		    "white"
+		    PaperOrientation	    "landscape"
+		    PaperPositionMode	    "auto"
+		    PaperType		    "A4"
+		    PaperUnits		    "centimeters"
+		    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+		    TiledPageScale	    1
+		    ShowPageBoundaries	    off
+		    ZoomFactor		    "100"
+		    Block {
+		    BlockType		    Inport
+		    Name		    "X"
+		    SID			    "206"
+		    Position		    [20, 43, 50, 57]
+		    ZOrder		    280
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    Inport
+		    Name		    "Y"
+		    SID			    "207"
+		    Position		    [20, 78, 50, 92]
+		    ZOrder		    283
+		    Port		    "2"
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    Inport
+		    Name		    "Z"
+		    SID			    "208"
+		    Position		    [20, 113, 50, 127]
+		    ZOrder		    284
+		    Port		    "3"
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    Inport
+		    Name		    "TypeAndName"
+		    SID			    "209"
+		    Position		    [20, 148, 50, 162]
+		    ZOrder		    281
+		    Port		    "4"
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    SubSystem
+		    Name		    "PrepareUDP_XYZ"
+		    SID			    "210"
+		    Ports		    [4, 1]
+		    Position		    [160, 29, 470, 176]
+		    ZOrder		    279
+		    LibraryVersion	    "1.32"
+		    ErrorFcn		    "Stateflow.Translate.translate"
+		    PermitHierarchicalResolution "ExplicitOnly"
+		    TreatAsAtomicUnit	    on
+		    RequestExecContextInheritance off
+		    SFBlockType		    "MATLAB Function"
+		    System {
+		    Name		    "PrepareUDP_XYZ"
+		    Location		    [223, 338, 826, 833]
+		    Open		    off
+		    ModelBrowserVisibility  on
+		    ModelBrowserWidth	    200
+		    ScreenColor		    "white"
+		    PaperOrientation	    "landscape"
+		    PaperPositionMode	    "auto"
+		    PaperType		    "A4"
+		    PaperUnits		    "centimeters"
+		    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+		    TiledPageScale	    1
+		    ShowPageBoundaries	    off
+		    ZoomFactor		    "100"
+		    SIDHighWatermark	    "68"
+		    Block {
+		    BlockType		    Inport
+		    Name		    "DataX"
+		    SID			    "210::1"
+		    Position		    [20, 101, 40, 119]
+		    ZOrder		    -1
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    Inport
+		    Name		    "DataY"
+		    SID			    "210::31"
+		    Position		    [20, 136, 40, 154]
+		    ZOrder		    11
+		    Port		    "2"
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    Inport
+		    Name		    "DataZ"
+		    SID			    "210::32"
+		    Position		    [20, 171, 40, 189]
+		    ZOrder		    12
+		    Port		    "3"
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    Inport
+		    Name		    "TnName"
+		    SID			    "210::21"
+		    Position		    [20, 206, 40, 224]
+		    ZOrder		    7
+		    Port		    "4"
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    Demux
+		    Name		    " Demux "
+		    SID			    "210::67"
+		    Ports		    [1, 1]
+		    Position		    [270, 230, 320, 270]
+		    ZOrder		    23
+		    Outputs		    "1"
+		    }
+		    Block {
+		    BlockType		    S-Function
+		    Name		    " SFunction "
+		    SID			    "210::66"
+		    Tag			    "Stateflow S-Function Aufgabe_4_Vorlage 1"
+		    Ports		    [4, 2]
+		    Position		    [180, 102, 230, 203]
+		    ZOrder		    22
+		    FunctionName	    "sf_sfun"
+		    PortCounts		    "[4 2]"
+		    EnableBusSupport	    on
+		    Port {
+		    PortNumber		    2
+		    Name		    "UDPData"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		    }
+		    }
+		    Block {
+		    BlockType		    Terminator
+		    Name		    " Terminator "
+		    SID			    "210::68"
+		    Position		    [460, 241, 480, 259]
+		    ZOrder		    24
+		    }
+		    Block {
+		    BlockType		    Outport
+		    Name		    "UDPData"
+		    SID			    "210::5"
+		    Position		    [460, 101, 480, 119]
+		    ZOrder		    -5
+		    IconDisplay		    "Port number"
+		    }
+		    Line {
+		    ZOrder		    8
+		    SrcBlock		    "DataX"
+		    SrcPort		    1
+		    DstBlock		    " SFunction "
+		    DstPort		    1
+		    }
+		    Line {
+		    ZOrder		    9
+		    SrcBlock		    "DataY"
+		    SrcPort		    1
+		    DstBlock		    " SFunction "
+		    DstPort		    2
+		    }
+		    Line {
+		    ZOrder		    10
+		    SrcBlock		    "DataZ"
+		    SrcPort		    1
+		    DstBlock		    " SFunction "
+		    DstPort		    3
+		    }
+		    Line {
+		    ZOrder		    11
+		    SrcBlock		    "TnName"
+		    SrcPort		    1
+		    DstBlock		    " SFunction "
+		    DstPort		    4
+		    }
+		    Line {
+		    Name		    "UDPData"
+		    ZOrder		    12
+		    Labels		    [0, 0]
+		    SrcBlock		    " SFunction "
+		    SrcPort		    2
+		    DstBlock		    "UDPData"
+		    DstPort		    1
+		    }
+		    Line {
+		    ZOrder		    13
+		    SrcBlock		    " Demux "
+		    SrcPort		    1
+		    DstBlock		    " Terminator "
+		    DstPort		    1
+		    }
+		    Line {
+		    ZOrder		    14
+		    SrcBlock		    " SFunction "
+		    SrcPort		    1
+		    DstBlock		    " Demux "
+		    DstPort		    1
+		    }
+		    }
+		    }
+		    Block {
+		    BlockType		    Outport
+		    Name		    "UDPData"
+		    SID			    "211"
+		    Position		    [540, 98, 570, 112]
+		    ZOrder		    282
+		    IconDisplay		    "Port number"
+		    }
+		    Line {
+		    ZOrder		    1
+		    SrcBlock		    "PrepareUDP_XYZ"
+		    SrcPort		    1
+		    DstBlock		    "UDPData"
+		    DstPort		    1
+		    }
+		    Line {
+		    ZOrder		    2
+		    SrcBlock		    "X"
+		    SrcPort		    1
+		    DstBlock		    "PrepareUDP_XYZ"
+		    DstPort		    1
+		    }
+		    Line {
+		    ZOrder		    3
+		    SrcBlock		    "TypeAndName"
+		    SrcPort		    1
+		    DstBlock		    "PrepareUDP_XYZ"
+		    DstPort		    4
+		    }
+		    Line {
+		    ZOrder		    4
+		    SrcBlock		    "Z"
+		    SrcPort		    1
+		    DstBlock		    "PrepareUDP_XYZ"
+		    DstPort		    3
+		    }
+		    Line {
+		    ZOrder		    5
+		    SrcBlock		    "Y"
+		    SrcPort		    1
+		    DstBlock		    "PrepareUDP_XYZ"
+		    DstPort		    2
+		    }
+		  }
+		}
+		Line {
+		  ZOrder		  1
+		  SrcBlock		  "XYZToUDP3"
+		  SrcPort		  1
+		  DstBlock		  "UDP Send6"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  2
+		  SrcBlock		  "Constant10"
+		  SrcPort		  1
+		  Points		  [0, -10; 64, 0]
+		  Branch {
+		    ZOrder		    3
+		    DstBlock		    "XYZToUDP3"
+		    DstPort		    1
+		  }
+		  Branch {
+		    ZOrder		    4
+		    Points		    [0, 35]
+		    DstBlock		    "XYZToUDP3"
+		    DstPort		    2
+		  }
+		}
+		Line {
+		  ZOrder		  5
+		  SrcBlock		  "Constant9"
+		  SrcPort		  1
+		  DstBlock		  "XYZToUDP3"
+		  DstPort		  4
+		}
+		Line {
+		  ZOrder		  6
+		  SrcBlock		  "Gain1"
+		  SrcPort		  1
+		  DstBlock		  "XYZToUDP3"
+		  DstPort		  3
+		}
+		Line {
+		  ZOrder		  7
+		  SrcBlock		  "XYZToUDP1"
+		  SrcPort		  1
+		  Points		  [6, 0]
+		  Branch {
+		    ZOrder		    8
+		    Points		    [0, -82; -51, 0; 0, -38]
+		    DstBlock		    "Scope"
+		    DstPort		    1
+		  }
+		  Branch {
+		    ZOrder		    9
+		    DstBlock		    "UDP Send1"
+		    DstPort		    1
+		  }
+		}
+		Line {
+		  ZOrder		  10
+		  SrcBlock		  "Constant1"
+		  SrcPort		  1
+		  Points		  [99, 0]
+		  Branch {
+		    ZOrder		    11
+		    Points		    [0, 35]
+		    DstBlock		    "XYZToUDP1"
+		    DstPort		    3
+		  }
+		  Branch {
+		    ZOrder		    12
+		    DstBlock		    "XYZToUDP1"
+		    DstPort		    2
+		  }
+		}
+		Line {
+		  ZOrder		  13
+		  SrcBlock		  "Constant2"
+		  SrcPort		  1
+		  DstBlock		  "XYZToUDP1"
+		  DstPort		  4
+		}
+		Line {
+		  ZOrder		  14
+		  SrcBlock		  "H3"
+		  SrcPort		  1
+		  Points		  [0, 45]
+		  Branch {
+		    ZOrder		    15
+		    Points		    [0, 210]
+		    DstBlock		    "Gain2"
+		    DstPort		    1
+		  }
+		  Branch {
+		    ZOrder		    16
+		    DstBlock		    "Gain1"
+		    DstPort		    1
+		  }
+		}
+		Line {
+		  ZOrder		  17
+		  SrcBlock		  "Gain2"
+		  SrcPort		  1
+		  Points		  [99, 0; 0, 25]
+		  DstBlock		  "XYZToUDP1"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "UDP_OUT2"
+	      SID		      "212"
+	      Ports		      [1]
+	      Position		      [355, 210, 395, 270]
+	      ZOrder		      489
+	      RequestExecContextInheritance off
+	      System {
+		Name			"UDP_OUT2"
+		Location		[155, 97, 1761, 965]
+		Open			off
+		ModelBrowserVisibility	on
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"A4"
+		PaperUnits		"centimeters"
+		TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "H4"
+		  SID			  "213"
+		  Position		  [20, 45, 50, 60]
+		  ZOrder		  487
+		  BlockRotation		  270
+		  BlockMirror		  on
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant1"
+		  SID			  "214"
+		  Position		  [160, 320, 190, 350]
+		  ZOrder		  498
+		  Value			  "0.99"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant10"
+		  SID			  "215"
+		  Position		  [165, 35, 195, 65]
+		  ZOrder		  486
+		  Value			  "0.99"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant2"
+		  SID			  "216"
+		  Position		  [225, 387, 330, 423]
+		  ZOrder		  496
+		  Value			  "uint8('TTeX4')"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant9"
+		  SID			  "217"
+		  Position		  [195, 127, 300, 163]
+		  ZOrder		  483
+		  Value			  "uint8('DWaV4')"
+		}
+		Block {
+		  BlockType		  Gain
+		  Name			  "Gain1"
+		  SID			  "218"
+		  Position		  [90, 260, 225, 290]
+		  ZOrder		  499
+		  Gain			  "1/(10*10^-3)"
+		  ParamDataTypeStr	  "Inherit: Inherit via internal rule"
+		  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+		  SaturateOnIntegerOverflow off
+		}
+		Block {
+		  BlockType		  Gain
+		  Name			  "Gain2"
+		  SID			  "219"
+		  Position		  [80, 95, 215, 125]
+		  ZOrder		  493
+		  Gain			  "1/(10*10^-3)"
+		  ParamDataTypeStr	  "Inherit: Inherit via internal rule"
+		  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+		  SaturateOnIntegerOverflow off
+		}
+		Block {
+		  BlockType		  Scope
+		  Name			  "Scope"
+		  SID			  "220"
+		  Ports			  [1]
+		  Position		  [500, 219, 530, 251]
+		  ZOrder		  494
+		  Floating		  off
+		  Location		  [188, 365, 512, 604]
+		  Open			  off
+		  NumInputPorts		  "1"
+		  List {
+		    ListType		    AxesTitles
+		    axes1		    "%<SignalLabel>"
+		  }
+		  ShowLegends		  off
+		  ScrollMode		  off
+		}
+		Block {
+		  BlockType		  Reference
+		  Name			  "UDP Send1"
+		  SID			  "221"
+		  Ports			  [1]
+		  Position		  [540, 325, 650, 385]
+		  ZOrder		  495
+		  LibraryVersion	  "1.105"
+		  FontName		  "arial"
+		  SourceBlock		  "dspnetwork/UDP Send"
+		  SourceType		  "UDP Send"
+		  remoteURL		  "'localhost'"
+		  remotePort		  "9999"
+		  localURL		  "'0.0.0.0'"
+		  localPortSource	  "Automatically determine"
+		  localPort		  "-1"
+		  sampletime		  "-1"
+		  blockPlatform		  "WINDOWS"
+		  separateLengthPort	  "0"
+		}
+		Block {
+		  BlockType		  Reference
+		  Name			  "UDP Send6"
+		  SID			  "222"
+		  Ports			  [1]
+		  Position		  [510, 65, 620, 125]
+		  ZOrder		  482
+		  LibraryVersion	  "1.105"
+		  FontName		  "arial"
+		  SourceBlock		  "dspnetwork/UDP Send"
+		  SourceType		  "UDP Send"
+		  remoteURL		  "'localhost'"
+		  remotePort		  "9999"
+		  localURL		  "'0.0.0.0'"
+		  localPortSource	  "Automatically determine"
+		  localPort		  "-1"
+		  sampletime		  "-1"
+		  blockPlatform		  "WINDOWS"
+		  separateLengthPort	  "0"
+		}
+		Block {
+		  BlockType		  SubSystem
+		  Name			  "XYZToUDP1"
+		  SID			  "223"
+		  Ports			  [4, 1]
+		  Position		  [365, 282, 510, 423]
+		  ZOrder		  497
+		  RequestExecContextInheritance	off
+		  System {
+		    Name		    "XYZToUDP1"
+		    Location		    [-8, -8, 1928, 1048]
+		    Open		    off
+		    ModelBrowserVisibility  on
+		    ModelBrowserWidth	    200
+		    ScreenColor		    "white"
+		    PaperOrientation	    "landscape"
+		    PaperPositionMode	    "auto"
+		    PaperType		    "A4"
+		    PaperUnits		    "centimeters"
+		    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+		    TiledPageScale	    1
+		    ShowPageBoundaries	    off
+		    ZoomFactor		    "100"
+		    Block {
+		    BlockType		    Inport
+		    Name		    "X"
+		    SID			    "224"
+		    Position		    [20, 43, 50, 57]
+		    ZOrder		    280
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    Inport
+		    Name		    "Y"
+		    SID			    "225"
+		    Position		    [20, 78, 50, 92]
+		    ZOrder		    283
+		    Port		    "2"
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    Inport
+		    Name		    "Z"
+		    SID			    "226"
+		    Position		    [20, 113, 50, 127]
+		    ZOrder		    284
+		    Port		    "3"
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    Inport
+		    Name		    "TypeAndName"
+		    SID			    "227"
+		    Position		    [20, 148, 50, 162]
+		    ZOrder		    281
+		    Port		    "4"
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    SubSystem
+		    Name		    "PrepareUDP_XYZ"
+		    SID			    "228"
+		    Ports		    [4, 1]
+		    Position		    [160, 29, 470, 176]
+		    ZOrder		    279
+		    LibraryVersion	    "1.32"
+		    ErrorFcn		    "Stateflow.Translate.translate"
+		    PermitHierarchicalResolution "ExplicitOnly"
+		    TreatAsAtomicUnit	    on
+		    RequestExecContextInheritance off
+		    SFBlockType		    "MATLAB Function"
+		    System {
+		    Name		    "PrepareUDP_XYZ"
+		    Location		    [223, 338, 826, 833]
+		    Open		    off
+		    ModelBrowserVisibility  on
+		    ModelBrowserWidth	    200
+		    ScreenColor		    "white"
+		    PaperOrientation	    "landscape"
+		    PaperPositionMode	    "auto"
+		    PaperType		    "A4"
+		    PaperUnits		    "centimeters"
+		    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+		    TiledPageScale	    1
+		    ShowPageBoundaries	    off
+		    ZoomFactor		    "100"
+		    SIDHighWatermark	    "68"
+		    Block {
+		    BlockType		    Inport
+		    Name		    "DataX"
+		    SID			    "228::1"
+		    Position		    [20, 101, 40, 119]
+		    ZOrder		    -1
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    Inport
+		    Name		    "DataY"
+		    SID			    "228::31"
+		    Position		    [20, 136, 40, 154]
+		    ZOrder		    11
+		    Port		    "2"
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    Inport
+		    Name		    "DataZ"
+		    SID			    "228::32"
+		    Position		    [20, 171, 40, 189]
+		    ZOrder		    12
+		    Port		    "3"
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    Inport
+		    Name		    "TnName"
+		    SID			    "228::21"
+		    Position		    [20, 206, 40, 224]
+		    ZOrder		    7
+		    Port		    "4"
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    Demux
+		    Name		    " Demux "
+		    SID			    "228::67"
+		    Ports		    [1, 1]
+		    Position		    [270, 230, 320, 270]
+		    ZOrder		    23
+		    Outputs		    "1"
+		    }
+		    Block {
+		    BlockType		    S-Function
+		    Name		    " SFunction "
+		    SID			    "228::66"
+		    Tag			    "Stateflow S-Function Aufgabe_4_Vorlage 4"
+		    Ports		    [4, 2]
+		    Position		    [180, 102, 230, 203]
+		    ZOrder		    22
+		    FunctionName	    "sf_sfun"
+		    PortCounts		    "[4 2]"
+		    EnableBusSupport	    on
+		    Port {
+		    PortNumber		    2
+		    Name		    "UDPData"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		    }
+		    }
+		    Block {
+		    BlockType		    Terminator
+		    Name		    " Terminator "
+		    SID			    "228::68"
+		    Position		    [460, 241, 480, 259]
+		    ZOrder		    24
+		    }
+		    Block {
+		    BlockType		    Outport
+		    Name		    "UDPData"
+		    SID			    "228::5"
+		    Position		    [460, 101, 480, 119]
+		    ZOrder		    -5
+		    IconDisplay		    "Port number"
+		    }
+		    Line {
+		    ZOrder		    8
+		    SrcBlock		    "DataX"
+		    SrcPort		    1
+		    DstBlock		    " SFunction "
+		    DstPort		    1
+		    }
+		    Line {
+		    ZOrder		    9
+		    SrcBlock		    "DataY"
+		    SrcPort		    1
+		    DstBlock		    " SFunction "
+		    DstPort		    2
+		    }
+		    Line {
+		    ZOrder		    10
+		    SrcBlock		    "DataZ"
+		    SrcPort		    1
+		    DstBlock		    " SFunction "
+		    DstPort		    3
+		    }
+		    Line {
+		    ZOrder		    11
+		    SrcBlock		    "TnName"
+		    SrcPort		    1
+		    DstBlock		    " SFunction "
+		    DstPort		    4
+		    }
+		    Line {
+		    Name		    "UDPData"
+		    ZOrder		    12
+		    Labels		    [0, 0]
+		    SrcBlock		    " SFunction "
+		    SrcPort		    2
+		    DstBlock		    "UDPData"
+		    DstPort		    1
+		    }
+		    Line {
+		    ZOrder		    13
+		    SrcBlock		    " Demux "
+		    SrcPort		    1
+		    DstBlock		    " Terminator "
+		    DstPort		    1
+		    }
+		    Line {
+		    ZOrder		    14
+		    SrcBlock		    " SFunction "
+		    SrcPort		    1
+		    DstBlock		    " Demux "
+		    DstPort		    1
+		    }
+		    }
+		    }
+		    Block {
+		    BlockType		    Outport
+		    Name		    "UDPData"
+		    SID			    "229"
+		    Position		    [540, 98, 570, 112]
+		    ZOrder		    282
+		    IconDisplay		    "Port number"
+		    }
+		    Line {
+		    ZOrder		    1
+		    SrcBlock		    "PrepareUDP_XYZ"
+		    SrcPort		    1
+		    DstBlock		    "UDPData"
+		    DstPort		    1
+		    }
+		    Line {
+		    ZOrder		    2
+		    SrcBlock		    "X"
+		    SrcPort		    1
+		    DstBlock		    "PrepareUDP_XYZ"
+		    DstPort		    1
+		    }
+		    Line {
+		    ZOrder		    3
+		    SrcBlock		    "TypeAndName"
+		    SrcPort		    1
+		    DstBlock		    "PrepareUDP_XYZ"
+		    DstPort		    4
+		    }
+		    Line {
+		    ZOrder		    4
+		    SrcBlock		    "Z"
+		    SrcPort		    1
+		    DstBlock		    "PrepareUDP_XYZ"
+		    DstPort		    3
+		    }
+		    Line {
+		    ZOrder		    5
+		    SrcBlock		    "Y"
+		    SrcPort		    1
+		    DstBlock		    "PrepareUDP_XYZ"
+		    DstPort		    2
+		    }
+		  }
+		}
+		Block {
+		  BlockType		  SubSystem
+		  Name			  "XYZToUDP3"
+		  SID			  "230"
+		  Ports			  [4, 1]
+		  Position		  [335, 22, 480, 163]
+		  ZOrder		  484
+		  RequestExecContextInheritance	off
+		  System {
+		    Name		    "XYZToUDP3"
+		    Location		    [-8, -8, 1928, 1048]
+		    Open		    off
+		    ModelBrowserVisibility  on
+		    ModelBrowserWidth	    200
+		    ScreenColor		    "white"
+		    PaperOrientation	    "landscape"
+		    PaperPositionMode	    "auto"
+		    PaperType		    "A4"
+		    PaperUnits		    "centimeters"
+		    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+		    TiledPageScale	    1
+		    ShowPageBoundaries	    off
+		    ZoomFactor		    "100"
+		    Block {
+		    BlockType		    Inport
+		    Name		    "X"
+		    SID			    "231"
+		    Position		    [20, 43, 50, 57]
+		    ZOrder		    280
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    Inport
+		    Name		    "Y"
+		    SID			    "232"
+		    Position		    [20, 78, 50, 92]
+		    ZOrder		    283
+		    Port		    "2"
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    Inport
+		    Name		    "Z"
+		    SID			    "233"
+		    Position		    [20, 113, 50, 127]
+		    ZOrder		    284
+		    Port		    "3"
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    Inport
+		    Name		    "TypeAndName"
+		    SID			    "234"
+		    Position		    [20, 148, 50, 162]
+		    ZOrder		    281
+		    Port		    "4"
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    SubSystem
+		    Name		    "PrepareUDP_XYZ"
+		    SID			    "235"
+		    Ports		    [4, 1]
+		    Position		    [160, 29, 470, 176]
+		    ZOrder		    279
+		    LibraryVersion	    "1.32"
+		    ErrorFcn		    "Stateflow.Translate.translate"
+		    PermitHierarchicalResolution "ExplicitOnly"
+		    TreatAsAtomicUnit	    on
+		    RequestExecContextInheritance off
+		    SFBlockType		    "MATLAB Function"
+		    System {
+		    Name		    "PrepareUDP_XYZ"
+		    Location		    [223, 338, 826, 833]
+		    Open		    off
+		    ModelBrowserVisibility  on
+		    ModelBrowserWidth	    200
+		    ScreenColor		    "white"
+		    PaperOrientation	    "landscape"
+		    PaperPositionMode	    "auto"
+		    PaperType		    "A4"
+		    PaperUnits		    "centimeters"
+		    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+		    TiledPageScale	    1
+		    ShowPageBoundaries	    off
+		    ZoomFactor		    "100"
+		    SIDHighWatermark	    "68"
+		    Block {
+		    BlockType		    Inport
+		    Name		    "DataX"
+		    SID			    "235::1"
+		    Position		    [20, 101, 40, 119]
+		    ZOrder		    -1
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    Inport
+		    Name		    "DataY"
+		    SID			    "235::31"
+		    Position		    [20, 136, 40, 154]
+		    ZOrder		    11
+		    Port		    "2"
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    Inport
+		    Name		    "DataZ"
+		    SID			    "235::32"
+		    Position		    [20, 171, 40, 189]
+		    ZOrder		    12
+		    Port		    "3"
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    Inport
+		    Name		    "TnName"
+		    SID			    "235::21"
+		    Position		    [20, 206, 40, 224]
+		    ZOrder		    7
+		    Port		    "4"
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    Demux
+		    Name		    " Demux "
+		    SID			    "235::67"
+		    Ports		    [1, 1]
+		    Position		    [270, 230, 320, 270]
+		    ZOrder		    23
+		    Outputs		    "1"
+		    }
+		    Block {
+		    BlockType		    S-Function
+		    Name		    " SFunction "
+		    SID			    "235::66"
+		    Tag			    "Stateflow S-Function Aufgabe_4_Vorlage 3"
+		    Ports		    [4, 2]
+		    Position		    [180, 102, 230, 203]
+		    ZOrder		    22
+		    FunctionName	    "sf_sfun"
+		    PortCounts		    "[4 2]"
+		    EnableBusSupport	    on
+		    Port {
+		    PortNumber		    2
+		    Name		    "UDPData"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		    }
+		    }
+		    Block {
+		    BlockType		    Terminator
+		    Name		    " Terminator "
+		    SID			    "235::68"
+		    Position		    [460, 241, 480, 259]
+		    ZOrder		    24
+		    }
+		    Block {
+		    BlockType		    Outport
+		    Name		    "UDPData"
+		    SID			    "235::5"
+		    Position		    [460, 101, 480, 119]
+		    ZOrder		    -5
+		    IconDisplay		    "Port number"
+		    }
+		    Line {
+		    ZOrder		    8
+		    SrcBlock		    "DataX"
+		    SrcPort		    1
+		    DstBlock		    " SFunction "
+		    DstPort		    1
+		    }
+		    Line {
+		    ZOrder		    9
+		    SrcBlock		    "DataY"
+		    SrcPort		    1
+		    DstBlock		    " SFunction "
+		    DstPort		    2
+		    }
+		    Line {
+		    ZOrder		    10
+		    SrcBlock		    "DataZ"
+		    SrcPort		    1
+		    DstBlock		    " SFunction "
+		    DstPort		    3
+		    }
+		    Line {
+		    ZOrder		    11
+		    SrcBlock		    "TnName"
+		    SrcPort		    1
+		    DstBlock		    " SFunction "
+		    DstPort		    4
+		    }
+		    Line {
+		    Name		    "UDPData"
+		    ZOrder		    12
+		    Labels		    [0, 0]
+		    SrcBlock		    " SFunction "
+		    SrcPort		    2
+		    DstBlock		    "UDPData"
+		    DstPort		    1
+		    }
+		    Line {
+		    ZOrder		    13
+		    SrcBlock		    " Demux "
+		    SrcPort		    1
+		    DstBlock		    " Terminator "
+		    DstPort		    1
+		    }
+		    Line {
+		    ZOrder		    14
+		    SrcBlock		    " SFunction "
+		    SrcPort		    1
+		    DstBlock		    " Demux "
+		    DstPort		    1
+		    }
+		    }
+		    }
+		    Block {
+		    BlockType		    Outport
+		    Name		    "UDPData"
+		    SID			    "236"
+		    Position		    [540, 98, 570, 112]
+		    ZOrder		    282
+		    IconDisplay		    "Port number"
+		    }
+		    Line {
+		    ZOrder		    1
+		    SrcBlock		    "PrepareUDP_XYZ"
+		    SrcPort		    1
+		    DstBlock		    "UDPData"
+		    DstPort		    1
+		    }
+		    Line {
+		    ZOrder		    2
+		    SrcBlock		    "X"
+		    SrcPort		    1
+		    DstBlock		    "PrepareUDP_XYZ"
+		    DstPort		    1
+		    }
+		    Line {
+		    ZOrder		    3
+		    SrcBlock		    "TypeAndName"
+		    SrcPort		    1
+		    DstBlock		    "PrepareUDP_XYZ"
+		    DstPort		    4
+		    }
+		    Line {
+		    ZOrder		    4
+		    SrcBlock		    "Z"
+		    SrcPort		    1
+		    DstBlock		    "PrepareUDP_XYZ"
+		    DstPort		    3
+		    }
+		    Line {
+		    ZOrder		    5
+		    SrcBlock		    "Y"
+		    SrcPort		    1
+		    DstBlock		    "PrepareUDP_XYZ"
+		    DstPort		    2
+		    }
+		  }
+		}
+		Line {
+		  ZOrder		  1
+		  SrcBlock		  "XYZToUDP3"
+		  SrcPort		  1
+		  DstBlock		  "UDP Send6"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  2
+		  SrcBlock		  "Constant10"
+		  SrcPort		  1
+		  Points		  [0, -10; 64, 0]
+		  Branch {
+		    ZOrder		    3
+		    DstBlock		    "XYZToUDP3"
+		    DstPort		    1
+		  }
+		  Branch {
+		    ZOrder		    4
+		    Points		    [0, 35]
+		    DstBlock		    "XYZToUDP3"
+		    DstPort		    2
+		  }
+		}
+		Line {
+		  ZOrder		  5
+		  SrcBlock		  "Constant9"
+		  SrcPort		  1
+		  DstBlock		  "XYZToUDP3"
+		  DstPort		  4
+		}
+		Line {
+		  ZOrder		  6
+		  SrcBlock		  "Gain2"
+		  SrcPort		  1
+		  DstBlock		  "XYZToUDP3"
+		  DstPort		  3
+		}
+		Line {
+		  ZOrder		  7
+		  SrcBlock		  "XYZToUDP1"
+		  SrcPort		  1
+		  Points		  [6, 0]
+		  Branch {
+		    ZOrder		    8
+		    Points		    [0, -82; -51, 0; 0, -38]
+		    DstBlock		    "Scope"
+		    DstPort		    1
+		  }
+		  Branch {
+		    ZOrder		    9
+		    DstBlock		    "UDP Send1"
+		    DstPort		    1
+		  }
+		}
+		Line {
+		  ZOrder		  10
+		  SrcBlock		  "Constant1"
+		  SrcPort		  1
+		  Points		  [99, 0]
+		  Branch {
+		    ZOrder		    11
+		    Points		    [0, 35]
+		    DstBlock		    "XYZToUDP1"
+		    DstPort		    3
+		  }
+		  Branch {
+		    ZOrder		    12
+		    DstBlock		    "XYZToUDP1"
+		    DstPort		    2
+		  }
+		}
+		Line {
+		  ZOrder		  13
+		  SrcBlock		  "Constant2"
+		  SrcPort		  1
+		  DstBlock		  "XYZToUDP1"
+		  DstPort		  4
+		}
+		Line {
+		  ZOrder		  14
+		  SrcBlock		  "H4"
+		  SrcPort		  1
+		  Points		  [0, 45]
+		  Branch {
+		    ZOrder		    15
+		    Points		    [0, 165]
+		    DstBlock		    "Gain1"
+		    DstPort		    1
+		  }
+		  Branch {
+		    ZOrder		    16
+		    DstBlock		    "Gain2"
+		    DstPort		    1
+		  }
+		}
+		Line {
+		  ZOrder		  17
+		  SrcBlock		  "Gain1"
+		  SrcPort		  1
+		  Points		  [99, 0; 0, 25]
+		  DstBlock		  "XYZToUDP1"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Line {
+	      ZOrder		      1
+	      SrcBlock		      "V2"
+	      SrcPort		      1
+	      Points		      [0, 30]
+	      DstBlock		      "UDP_OUT"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      2
+	      SrcBlock		      "V3"
+	      SrcPort		      1
+	      Points		      [0, 60]
+	      DstBlock		      "UDP_OUT1"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      3
+	      SrcBlock		      "V4\n"
+	      SrcPort		      1
+	      Points		      [0, 35]
+	      DstBlock		      "UDP_OUT2"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Line {
+	  ZOrder		  1
+	  SrcBlock		  "V106"
+	  SrcPort		  1
+	  Points		  [0, 20]
+	  DstBlock		  "Simulation1"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  2
+	  SrcBlock		  "V101"
+	  SrcPort		  1
+	  Points		  [0, 20]
+	  DstBlock		  "Simulation2"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  3
+	  SrcBlock		  "V2"
+	  SrcPort		  1
+	  DstBlock		  "Visualisierung\n"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  4
+	  SrcBlock		  "V4"
+	  SrcPort		  1
+	  Points		  [0, 40]
+	  DstBlock		  "Visualisierung\n"
+	  DstPort		  3
+	}
+	Line {
+	  ZOrder		  5
+	  SrcBlock		  "P101"
+	  SrcPort		  1
+	  Points		  [0, 25]
+	  DstBlock		  "Simulation"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  6
+	  SrcBlock		  "V3"
+	  SrcPort		  1
+	  Points		  [0, 19; 269, 0; 0, 1]
+	  DstBlock		  "Visualisierung\n"
+	  DstPort		  2
+	}
+      }
+    }
+    Line {
+      ZOrder		      58
+      SrcBlock		      "Dreitank-System"
+      SrcPort		      1
+      Points		      [113, 0]
+      Branch {
+	ZOrder			2
+	Points			[0, -30]
+	DstBlock		"To Workspace2"
+	DstPort			1
+      }
+      Branch {
+	ZOrder			21
+	Points			[0, 180]
+	DstBlock		"Visualisierung"
+	DstPort			1
+      }
+      Branch {
+	ZOrder			3
+	DstBlock		"Mux"
+	DstPort			1
+      }
+    }
+    Line {
+      ZOrder		      59
+      SrcBlock		      "Dreitank-System"
+      SrcPort		      2
+      Points		      [95, 0]
+      Branch {
+	ZOrder			5
+	Points			[0, -115]
+	DstBlock		"To Workspace1"
+	DstPort			1
+      }
+      Branch {
+	ZOrder			23
+	Points			[0, 170]
+	DstBlock		"Visualisierung"
+	DstPort			2
+      }
+      Branch {
+	ZOrder			6
+	DstBlock		"Mux"
+	DstPort			2
+      }
+    }
+    Line {
+      ZOrder		      60
+      SrcBlock		      "Dreitank-System"
+      SrcPort		      3
+      Points		      [73, 0]
+      Branch {
+	ZOrder			24
+	Points			[0, 160]
+	DstBlock		"Visualisierung"
+	DstPort			3
+      }
+      Branch {
+	ZOrder			8
+	Points			[0, -200]
+	DstBlock		"To Workspace3"
+	DstPort			1
+      }
+      Branch {
+	ZOrder			9
+	DstBlock		"Mux"
+	DstPort			3
+      }
+    }
+    Line {
+      ZOrder		      10
+      SrcBlock		      "Mux"
+      SrcPort		      1
+      DstBlock		      "Scope"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      14
+      SrcBlock		      "Manual Switch1"
+      SrcPort		      1
+      Points		      [37, 0]
+      Branch {
+	ZOrder			61
+	DstBlock		"Dreitank-System"
+	DstPort			2
+      }
+      Branch {
+	ZOrder			28
+	Points			[0, 215]
+	DstBlock		"Visualisierung"
+	DstPort			5
+      }
+    }
+    Line {
+      ZOrder		      15
+      SrcBlock		      "Constant1"
+      SrcPort		      1
+      Points		      [32, 0; 0, 15]
+      DstBlock		      "Manual Switch1"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      16
+      SrcBlock		      "Step1"
+      SrcPort		      1
+      Points		      [32, 0; 0, -20]
+      DstBlock		      "Manual Switch1"
+      DstPort		      2
+    }
+    Line {
+      ZOrder		      17
+      SrcBlock		      "Manual Switch2"
+      SrcPort		      1
+      Points		      [25, 0]
+      Branch {
+	ZOrder			65
+	Points			[0, -65]
+	DstBlock		"Dreitank-System"
+	DstPort			3
+      }
+      Branch {
+	ZOrder			30
+	Points			[0, 125]
+	DstBlock		"Visualisierung"
+	DstPort			6
+      }
+    }
+    Line {
+      ZOrder		      18
+      SrcBlock		      "Constant2"
+      SrcPort		      1
+      DstBlock		      "Manual Switch2"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      19
+      SrcBlock		      "Step2"
+      SrcPort		      1
+      Points		      [26, 0; 0, -55]
+      DstBlock		      "Manual Switch2"
+      DstPort		      2
+    }
+    Line {
+      ZOrder		      56
+      SrcBlock		      "Constant"
+      SrcPort		      1
+      Points		      [33, 0; 0, 25]
+      DstBlock		      "Manual Switch3"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      57
+      SrcBlock		      "Step"
+      SrcPort		      1
+      Points		      [6, 0; 0, -10]
+      DstBlock		      "Manual Switch3"
+      DstPort		      2
+    }
+    Line {
+      ZOrder		      55
+      SrcBlock		      "Manual Switch3"
+      SrcPort		      1
+      Points		      [29, 0; 0, 74; 18, 0; 0, 1]
+      Branch {
+	ZOrder			63
+	DstBlock		"Dreitank-System"
+	DstPort			1
+      }
+      Branch {
+	ZOrder			26
+	Points			[0, 240]
+	DstBlock		"Visualisierung"
+	DstPort			4
+      }
+    }
+    Line {
+      ZOrder		      87
+      SrcBlock		      "Dreitank-System"
+      SrcPort		      4
+      Points		      [34, 0; 0, 30]
+      DstBlock		      "Scope1"
+      DstPort		      1
+    }
+  }
+}
+#Finite State Machines
+#
+#   Stateflow 80000001
+#
+#
+Stateflow {
+  machine {
+    id			    1
+    name		    "Aufgabe_4_Vorlage"
+    created		    "01-Jun-2016 19:47:15"
+    isLibrary		    0
+    firstTarget		    97
+    sfVersion		    80000001
+  }
+  chart {
+    id			    2
+    name		    "Visualisierung/Visualisierung\n/UDP_OUT1/XYZToUDP3/PrepareUDP_XYZ"
+    windowPosition	    [357.331 483.407 167 391]
+    viewLimits		    [0 156.75 0 153.75]
+    screen		    [1 1 1280 1024 1.041050272174191]
+    treeNode		    [0 3 0 0]
+    firstTransition	    10
+    firstJunction	    9
+    viewObj		    2
+    machine		    1
+    ssIdHighWaterMark	    8
+    decomposition	    CLUSTER_CHART
+    type		    EML_CHART
+    firstData		    4
+    chartFileNumber	    1
+    disableImplicitCasting  1
+    eml {
+      name		      "XYZToBlenderUdpConversion"
+    }
+  }
+  state {
+    id			    3
+    labelString		    "eML_blk_kernel()"
+    position		    [18 64.5 118 66]
+    fontSize		    12
+    chart		    2
+    treeNode		    [2 0 0 0]
+    superState		    SUBCHART
+    subviewer		    2
+    ssIdNumber		    1
+    type		    FUNC_STATE
+    decomposition	    CLUSTER_STATE
+    eml {
+      isEML		      1
+      script		      "function UDPData = XYZToBlenderUdpConversion(DataX,DataY,DataZ,TnName)\ntx=typecast(single(DataX)"
+      ",'uint8')';\nty=typecast(single(DataY),'uint8')';\ntz=typecast(single(DataZ),'uint8')';\nUDPData=zeros(17,1,'uin"
+      "t8');\nUDPData=[TnName;tx;ty;tz];"
+      editorLayout	      "100 M4x1[10 5 700 500]"
+    }
+  }
+  data {
+    id			    4
+    ssIdNumber		    4
+    name		    "DataX"
+    linkNode		    [2 0 5]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+      }
+      complexity	      SF_COMPLEX_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    5
+    ssIdNumber		    7
+    name		    "DataY"
+    linkNode		    [2 4 6]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    6
+    ssIdNumber		    8
+    name		    "DataZ"
+    linkNode		    [2 5 7]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    7
+    ssIdNumber		    5
+    name		    "UDPData"
+    linkNode		    [2 6 8]
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_UINT8_TYPE
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_NO
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    8
+    ssIdNumber		    6
+    name		    "TnName"
+    linkNode		    [2 7 0]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  junction {
+    id			    9
+    position		    [23.5747 49.5747 7]
+    chart		    2
+    linkNode		    [2 0 0]
+    subviewer		    2
+    ssIdNumber		    3
+    type		    CONNECTIVE_JUNCTION
+  }
+  transition {
+    id			    10
+    labelString		    "{eML_blk_kernel();}"
+    labelPosition	    [24.125 7.875 102.544 14.964]
+    fontSize		    12
+    src {
+      intersection	      [0 0 1 0 23.5747 14.625 0 0]
+    }
+    dst {
+      id		      9
+      intersection	      [1 0 -1 0 23.5747 42.5747 0 0]
+    }
+    midPoint		    [23.5747 24.9468]
+    chart		    2
+    linkNode		    [2 0 0]
+    dataLimits		    [21.175 25.975 14.625 42.575]
+    subviewer		    2
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    2
+  }
+  instance {
+    id			    11
+    name		    "Visualisierung/Visualisierung\n/UDP_OUT1/XYZToUDP3/PrepareUDP_XYZ"
+    machine		    1
+    chart		    2
+  }
+  chart {
+    id			    12
+    name		    "Einstellungen durch \nDoppelklick anpassen"
+    windowPosition	    [341 332 213 385]
+    viewLimits		    [0 156.75 0 153.75]
+    screen		    [1 1 1920 1080 1.333333333333333]
+    treeNode		    [0 13 0 0]
+    firstTransition	    15
+    firstJunction	    14
+    viewObj		    12
+    machine		    1
+    ssIdHighWaterMark	    5
+    decomposition	    CLUSTER_CHART
+    type		    EML_CHART
+    updateMethod	    DISCRETE
+    sampleTime		    "0.1"
+    chartFileNumber	    2
+    disableImplicitCasting  1
+    eml {
+      name		      "Auswahl"
+    }
+  }
+  state {
+    id			    13
+    labelString		    "eML_blk_kernel()"
+    position		    [18 64.5 118 66]
+    fontSize		    12
+    chart		    12
+    treeNode		    [12 0 0 0]
+    superState		    SUBCHART
+    subviewer		    12
+    ssIdNumber		    1
+    type		    FUNC_STATE
+    decomposition	    CLUSTER_STATE
+    eml {
+      isEML		      1
+      script		      "function Auswahl\n\n\ncoder.extrinsic('tic');\ncoder.extrinsic('toc');\ncoder.extrinsic('drawnow'"
+      ");\ncoder.extrinsic('evalin');\n\nTesten = 0;\nTesten = evalin('base','Testen');\n\nif Testen == 0\n\n    t = 0;"
+      "\n    t = toc;\n    while t < 0.1\n    t = toc;\n    drawnow;\n    end\n    tic;\n\nend\n"
+      editorLayout	      "100 M4x1[10 5 700 500]"
+    }
+  }
+  junction {
+    id			    14
+    position		    [23.5747 49.5747 7]
+    chart		    12
+    linkNode		    [12 0 0]
+    subviewer		    12
+    ssIdNumber		    3
+    type		    CONNECTIVE_JUNCTION
+  }
+  transition {
+    id			    15
+    labelString		    "{eML_blk_kernel();}"
+    labelPosition	    [28.125 13.875 102.544 14.964]
+    fontSize		    12
+    src {
+      intersection	      [0 0 1 0 23.5747 14.625 0 0]
+    }
+    dst {
+      id		      14
+      intersection	      [1 0 -1 0 23.5747 42.5747 0 0]
+    }
+    midPoint		    [23.5747 24.9468]
+    chart		    12
+    linkNode		    [12 0 0]
+    dataLimits		    [21.175 25.975 14.625 42.575]
+    subviewer		    12
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    2
+  }
+  instance {
+    id			    16
+    name		    "Einstellungen durch \nDoppelklick anpassen"
+    machine		    1
+    chart		    12
+  }
+  chart {
+    id			    17
+    name		    "Visualisierung/Visualisierung\n/UDP_OUT2/XYZToUDP3/PrepareUDP_XYZ"
+    windowPosition	    [357.331 483.407 167 391]
+    viewLimits		    [0 156.75 0 153.75]
+    screen		    [1 1 1280 1024 1.041050272174191]
+    treeNode		    [0 18 0 0]
+    firstTransition	    25
+    firstJunction	    24
+    viewObj		    17
+    machine		    1
+    ssIdHighWaterMark	    8
+    decomposition	    CLUSTER_CHART
+    type		    EML_CHART
+    firstData		    19
+    chartFileNumber	    3
+    disableImplicitCasting  1
+    eml {
+      name		      "XYZToBlenderUdpConversion"
+    }
+  }
+  state {
+    id			    18
+    labelString		    "eML_blk_kernel()"
+    position		    [18 64.5 118 66]
+    fontSize		    12
+    chart		    17
+    treeNode		    [17 0 0 0]
+    superState		    SUBCHART
+    subviewer		    17
+    ssIdNumber		    1
+    type		    FUNC_STATE
+    decomposition	    CLUSTER_STATE
+    eml {
+      isEML		      1
+      script		      "function UDPData = XYZToBlenderUdpConversion(DataX,DataY,DataZ,TnName)\ntx=typecast(single(DataX)"
+      ",'uint8')';\nty=typecast(single(DataY),'uint8')';\ntz=typecast(single(DataZ),'uint8')';\nUDPData=zeros(17,1,'uin"
+      "t8');\nUDPData=[TnName;tx;ty;tz];"
+      editorLayout	      "100 M4x1[10 5 700 500]"
+    }
+  }
+  data {
+    id			    19
+    ssIdNumber		    4
+    name		    "DataX"
+    linkNode		    [17 0 20]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+      }
+      complexity	      SF_COMPLEX_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    20
+    ssIdNumber		    7
+    name		    "DataY"
+    linkNode		    [17 19 21]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    21
+    ssIdNumber		    8
+    name		    "DataZ"
+    linkNode		    [17 20 22]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    22
+    ssIdNumber		    5
+    name		    "UDPData"
+    linkNode		    [17 21 23]
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_UINT8_TYPE
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_NO
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    23
+    ssIdNumber		    6
+    name		    "TnName"
+    linkNode		    [17 22 0]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  junction {
+    id			    24
+    position		    [23.5747 49.5747 7]
+    chart		    17
+    linkNode		    [17 0 0]
+    subviewer		    17
+    ssIdNumber		    3
+    type		    CONNECTIVE_JUNCTION
+  }
+  transition {
+    id			    25
+    labelString		    "{eML_blk_kernel();}"
+    labelPosition	    [24.125 7.875 102.544 14.964]
+    fontSize		    12
+    src {
+      intersection	      [0 0 1 0 23.5747 14.625 0 0]
+    }
+    dst {
+      id		      24
+      intersection	      [1 0 -1 0 23.5747 42.5747 0 0]
+    }
+    midPoint		    [23.5747 24.9468]
+    chart		    17
+    linkNode		    [17 0 0]
+    dataLimits		    [21.175 25.975 14.625 42.575]
+    subviewer		    17
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    2
+  }
+  instance {
+    id			    26
+    name		    "Visualisierung/Visualisierung\n/UDP_OUT2/XYZToUDP3/PrepareUDP_XYZ"
+    machine		    1
+    chart		    17
+  }
+  chart {
+    id			    27
+    name		    "Visualisierung/Visualisierung\n/UDP_OUT2/XYZToUDP1/PrepareUDP_XYZ"
+    windowPosition	    [357.331 483.407 167 391]
+    viewLimits		    [0 156.75 0 153.75]
+    screen		    [1 1 1280 1024 1.041050272174191]
+    treeNode		    [0 28 0 0]
+    firstTransition	    35
+    firstJunction	    34
+    viewObj		    27
+    machine		    1
+    ssIdHighWaterMark	    8
+    decomposition	    CLUSTER_CHART
+    type		    EML_CHART
+    firstData		    29
+    chartFileNumber	    4
+    disableImplicitCasting  1
+    eml {
+      name		      "XYZToBlenderUdpConversion"
+    }
+  }
+  state {
+    id			    28
+    labelString		    "eML_blk_kernel()"
+    position		    [18 64.5 118 66]
+    fontSize		    12
+    chart		    27
+    treeNode		    [27 0 0 0]
+    superState		    SUBCHART
+    subviewer		    27
+    ssIdNumber		    1
+    type		    FUNC_STATE
+    decomposition	    CLUSTER_STATE
+    eml {
+      isEML		      1
+      script		      "function UDPData = XYZToBlenderUdpConversion(DataX,DataY,DataZ,TnName)\ntx=typecast(single(DataX)"
+      ",'uint8')';\nty=typecast(single(DataY),'uint8')';\ntz=typecast(single(DataZ),'uint8')';\nUDPData=zeros(17,1,'uin"
+      "t8');\nUDPData=[TnName;tx;ty;tz];"
+      editorLayout	      "100 M4x1[10 5 700 500]"
+    }
+  }
+  data {
+    id			    29
+    ssIdNumber		    4
+    name		    "DataX"
+    linkNode		    [27 0 30]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+      }
+      complexity	      SF_COMPLEX_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    30
+    ssIdNumber		    7
+    name		    "DataY"
+    linkNode		    [27 29 31]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    31
+    ssIdNumber		    8
+    name		    "DataZ"
+    linkNode		    [27 30 32]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    32
+    ssIdNumber		    5
+    name		    "UDPData"
+    linkNode		    [27 31 33]
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_UINT8_TYPE
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_NO
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    33
+    ssIdNumber		    6
+    name		    "TnName"
+    linkNode		    [27 32 0]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  junction {
+    id			    34
+    position		    [23.5747 49.5747 7]
+    chart		    27
+    linkNode		    [27 0 0]
+    subviewer		    27
+    ssIdNumber		    3
+    type		    CONNECTIVE_JUNCTION
+  }
+  transition {
+    id			    35
+    labelString		    "{eML_blk_kernel();}"
+    labelPosition	    [24.125 7.875 102.544 14.964]
+    fontSize		    12
+    src {
+      intersection	      [0 0 1 0 23.5747 14.625 0 0]
+    }
+    dst {
+      id		      34
+      intersection	      [1 0 -1 0 23.5747 42.5747 0 0]
+    }
+    midPoint		    [23.5747 24.9468]
+    chart		    27
+    linkNode		    [27 0 0]
+    dataLimits		    [21.175 25.975 14.625 42.575]
+    subviewer		    27
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    2
+  }
+  instance {
+    id			    36
+    name		    "Visualisierung/Visualisierung\n/UDP_OUT2/XYZToUDP1/PrepareUDP_XYZ"
+    machine		    1
+    chart		    27
+  }
+  chart {
+    id			    37
+    name		    "Visualisierung/Visualisierung\n/UDP_OUT1/XYZToUDP1/PrepareUDP_XYZ"
+    windowPosition	    [357.331 483.407 167 391]
+    viewLimits		    [0 156.75 0 153.75]
+    screen		    [1 1 1280 1024 1.041050272174191]
+    treeNode		    [0 38 0 0]
+    firstTransition	    45
+    firstJunction	    44
+    viewObj		    37
+    machine		    1
+    ssIdHighWaterMark	    8
+    decomposition	    CLUSTER_CHART
+    type		    EML_CHART
+    firstData		    39
+    chartFileNumber	    5
+    disableImplicitCasting  1
+    eml {
+      name		      "XYZToBlenderUdpConversion"
+    }
+  }
+  state {
+    id			    38
+    labelString		    "eML_blk_kernel()"
+    position		    [18 64.5 118 66]
+    fontSize		    12
+    chart		    37
+    treeNode		    [37 0 0 0]
+    superState		    SUBCHART
+    subviewer		    37
+    ssIdNumber		    1
+    type		    FUNC_STATE
+    decomposition	    CLUSTER_STATE
+    eml {
+      isEML		      1
+      script		      "function UDPData = XYZToBlenderUdpConversion(DataX,DataY,DataZ,TnName)\ntx=typecast(single(DataX)"
+      ",'uint8')';\nty=typecast(single(DataY),'uint8')';\ntz=typecast(single(DataZ),'uint8')';\nUDPData=zeros(17,1,'uin"
+      "t8');\nUDPData=[TnName;tx;ty;tz];"
+      editorLayout	      "100 M4x1[10 5 700 500]"
+    }
+  }
+  data {
+    id			    39
+    ssIdNumber		    4
+    name		    "DataX"
+    linkNode		    [37 0 40]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+      }
+      complexity	      SF_COMPLEX_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    40
+    ssIdNumber		    7
+    name		    "DataY"
+    linkNode		    [37 39 41]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    41
+    ssIdNumber		    8
+    name		    "DataZ"
+    linkNode		    [37 40 42]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    42
+    ssIdNumber		    5
+    name		    "UDPData"
+    linkNode		    [37 41 43]
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_UINT8_TYPE
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_NO
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    43
+    ssIdNumber		    6
+    name		    "TnName"
+    linkNode		    [37 42 0]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  junction {
+    id			    44
+    position		    [23.5747 49.5747 7]
+    chart		    37
+    linkNode		    [37 0 0]
+    subviewer		    37
+    ssIdNumber		    3
+    type		    CONNECTIVE_JUNCTION
+  }
+  transition {
+    id			    45
+    labelString		    "{eML_blk_kernel();}"
+    labelPosition	    [24.125 7.875 102.544 14.964]
+    fontSize		    12
+    src {
+      intersection	      [0 0 1 0 23.5747 14.625 0 0]
+    }
+    dst {
+      id		      44
+      intersection	      [1 0 -1 0 23.5747 42.5747 0 0]
+    }
+    midPoint		    [23.5747 24.9468]
+    chart		    37
+    linkNode		    [37 0 0]
+    dataLimits		    [21.175 25.975 14.625 42.575]
+    subviewer		    37
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    2
+  }
+  instance {
+    id			    46
+    name		    "Visualisierung/Visualisierung\n/UDP_OUT1/XYZToUDP1/PrepareUDP_XYZ"
+    machine		    1
+    chart		    37
+  }
+  chart {
+    id			    47
+    name		    "Visualisierung/Visualisierung\n/UDP_OUT/XYZToUDP3/PrepareUDP_XYZ"
+    windowPosition	    [357.331 483.407 167 391]
+    viewLimits		    [0 156.75 0 153.75]
+    screen		    [1 1 1280 1024 1.041050272174191]
+    treeNode		    [0 48 0 0]
+    firstTransition	    55
+    firstJunction	    54
+    viewObj		    47
+    machine		    1
+    ssIdHighWaterMark	    8
+    decomposition	    CLUSTER_CHART
+    type		    EML_CHART
+    firstData		    49
+    chartFileNumber	    6
+    disableImplicitCasting  1
+    eml {
+      name		      "XYZToBlenderUdpConversion"
+    }
+  }
+  state {
+    id			    48
+    labelString		    "eML_blk_kernel()"
+    position		    [18 64.5 118 66]
+    fontSize		    12
+    chart		    47
+    treeNode		    [47 0 0 0]
+    superState		    SUBCHART
+    subviewer		    47
+    ssIdNumber		    1
+    type		    FUNC_STATE
+    decomposition	    CLUSTER_STATE
+    eml {
+      isEML		      1
+      script		      "function UDPData = XYZToBlenderUdpConversion(DataX,DataY,DataZ,TnName)\ntx=typecast(single(DataX)"
+      ",'uint8')';\nty=typecast(single(DataY),'uint8')';\ntz=typecast(single(DataZ),'uint8')';\nUDPData=zeros(17,1,'uin"
+      "t8');\nUDPData=[TnName;tx;ty;tz];"
+      editorLayout	      "100 M4x1[10 5 700 500]"
+    }
+  }
+  data {
+    id			    49
+    ssIdNumber		    4
+    name		    "DataX"
+    linkNode		    [47 0 50]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+      }
+      complexity	      SF_COMPLEX_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    50
+    ssIdNumber		    7
+    name		    "DataY"
+    linkNode		    [47 49 51]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    51
+    ssIdNumber		    8
+    name		    "DataZ"
+    linkNode		    [47 50 52]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    52
+    ssIdNumber		    5
+    name		    "UDPData"
+    linkNode		    [47 51 53]
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_UINT8_TYPE
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_NO
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    53
+    ssIdNumber		    6
+    name		    "TnName"
+    linkNode		    [47 52 0]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  junction {
+    id			    54
+    position		    [23.5747 49.5747 7]
+    chart		    47
+    linkNode		    [47 0 0]
+    subviewer		    47
+    ssIdNumber		    3
+    type		    CONNECTIVE_JUNCTION
+  }
+  transition {
+    id			    55
+    labelString		    "{eML_blk_kernel();}"
+    labelPosition	    [24.125 7.875 102.544 14.964]
+    fontSize		    12
+    src {
+      intersection	      [0 0 1 0 23.5747 14.625 0 0]
+    }
+    dst {
+      id		      54
+      intersection	      [1 0 -1 0 23.5747 42.5747 0 0]
+    }
+    midPoint		    [23.5747 24.9468]
+    chart		    47
+    linkNode		    [47 0 0]
+    dataLimits		    [21.175 25.975 14.625 42.575]
+    subviewer		    47
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    2
+  }
+  instance {
+    id			    56
+    name		    "Visualisierung/Visualisierung\n/UDP_OUT/XYZToUDP3/PrepareUDP_XYZ"
+    machine		    1
+    chart		    47
+  }
+  chart {
+    id			    57
+    name		    "Visualisierung/Visualisierung\n/UDP_OUT/XYZToUDP1/PrepareUDP_XYZ"
+    windowPosition	    [357.331 483.407 167 391]
+    viewLimits		    [0 156.75 0 153.75]
+    screen		    [1 1 1280 1024 1.041050272174191]
+    treeNode		    [0 58 0 0]
+    firstTransition	    65
+    firstJunction	    64
+    viewObj		    57
+    machine		    1
+    ssIdHighWaterMark	    8
+    decomposition	    CLUSTER_CHART
+    type		    EML_CHART
+    firstData		    59
+    chartFileNumber	    7
+    disableImplicitCasting  1
+    eml {
+      name		      "XYZToBlenderUdpConversion"
+    }
+  }
+  state {
+    id			    58
+    labelString		    "eML_blk_kernel()"
+    position		    [18 64.5 118 66]
+    fontSize		    12
+    chart		    57
+    treeNode		    [57 0 0 0]
+    superState		    SUBCHART
+    subviewer		    57
+    ssIdNumber		    1
+    type		    FUNC_STATE
+    decomposition	    CLUSTER_STATE
+    eml {
+      isEML		      1
+      script		      "function UDPData = XYZToBlenderUdpConversion(DataX,DataY,DataZ,TnName)\ntx=typecast(single(DataX)"
+      ",'uint8')';\nty=typecast(single(DataY),'uint8')';\ntz=typecast(single(DataZ),'uint8')';\nUDPData=zeros(17,1,'uin"
+      "t8');\nUDPData=[TnName;tx;ty;tz];"
+      editorLayout	      "100 M4x1[10 5 700 500]"
+    }
+  }
+  data {
+    id			    59
+    ssIdNumber		    4
+    name		    "DataX"
+    linkNode		    [57 0 60]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+      }
+      complexity	      SF_COMPLEX_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    60
+    ssIdNumber		    7
+    name		    "DataY"
+    linkNode		    [57 59 61]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    61
+    ssIdNumber		    8
+    name		    "DataZ"
+    linkNode		    [57 60 62]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    62
+    ssIdNumber		    5
+    name		    "UDPData"
+    linkNode		    [57 61 63]
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_UINT8_TYPE
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_NO
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    63
+    ssIdNumber		    6
+    name		    "TnName"
+    linkNode		    [57 62 0]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  junction {
+    id			    64
+    position		    [23.5747 49.5747 7]
+    chart		    57
+    linkNode		    [57 0 0]
+    subviewer		    57
+    ssIdNumber		    3
+    type		    CONNECTIVE_JUNCTION
+  }
+  transition {
+    id			    65
+    labelString		    "{eML_blk_kernel();}"
+    labelPosition	    [24.125 7.875 102.544 14.964]
+    fontSize		    12
+    src {
+      intersection	      [0 0 1 0 23.5747 14.625 0 0]
+    }
+    dst {
+      id		      64
+      intersection	      [1 0 -1 0 23.5747 42.5747 0 0]
+    }
+    midPoint		    [23.5747 24.9468]
+    chart		    57
+    linkNode		    [57 0 0]
+    dataLimits		    [21.175 25.975 14.625 42.575]
+    subviewer		    57
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    2
+  }
+  instance {
+    id			    66
+    name		    "Visualisierung/Visualisierung\n/UDP_OUT/XYZToUDP1/PrepareUDP_XYZ"
+    machine		    1
+    chart		    57
+  }
+  chart {
+    id			    67
+    name		    "Visualisierung/Simulation/XYZToUDP1/PrepareUDP_XYZ"
+    windowPosition	    [357.331 483.407 167 391]
+    viewLimits		    [0 156.75 0 153.75]
+    screen		    [1 1 1280 1024 1.041050272174191]
+    treeNode		    [0 68 0 0]
+    firstTransition	    75
+    firstJunction	    74
+    viewObj		    67
+    machine		    1
+    ssIdHighWaterMark	    8
+    decomposition	    CLUSTER_CHART
+    type		    EML_CHART
+    firstData		    69
+    chartFileNumber	    8
+    disableImplicitCasting  1
+    eml {
+      name		      "XYZToBlenderUdpConversion"
+    }
+  }
+  state {
+    id			    68
+    labelString		    "eML_blk_kernel()"
+    position		    [18 64.5 118 66]
+    fontSize		    12
+    chart		    67
+    treeNode		    [67 0 0 0]
+    superState		    SUBCHART
+    subviewer		    67
+    ssIdNumber		    1
+    type		    FUNC_STATE
+    decomposition	    CLUSTER_STATE
+    eml {
+      isEML		      1
+      script		      "function UDPData = XYZToBlenderUdpConversion(DataX,DataY,DataZ,TnName)\ntx=typecast(single(DataX)"
+      ",'uint8')';\nty=typecast(single(DataY),'uint8')';\ntz=typecast(single(DataZ),'uint8')';\nUDPData=zeros(17,1,'uin"
+      "t8');\nUDPData=[TnName;tx;ty;tz];"
+      editorLayout	      "100 M4x1[10 5 700 500]"
+    }
+  }
+  data {
+    id			    69
+    ssIdNumber		    4
+    name		    "DataX"
+    linkNode		    [67 0 70]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+      }
+      complexity	      SF_COMPLEX_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    70
+    ssIdNumber		    7
+    name		    "DataY"
+    linkNode		    [67 69 71]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    71
+    ssIdNumber		    8
+    name		    "DataZ"
+    linkNode		    [67 70 72]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    72
+    ssIdNumber		    5
+    name		    "UDPData"
+    linkNode		    [67 71 73]
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_UINT8_TYPE
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_NO
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    73
+    ssIdNumber		    6
+    name		    "TnName"
+    linkNode		    [67 72 0]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  junction {
+    id			    74
+    position		    [23.5747 49.5747 7]
+    chart		    67
+    linkNode		    [67 0 0]
+    subviewer		    67
+    ssIdNumber		    3
+    type		    CONNECTIVE_JUNCTION
+  }
+  transition {
+    id			    75
+    labelString		    "{eML_blk_kernel();}"
+    labelPosition	    [24.125 7.875 102.544 14.964]
+    fontSize		    12
+    src {
+      intersection	      [0 0 1 0 23.5747 14.625 0 0]
+    }
+    dst {
+      id		      74
+      intersection	      [1 0 -1 0 23.5747 42.5747 0 0]
+    }
+    midPoint		    [23.5747 24.9468]
+    chart		    67
+    linkNode		    [67 0 0]
+    dataLimits		    [21.175 25.975 14.625 42.575]
+    subviewer		    67
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    2
+  }
+  instance {
+    id			    76
+    name		    "Visualisierung/Simulation/XYZToUDP1/PrepareUDP_XYZ"
+    machine		    1
+    chart		    67
+  }
+  chart {
+    id			    77
+    name		    "Visualisierung/Simulation1/XYZToUDP1/PrepareUDP_XYZ"
+    windowPosition	    [357.331 483.407 167 391]
+    viewLimits		    [0 156.75 0 153.75]
+    screen		    [1 1 1280 1024 1.041050272174191]
+    treeNode		    [0 78 0 0]
+    firstTransition	    85
+    firstJunction	    84
+    viewObj		    77
+    machine		    1
+    ssIdHighWaterMark	    8
+    decomposition	    CLUSTER_CHART
+    type		    EML_CHART
+    firstData		    79
+    chartFileNumber	    9
+    disableImplicitCasting  1
+    eml {
+      name		      "XYZToBlenderUdpConversion"
+    }
+  }
+  state {
+    id			    78
+    labelString		    "eML_blk_kernel()"
+    position		    [18 64.5 118 66]
+    fontSize		    12
+    chart		    77
+    treeNode		    [77 0 0 0]
+    superState		    SUBCHART
+    subviewer		    77
+    ssIdNumber		    1
+    type		    FUNC_STATE
+    decomposition	    CLUSTER_STATE
+    eml {
+      isEML		      1
+      script		      "function UDPData = XYZToBlenderUdpConversion(DataX,DataY,DataZ,TnName)\ntx=typecast(single(DataX)"
+      ",'uint8')';\nty=typecast(single(DataY),'uint8')';\ntz=typecast(single(DataZ),'uint8')';\nUDPData=zeros(17,1,'uin"
+      "t8');\nUDPData=[TnName;tx;ty;tz];"
+      editorLayout	      "100 M4x1[10 5 700 500]"
+    }
+  }
+  data {
+    id			    79
+    ssIdNumber		    4
+    name		    "DataX"
+    linkNode		    [77 0 80]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+      }
+      complexity	      SF_COMPLEX_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    80
+    ssIdNumber		    7
+    name		    "DataY"
+    linkNode		    [77 79 81]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    81
+    ssIdNumber		    8
+    name		    "DataZ"
+    linkNode		    [77 80 82]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    82
+    ssIdNumber		    5
+    name		    "UDPData"
+    linkNode		    [77 81 83]
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_UINT8_TYPE
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_NO
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    83
+    ssIdNumber		    6
+    name		    "TnName"
+    linkNode		    [77 82 0]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  junction {
+    id			    84
+    position		    [23.5747 49.5747 7]
+    chart		    77
+    linkNode		    [77 0 0]
+    subviewer		    77
+    ssIdNumber		    3
+    type		    CONNECTIVE_JUNCTION
+  }
+  transition {
+    id			    85
+    labelString		    "{eML_blk_kernel();}"
+    labelPosition	    [24.125 7.875 102.544 14.964]
+    fontSize		    12
+    src {
+      intersection	      [0 0 1 0 23.5747 14.625 0 0]
+    }
+    dst {
+      id		      84
+      intersection	      [1 0 -1 0 23.5747 42.5747 0 0]
+    }
+    midPoint		    [23.5747 24.9468]
+    chart		    77
+    linkNode		    [77 0 0]
+    dataLimits		    [21.175 25.975 14.625 42.575]
+    subviewer		    77
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    2
+  }
+  instance {
+    id			    86
+    name		    "Visualisierung/Simulation1/XYZToUDP1/PrepareUDP_XYZ"
+    machine		    1
+    chart		    77
+  }
+  chart {
+    id			    87
+    name		    "Visualisierung/Simulation2/XYZToUDP1/PrepareUDP_XYZ"
+    windowPosition	    [357.331 483.407 167 391]
+    viewLimits		    [0 156.75 0 153.75]
+    screen		    [1 1 1280 1024 1.041050272174191]
+    treeNode		    [0 88 0 0]
+    firstTransition	    95
+    firstJunction	    94
+    viewObj		    87
+    machine		    1
+    ssIdHighWaterMark	    8
+    decomposition	    CLUSTER_CHART
+    type		    EML_CHART
+    firstData		    89
+    chartFileNumber	    10
+    disableImplicitCasting  1
+    eml {
+      name		      "XYZToBlenderUdpConversion"
+    }
+  }
+  state {
+    id			    88
+    labelString		    "eML_blk_kernel()"
+    position		    [18 64.5 118 66]
+    fontSize		    12
+    chart		    87
+    treeNode		    [87 0 0 0]
+    superState		    SUBCHART
+    subviewer		    87
+    ssIdNumber		    1
+    type		    FUNC_STATE
+    decomposition	    CLUSTER_STATE
+    eml {
+      isEML		      1
+      script		      "function UDPData = XYZToBlenderUdpConversion(DataX,DataY,DataZ,TnName)\ntx=typecast(single(DataX)"
+      ",'uint8')';\nty=typecast(single(DataY),'uint8')';\ntz=typecast(single(DataZ),'uint8')';\nUDPData=zeros(17,1,'uin"
+      "t8');\nUDPData=[TnName;tx;ty;tz];"
+      editorLayout	      "100 M4x1[10 5 700 500]"
+    }
+  }
+  data {
+    id			    89
+    ssIdNumber		    4
+    name		    "DataX"
+    linkNode		    [87 0 90]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+      }
+      complexity	      SF_COMPLEX_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    90
+    ssIdNumber		    7
+    name		    "DataY"
+    linkNode		    [87 89 91]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    91
+    ssIdNumber		    8
+    name		    "DataZ"
+    linkNode		    [87 90 92]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    92
+    ssIdNumber		    5
+    name		    "UDPData"
+    linkNode		    [87 91 93]
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_UINT8_TYPE
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_NO
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    93
+    ssIdNumber		    6
+    name		    "TnName"
+    linkNode		    [87 92 0]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  junction {
+    id			    94
+    position		    [23.5747 49.5747 7]
+    chart		    87
+    linkNode		    [87 0 0]
+    subviewer		    87
+    ssIdNumber		    3
+    type		    CONNECTIVE_JUNCTION
+  }
+  transition {
+    id			    95
+    labelString		    "{eML_blk_kernel();}"
+    labelPosition	    [24.125 7.875 102.544 14.964]
+    fontSize		    12
+    src {
+      intersection	      [0 0 1 0 23.5747 14.625 0 0]
+    }
+    dst {
+      id		      94
+      intersection	      [1 0 -1 0 23.5747 42.5747 0 0]
+    }
+    midPoint		    [23.5747 24.9468]
+    chart		    87
+    linkNode		    [87 0 0]
+    dataLimits		    [21.175 25.975 14.625 42.575]
+    subviewer		    87
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    2
+  }
+  instance {
+    id			    96
+    name		    "Visualisierung/Simulation2/XYZToUDP1/PrepareUDP_XYZ"
+    machine		    1
+    chart		    87
+  }
+  target {
+    id			    97
+    name		    "sfun"
+    description		    "Default Simulink S-Function Target."
+    machine		    1
+    linkNode		    [1 0 0]
+  }
+}
