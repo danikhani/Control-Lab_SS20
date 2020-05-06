@@ -1,16 +1,84 @@
 Model {
   Name			  "Aufgabe_4_Vorlage"
-  Version		  8.4
-  MdlSubVersion		  0
+  Version		  9.2
   SavedCharacterEncoding  "windows-1252"
   GraphicalInterface {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.67"
+    ComputedModelVersion    "1.71"
     NumModelReferences	    0
     NumTestPointedSignals   0
+    NumProvidedFunctions    0
+    NumRequiredFunctions    0
+    NumResetEvents	    0
+    HasInitializeEvent	    0
+    HasTerminateEvent	    0
+    PreCompExecutionDomainType "Unset"
+    IsExportFunctionModel   0
+    NumParameterArguments   0
+    NumExternalFileReferences 9
+    ExternalFileReference {
+      Reference		      "dspnetwork/UDP Send"
+      Path		      "Aufgabe_4_Vorlage/Visualisierung/Simulation/UDP Send1"
+      SID		      "122"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "dspnetwork/UDP Send"
+      Path		      "Aufgabe_4_Vorlage/Visualisierung/Simulation1/UDP Send1"
+      SID		      "136"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "dspnetwork/UDP Send"
+      Path		      "Aufgabe_4_Vorlage/Visualisierung/Simulation2/UDP Send1"
+      SID		      "150"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "dspnetwork/UDP Send"
+      Path		      "Aufgabe_4_Vorlage/Visualisierung/Visualisierung /UDP_OUT/UDP Send1"
+      SID		      "171"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "dspnetwork/UDP Send"
+      Path		      "Aufgabe_4_Vorlage/Visualisierung/Visualisierung /UDP_OUT/UDP Send6"
+      SID		      "172"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "dspnetwork/UDP Send"
+      Path		      "Aufgabe_4_Vorlage/Visualisierung/Visualisierung /UDP_OUT1/UDP Send1"
+      SID		      "196"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "dspnetwork/UDP Send"
+      Path		      "Aufgabe_4_Vorlage/Visualisierung/Visualisierung /UDP_OUT1/UDP Send6"
+      SID		      "197"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "dspnetwork/UDP Send"
+      Path		      "Aufgabe_4_Vorlage/Visualisierung/Visualisierung /UDP_OUT2/UDP Send1"
+      SID		      "221"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "dspnetwork/UDP Send"
+      Path		      "Aufgabe_4_Vorlage/Visualisierung/Visualisierung /UDP_OUT2/UDP Send6"
+      SID		      "222"
+      Type		      "LIBRARY_BLOCK"
+    }
+    OrderedModelArguments   1
   }
+  DiagnosticSuppressor	  "on"
+  WebScopes_FoundationPlugin "on"
+  NotesPlugin		  "on"
+  LogicAnalyzerPlugin	  "on"
+  SLCCPlugin		  "on"
   ScopeRefreshTime	  0.035000
   OverrideScopeRefreshTime off
   DisableAllScopes	  off
@@ -21,6 +89,7 @@ Model {
   FPTRunName		  "Run 1"
   MaxMDLFileLineLength	  120
   InitFcn		  "Ts = 0.1;  % Nicht entfernen!!!"
+  LastSavedArchitecture	  "win64"
   Object {
     $PropName		    "BdWindowsInfo"
     $ObjectID		    1
@@ -30,7 +99,7 @@ Model {
       $ObjectID		      2
       $ClassName	      "Simulink.WindowInfo"
       IsActive		      [1]
-      Location		      [225.0, 182.0, 1307.0, 825.0]
+      Location		      [-7.0, -7.0, 1550.0, 838.0]
       Object {
 	$PropName		"ModelBrowserInfo"
 	$ObjectID		3
@@ -52,30 +121,59 @@ Model {
 	$ObjectID		5
 	$ClassName		"Simulink.EditorInfo"
 	IsActive		[1]
-	ViewObjType		"SimulinkTopLevel"
-	LoadSaveID		"0"
-	Extents			[1064.0, 651.0]
+	ViewObjType		"SimulinkSubsys"
+	LoadSaveID		"67"
+	Extents			[1681.0, 833.0]
 	ZoomFactor		[1.0]
-	Offset			[135.875, -36.0]
+	Offset			[-64.175217929262885, -16.388252878778871]
       }
+      Object {
+	$PropName		"DockComponentsInfo"
+	$ObjectID		6
+	$ClassName		"Simulink.DockComponentInfo"
+	Type			"GLUE2:PropertyInspector"
+	ID			"Property Inspector"
+	Visible			[0]
+	CreateCallback		""
+	UserData		""
+	Floating		[0]
+	DockPosition		"Right"
+	Width			[512]
+	Height			[384]
+      }
+      WindowState	      "AAAA/wAAAAD9AAAAAgAAAAAAAAC9AAADhvwCAAAAA/sAAAAWAEQAbwBjAGsAVwBpAGQAZwBlAHQAMwEAAAAxAAAB+AAAA"
+      "AAAAAAA+wAAABYARABvAGMAawBXAGkAZABnAGUAdAA0AAAAAAD/////AAAAAAAAAAD7AAAAUgBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0Ac"
+      "ABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQBAAAASgAAA4YAAAB5AP///wAAAAEAAAAAAAAAAPwCA"
+      "AAAAfsAAABUAEcATABVAEUAMgA6AFAAcgBvAHAAZQByAHQAeQBJAG4AcwBwAGUAYwB0AG8AcgAvAFAAcgBvAHAAZQByAHQAeQAgAEkAbgBzAHAAZ"
+      "QBjAHQAbwByAAAAAAD/////AAAARgD///8AAAa+AAADhgAAAAEAAAACAAAAAQAAAAL8AAAAAQAAAAIAAAAP/////wAAAAAA/////wAAAAAAAAAA/"
+      "////wEAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/"
+      "////wEAAACR/////wAAAAAAAAAA/////wEAAAEE/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAAGV/////wAAAAAAAAAA/"
+      "////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAAON/////wAAAAAAAAAA/"
+      "////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA"
     }
   }
+  HideAutomaticNames	  on
   Created		  "Wed May 14 11:10:20 2014"
   Creator		  "ST"
   UpdateHistory		  "UpdateHistoryNever"
   ModifiedByFormat	  "%<Auto>"
-  LastModifiedBy	  "St"
+  LastModifiedBy	  "danial"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Thu May 04 11:18:10 2017"
-  RTWModifiedTimeStamp	  415797488
-  ModelVersionFormat	  "1.%<AutoIncrement:67>"
-  ConfigurationManager	  "none"
+  LastModifiedDate	  "Wed May 06 20:04:26 2020"
+  RTWModifiedTimeStamp	  510696201
+  ModelVersionFormat	  "1.%<AutoIncrement:71>"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
   LibraryLinkDisplay	  "disabled"
   WideLines		  off
   ShowLineDimensions	  off
   ShowPortDataTypes	  off
+  ShowAllPropagatedSignalLabels	off
+  PortDataTypeDisplayFormat "AliasTypeOnly"
+  ShowEditTimeErrors	  on
+  ShowEditTimeWarnings	  on
+  ShowEditTimeAdvisorChecks off
+  ShowPortUnits		  off
   ShowDesignRanges	  off
   ShowLoopsOnError	  on
   IgnoreBidirectionalLines off
@@ -84,22 +182,31 @@ Model {
   ShowSignalResolutionIcons on
   ShowViewerIcons	  on
   SortedOrder		  off
+  VariantCondition	  off
+  ShowSubsystemDomainSpec off
   ExecutionContextIcon	  off
   ShowLinearizationAnnotations on
+  ShowVisualizeInsertedRTB on
   ShowMarkup		  on
   BlockNameDataTip	  off
   BlockParametersDataTip  off
   BlockDescriptionStringDataTip	off
+  BlockVariantConditionDataTip off
   ToolBar		  on
   StatusBar		  on
   BrowserShowLibraryLinks off
+  FunctionConnectors	  off
   BrowserLookUnderMasks	  off
+  MultiThreadCoSim	  on
   SimulationMode	  "normal"
+  VisualizeLoggedSignalsWhenLoggingToFile off
   PauseTimes		  "5"
   NumberOfSteps		  1
   SnapshotBufferSize	  10
   SnapshotInterval	  10
   NumberOfLastSnapshots	  0
+  EnablePacing		  off
+  PacingRate		  1
   LinearizationMsg	  "none"
   Profile		  off
   ParamWorkspaceSource	  "MATLABWorkspace"
@@ -109,14 +216,14 @@ Model {
   TryForcingSFcnDF	  off
   Object {
     $PropName		    "DataLoggingOverride"
-    $ObjectID		    6
+    $ObjectID		    7
     $ClassName		    "Simulink.SimulationData.ModelLoggingInfo"
-    model_		    "Aufgabe_4_Weiterarbeiten"
+    model_		    "Aufgabe_4_Vorlage"
     overrideMode_	    [0.0]
     Array {
       Type		      "Cell"
       Dimension		      1
-      Cell		      "Aufgabe_4_Weiterarbeiten"
+      Cell		      "Aufgabe_4_Vorlage"
       PropName		      "logAsSpecifiedByModels_"
     }
     Array {
@@ -126,27 +233,6 @@ Model {
       PropName		      "logAsSpecifiedByModelsSSIDs_"
     }
   }
-  RecordCoverage	  off
-  CovPath		  "/"
-  CovSaveName		  "covdata"
-  CovMetricSettings	  "dw"
-  CovNameIncrementing	  off
-  CovHtmlReporting	  on
-  CovForceBlockReductionOff on
-  CovEnableCumulative	  on
-  covSaveCumulativeToWorkspaceVar on
-  CovSaveSingleToWorkspaceVar on
-  CovCumulativeVarName	  "covCumulativeData"
-  CovCumulativeReport	  off
-  CovReportOnPause	  on
-  CovModelRefEnable	  "Off"
-  CovExternalEMLEnable	  off
-  CovSFcnEnable		  off
-  CovBoundaryAbsTol	  0.000010
-  CovBoundaryRelTol	  0.010000
-  CovUseTimeInterval	  off
-  CovStartTime		  0
-  CovStopTime		  0
   ExtModeBatchMode	  off
   ExtModeEnableFloating	  on
   ExtModeTrigType	  "manual"
@@ -168,27 +254,31 @@ Model {
   ExtModeSkipDownloadWhenConnect off
   ExtModeLogAll		  on
   ExtModeAutoUpdateStatusClock on
-  BufferReuse		  on
   ShowModelReferenceBlockVersion off
   ShowModelReferenceBlockIO off
+  OrderedModelArguments	  on
   Array {
     Type		    "Handle"
     Dimension		    1
     Simulink.ConfigSet {
-      $ObjectID		      7
-      Version		      "1.14.3"
+      $ObjectID		      8
+      Version		      "1.18.1"
+      DisabledProps	      []
+      Description	      ""
       Array {
 	Type			"Handle"
 	Dimension		9
 	Simulink.SolverCC {
-	  $ObjectID		  8
-	  Version		  "1.14.3"
+	  $ObjectID		  9
+	  Version		  "1.18.1"
+	  DisabledProps		  []
+	  Description		  ""
 	  StartTime		  "0"
 	  StopTime		  "100"
 	  AbsTol		  "auto"
+	  AutoScaleAbsTol	  on
 	  FixedStep		  "auto"
 	  InitialStep		  "auto"
-	  MaxNumMinSteps	  "-1"
 	  MaxOrder		  5
 	  ZcThreshold		  "auto"
 	  ConsecutiveZCsStepRelTol "10*128*eps"
@@ -199,8 +289,7 @@ Model {
 	  MinStep		  "auto"
 	  MaxConsecutiveMinStep	  "1"
 	  RelTol		  "1e-3"
-	  SolverMode		  "Auto"
-	  EnableConcurrentExecution off
+	  EnableMultiTasking	  on
 	  ConcurrentTasks	  off
 	  Solver		  "ode45"
 	  SolverName		  "ode45"
@@ -209,15 +298,22 @@ Model {
 	  ZeroCrossControl	  "UseLocalSettings"
 	  ZeroCrossAlgorithm	  "Adaptive"
 	  AlgebraicLoopSolver	  "TrustRegion"
+	  SolverInfoToggleStatus  off
+	  IsAutoAppliedInSIP	  off
 	  SolverResetMethod	  "Fast"
 	  PositivePriorityOrder	  off
 	  AutoInsertRateTranBlk	  off
 	  SampleTimeConstraint	  "Unconstrained"
 	  InsertRTBMode		  "Whenever possible"
+	  SampleTimeProperty	  []
+	  DecoupledContinuousIntegration off
+	  MinimalZcImpactIntegration off
 	}
 	Simulink.DataIOCC {
-	  $ObjectID		  9
-	  Version		  "1.14.3"
+	  $ObjectID		  10
+	  Version		  "1.18.1"
+	  DisabledProps		  []
+	  Description		  ""
 	  Decimation		  "1"
 	  ExternalInput		  "[t, u]"
 	  FinalStateName	  "xFinal"
@@ -236,6 +332,8 @@ Model {
 	  DSMLogging		  on
 	  InspectSignalLogs	  off
 	  VisualizeSimOutput	  on
+	  StreamToWorkspace	  off
+	  StreamVariableName	  "streamout"
 	  SaveTime		  on
 	  ReturnWorkspaceOutputs  off
 	  StateSaveName		  "xout"
@@ -247,10 +345,14 @@ Model {
 	  OutputTimes		  "[]"
 	  ReturnWorkspaceOutputsName "out"
 	  Refine		  "1"
+	  LoggingToFile		  off
+	  DatasetSignalFormat	  "timeseries"
+	  LoggingFileName	  "out.mat"
+	  LoggingIntervals	  "[-inf, inf]"
 	}
 	Simulink.OptimizationCC {
-	  $ObjectID		  10
-	  Version		  "1.14.3"
+	  $ObjectID		  11
+	  Version		  "1.18.1"
 	  Array {
 	    Type		    "Cell"
 	    Dimension		    8
@@ -264,11 +366,12 @@ Model {
 	    Cell		    "UseSpecifiedMinMax"
 	    PropName		    "DisabledProps"
 	  }
+	  Description		  ""
 	  BlockReduction	  on
 	  BooleanDataType	  on
 	  ConditionallyExecuteInputs on
-	  InlineParams		  off
-	  UseDivisionForNetSlopeComputation "Off"
+	  DefaultParameterBehavior "Tunable"
+	  UseDivisionForNetSlopeComputation "off"
 	  UseFloatMulNetSlope	  off
 	  DefaultUnderspecifiedDataType	"double"
 	  UseSpecifiedMinMax	  off
@@ -279,42 +382,56 @@ Model {
 	  CachingGlobalReferences off
 	  GlobalBufferReuse	  on
 	  StrengthReduction	  off
+	  AdvancedOptControl	  ""
 	  ExpressionFolding	  on
 	  BooleansAsBitfields	  off
 	  BitfieldContainerType	  "uint_T"
 	  EnableMemcpy		  on
 	  MemcpyThreshold	  64
 	  PassReuseOutputArgsAs	  "Structure reference"
+	  PassReuseOutputArgsThreshold 12
 	  ExpressionDepthLimit	  128
-	  FoldNonRolledExpr	  on
 	  LocalBlockOutputs	  on
 	  RollThreshold		  5
-	  SystemCodeInlineAuto	  off
 	  StateBitsets		  off
 	  DataBitsets		  off
 	  ActiveStateOutputEnumStorageType "Native Integer"
-	  UseTempVars		  off
 	  ZeroExternalMemoryAtStartup on
 	  ZeroInternalMemoryAtStartup on
 	  InitFltsAndDblsToZero	  off
 	  NoFixptDivByZeroProtection off
 	  EfficientFloat2IntCast  off
 	  EfficientMapNaN2IntZero on
-	  OptimizeModelRefInitCode off
 	  LifeSpan		  "inf"
 	  MaxStackSize		  "Inherit from target"
 	  BufferReusableBoundary  on
-	  SimCompilerOptimization "Off"
+	  SimCompilerOptimization "off"
 	  AccelVerboseBuild	  off
-	  ParallelExecutionInRapidAccelerator on
+	  OptimizeBlockOrder	  "off"
+	  OptimizeDataStoreBuffers on
+	  BusAssignmentInplaceUpdate on
+	  DifferentSizesBufferReuse off
+	  OptimizationLevel	  "level2"
+	  OptimizationPriority	  "Balanced"
+	  OptimizationCustomize	  on
+	  UseRowMajorAlgorithm	  off
+	  LabelGuidedReuse	  off
 	}
 	Simulink.DebuggingCC {
-	  $ObjectID		  11
-	  Version		  "1.14.3"
+	  $ObjectID		  12
+	  Version		  "1.18.1"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    1
+	    Cell		    "UseOnlyExistingSharedCode"
+	    PropName		    "DisabledProps"
+	  }
+	  Description		  ""
 	  RTPrefix		  "error"
 	  ConsistencyChecking	  "none"
 	  ArrayBoundsChecking	  "none"
 	  SignalInfNanChecking	  "none"
+	  StringTruncationChecking "error"
 	  SignalRangeChecking	  "none"
 	  ReadBeforeWriteMsg	  "UseLocalSettings"
 	  WriteAfterWriteMsg	  "UseLocalSettings"
@@ -337,12 +454,12 @@ Model {
 	  IgnoredZcDiagnostic	  "none"
 	  SolverPrmCheckMsg	  "warning"
 	  InheritedTsInSrcMsg	  "warning"
-	  DiscreteInheritContinuousMsg "warning"
 	  MultiTaskDSMMsg	  "error"
 	  MultiTaskCondExecSysMsg "error"
 	  MultiTaskRateTransMsg	  "error"
 	  SingleTaskRateTransMsg  "none"
 	  TasksWithSamePriorityMsg "warning"
+	  ExportedTasksRateTransMsg "none"
 	  SigSpecEnsureSampleTimeMsg "warning"
 	  CheckMatrixSingularityMsg "none"
 	  IntegerOverflowMsg	  "warning"
@@ -359,23 +476,24 @@ Model {
 	  UnnecessaryDatatypeConvMsg "none"
 	  VectorMatrixConversionMsg "none"
 	  InvalidFcnCallConnMsg	  "error"
-	  FcnCallInpInsideContextMsg "EnableAllAsError"
+	  FcnCallInpInsideContextMsg "error"
 	  SignalLabelMismatchMsg  "none"
 	  UnconnectedInputMsg	  "warning"
 	  UnconnectedOutputMsg	  "warning"
 	  UnconnectedLineMsg	  "warning"
+	  UseOnlyExistingSharedCode "error"
 	  SFcnCompatibilityMsg	  "none"
 	  FrameProcessingCompatibilityMsg "error"
 	  UniqueDataStoreMsg	  "none"
 	  BusObjectLabelMismatch  "warning"
 	  RootOutportRequireBusObject "warning"
 	  AssertControl		  "UseLocalSettings"
-	  EnableOverflowDetection off
+	  AllowSymbolicDim	  on
+	  RowMajorDimensionSupport off
 	  ModelReferenceIOMsg	  "none"
 	  ModelReferenceMultiInstanceNormalModeStructChecksumCheck "error"
 	  ModelReferenceVersionMismatchMessage "none"
 	  ModelReferenceIOMismatchMessage "none"
-	  ModelReferenceCSMismatchMessage "none"
 	  UnknownTsInhSupMsg	  "warning"
 	  ModelReferenceDataLoggingMessage "warning"
 	  ModelReferenceSymbolNameMessage "warning"
@@ -383,25 +501,46 @@ Model {
 	  StateNameClashWarn	  "warning"
 	  SimStateInterfaceChecksumMismatchMsg "warning"
 	  SimStateOlderReleaseMsg "error"
+	  ChecksumConsistencyForSSReuse	"none"
+	  LibraryContextMissingDiagnostic "warning"
+	  MatchCodeGenerationContextForUpdateDiagram "none"
 	  InitInArrayFormatMsg	  "warning"
 	  StrictBusMsg		  "ErrorLevel1"
 	  BusNameAdapt		  "WarnAndRepair"
 	  NonBusSignalsTreatedAsBus "none"
-	  LoggingUnavailableSignals "error"
+	  SymbolicDimMinMaxWarning "warning"
+	  LossOfSymbolicDimsSimulationWarning "warning"
+	  LossOfSymbolicDimsCodeGenerationWarning "error"
+	  SymbolicDimsDataTypeCodeGenerationDiagnostic "error"
 	  BlockIODiagnostic	  "none"
 	  SFUnusedDataAndEventsDiag "warning"
 	  SFUnexpectedBacktrackingDiag "warning"
 	  SFInvalidInputDataAccessInChartInitDiag "warning"
 	  SFNoUnconditionalDefaultTransitionDiag "warning"
 	  SFTransitionOutsideNaturalParentDiag "warning"
-	  SFUnconditionalTransitionShadowingDiag "warning"
+	  SFUnreachableExecutionPathDiag "warning"
 	  SFUndirectedBroadcastEventsDiag "warning"
 	  SFTransitionActionBeforeConditionDiag	"warning"
+	  SFOutputUsedAsStateInMooreChartDiag "error"
+	  SFTemporalDelaySmallerThanSampleTimeDiag "warning"
+	  SFSelfTransitionDiag	  "warning"
+	  SFExecutionAtInitializationDiag "none"
+	  SFMachineParentedDataDiag "warning"
 	  IntegerSaturationMsg	  "warning"
+	  AllowedUnitSystems	  "all"
+	  UnitsInconsistencyMsg	  "warning"
+	  AllowAutomaticUnitConversions	on
+	  RCSCRenamedMsg	  "warning"
+	  RCSCObservableMsg	  "warning"
+	  ForceCombineOutputUpdateInSim	off
+	  UnitDatabase		  ""
+	  UnderSpecifiedDimensionMsg "none"
 	}
 	Simulink.HardwareCC {
-	  $ObjectID		  12
-	  Version		  "1.14.3"
+	  $ObjectID		  13
+	  Version		  "1.18.1"
+	  DisabledProps		  []
+	  Description		  ""
 	  ProdBitPerChar	  8
 	  ProdBitPerShort	  16
 	  ProdBitPerInt		  32
@@ -410,6 +549,8 @@ Model {
 	  ProdBitPerFloat	  32
 	  ProdBitPerDouble	  64
 	  ProdBitPerPointer	  32
+	  ProdBitPerSizeT	  32
+	  ProdBitPerPtrDiffT	  32
 	  ProdLargestAtomicInteger "Char"
 	  ProdLargestAtomicFloat  "None"
 	  ProdIntDivRoundTo	  "Undefined"
@@ -426,6 +567,8 @@ Model {
 	  TargetBitPerFloat	  32
 	  TargetBitPerDouble	  64
 	  TargetBitPerPointer	  32
+	  TargetBitPerSizeT	  32
+	  TargetBitPerPtrDiffT	  32
 	  TargetLargestAtomicInteger "Char"
 	  TargetLargestAtomicFloat "None"
 	  TargetShiftRightIntArith on
@@ -433,50 +576,72 @@ Model {
 	  TargetIntDivRoundTo	  "Undefined"
 	  TargetEndianess	  "Unspecified"
 	  TargetWordSize	  32
-	  TargetTypeEmulationWarnSuppressLevel 0
 	  TargetPreprocMaxBitsSint 32
 	  TargetPreprocMaxBitsUint 32
 	  TargetHWDeviceType	  "Specified"
 	  TargetUnknown		  off
 	  ProdEqTarget		  on
+	  UseEmbeddedCoderFeatures on
+	  UseSimulinkCoderFeatures on
 	}
 	Simulink.ModelReferenceCC {
-	  $ObjectID		  13
-	  Version		  "1.14.3"
+	  $ObjectID		  14
+	  Version		  "1.18.1"
+	  DisabledProps		  []
+	  Description		  ""
 	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
+	  EnableRefExpFcnMdlSchedulingChecks on
 	  CheckModelReferenceTargetMessage "error"
 	  EnableParallelModelReferenceBuilds off
 	  ParallelModelReferenceErrorOnInvalidPool on
 	  ParallelModelReferenceMATLABWorkerInit "None"
 	  ModelReferenceNumInstancesAllowed "Multi"
 	  PropagateVarSize	  "Infer from blocks in model"
+	  ModelDependencies	  ""
 	  ModelReferencePassRootInputsByReference on
 	  ModelReferenceMinAlgLoopOccurrences off
 	  PropagateSignalLabelsOutOfModel off
 	  SupportModelReferenceSimTargetCustomCode off
 	}
 	Simulink.SFSimCC {
-	  $ObjectID		  14
-	  Version		  "1.14.3"
-	  SFSimEnableDebug	  on
-	  SFSimOverflowDetection  on
+	  $ObjectID		  15
+	  Version		  "1.18.1"
+	  DisabledProps		  []
+	  Description		  ""
+	  SimCustomSourceCode	  ""
+	  SimCustomHeaderCode	  ""
+	  SimCustomInitializer	  ""
+	  SimCustomTerminator	  ""
+	  SimReservedNameArray	  []
+	  SimUserSources	  ""
+	  SimUserIncludeDirs	  ""
+	  SimUserLibraries	  ""
+	  SimUserDefines	  ""
+	  SimCustomCompilerFlags  ""
+	  SimCustomLinkerFlags	  ""
 	  SFSimEcho		  on
-	  SimBlas		  on
 	  SimCtrlC		  on
-	  SimExtrinsic		  on
 	  SimIntegrity		  on
 	  SimUseLocalCustomCode	  off
 	  SimParseCustomCode	  on
+	  SimAnalyzeCustomCode	  off
 	  SimBuildMode		  "sf_incremental_build"
 	  SimGenImportedTypeDefs  off
+	  ModelFunctionsGlobalVisibility "on"
+	  CompileTimeRecursionLimit 50
+	  EnableRuntimeRecursion  on
+	  MATLABDynamicMemAlloc	  on
+	  MATLABDynamicMemAllocThreshold 65536
+	  CustomCodeFunctionArrayLayout	[]
+	  DefaultCustomCodeFunctionArrayLayout "NotSpecified"
 	}
 	Simulink.RTWCC {
 	  $BackupClass		  "Simulink.RTWCC"
-	  $ObjectID		  15
-	  Version		  "1.14.3"
+	  $ObjectID		  16
+	  Version		  "1.18.1"
 	  Array {
 	    Type		    "Cell"
-	    Dimension		    15
+	    Dimension		    16
 	    Cell		    "IncludeHyperlinkInReport"
 	    Cell		    "GenerateTraceInfo"
 	    Cell		    "GenerateTraceReport"
@@ -492,9 +657,11 @@ Model {
 	    Cell		    "CodeExecutionProfiling"
 	    Cell		    "CodeProfilingSaveOptions"
 	    Cell		    "CodeProfilingInstrumentation"
+	    Cell		    "GenerateMissedCodeReplacementReport"
 	    PropName		    "DisabledProps"
 	  }
 	  SystemTargetFile	  "grt.tlc"
+	  HardwareBoard		  "None"
 	  TLCOptions		  ""
 	  GenCodeOnly		  off
 	  MakeCommand		  "make_rtw"
@@ -505,18 +672,13 @@ Model {
 	  PostCodeGenCommand	  ""
 	  Description		  ""
 	  GenerateReport	  off
-	  SaveLog		  off
 	  RTWVerbose		  on
 	  RetainRTWFile		  off
+	  RTWBuildHooks		  []
 	  ProfileTLC		  off
 	  TLCDebug		  off
 	  TLCCoverage		  off
 	  TLCAssert		  off
-	  ProcessScriptMode	  "Default"
-	  ConfigurationMode	  "Optimized"
-	  ProcessScript		  ""
-	  ConfigurationScript	  ""
-	  ConfigAtBuild		  off
 	  RTWUseLocalCustomCode	  off
 	  RTWUseSimCustomCode	  off
 	  CustomSourceCode	  ""
@@ -524,10 +686,15 @@ Model {
 	  CustomInclude		  ""
 	  CustomSource		  ""
 	  CustomLibrary		  ""
+	  CustomDefine		  ""
+	  CustomBLASCallback	  ""
+	  CustomLAPACKCallback	  ""
+	  CustomFFTCallback	  ""
 	  CustomInitializer	  ""
 	  CustomTerminator	  ""
 	  Toolchain		  "Automatically locate an installed toolchain"
 	  BuildConfiguration	  "Faster Builds"
+	  CustomToolchainOptions  []
 	  IncludeHyperlinkInReport off
 	  LaunchReport		  off
 	  PortableWordSizes	  off
@@ -535,35 +702,33 @@ Model {
 	  CodeExecutionProfiling  off
 	  CodeExecutionProfileVariable "executionProfile"
 	  CodeProfilingSaveOptions "SummaryOnly"
-	  CodeProfilingInstrumentation off
+	  CodeProfilingInstrumentation "off"
 	  SILDebugging		  off
 	  TargetLang		  "C"
 	  IncludeBusHierarchyInRTWFileBlockHierarchyMap	off
-	  IncludeERTFirstTime	  off
 	  GenerateTraceInfo	  off
 	  GenerateTraceReport	  off
 	  GenerateTraceReportSl	  off
 	  GenerateTraceReportSf	  off
 	  GenerateTraceReportEml  off
-	  GenerateCodeInfo	  off
 	  GenerateWebview	  off
 	  GenerateCodeMetricsReport off
 	  GenerateCodeReplacementReport	off
-	  RTWCompilerOptimization "Off"
+	  GenerateMissedCodeReplacementReport off
+	  RTWCompilerOptimization "off"
+	  ObjectivePriorities	  []
 	  RTWCustomCompilerOptimizations ""
 	  CheckMdlBeforeBuild	  "Off"
-	  CustomRebuildMode	  "OnUpdate"
-	  DataInitializer	  ""
 	  SharedConstantsCachingThreshold 1024
 	  Array {
 	    Type		    "Handle"
 	    Dimension		    2
 	    Simulink.CodeAppCC {
-	      $ObjectID		      16
-	      Version		      "1.14.3"
+	      $ObjectID		      17
+	      Version		      "1.18.1"
 	      Array {
 		Type			"Cell"
-		Dimension		22
+		Dimension		28
 		Cell			"IgnoreCustomStorageClasses"
 		Cell			"IgnoreTestpoints"
 		Cell			"InsertBlockDesc"
@@ -586,54 +751,72 @@ Model {
 		Cell			"CustomSymbolStrTmpVar"
 		Cell			"CustomSymbolStrMacro"
 		Cell			"ReqsInCode"
+		Cell			"BlockCommentType"
+		Cell			"CustomSymbolStrModelFcn"
+		Cell			"CustomSymbolStrUtil"
+		Cell			"CustomSymbolStrEmxType"
+		Cell			"CustomSymbolStrEmxFcn"
+		Cell			"CustomUserTokenString"
 		PropName		"DisabledProps"
 	      }
+	      Description	      ""
+	      Comment		      ""
 	      ForceParamTrailComments off
 	      GenerateComments	      on
 	      CommentStyle	      "Auto"
 	      IgnoreCustomStorageClasses on
 	      IgnoreTestpoints	      off
-	      IncHierarchyInIds	      off
 	      MaxIdLength	      31
 	      PreserveName	      off
 	      PreserveNameWithParent  off
 	      ShowEliminatedStatement off
 	      OperatorAnnotations     off
-	      IncAutoGenComments      off
 	      SimulinkDataObjDesc     off
 	      SFDataObjDesc	      off
 	      MATLABFcnDesc	      off
-	      IncDataTypeInIds	      off
 	      MangleLength	      1
+	      SharedChecksumLength    8
 	      CustomSymbolStrGlobalVar "$R$N$M"
 	      CustomSymbolStrType     "$N$R$M_T"
 	      CustomSymbolStrField    "$N$M"
 	      CustomSymbolStrFcn      "$R$N$M$F"
+	      CustomSymbolStrModelFcn "$R$N"
 	      CustomSymbolStrFcnArg   "rt$I$N$M"
 	      CustomSymbolStrBlkIO    "rtb_$N$M"
 	      CustomSymbolStrTmpVar   "$N$M"
 	      CustomSymbolStrMacro    "$R$N$M"
 	      CustomSymbolStrUtil     "$N$C"
+	      CustomSymbolStrEmxType  "emxArray_$M$N"
+	      CustomSymbolStrEmxFcn   "emx$M$N"
+	      CustomUserTokenString   ""
+	      CustomCommentsFcn	      ""
 	      DefineNamingRule	      "None"
+	      DefineNamingFcn	      ""
 	      ParamNamingRule	      "None"
+	      ParamNamingFcn	      ""
 	      SignalNamingRule	      "None"
+	      SignalNamingFcn	      ""
 	      InsertBlockDesc	      off
 	      InsertPolySpaceComments off
 	      SimulinkBlockComments   on
+	      BlockCommentType	      "BlockPathComment"
+	      StateflowObjectComments on
 	      MATLABSourceComments    off
 	      EnableCustomComments    off
+	      InternalIdentifierFile  ""
 	      InternalIdentifier      "Shortened"
 	      InlinedPrmAccess	      "Literals"
 	      ReqsInCode	      off
 	      UseSimReservedNames     off
+	      ReservedNameArray	      []
 	    }
 	    Simulink.GRTTargetCC {
 	      $BackupClass	      "Simulink.TargetCC"
-	      $ObjectID		      17
-	      Version		      "1.14.3"
+	      $ObjectID		      18
+	      Version		      "1.18.1"
 	      Array {
 		Type			"Cell"
-		Dimension		14
+		Dimension		18
 		Cell			"GeneratePreprocessorConditionals"
 		Cell			"IncludeMdlTerminateFcn"
 		Cell			"SupportNonInlinedSFcns"
@@ -648,8 +831,13 @@ Model {
 		Cell			"SupportComplex"
 		Cell			"SupportAbsoluteTime"
 		Cell			"SupportContinuousTime"
+		Cell			"ExistingSharedCode"
+		Cell			"RemoveDisableFunc"
+		Cell			"RemoveResetFunc"
+		Cell			"PreserveStateflowLocalDataDimensions"
 		PropName		"DisabledProps"
 	      }
+	      Description	      ""
 	      TargetFcnLib	      "ansi_tfl_table_tmw.mat"
 	      TargetLibSuffix	      ""
 	      TargetPreCompLibLocation ""
@@ -657,10 +845,12 @@ Model {
 	      TargetLangStandard      "C89/C90 (ANSI)"
 	      CodeReplacementLibrary  "None"
 	      UtilityFuncGeneration   "Auto"
-	      ERTMultiwordTypeDef     "System defined"
-	      ERTMultiwordLength      256
+	      MultiwordTypeDef	      "System defined"
 	      MultiwordLength	      2048
+	      DynamicStringBufferSize 256
 	      GenerateFullHeader      on
+	      InferredTypesCompatibility off
+	      ExistingSharedCode      ""
 	      GenerateSampleERTMain   off
 	      GenerateTestInterfaces  off
 	      ModelReferenceCompliant on
@@ -671,8 +861,8 @@ Model {
 	      GeneratePreprocessorConditionals "Disable all"
 	      CombineOutputUpdateFcns on
 	      CombineSignalStateStructs	off
+	      GroupInternalDataByFunction off
 	      SuppressErrorStatus     off
-	      ERTFirstTimeCompliant   off
 	      IncludeFileDelimiter    "Auto"
 	      ERTCustomFileBanners    off
 	      SupportAbsoluteTime     on
@@ -680,22 +870,36 @@ Model {
 	      MatFileLogging	      on
 	      MultiInstanceERTCode    off
 	      CodeInterfacePackaging  "Nonreusable function"
+	      PurelyIntegerCode	      off
 	      SupportNonFinite	      on
 	      SupportComplex	      on
-	      PurelyIntegerCode	      off
 	      SupportContinuousTime   on
 	      SupportNonInlinedSFcns  on
+	      RemoveDisableFunc	      off
+	      RemoveResetFunc	      off
 	      SupportVariableSizeSignals off
-	      EnableShiftOperators    on
 	      ParenthesesLevel	      "Nominal"
 	      CastingMode	      "Nominal"
+	      PreserveStateflowLocalDataDimensions off
 	      MATLABClassNameForMDSCustomization "Simulink.SoftwareTarget.GRTCustomization"
 	      ModelStepFunctionPrototypeControlCompliant off
 	      CPPClassGenCompliant    on
 	      AutosarCompliant	      off
+	      MDXCompliant	      off
 	      GRTInterface	      off
 	      GenerateAllocFcn	      off
+	      UseToolchainInfoCompliant	on
 	      GenerateSharedConstants on
+	      CoderGroups	      []
+	      AccessMethods	      []
+	      LookupTableObjectStructAxisOrder "1,2,3,4,..."
+	      LUTObjectStructOrderExplicitValues "Size,Breakpoints,Table"
+	      LUTObjectStructOrderEvenSpacing "Size,Breakpoints,Table"
+	      ArrayLayout	      "Column-major"
+	      UnsupportedSFcnMsg      "error"
+	      ERTHeaderFileRootName   "$R$E"
+	      ERTSourceFileRootName   "$R$E"
+	      ERTDataFileRootName     "$R_data"
 	      UseMalloc		      off
 	      ExtMode		      off
 	      ExtModeStaticAlloc      off
@@ -703,6 +907,7 @@ Model {
 	      ExtModeStaticAllocSize  1000000
 	      ExtModeTransport	      0
 	      ExtModeMexFile	      "ext_comm"
+	      ExtModeMexArgs	      ""
 	      ExtModeIntrfLevel	      "Level1"
 	      RTWCAPISignals	      off
 	      RTWCAPIParams	      off
@@ -715,8 +920,9 @@ Model {
 	  }
 	}
 	SlCovCC.ConfigComp {
-	  $ObjectID		  18
-	  Version		  "1.14.3"
+	  $ObjectID		  19
+	  Version		  "1.18.1"
+	  DisabledProps		  []
 	  Description		  "Simulink Coverage Configuration Component"
 	  Name			  "Simulink Coverage"
 	  CovEnable		  off
@@ -725,7 +931,10 @@ Model {
 	  RecordCoverage	  off
 	  CovPath		  "/"
 	  CovSaveName		  "covdata"
+	  CovCompData		  ""
 	  CovMetricSettings	  "dw"
+	  CovFilter		  ""
+	  CovHTMLOptions	  ""
 	  CovNameIncrementing	  off
 	  CovHtmlReporting	  on
 	  CovForceBlockReductionOff on
@@ -737,31 +946,35 @@ Model {
 	  CovSaveOutputData	  on
 	  CovOutputDir		  "slcov_output/$ModelName$"
 	  CovDataFileName	  "$ModelName$_cvdata"
+	  CovShowResultsExplorer  on
 	  CovReportOnPause	  on
-	  CovModelRefEnable	  "Off"
+	  CovModelRefEnable	  "off"
+	  CovModelRefExcluded	  ""
 	  CovExternalEMLEnable	  off
-	  CovSFcnEnable		  on
+	  CovSFcnEnable		  off
 	  CovBoundaryAbsTol	  1e-05
 	  CovBoundaryRelTol	  0.01
 	  CovUseTimeInterval	  off
 	  CovStartTime		  0
 	  CovStopTime		  0
+	  CovMcdcMode		  "Masking"
 	}
 	PropName		"Components"
       }
       Name		      "Configuration"
+      ExtraOptions	      ""
       CurrentDlgPage	      "Solver"
-      ConfigPrmDlgPosition     [ 414, 165, 1510, 871 ] 
+      ConfigPrmDlgPosition    [ 414, 165, 1510, 871 ]
     }
     PropName		    "ConfigurationSets"
   }
   Simulink.ConfigSet {
     $PropName		    "ActiveConfigurationSet"
-    $ObjectID		    7
+    $ObjectID		    8
   }
   Object {
     $PropName		    "DataTransfer"
-    $ObjectID		    19
+    $ObjectID		    20
     $ClassName		    "Simulink.GlobalDataTransfer"
     DefaultTransitionBetweenSyncTasks "Ensure deterministic transfer (maximum delay)"
     DefaultTransitionBetweenAsyncTasks "Ensure data integrity only"
@@ -780,6 +993,7 @@ Model {
     FontWeight		    "normal"
     FontAngle		    "normal"
     ShowName		    on
+    HideAutomaticName	    on
     BlockRotation	    0
     BlockMirror		    off
   }
@@ -793,7 +1007,12 @@ Model {
     FontSize		    10
     FontWeight		    "normal"
     FontAngle		    "normal"
+    MarkupType		    "model"
     UseDisplayTextAsClickCallback off
+    AnnotationType	    "note_annotation"
+    FixedHeight		    off
+    FixedWidth		    off
+    Interpreter		    "off"
   }
   LineDefaults {
     FontName		    "Helvetica"
@@ -804,8 +1023,8 @@ Model {
   MaskDefaults {
     SelfModifiable	    "off"
     IconFrame		    "on"
-    IconOpaque		    "on"
-    RunInitForIconRedraw    "off"
+    IconOpaque		    "opaque"
+    RunInitForIconRedraw    "analyze"
     IconRotate		    "none"
     PortRotate		    "default"
     IconUnits		    "autoscale"
@@ -867,6 +1086,7 @@ Model {
       OutDataTypeStr	      "Inherit: auto"
       LockScale		      off
       BusOutputAsStruct	      off
+      Unit		      "inherit"
       PortDimensions	      "-1"
       VarSizeSig	      "Inherit"
       SampleTime	      "-1"
@@ -875,6 +1095,24 @@ Model {
       LatchByDelayingOutsideSignal off
       LatchInputForFeedbackSignals off
       Interpolate	      on
+    }
+    Block {
+      BlockType		      Integrator
+      ExternalReset	      "none"
+      InitialConditionSource  "internal"
+      InitialCondition	      "0"
+      LimitOutput	      off
+      UpperSaturationLimit    "inf"
+      LowerSaturationLimit    "-inf"
+      WrapState		      off
+      WrappedStateUpperValue  "pi"
+      WrappedStateLowerValue  "-pi"
+      ShowSaturationPort      off
+      ShowStatePort	      off
+      AbsoluteTolerance	      "auto"
+      IgnoreLimit	      off
+      ZeroCross		      on
+      ContinuousStateAttributes	"''"
     }
     Block {
       BlockType		      Lookup
@@ -938,39 +1176,31 @@ Model {
       OutDataTypeStr	      "Inherit: auto"
       LockScale		      off
       BusOutputAsStruct	      off
+      Unit		      "inherit"
       PortDimensions	      "-1"
       VarSizeSig	      "Inherit"
       SampleTime	      "-1"
       SignalType	      "auto"
       SamplingMode	      "auto"
+      EnsureOutportIsVirtual  off
       SourceOfInitialOutputValue "Dialog"
       OutputWhenDisabled      "held"
       InitialOutput	      "[]"
+      MustResolveToSignalObject	off
+      OutputWhenUnConnected   off
+      OutputWhenUnconnectedValue "0"
+      VectorParamsAs1DForOutWhenUnconnected off
     }
     Block {
       BlockType		      S-Function
       FunctionName	      "system"
       SFunctionModules	      "''"
       PortCounts	      "[]"
-      SFunctionDeploymentMode off
+      MultiThreadCoSim	      "auto"
     }
     Block {
       BlockType		      Scope
-      ModelBased	      off
-      TickLabels	      "OneTimeTick"
-      ZoomMode		      "on"
-      Grid		      "on"
-      TimeRange		      "auto"
-      YMin		      "-5"
-      YMax		      "5"
-      SaveToWorkspace	      off
-      SaveName		      "ScopeData"
-      DataFormat	      "Array"
-      LimitDataPoints	      on
-      MaxDataPoints	      "5000"
-      Decimation	      "1"
-      SampleInput	      off
-      SampleTime	      "-1"
+      DefaultConfigurationName "Simulink.scopes.TimeScopeBlockCfg"
     }
     Block {
       BlockType		      Step
@@ -989,7 +1219,6 @@ Model {
       TreatAsAtomicUnit	      off
       MinAlgLoopOccurrences   off
       PropExecContextOutsideSubsystem off
-      CheckFcnCallInpInsideContextMsg off
       SystemSampleTime	      "-1"
       RTWSystemCode	      "Auto"
       RTWFcnNameOpts	      "Auto"
@@ -1008,9 +1237,34 @@ Model {
       Opaque		      off
       MaskHideContents	      off
       SFBlockType	      "NONE"
+      VariantControlMode      "Expression"
       Variant		      off
       GeneratePreprocessorConditionals off
+      AllowZeroVariantControls off
+      PropagateVariantConditions off
+      TreatAsGroupedWhenPropagatingVariantConditions on
       ContentPreviewEnabled   off
+      IsWebBlock	      off
+      IsObserver	      off
+      Latency		      "0"
+      AutoFrameSizeCalculation off
+      IsWebBlockPanel	      off
+    }
+    Block {
+      BlockType		      Sum
+      IconShape		      "rectangular"
+      Inputs		      "++"
+      CollapseMode	      "All dimensions"
+      CollapseDim	      "1"
+      InputSameDT	      on
+      AccumDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Same as first input"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
     }
     Block {
       BlockType		      Terminator
@@ -1029,8 +1283,11 @@ Model {
   }
   System {
     Name		    "Aufgabe_4_Vorlage"
-    Location		    [225, 182, 1532, 1007]
-    Open		    on
+    Location		    [-7, -7, 1543, 831]
+    Open		    off
+    PortBlocksUseCompactNotation off
+    SetExecutionDomain	    off
+    ExecutionDomainType	    "Deduce"
     ModelBrowserVisibility  on
     ModelBrowserWidth	    200
     ScreenColor		    "white"
@@ -1043,7 +1300,7 @@ Model {
     ShowPageBoundaries	    off
     ZoomFactor		    "100"
     ReportName		    "simulink-default.rpt"
-    SIDHighWatermark	    "365"
+    SIDHighWatermark	    "371"
     Block {
       BlockType		      Constant
       Name		      "Constant"
@@ -1081,13 +1338,13 @@ Model {
       RequestExecContextInheritance off
       Object {
 	$PropName		"MaskObject"
-	$ObjectID		20
+	$ObjectID		21
 	$ClassName		"Simulink.Mask"
 	Array {
 	  Type			  "Simulink.MaskParameter"
 	  Dimension		  7
 	  Object {
-	    $ObjectID		    21
+	    $ObjectID		    22
 	    Type		    "edit"
 	    Name		    "B101_Volumen"
 	    Prompt		    "Volumen im Behälter B101 in m^3"
@@ -1095,7 +1352,7 @@ Model {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    22
+	    $ObjectID		    23
 	    Type		    "edit"
 	    Name		    "B102_Initial_Volumen"
 	    Prompt		    "Initialvolumen im Behälter B102 in m^3"
@@ -1103,7 +1360,7 @@ Model {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    23
+	    $ObjectID		    24
 	    Type		    "edit"
 	    Name		    "B103_Initial_Volumen"
 	    Prompt		    "Initialvolumen im Behälter B103 in m^3"
@@ -1111,7 +1368,7 @@ Model {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    24
+	    $ObjectID		    25
 	    Type		    "edit"
 	    Name		    "B104_Initial_Volumen"
 	    Prompt		    "Initialvolumen im Behälter B104 in m^3"
@@ -1119,7 +1376,7 @@ Model {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    25
+	    $ObjectID		    26
 	    Type		    "edit"
 	    Name		    "Querschnitt_Rohr_B102_B103"
 	    Prompt		    "Rohrquerschnitt zwischen Behälter B102 und B103 in m^2"
@@ -1127,7 +1384,7 @@ Model {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    26
+	    $ObjectID		    27
 	    Type		    "edit"
 	    Name		    "Querschnitt_Rohr_B103_B104"
 	    Prompt		    "Rohrquerschnitt zwischen Behälter B103 und B104 in m^2"
@@ -1135,7 +1392,7 @@ Model {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    27
+	    $ObjectID		    28
 	    Type		    "edit"
 	    Name		    "Flaeche_Behaelter"
 	    Prompt		    "Fläche der Behälter in m^2"
@@ -1147,8 +1404,11 @@ Model {
       }
       System {
 	Name			"Dreitank-System"
-	Location		[225, 182, 1532, 1007]
-	Open			off
+	Location		[-7, -7, 1543, 831]
+	Open			on
+	PortBlocksUseCompactNotation off
+	SetExecutionDomain	off
+	ExecutionDomainType	"Deduce"
 	ModelBrowserVisibility	on
 	ModelBrowserWidth	200
 	ScreenColor		"white"
@@ -1206,11 +1466,11 @@ Model {
 	  RequestExecContextInheritance	off
 	  Object {
 	    $PropName		    "MaskObject"
-	    $ObjectID		    28
+	    $ObjectID		    29
 	    $ClassName		    "Simulink.Mask"
 	    Object {
 	      $PropName		      "Parameters"
-	      $ObjectID		      29
+	      $ObjectID		      30
 	      $ClassName	      "Simulink.MaskParameter"
 	      Type		      "edit"
 	      Name		      "Initial_Volumen"
@@ -1221,8 +1481,11 @@ Model {
 	  }
 	  System {
 	    Name		    "B102"
-	    Location		    [225, 182, 1532, 1007]
+	    Location		    [-7, -7, 1543, 831]
 	    Open		    off
+	    PortBlocksUseCompactNotation off
+	    SetExecutionDomain	    off
+	    ExecutionDomainType	    "Deduce"
 	    ModelBrowserVisibility  on
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -1252,12 +1515,63 @@ Model {
 	      IconDisplay	      "Port number"
 	    }
 	    Block {
+	      BlockType		      Integrator
+	      Name		      "Integrator"
+	      SID		      "367"
+	      Ports		      [1, 1]
+	      Position		      [265, 55, 295, 85]
+	      ZOrder		      17
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "Sum1"
+	      SID		      "366"
+	      Ports		      [2, 1]
+	      Position		      [195, 60, 215, 80]
+	      ZOrder		      16
+	      ShowName		      off
+	      IconShape		      "round"
+	      Inputs		      "|+-"
+	      InputSameDT	      off
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
 	      BlockType		      Outport
 	      Name		      "V [m^3]"
 	      SID		      "312"
 	      Position		      [410, 63, 440, 77]
 	      ZOrder		      -5
 	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      ZOrder		      3
+	      SrcBlock		      "Q_zu [m^3/s]"
+	      SrcPort		      1
+	      DstBlock		      "Sum1"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      4
+	      SrcBlock		      "Q_ab [m^3/s]"
+	      SrcPort		      1
+	      Points		      [105, 0]
+	      DstBlock		      "Sum1"
+	      DstPort		      2
+	    }
+	    Line {
+	      ZOrder		      6
+	      SrcBlock		      "Sum1"
+	      SrcPort		      1
+	      DstBlock		      "Integrator"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      7
+	      SrcBlock		      "Integrator"
+	      SrcPort		      1
+	      DstBlock		      "V [m^3]"
+	      DstPort		      1
 	    }
 	  }
 	}
@@ -1272,11 +1586,11 @@ Model {
 	  RequestExecContextInheritance	off
 	  Object {
 	    $PropName		    "MaskObject"
-	    $ObjectID		    30
+	    $ObjectID		    31
 	    $ClassName		    "Simulink.Mask"
 	    Object {
 	      $PropName		      "Parameters"
-	      $ObjectID		      31
+	      $ObjectID		      32
 	      $ClassName	      "Simulink.MaskParameter"
 	      Type		      "edit"
 	      Name		      "Initial_Volumen"
@@ -1287,8 +1601,11 @@ Model {
 	  }
 	  System {
 	    Name		    "B103"
-	    Location		    [225, 182, 1532, 1007]
+	    Location		    [-7, -7, 1543, 831]
 	    Open		    off
+	    PortBlocksUseCompactNotation off
+	    SetExecutionDomain	    off
+	    ExecutionDomainType	    "Deduce"
 	    ModelBrowserVisibility  on
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -1318,12 +1635,63 @@ Model {
 	      IconDisplay	      "Port number"
 	    }
 	    Block {
+	      BlockType		      Integrator
+	      Name		      "Integrator"
+	      SID		      "368"
+	      Ports		      [1, 1]
+	      Position		      [265, 55, 295, 85]
+	      ZOrder		      19
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "Sum1"
+	      SID		      "369"
+	      Ports		      [2, 1]
+	      Position		      [195, 60, 215, 80]
+	      ZOrder		      18
+	      ShowName		      off
+	      IconShape		      "round"
+	      Inputs		      "|+-"
+	      InputSameDT	      off
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
 	      BlockType		      Outport
 	      Name		      "V [m^3]"
 	      SID		      "318"
 	      Position		      [455, 63, 485, 77]
 	      ZOrder		      -5
 	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      ZOrder		      5
+	      SrcBlock		      "Q_zu [m^3/s]"
+	      SrcPort		      1
+	      DstBlock		      "Sum1"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      7
+	      SrcBlock		      "Integrator"
+	      SrcPort		      1
+	      DstBlock		      "V [m^3]"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      3
+	      SrcBlock		      "Sum1"
+	      SrcPort		      1
+	      DstBlock		      "Integrator"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      6
+	      SrcBlock		      "Q_ab [m^3/s]"
+	      SrcPort		      1
+	      Points		      [105, 0]
+	      DstBlock		      "Sum1"
+	      DstPort		      2
 	    }
 	  }
 	}
@@ -1338,11 +1706,11 @@ Model {
 	  RequestExecContextInheritance	off
 	  Object {
 	    $PropName		    "MaskObject"
-	    $ObjectID		    32
+	    $ObjectID		    33
 	    $ClassName		    "Simulink.Mask"
 	    Object {
 	      $PropName		      "Parameters"
-	      $ObjectID		      33
+	      $ObjectID		      34
 	      $ClassName	      "Simulink.MaskParameter"
 	      Type		      "edit"
 	      Name		      "Initial_Volumen"
@@ -1353,8 +1721,11 @@ Model {
 	  }
 	  System {
 	    Name		    "B104"
-	    Location		    [225, 182, 1532, 1007]
+	    Location		    [-7, -7, 1543, 831]
 	    Open		    off
+	    PortBlocksUseCompactNotation off
+	    SetExecutionDomain	    off
+	    ExecutionDomainType	    "Deduce"
 	    ModelBrowserVisibility  on
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -1384,12 +1755,63 @@ Model {
 	      IconDisplay	      "Port number"
 	    }
 	    Block {
+	      BlockType		      Integrator
+	      Name		      "Integrator"
+	      SID		      "370"
+	      Ports		      [1, 1]
+	      Position		      [265, 55, 295, 85]
+	      ZOrder		      19
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "Sum1"
+	      SID		      "371"
+	      Ports		      [2, 1]
+	      Position		      [195, 60, 215, 80]
+	      ZOrder		      18
+	      ShowName		      off
+	      IconShape		      "round"
+	      Inputs		      "|+-"
+	      InputSameDT	      off
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
 	      BlockType		      Outport
 	      Name		      "V [m^3]"
 	      SID		      "324"
 	      Position		      [455, 63, 485, 77]
 	      ZOrder		      -5
 	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      ZOrder		      6
+	      SrcBlock		      "Q_zu [m^3/s]"
+	      SrcPort		      1
+	      DstBlock		      "Sum1"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      7
+	      SrcBlock		      "Integrator"
+	      SrcPort		      1
+	      DstBlock		      "V [m^3]"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      3
+	      SrcBlock		      "Sum1"
+	      SrcPort		      1
+	      DstBlock		      "Integrator"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      5
+	      SrcBlock		      "Q_ab [m^3/s]"
+	      SrcPort		      1
+	      Points		      [105, 0]
+	      DstBlock		      "Sum1"
+	      DstPort		      2
 	    }
 	  }
 	}
@@ -1404,13 +1826,13 @@ Model {
 	  RequestExecContextInheritance	off
 	  Object {
 	    $PropName		    "MaskObject"
-	    $ObjectID		    34
+	    $ObjectID		    35
 	    $ClassName		    "Simulink.Mask"
 	    Array {
 	      Type		      "Simulink.MaskParameter"
 	      Dimension		      2
 	      Object {
-		$ObjectID		35
+		$ObjectID		36
 		Type			"edit"
 		Name			"Querschnitt_Rohr"
 		Prompt			"Querschnitt des Rohrs in m^2"
@@ -1418,7 +1840,7 @@ Model {
 		Tunable			"off"
 	      }
 	      Object {
-		$ObjectID		36
+		$ObjectID		37
 		Type			"edit"
 		Name			"Flaeche_Behaelter"
 		Prompt			"Flaeche_Behaelter in m^2"
@@ -1430,8 +1852,11 @@ Model {
 	  }
 	  System {
 	    Name		    "Drossel B102 -> B103"
-	    Location		    [225, 182, 1532, 1007]
+	    Location		    [-7, -7, 1543, 831]
 	    Open		    off
+	    PortBlocksUseCompactNotation off
+	    SetExecutionDomain	    off
+	    ExecutionDomainType	    "Deduce"
 	    ModelBrowserVisibility  on
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -1517,13 +1942,13 @@ Model {
 	  RequestExecContextInheritance	off
 	  Object {
 	    $PropName		    "MaskObject"
-	    $ObjectID		    37
+	    $ObjectID		    38
 	    $ClassName		    "Simulink.Mask"
 	    Array {
 	      Type		      "Simulink.MaskParameter"
 	      Dimension		      2
 	      Object {
-		$ObjectID		38
+		$ObjectID		39
 		Type			"edit"
 		Name			"Querschnitt_Rohr"
 		Prompt			"Querschnitt des Rohrs in m^2"
@@ -1531,7 +1956,7 @@ Model {
 		Tunable			"off"
 	      }
 	      Object {
-		$ObjectID		39
+		$ObjectID		40
 		Type			"edit"
 		Name			"Flaeche_Behaelter"
 		Prompt			"Flaeche_Behaelter in m^2"
@@ -1545,6 +1970,9 @@ Model {
 	    Name		    "Drossel B103 -> B104"
 	    Location		    [225, 182, 1532, 1007]
 	    Open		    off
+	    PortBlocksUseCompactNotation off
+	    SetExecutionDomain	    off
+	    ExecutionDomainType	    "Deduce"
 	    ModelBrowserVisibility  on
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -1635,8 +2063,6 @@ Model {
 	  Port {
 	    PortNumber		    1
 	    Name		    "Q_zu_B102 [m^3/s]"
-	    RTWStorageClass	    "Auto"
-	    DataLoggingNameMode	    "SignalName"
 	  }
 	}
 	Block {
@@ -1656,8 +2082,6 @@ Model {
 	  Port {
 	    PortNumber		    1
 	    Name		    "Q_ab_B104 [m^3/s]"
-	    RTWStorageClass	    "Auto"
-	    DataLoggingNameMode	    "SignalName"
 	  }
 	}
 	Block {
@@ -1738,28 +2162,126 @@ Model {
 	Line {
 	  Name			  "Q_zu_B102 [m^3/s]"
 	  ZOrder		  112
+	  Labels		  [1, 0]
 	  SrcBlock		  "Lookup\nTable (2-D) P101"
 	  SrcPort		  1
-	  Points		  [12, 0]
+	  Points		  [12, 0; 0, -70]
 	  Branch {
-	    ZOrder		    121
-	    Labels		    [1, 1]
-	    Points		    [147, 0]
+	    ZOrder		    124
+	    Points		    [0, -40]
+	    DstBlock		    "B102"
+	    DstPort		    1
 	  }
 	  Branch {
 	    ZOrder		    120
-	    Points		    [0, -70]
 	    DstBlock		    "Q_P101 [m^3/s]"
 	    DstPort		    1
 	  }
 	}
 	Line {
 	  Name			  "Q_ab_B104 [m^3/s]"
-	  ZOrder		  119
+	  ZOrder		  132
 	  Labels		  [1, 1]
 	  SrcBlock		  "Lookup\nTable (2-D) V106"
 	  SrcPort		  1
-	  Points		  [109, 0]
+	  DstBlock		  "B104"
+	  DstPort		  2
+	}
+	Line {
+	  ZOrder		  126
+	  SrcBlock		  "B102"
+	  SrcPort		  1
+	  Points		  [19, 0]
+	  Branch {
+	    ZOrder		    134
+	    Points		    [0, 60]
+	    DstBlock		    "Drossel B102 -> B103"
+	    DstPort		    2
+	  }
+	  Branch {
+	    ZOrder		    133
+	    Points		    [10, 0; 0, -90]
+	    DstBlock		    "V2 [m^3]"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  ZOrder		  127
+	  SrcBlock		  "Drossel B102 -> B103"
+	  SrcPort		  1
+	  Points		  [9, 0; 0, 69; -232, 0; 0, -53; -148, 0; 0, 29]
+	  DstBlock		  "B103"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  128
+	  SrcBlock		  "Drossel B103 -> B104"
+	  SrcPort		  1
+	  Points		  [9, 0; 0, 69; -222, 0; 0, -68; -158, 0]
+	  Branch {
+	    ZOrder		    142
+	    Points		    [0, -51]
+	    DstBlock		    "B103"
+	    DstPort		    2
+	  }
+	  Branch {
+	    ZOrder		    141
+	    Points		    [0, 24]
+	    DstBlock		    "B104"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  ZOrder		  135
+	  SrcBlock		  "B103"
+	  SrcPort		  1
+	  Points		  [4, 0]
+	  Branch {
+	    ZOrder		    139
+	    Points		    [0, -35; 32, 0]
+	    Branch {
+	      ZOrder		      145
+	      Points		      [0, -117; 79, 0; 0, -63]
+	      DstBlock		      "V3 [m^3]"
+	      DstPort		      1
+	    }
+	    Branch {
+	      ZOrder		      144
+	      DstBlock		      "Drossel B102 -> B103"
+	      DstPort		      3
+	    }
+	  }
+	  Branch {
+	    ZOrder		    137
+	    Points		    [0, 54; 66, 0]
+	    DstBlock		    "Drossel B103 -> B104"
+	    DstPort		    2
+	  }
+	}
+	Line {
+	  ZOrder		  138
+	  SrcBlock		  "B104"
+	  SrcPort		  1
+	  Points		  [54, 0; 0, -15]
+	  Branch {
+	    ZOrder		    147
+	    Points		    [0, -230; 129, 0; 0, -85]
+	    DstBlock		    "V4 [m^3]"
+	    DstPort		    1
+	  }
+	  Branch {
+	    ZOrder		    146
+	    DstBlock		    "Drossel B103 -> B104"
+	    DstPort		    3
+	  }
+	}
+	Line {
+	  ZOrder		  140
+	  SrcBlock		  "Lookup Table V101"
+	  SrcPort		  1
+	  Points		  [38, 0; 0, 110]
+	  DstBlock		  "B102"
+	  DstPort		  2
 	}
       }
     }
@@ -1780,15 +2302,15 @@ Model {
       SFBlockType	      "MATLAB Function"
       Object {
 	$PropName		"MaskObject"
-	$ObjectID		40
+	$ObjectID		41
 	$ClassName		"Simulink.Mask"
 	Initialization		"maskStr = get_param(gcb,'Auswahl');\n\nif strcmp(maskStr(1),'I')\n     assignin('base','Testen',0)\n"
 	"else if strcmp(maskStr(1),'M')\n        assignin('base','Testen',1)\n    else\n        assignin('base','Testen',2)\n "
 	"   end\nend\n"
-	IconOpaque		"off"
+	IconOpaque		"transparent"
 	Object {
 	  $PropName		  "Parameters"
-	  $ObjectID		  41
+	  $ObjectID		  42
 	  $ClassName		  "Simulink.MaskParameter"
 	  Type			  "popup"
 	  Array {
@@ -1811,12 +2333,12 @@ Model {
 	  Type			  "Simulink.dialog.Control"
 	  Dimension		  2
 	  Object {
-	    $ObjectID		    42
+	    $ObjectID		    43
 	    $ClassName		    "Simulink.dialog.Group"
 	    Prompt		    "%<MaskType>"
 	    Object {
 	      $PropName		      "DialogControls"
-	      $ObjectID		      43
+	      $ObjectID		      44
 	      $ClassName	      "Simulink.dialog.Text"
 	      Prompt		      "Zum Vergleichen des Modells mit der Musterlösung für Aufgabe 6 wählen Sie bitte \"Mit Lösung ver"
 	      "gleichen\" aus. Möchten Sie das Modell in Echtzeit testen, dann wählen Sie \"In Echtzeit ausführen\". In allen "
@@ -1826,7 +2348,7 @@ Model {
 	    Name		    "DescGroupVar"
 	  }
 	  Object {
-	    $ObjectID		    44
+	    $ObjectID		    45
 	    $ClassName		    "Simulink.dialog.parameter.Popup"
 	    Name		    "Auswahl"
 	  }
@@ -1837,6 +2359,9 @@ Model {
 	Name			"Einstellungen durch \nDoppelklick anpassen"
 	Location		[227, 345, 838, 789]
 	Open			off
+	PortBlocksUseCompactNotation off
+	SetExecutionDomain	off
+	ExecutionDomainType	"Deduce"
 	ModelBrowserVisibility	on
 	ModelBrowserWidth	200
 	ScreenColor		"white"
@@ -1848,58 +2373,60 @@ Model {
 	TiledPageScale		1
 	ShowPageBoundaries	off
 	ZoomFactor		"100"
-	SIDHighWatermark	"34"
+	SIDHighWatermark	"38"
 	Block {
 	  BlockType		  Demux
 	  Name			  " Demux "
-	  SID			  "365::32"
+	  SID			  "365::36"
 	  Ports			  [1, 1]
 	  Position		  [270, 100, 320, 140]
-	  ZOrder		  10
+	  ZOrder		  14
 	  Outputs		  "1"
 	}
 	Block {
 	  BlockType		  Ground
 	  Name			  " Ground "
-	  SID			  "365::34"
+	  SID			  "365::38"
 	  Position		  [20, 111, 40, 129]
-	  ZOrder		  12
+	  ZOrder		  16
 	}
 	Block {
 	  BlockType		  S-Function
 	  Name			  " SFunction "
-	  SID			  "365::31"
+	  SID			  "365::35"
 	  Tag			  "Stateflow S-Function Aufgabe_4_Vorlage 2"
 	  Ports			  [1, 1]
 	  Position		  [180, 100, 230, 140]
-	  ZOrder		  9
+	  ZOrder		  13
 	  FunctionName		  "sf_sfun"
 	  PortCounts		  "[1 1]"
-	  EnableBusSupport	  on
+	  SFunctionDeploymentMode off
+	  EnableBusSupport	  off
+	  SFcnIsStateOwnerBlock	  off
 	}
 	Block {
 	  BlockType		  Terminator
 	  Name			  " Terminator "
-	  SID			  "365::33"
+	  SID			  "365::37"
 	  Position		  [460, 111, 480, 129]
-	  ZOrder		  11
+	  ZOrder		  15
 	}
 	Line {
-	  ZOrder		  1
+	  ZOrder		  4
 	  SrcBlock		  " Ground "
 	  SrcPort		  1
 	  DstBlock		  " SFunction "
 	  DstPort		  1
 	}
 	Line {
-	  ZOrder		  2
+	  ZOrder		  5
 	  SrcBlock		  " Demux "
 	  SrcPort		  1
 	  DstBlock		  " Terminator "
 	  DstPort		  1
 	}
 	Line {
-	  ZOrder		  3
+	  ZOrder		  6
 	  SrcBlock		  " SFunction "
 	  SrcPort		  1
 	  DstBlock		  " Demux "
@@ -1946,27 +2473,14 @@ Model {
       Ports		      [1]
       Position		      [870, 254, 900, 286]
       ZOrder		      12
-      Floating		      off
-      Location		      [-6, 60, 1914, 1181]
-      Open		      off
+      ScopeSpecificationString "C++SS(StrPVP('Location','[-6, 60, 1914, 1181]'),StrPVP('Open','off'),MxPVP('AxesTitles"
+      "',53,'struct(''axes1'',''%<SignalLabel>'')'),MxPVP('ScopeGraphics',56,'struct(''FigureColor'',''[0.5 0.5 0.5]'',"
+      "''AxesColor'',''[0 0 0]'',''AxesTickColor'',''[1 1 1]'',''LineColors'',''[1 1 0;1 0 1;0 1 1;1 0 0;0 1 0;0 0 1]''"
+      ",''LineStyles'',''-|-|-|-|-|-'',''LineWidths'',''[0.5 0.5 0.5 0.5 0.5 0.5]'',''MarkerStyles'',''none|none|none|n"
+      "one|none|none'')'),StrPVP('ShowLegends','off'),StrPVP('LimitDataPoints','off'),StrPVP('ScrollMode','off'),StrPVP"
+      "('DataFormat','Array'),StrPVP('Decimation','1'),StrPVP('BlockParamSampleInput','off'))"
       NumInputPorts	      "1"
-      List {
-	ListType		AxesTitles
-	axes1			"%<SignalLabel>"
-      }
-      List {
-	ListType		ScopeGraphics
-	FigureColor		"[0.5 0.5 0.5]"
-	AxesColor		"[0 0 0]"
-	AxesTickColor		"[1 1 1]"
-	LineColors		"[1 1 0;1 0 1;0 1 1;1 0 0;0 1 0;0 0 1]"
-	LineStyles		"-|-|-|-|-|-"
-	LineWidths		"[0.5 0.5 0.5 0.5 0.5 0.5]"
-	MarkerStyles		"none|none|none|none|none|none"
-      }
-      ShowLegends	      off
-      LimitDataPoints	      off
-      ScrollMode	      off
+      Floating		      off
     }
     Block {
       BlockType		      Scope
@@ -1975,28 +2489,14 @@ Model {
       Ports		      [1]
       Position		      [870, 344, 900, 376]
       ZOrder		      525
-      Floating		      off
-      Location		      [1, 48, 1921, 1169]
-      Open		      off
+      ScopeSpecificationString "C++SS(StrPVP('Location','[1, 48, 1921, 1169]'),StrPVP('Open','off'),StrPVP('ZoomMode',"
+      "'yonly'),MxPVP('AxesTitles',53,'struct(''axes1'',''%<SignalLabel>'')'),MxPVP('ScopeGraphics',56,'struct(''Figure"
+      "Color'',''[0.5 0.5 0.5]'',''AxesColor'',''[0 0 0]'',''AxesTickColor'',''[1 1 1]'',''LineColors'',''[1 1 0;1 0 1;"
+      "0 1 1;1 0 0;0 1 0;0 0 1]'',''LineStyles'',''-|-|-|-|-|-'',''LineWidths'',''[0.5 0.5 0.5 0.5 0.5 0.5]'',''MarkerS"
+      "tyles'',''none|none|none|none|none|none'')'),StrPVP('ShowLegends','off'),StrPVP('LimitDataPoints','off'),StrPVP("
+      "'ScrollMode','off'),StrPVP('DataFormat','Array'),StrPVP('Decimation','1'),StrPVP('BlockParamSampleInput','off'))"
       NumInputPorts	      "1"
-      ZoomMode		      "yonly"
-      List {
-	ListType		AxesTitles
-	axes1			"%<SignalLabel>"
-      }
-      List {
-	ListType		ScopeGraphics
-	FigureColor		"[0.5 0.5 0.5]"
-	AxesColor		"[0 0 0]"
-	AxesTickColor		"[1 1 1]"
-	LineColors		"[1 1 0;1 0 1;0 1 1;1 0 0;0 1 0;0 0 1]"
-	LineStyles		"-|-|-|-|-|-"
-	LineWidths		"[0.5 0.5 0.5 0.5 0.5 0.5]"
-	MarkerStyles		"none|none|none|none|none|none"
-      }
-      ShowLegends	      off
-      LimitDataPoints	      off
-      ScrollMode	      off
+      Floating		      off
     }
     Block {
       BlockType		      Step
@@ -2078,6 +2578,9 @@ Model {
 	Name			"Visualisierung"
 	Location		[73, 70, 1746, 953]
 	Open			off
+	PortBlocksUseCompactNotation off
+	SetExecutionDomain	off
+	ExecutionDomainType	"Deduce"
 	ModelBrowserVisibility	on
 	ModelBrowserWidth	200
 	ScreenColor		"white"
@@ -2169,6 +2672,9 @@ Model {
 	    Name		    "Simulation"
 	    Location		    [161, 111, 1767, 979]
 	    Open		    off
+	    PortBlocksUseCompactNotation off
+	    SetExecutionDomain	    off
+	    ExecutionDomainType	    "Deduce"
 	    ModelBrowserVisibility  on
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -2224,16 +2730,12 @@ Model {
 	      Ports		      [1]
 	      Position		      [545, 34, 575, 66]
 	      ZOrder		      500
-	      Floating		      off
-	      Location		      [188, 365, 512, 604]
-	      Open		      off
+	      ScopeSpecificationString "C++SS(StrPVP('Location','[188, 365, 512, 604]'),StrPVP('Open','off'),MxPVP('AxesTitle"
+	      "s',53,'struct(''axes1'',''%<SignalLabel>'')'),StrPVP('ShowLegends','off'),StrPVP('ScrollMode','off'),StrPVP('Li"
+	      "mitDataPoints','on'),StrPVP('DataFormat','Array'),StrPVP('Decimation','1'),StrPVP('BlockParamSampleInput','off'"
+	      "))"
 	      NumInputPorts	      "1"
-	      List {
-		ListType		AxesTitles
-		axes1			"%<SignalLabel>"
-	      }
-	      ShowLegends	      off
-	      ScrollMode	      off
+	      Floating		      off
 	    }
 	    Block {
 	      BlockType		      Reference
@@ -2246,6 +2748,8 @@ Model {
 	      FontName		      "arial"
 	      SourceBlock	      "dspnetwork/UDP Send"
 	      SourceType	      "UDP Send"
+	      SourceProductName	      "DSP System Toolbox"
+	      SourceProductBaseCode   "DS"
 	      remoteURL		      "'localhost'"
 	      remotePort	      "9999"
 	      localURL		      "'0.0.0.0'"
@@ -2267,6 +2771,9 @@ Model {
 		Name			"XYZToUDP1"
 		Location		[-8, -8, 1928, 1048]
 		Open			off
+		PortBlocksUseCompactNotation off
+		SetExecutionDomain	off
+		ExecutionDomainType	"Deduce"
 		ModelBrowserVisibility	on
 		ModelBrowserWidth	200
 		ScreenColor		"white"
@@ -2330,6 +2837,9 @@ Model {
 		    Name		    "PrepareUDP_XYZ"
 		    Location		    [223, 338, 826, 833]
 		    Open		    off
+		    PortBlocksUseCompactNotation off
+		    SetExecutionDomain	    off
+		    ExecutionDomainType	    "Deduce"
 		    ModelBrowserVisibility  on
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -2341,7 +2851,7 @@ Model {
 		    TiledPageScale	    1
 		    ShowPageBoundaries	    off
 		    ZoomFactor		    "100"
-		    SIDHighWatermark	    "68"
+		    SIDHighWatermark	    "71"
 		    Block {
 		    BlockType		    Inport
 		    Name		    "DataX"
@@ -2380,36 +2890,36 @@ Model {
 		    Block {
 		    BlockType		    Demux
 		    Name		    " Demux "
-		    SID			    "128::67"
+		    SID			    "128::70"
 		    Ports		    [1, 1]
 		    Position		    [270, 230, 320, 270]
-		    ZOrder		    23
+		    ZOrder		    26
 		    Outputs		    "1"
 		    }
 		    Block {
 		    BlockType		    S-Function
 		    Name		    " SFunction "
-		    SID			    "128::66"
+		    SID			    "128::69"
 		    Tag			    "Stateflow S-Function Aufgabe_4_Vorlage 8"
 		    Ports		    [4, 2]
 		    Position		    [180, 102, 230, 203]
-		    ZOrder		    22
+		    ZOrder		    25
 		    FunctionName	    "sf_sfun"
 		    PortCounts		    "[4 2]"
-		    EnableBusSupport	    on
+		    SFunctionDeploymentMode off
+		    EnableBusSupport	    off
+		    SFcnIsStateOwnerBlock   off
 		    Port {
 		    PortNumber		    2
 		    Name		    "UDPData"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    }
 		    Block {
 		    BlockType		    Terminator
 		    Name		    " Terminator "
-		    SID			    "128::68"
+		    SID			    "128::71"
 		    Position		    [460, 241, 480, 259]
-		    ZOrder		    24
+		    ZOrder		    27
 		    }
 		    Block {
 		    BlockType		    Outport
@@ -2420,28 +2930,28 @@ Model {
 		    IconDisplay		    "Port number"
 		    }
 		    Line {
-		    ZOrder		    8
+		    ZOrder		    15
 		    SrcBlock		    "DataX"
 		    SrcPort		    1
 		    DstBlock		    " SFunction "
 		    DstPort		    1
 		    }
 		    Line {
-		    ZOrder		    9
+		    ZOrder		    16
 		    SrcBlock		    "DataY"
 		    SrcPort		    1
 		    DstBlock		    " SFunction "
 		    DstPort		    2
 		    }
 		    Line {
-		    ZOrder		    10
+		    ZOrder		    17
 		    SrcBlock		    "DataZ"
 		    SrcPort		    1
 		    DstBlock		    " SFunction "
 		    DstPort		    3
 		    }
 		    Line {
-		    ZOrder		    11
+		    ZOrder		    18
 		    SrcBlock		    "TnName"
 		    SrcPort		    1
 		    DstBlock		    " SFunction "
@@ -2449,7 +2959,7 @@ Model {
 		    }
 		    Line {
 		    Name		    "UDPData"
-		    ZOrder		    12
+		    ZOrder		    19
 		    Labels		    [0, 0]
 		    SrcBlock		    " SFunction "
 		    SrcPort		    2
@@ -2457,14 +2967,14 @@ Model {
 		    DstPort		    1
 		    }
 		    Line {
-		    ZOrder		    13
+		    ZOrder		    20
 		    SrcBlock		    " Demux "
 		    SrcPort		    1
 		    DstBlock		    " Terminator "
 		    DstPort		    1
 		    }
 		    Line {
-		    ZOrder		    14
+		    ZOrder		    21
 		    SrcBlock		    " SFunction "
 		    SrcPort		    1
 		    DstBlock		    " Demux "
@@ -2588,6 +3098,9 @@ Model {
 	    Name		    "Simulation1"
 	    Location		    [161, 111, 1767, 979]
 	    Open		    off
+	    PortBlocksUseCompactNotation off
+	    SetExecutionDomain	    off
+	    ExecutionDomainType	    "Deduce"
 	    ModelBrowserVisibility  on
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -2643,16 +3156,12 @@ Model {
 	      Ports		      [1]
 	      Position		      [545, 34, 575, 66]
 	      ZOrder		      500
-	      Floating		      off
-	      Location		      [188, 365, 512, 604]
-	      Open		      off
+	      ScopeSpecificationString "C++SS(StrPVP('Location','[188, 365, 512, 604]'),StrPVP('Open','off'),MxPVP('AxesTitle"
+	      "s',53,'struct(''axes1'',''%<SignalLabel>'')'),StrPVP('ShowLegends','off'),StrPVP('ScrollMode','off'),StrPVP('Li"
+	      "mitDataPoints','on'),StrPVP('DataFormat','Array'),StrPVP('Decimation','1'),StrPVP('BlockParamSampleInput','off'"
+	      "))"
 	      NumInputPorts	      "1"
-	      List {
-		ListType		AxesTitles
-		axes1			"%<SignalLabel>"
-	      }
-	      ShowLegends	      off
-	      ScrollMode	      off
+	      Floating		      off
 	    }
 	    Block {
 	      BlockType		      Reference
@@ -2665,6 +3174,8 @@ Model {
 	      FontName		      "arial"
 	      SourceBlock	      "dspnetwork/UDP Send"
 	      SourceType	      "UDP Send"
+	      SourceProductName	      "DSP System Toolbox"
+	      SourceProductBaseCode   "DS"
 	      remoteURL		      "'localhost'"
 	      remotePort	      "9999"
 	      localURL		      "'0.0.0.0'"
@@ -2686,6 +3197,9 @@ Model {
 		Name			"XYZToUDP1"
 		Location		[-8, -8, 1928, 1048]
 		Open			off
+		PortBlocksUseCompactNotation off
+		SetExecutionDomain	off
+		ExecutionDomainType	"Deduce"
 		ModelBrowserVisibility	on
 		ModelBrowserWidth	200
 		ScreenColor		"white"
@@ -2749,6 +3263,9 @@ Model {
 		    Name		    "PrepareUDP_XYZ"
 		    Location		    [223, 338, 826, 833]
 		    Open		    off
+		    PortBlocksUseCompactNotation off
+		    SetExecutionDomain	    off
+		    ExecutionDomainType	    "Deduce"
 		    ModelBrowserVisibility  on
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -2760,7 +3277,7 @@ Model {
 		    TiledPageScale	    1
 		    ShowPageBoundaries	    off
 		    ZoomFactor		    "100"
-		    SIDHighWatermark	    "68"
+		    SIDHighWatermark	    "71"
 		    Block {
 		    BlockType		    Inport
 		    Name		    "DataX"
@@ -2799,36 +3316,36 @@ Model {
 		    Block {
 		    BlockType		    Demux
 		    Name		    " Demux "
-		    SID			    "142::67"
+		    SID			    "142::70"
 		    Ports		    [1, 1]
 		    Position		    [270, 230, 320, 270]
-		    ZOrder		    23
+		    ZOrder		    26
 		    Outputs		    "1"
 		    }
 		    Block {
 		    BlockType		    S-Function
 		    Name		    " SFunction "
-		    SID			    "142::66"
+		    SID			    "142::69"
 		    Tag			    "Stateflow S-Function Aufgabe_4_Vorlage 9"
 		    Ports		    [4, 2]
 		    Position		    [180, 102, 230, 203]
-		    ZOrder		    22
+		    ZOrder		    25
 		    FunctionName	    "sf_sfun"
 		    PortCounts		    "[4 2]"
-		    EnableBusSupport	    on
+		    SFunctionDeploymentMode off
+		    EnableBusSupport	    off
+		    SFcnIsStateOwnerBlock   off
 		    Port {
 		    PortNumber		    2
 		    Name		    "UDPData"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    }
 		    Block {
 		    BlockType		    Terminator
 		    Name		    " Terminator "
-		    SID			    "142::68"
+		    SID			    "142::71"
 		    Position		    [460, 241, 480, 259]
-		    ZOrder		    24
+		    ZOrder		    27
 		    }
 		    Block {
 		    BlockType		    Outport
@@ -2839,28 +3356,28 @@ Model {
 		    IconDisplay		    "Port number"
 		    }
 		    Line {
-		    ZOrder		    8
+		    ZOrder		    15
 		    SrcBlock		    "DataX"
 		    SrcPort		    1
 		    DstBlock		    " SFunction "
 		    DstPort		    1
 		    }
 		    Line {
-		    ZOrder		    9
+		    ZOrder		    16
 		    SrcBlock		    "DataY"
 		    SrcPort		    1
 		    DstBlock		    " SFunction "
 		    DstPort		    2
 		    }
 		    Line {
-		    ZOrder		    10
+		    ZOrder		    17
 		    SrcBlock		    "DataZ"
 		    SrcPort		    1
 		    DstBlock		    " SFunction "
 		    DstPort		    3
 		    }
 		    Line {
-		    ZOrder		    11
+		    ZOrder		    18
 		    SrcBlock		    "TnName"
 		    SrcPort		    1
 		    DstBlock		    " SFunction "
@@ -2868,7 +3385,7 @@ Model {
 		    }
 		    Line {
 		    Name		    "UDPData"
-		    ZOrder		    12
+		    ZOrder		    19
 		    Labels		    [0, 0]
 		    SrcBlock		    " SFunction "
 		    SrcPort		    2
@@ -2876,14 +3393,14 @@ Model {
 		    DstPort		    1
 		    }
 		    Line {
-		    ZOrder		    13
+		    ZOrder		    20
 		    SrcBlock		    " Demux "
 		    SrcPort		    1
 		    DstBlock		    " Terminator "
 		    DstPort		    1
 		    }
 		    Line {
-		    ZOrder		    14
+		    ZOrder		    21
 		    SrcBlock		    " SFunction "
 		    SrcPort		    1
 		    DstBlock		    " Demux "
@@ -3007,6 +3524,9 @@ Model {
 	    Name		    "Simulation2"
 	    Location		    [161, 111, 1767, 979]
 	    Open		    off
+	    PortBlocksUseCompactNotation off
+	    SetExecutionDomain	    off
+	    ExecutionDomainType	    "Deduce"
 	    ModelBrowserVisibility  on
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -3062,16 +3582,12 @@ Model {
 	      Ports		      [1]
 	      Position		      [545, 34, 575, 66]
 	      ZOrder		      500
-	      Floating		      off
-	      Location		      [188, 365, 512, 604]
-	      Open		      off
+	      ScopeSpecificationString "C++SS(StrPVP('Location','[188, 365, 512, 604]'),StrPVP('Open','off'),MxPVP('AxesTitle"
+	      "s',53,'struct(''axes1'',''%<SignalLabel>'')'),StrPVP('ShowLegends','off'),StrPVP('ScrollMode','off'),StrPVP('Li"
+	      "mitDataPoints','on'),StrPVP('DataFormat','Array'),StrPVP('Decimation','1'),StrPVP('BlockParamSampleInput','off'"
+	      "))"
 	      NumInputPorts	      "1"
-	      List {
-		ListType		AxesTitles
-		axes1			"%<SignalLabel>"
-	      }
-	      ShowLegends	      off
-	      ScrollMode	      off
+	      Floating		      off
 	    }
 	    Block {
 	      BlockType		      Reference
@@ -3084,6 +3600,8 @@ Model {
 	      FontName		      "arial"
 	      SourceBlock	      "dspnetwork/UDP Send"
 	      SourceType	      "UDP Send"
+	      SourceProductName	      "DSP System Toolbox"
+	      SourceProductBaseCode   "DS"
 	      remoteURL		      "'localhost'"
 	      remotePort	      "9999"
 	      localURL		      "'0.0.0.0'"
@@ -3105,6 +3623,9 @@ Model {
 		Name			"XYZToUDP1"
 		Location		[-8, -8, 1928, 1048]
 		Open			off
+		PortBlocksUseCompactNotation off
+		SetExecutionDomain	off
+		ExecutionDomainType	"Deduce"
 		ModelBrowserVisibility	on
 		ModelBrowserWidth	200
 		ScreenColor		"white"
@@ -3168,6 +3689,9 @@ Model {
 		    Name		    "PrepareUDP_XYZ"
 		    Location		    [223, 338, 826, 833]
 		    Open		    off
+		    PortBlocksUseCompactNotation off
+		    SetExecutionDomain	    off
+		    ExecutionDomainType	    "Deduce"
 		    ModelBrowserVisibility  on
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -3179,7 +3703,7 @@ Model {
 		    TiledPageScale	    1
 		    ShowPageBoundaries	    off
 		    ZoomFactor		    "100"
-		    SIDHighWatermark	    "68"
+		    SIDHighWatermark	    "71"
 		    Block {
 		    BlockType		    Inport
 		    Name		    "DataX"
@@ -3218,36 +3742,36 @@ Model {
 		    Block {
 		    BlockType		    Demux
 		    Name		    " Demux "
-		    SID			    "156::67"
+		    SID			    "156::70"
 		    Ports		    [1, 1]
 		    Position		    [270, 230, 320, 270]
-		    ZOrder		    23
+		    ZOrder		    26
 		    Outputs		    "1"
 		    }
 		    Block {
 		    BlockType		    S-Function
 		    Name		    " SFunction "
-		    SID			    "156::66"
+		    SID			    "156::69"
 		    Tag			    "Stateflow S-Function Aufgabe_4_Vorlage 10"
 		    Ports		    [4, 2]
 		    Position		    [180, 102, 230, 203]
-		    ZOrder		    22
+		    ZOrder		    25
 		    FunctionName	    "sf_sfun"
 		    PortCounts		    "[4 2]"
-		    EnableBusSupport	    on
+		    SFunctionDeploymentMode off
+		    EnableBusSupport	    off
+		    SFcnIsStateOwnerBlock   off
 		    Port {
 		    PortNumber		    2
 		    Name		    "UDPData"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    }
 		    Block {
 		    BlockType		    Terminator
 		    Name		    " Terminator "
-		    SID			    "156::68"
+		    SID			    "156::71"
 		    Position		    [460, 241, 480, 259]
-		    ZOrder		    24
+		    ZOrder		    27
 		    }
 		    Block {
 		    BlockType		    Outport
@@ -3258,28 +3782,28 @@ Model {
 		    IconDisplay		    "Port number"
 		    }
 		    Line {
-		    ZOrder		    8
+		    ZOrder		    15
 		    SrcBlock		    "DataX"
 		    SrcPort		    1
 		    DstBlock		    " SFunction "
 		    DstPort		    1
 		    }
 		    Line {
-		    ZOrder		    9
+		    ZOrder		    16
 		    SrcBlock		    "DataY"
 		    SrcPort		    1
 		    DstBlock		    " SFunction "
 		    DstPort		    2
 		    }
 		    Line {
-		    ZOrder		    10
+		    ZOrder		    17
 		    SrcBlock		    "DataZ"
 		    SrcPort		    1
 		    DstBlock		    " SFunction "
 		    DstPort		    3
 		    }
 		    Line {
-		    ZOrder		    11
+		    ZOrder		    18
 		    SrcBlock		    "TnName"
 		    SrcPort		    1
 		    DstBlock		    " SFunction "
@@ -3287,7 +3811,7 @@ Model {
 		    }
 		    Line {
 		    Name		    "UDPData"
-		    ZOrder		    12
+		    ZOrder		    19
 		    Labels		    [0, 0]
 		    SrcBlock		    " SFunction "
 		    SrcPort		    2
@@ -3295,14 +3819,14 @@ Model {
 		    DstPort		    1
 		    }
 		    Line {
-		    ZOrder		    13
+		    ZOrder		    20
 		    SrcBlock		    " Demux "
 		    SrcPort		    1
 		    DstBlock		    " Terminator "
 		    DstPort		    1
 		    }
 		    Line {
-		    ZOrder		    14
+		    ZOrder		    21
 		    SrcBlock		    " SFunction "
 		    SrcPort		    1
 		    DstBlock		    " Demux "
@@ -3427,6 +3951,9 @@ Model {
 	    Name		    "Visualisierung\n"
 	    Location		    [241, 102, 1914, 985]
 	    Open		    off
+	    PortBlocksUseCompactNotation off
+	    SetExecutionDomain	    off
+	    ExecutionDomainType	    "Deduce"
 	    ModelBrowserVisibility  on
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -3482,6 +4009,9 @@ Model {
 		Name			"UDP_OUT"
 		Location		[155, 97, 1761, 965]
 		Open			off
+		PortBlocksUseCompactNotation off
+		SetExecutionDomain	off
+		ExecutionDomainType	"Deduce"
 		ModelBrowserVisibility	on
 		ModelBrowserWidth	200
 		ScreenColor		"white"
@@ -3564,16 +4094,11 @@ Model {
 		  Ports			  [1]
 		  Position		  [495, 279, 525, 311]
 		  ZOrder		  500
-		  Floating		  off
-		  Location		  [188, 365, 512, 604]
-		  Open			  off
+		  ScopeSpecificationString "C++SS(StrPVP('Location','[188, 365, 512, 604]'),StrPVP('Open','off'),MxPVP('AxesTitles',"
+		  "53,'struct(''axes1'',''%<SignalLabel>'')'),StrPVP('ShowLegends','off'),StrPVP('ScrollMode','off'),StrPVP('LimitDat"
+		  "aPoints','on'),StrPVP('DataFormat','Array'),StrPVP('Decimation','1'),StrPVP('BlockParamSampleInput','off'))"
 		  NumInputPorts		  "1"
-		  List {
-		    ListType		    AxesTitles
-		    axes1		    "%<SignalLabel>"
-		  }
-		  ShowLegends		  off
-		  ScrollMode		  off
+		  Floating		  off
 		}
 		Block {
 		  BlockType		  Reference
@@ -3586,6 +4111,8 @@ Model {
 		  FontName		  "arial"
 		  SourceBlock		  "dspnetwork/UDP Send"
 		  SourceType		  "UDP Send"
+		  SourceProductName	  "DSP System Toolbox"
+		  SourceProductBaseCode	  "DS"
 		  remoteURL		  "'localhost'"
 		  remotePort		  "9999"
 		  localURL		  "'0.0.0.0'"
@@ -3606,6 +4133,8 @@ Model {
 		  FontName		  "arial"
 		  SourceBlock		  "dspnetwork/UDP Send"
 		  SourceType		  "UDP Send"
+		  SourceProductName	  "DSP System Toolbox"
+		  SourceProductBaseCode	  "DS"
 		  remoteURL		  "'localhost'"
 		  remotePort		  "9999"
 		  localURL		  "'0.0.0.0'"
@@ -3627,6 +4156,9 @@ Model {
 		    Name		    "XYZToUDP1"
 		    Location		    [-8, -8, 1928, 1048]
 		    Open		    off
+		    PortBlocksUseCompactNotation off
+		    SetExecutionDomain	    off
+		    ExecutionDomainType	    "Deduce"
 		    ModelBrowserVisibility  on
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -3690,6 +4222,9 @@ Model {
 		    Name		    "PrepareUDP_XYZ"
 		    Location		    [223, 338, 826, 833]
 		    Open		    off
+		    PortBlocksUseCompactNotation off
+		    SetExecutionDomain	    off
+		    ExecutionDomainType	    "Deduce"
 		    ModelBrowserVisibility  on
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -3701,7 +4236,7 @@ Model {
 		    TiledPageScale	    1
 		    ShowPageBoundaries	    off
 		    ZoomFactor		    "100"
-		    SIDHighWatermark	    "68"
+		    SIDHighWatermark	    "71"
 		    Block {
 		    BlockType		    Inport
 		    Name		    "DataX"
@@ -3740,36 +4275,36 @@ Model {
 		    Block {
 		    BlockType		    Demux
 		    Name		    " Demux "
-		    SID			    "178::67"
+		    SID			    "178::70"
 		    Ports		    [1, 1]
 		    Position		    [270, 230, 320, 270]
-		    ZOrder		    23
+		    ZOrder		    26
 		    Outputs		    "1"
 		    }
 		    Block {
 		    BlockType		    S-Function
 		    Name		    " SFunction "
-		    SID			    "178::66"
+		    SID			    "178::69"
 		    Tag			    "Stateflow S-Function Aufgabe_4_Vorlage 7"
 		    Ports		    [4, 2]
 		    Position		    [180, 102, 230, 203]
-		    ZOrder		    22
+		    ZOrder		    25
 		    FunctionName	    "sf_sfun"
 		    PortCounts		    "[4 2]"
-		    EnableBusSupport	    on
+		    SFunctionDeploymentMode off
+		    EnableBusSupport	    off
+		    SFcnIsStateOwnerBlock   off
 		    Port {
 		    PortNumber		    2
 		    Name		    "UDPData"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    }
 		    Block {
 		    BlockType		    Terminator
 		    Name		    " Terminator "
-		    SID			    "178::68"
+		    SID			    "178::71"
 		    Position		    [460, 241, 480, 259]
-		    ZOrder		    24
+		    ZOrder		    27
 		    }
 		    Block {
 		    BlockType		    Outport
@@ -3780,28 +4315,28 @@ Model {
 		    IconDisplay		    "Port number"
 		    }
 		    Line {
-		    ZOrder		    8
+		    ZOrder		    15
 		    SrcBlock		    "DataX"
 		    SrcPort		    1
 		    DstBlock		    " SFunction "
 		    DstPort		    1
 		    }
 		    Line {
-		    ZOrder		    9
+		    ZOrder		    16
 		    SrcBlock		    "DataY"
 		    SrcPort		    1
 		    DstBlock		    " SFunction "
 		    DstPort		    2
 		    }
 		    Line {
-		    ZOrder		    10
+		    ZOrder		    17
 		    SrcBlock		    "DataZ"
 		    SrcPort		    1
 		    DstBlock		    " SFunction "
 		    DstPort		    3
 		    }
 		    Line {
-		    ZOrder		    11
+		    ZOrder		    18
 		    SrcBlock		    "TnName"
 		    SrcPort		    1
 		    DstBlock		    " SFunction "
@@ -3809,7 +4344,7 @@ Model {
 		    }
 		    Line {
 		    Name		    "UDPData"
-		    ZOrder		    12
+		    ZOrder		    19
 		    Labels		    [0, 0]
 		    SrcBlock		    " SFunction "
 		    SrcPort		    2
@@ -3817,14 +4352,14 @@ Model {
 		    DstPort		    1
 		    }
 		    Line {
-		    ZOrder		    13
+		    ZOrder		    20
 		    SrcBlock		    " Demux "
 		    SrcPort		    1
 		    DstBlock		    " Terminator "
 		    DstPort		    1
 		    }
 		    Line {
-		    ZOrder		    14
+		    ZOrder		    21
 		    SrcBlock		    " SFunction "
 		    SrcPort		    1
 		    DstBlock		    " Demux "
@@ -3889,6 +4424,9 @@ Model {
 		    Name		    "XYZToUDP3"
 		    Location		    [-8, -8, 1928, 1048]
 		    Open		    off
+		    PortBlocksUseCompactNotation off
+		    SetExecutionDomain	    off
+		    ExecutionDomainType	    "Deduce"
 		    ModelBrowserVisibility  on
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -3952,6 +4490,9 @@ Model {
 		    Name		    "PrepareUDP_XYZ"
 		    Location		    [223, 338, 826, 833]
 		    Open		    off
+		    PortBlocksUseCompactNotation off
+		    SetExecutionDomain	    off
+		    ExecutionDomainType	    "Deduce"
 		    ModelBrowserVisibility  on
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -3963,7 +4504,7 @@ Model {
 		    TiledPageScale	    1
 		    ShowPageBoundaries	    off
 		    ZoomFactor		    "100"
-		    SIDHighWatermark	    "68"
+		    SIDHighWatermark	    "71"
 		    Block {
 		    BlockType		    Inport
 		    Name		    "DataX"
@@ -4002,36 +4543,36 @@ Model {
 		    Block {
 		    BlockType		    Demux
 		    Name		    " Demux "
-		    SID			    "185::67"
+		    SID			    "185::70"
 		    Ports		    [1, 1]
 		    Position		    [270, 230, 320, 270]
-		    ZOrder		    23
+		    ZOrder		    26
 		    Outputs		    "1"
 		    }
 		    Block {
 		    BlockType		    S-Function
 		    Name		    " SFunction "
-		    SID			    "185::66"
+		    SID			    "185::69"
 		    Tag			    "Stateflow S-Function Aufgabe_4_Vorlage 6"
 		    Ports		    [4, 2]
 		    Position		    [180, 102, 230, 203]
-		    ZOrder		    22
+		    ZOrder		    25
 		    FunctionName	    "sf_sfun"
 		    PortCounts		    "[4 2]"
-		    EnableBusSupport	    on
+		    SFunctionDeploymentMode off
+		    EnableBusSupport	    off
+		    SFcnIsStateOwnerBlock   off
 		    Port {
 		    PortNumber		    2
 		    Name		    "UDPData"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    }
 		    Block {
 		    BlockType		    Terminator
 		    Name		    " Terminator "
-		    SID			    "185::68"
+		    SID			    "185::71"
 		    Position		    [460, 241, 480, 259]
-		    ZOrder		    24
+		    ZOrder		    27
 		    }
 		    Block {
 		    BlockType		    Outport
@@ -4042,28 +4583,28 @@ Model {
 		    IconDisplay		    "Port number"
 		    }
 		    Line {
-		    ZOrder		    8
+		    ZOrder		    15
 		    SrcBlock		    "DataX"
 		    SrcPort		    1
 		    DstBlock		    " SFunction "
 		    DstPort		    1
 		    }
 		    Line {
-		    ZOrder		    9
+		    ZOrder		    16
 		    SrcBlock		    "DataY"
 		    SrcPort		    1
 		    DstBlock		    " SFunction "
 		    DstPort		    2
 		    }
 		    Line {
-		    ZOrder		    10
+		    ZOrder		    17
 		    SrcBlock		    "DataZ"
 		    SrcPort		    1
 		    DstBlock		    " SFunction "
 		    DstPort		    3
 		    }
 		    Line {
-		    ZOrder		    11
+		    ZOrder		    18
 		    SrcBlock		    "TnName"
 		    SrcPort		    1
 		    DstBlock		    " SFunction "
@@ -4071,7 +4612,7 @@ Model {
 		    }
 		    Line {
 		    Name		    "UDPData"
-		    ZOrder		    12
+		    ZOrder		    19
 		    Labels		    [0, 0]
 		    SrcBlock		    " SFunction "
 		    SrcPort		    2
@@ -4079,14 +4620,14 @@ Model {
 		    DstPort		    1
 		    }
 		    Line {
-		    ZOrder		    13
+		    ZOrder		    20
 		    SrcBlock		    " Demux "
 		    SrcPort		    1
 		    DstBlock		    " Terminator "
 		    DstPort		    1
 		    }
 		    Line {
-		    ZOrder		    14
+		    ZOrder		    21
 		    SrcBlock		    " SFunction "
 		    SrcPort		    1
 		    DstBlock		    " Demux "
@@ -4257,6 +4798,9 @@ Model {
 		Name			"UDP_OUT1"
 		Location		[155, 97, 1761, 965]
 		Open			off
+		PortBlocksUseCompactNotation off
+		SetExecutionDomain	off
+		ExecutionDomainType	"Deduce"
 		ModelBrowserVisibility	on
 		ModelBrowserWidth	200
 		ScreenColor		"white"
@@ -4339,16 +4883,11 @@ Model {
 		  Ports			  [1]
 		  Position		  [485, 264, 515, 296]
 		  ZOrder		  500
-		  Floating		  off
-		  Location		  [188, 365, 512, 604]
-		  Open			  off
+		  ScopeSpecificationString "C++SS(StrPVP('Location','[188, 365, 512, 604]'),StrPVP('Open','off'),MxPVP('AxesTitles',"
+		  "53,'struct(''axes1'',''%<SignalLabel>'')'),StrPVP('ShowLegends','off'),StrPVP('ScrollMode','off'),StrPVP('LimitDat"
+		  "aPoints','on'),StrPVP('DataFormat','Array'),StrPVP('Decimation','1'),StrPVP('BlockParamSampleInput','off'))"
 		  NumInputPorts		  "1"
-		  List {
-		    ListType		    AxesTitles
-		    axes1		    "%<SignalLabel>"
-		  }
-		  ShowLegends		  off
-		  ScrollMode		  off
+		  Floating		  off
 		}
 		Block {
 		  BlockType		  Reference
@@ -4361,6 +4900,8 @@ Model {
 		  FontName		  "arial"
 		  SourceBlock		  "dspnetwork/UDP Send"
 		  SourceType		  "UDP Send"
+		  SourceProductName	  "DSP System Toolbox"
+		  SourceProductBaseCode	  "DS"
 		  remoteURL		  "'localhost'"
 		  remotePort		  "9999"
 		  localURL		  "'0.0.0.0'"
@@ -4381,6 +4922,8 @@ Model {
 		  FontName		  "arial"
 		  SourceBlock		  "dspnetwork/UDP Send"
 		  SourceType		  "UDP Send"
+		  SourceProductName	  "DSP System Toolbox"
+		  SourceProductBaseCode	  "DS"
 		  remoteURL		  "'localhost'"
 		  remotePort		  "9999"
 		  localURL		  "'0.0.0.0'"
@@ -4402,6 +4945,9 @@ Model {
 		    Name		    "XYZToUDP1"
 		    Location		    [-8, -8, 1928, 1048]
 		    Open		    off
+		    PortBlocksUseCompactNotation off
+		    SetExecutionDomain	    off
+		    ExecutionDomainType	    "Deduce"
 		    ModelBrowserVisibility  on
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -4465,6 +5011,9 @@ Model {
 		    Name		    "PrepareUDP_XYZ"
 		    Location		    [223, 338, 826, 833]
 		    Open		    off
+		    PortBlocksUseCompactNotation off
+		    SetExecutionDomain	    off
+		    ExecutionDomainType	    "Deduce"
 		    ModelBrowserVisibility  on
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -4476,7 +5025,7 @@ Model {
 		    TiledPageScale	    1
 		    ShowPageBoundaries	    off
 		    ZoomFactor		    "100"
-		    SIDHighWatermark	    "68"
+		    SIDHighWatermark	    "71"
 		    Block {
 		    BlockType		    Inport
 		    Name		    "DataX"
@@ -4515,36 +5064,36 @@ Model {
 		    Block {
 		    BlockType		    Demux
 		    Name		    " Demux "
-		    SID			    "203::67"
+		    SID			    "203::70"
 		    Ports		    [1, 1]
 		    Position		    [270, 230, 320, 270]
-		    ZOrder		    23
+		    ZOrder		    26
 		    Outputs		    "1"
 		    }
 		    Block {
 		    BlockType		    S-Function
 		    Name		    " SFunction "
-		    SID			    "203::66"
+		    SID			    "203::69"
 		    Tag			    "Stateflow S-Function Aufgabe_4_Vorlage 5"
 		    Ports		    [4, 2]
 		    Position		    [180, 102, 230, 203]
-		    ZOrder		    22
+		    ZOrder		    25
 		    FunctionName	    "sf_sfun"
 		    PortCounts		    "[4 2]"
-		    EnableBusSupport	    on
+		    SFunctionDeploymentMode off
+		    EnableBusSupport	    off
+		    SFcnIsStateOwnerBlock   off
 		    Port {
 		    PortNumber		    2
 		    Name		    "UDPData"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    }
 		    Block {
 		    BlockType		    Terminator
 		    Name		    " Terminator "
-		    SID			    "203::68"
+		    SID			    "203::71"
 		    Position		    [460, 241, 480, 259]
-		    ZOrder		    24
+		    ZOrder		    27
 		    }
 		    Block {
 		    BlockType		    Outport
@@ -4555,28 +5104,28 @@ Model {
 		    IconDisplay		    "Port number"
 		    }
 		    Line {
-		    ZOrder		    8
+		    ZOrder		    15
 		    SrcBlock		    "DataX"
 		    SrcPort		    1
 		    DstBlock		    " SFunction "
 		    DstPort		    1
 		    }
 		    Line {
-		    ZOrder		    9
+		    ZOrder		    16
 		    SrcBlock		    "DataY"
 		    SrcPort		    1
 		    DstBlock		    " SFunction "
 		    DstPort		    2
 		    }
 		    Line {
-		    ZOrder		    10
+		    ZOrder		    17
 		    SrcBlock		    "DataZ"
 		    SrcPort		    1
 		    DstBlock		    " SFunction "
 		    DstPort		    3
 		    }
 		    Line {
-		    ZOrder		    11
+		    ZOrder		    18
 		    SrcBlock		    "TnName"
 		    SrcPort		    1
 		    DstBlock		    " SFunction "
@@ -4584,7 +5133,7 @@ Model {
 		    }
 		    Line {
 		    Name		    "UDPData"
-		    ZOrder		    12
+		    ZOrder		    19
 		    Labels		    [0, 0]
 		    SrcBlock		    " SFunction "
 		    SrcPort		    2
@@ -4592,14 +5141,14 @@ Model {
 		    DstPort		    1
 		    }
 		    Line {
-		    ZOrder		    13
+		    ZOrder		    20
 		    SrcBlock		    " Demux "
 		    SrcPort		    1
 		    DstBlock		    " Terminator "
 		    DstPort		    1
 		    }
 		    Line {
-		    ZOrder		    14
+		    ZOrder		    21
 		    SrcBlock		    " SFunction "
 		    SrcPort		    1
 		    DstBlock		    " Demux "
@@ -4664,6 +5213,9 @@ Model {
 		    Name		    "XYZToUDP3"
 		    Location		    [-8, -8, 1928, 1048]
 		    Open		    off
+		    PortBlocksUseCompactNotation off
+		    SetExecutionDomain	    off
+		    ExecutionDomainType	    "Deduce"
 		    ModelBrowserVisibility  on
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -4727,6 +5279,9 @@ Model {
 		    Name		    "PrepareUDP_XYZ"
 		    Location		    [223, 338, 826, 833]
 		    Open		    off
+		    PortBlocksUseCompactNotation off
+		    SetExecutionDomain	    off
+		    ExecutionDomainType	    "Deduce"
 		    ModelBrowserVisibility  on
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -4738,7 +5293,7 @@ Model {
 		    TiledPageScale	    1
 		    ShowPageBoundaries	    off
 		    ZoomFactor		    "100"
-		    SIDHighWatermark	    "68"
+		    SIDHighWatermark	    "71"
 		    Block {
 		    BlockType		    Inport
 		    Name		    "DataX"
@@ -4777,36 +5332,36 @@ Model {
 		    Block {
 		    BlockType		    Demux
 		    Name		    " Demux "
-		    SID			    "210::67"
+		    SID			    "210::70"
 		    Ports		    [1, 1]
 		    Position		    [270, 230, 320, 270]
-		    ZOrder		    23
+		    ZOrder		    26
 		    Outputs		    "1"
 		    }
 		    Block {
 		    BlockType		    S-Function
 		    Name		    " SFunction "
-		    SID			    "210::66"
+		    SID			    "210::69"
 		    Tag			    "Stateflow S-Function Aufgabe_4_Vorlage 1"
 		    Ports		    [4, 2]
 		    Position		    [180, 102, 230, 203]
-		    ZOrder		    22
+		    ZOrder		    25
 		    FunctionName	    "sf_sfun"
 		    PortCounts		    "[4 2]"
-		    EnableBusSupport	    on
+		    SFunctionDeploymentMode off
+		    EnableBusSupport	    off
+		    SFcnIsStateOwnerBlock   off
 		    Port {
 		    PortNumber		    2
 		    Name		    "UDPData"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    }
 		    Block {
 		    BlockType		    Terminator
 		    Name		    " Terminator "
-		    SID			    "210::68"
+		    SID			    "210::71"
 		    Position		    [460, 241, 480, 259]
-		    ZOrder		    24
+		    ZOrder		    27
 		    }
 		    Block {
 		    BlockType		    Outport
@@ -4817,28 +5372,28 @@ Model {
 		    IconDisplay		    "Port number"
 		    }
 		    Line {
-		    ZOrder		    8
+		    ZOrder		    15
 		    SrcBlock		    "DataX"
 		    SrcPort		    1
 		    DstBlock		    " SFunction "
 		    DstPort		    1
 		    }
 		    Line {
-		    ZOrder		    9
+		    ZOrder		    16
 		    SrcBlock		    "DataY"
 		    SrcPort		    1
 		    DstBlock		    " SFunction "
 		    DstPort		    2
 		    }
 		    Line {
-		    ZOrder		    10
+		    ZOrder		    17
 		    SrcBlock		    "DataZ"
 		    SrcPort		    1
 		    DstBlock		    " SFunction "
 		    DstPort		    3
 		    }
 		    Line {
-		    ZOrder		    11
+		    ZOrder		    18
 		    SrcBlock		    "TnName"
 		    SrcPort		    1
 		    DstBlock		    " SFunction "
@@ -4846,7 +5401,7 @@ Model {
 		    }
 		    Line {
 		    Name		    "UDPData"
-		    ZOrder		    12
+		    ZOrder		    19
 		    Labels		    [0, 0]
 		    SrcBlock		    " SFunction "
 		    SrcPort		    2
@@ -4854,14 +5409,14 @@ Model {
 		    DstPort		    1
 		    }
 		    Line {
-		    ZOrder		    13
+		    ZOrder		    20
 		    SrcBlock		    " Demux "
 		    SrcPort		    1
 		    DstBlock		    " Terminator "
 		    DstPort		    1
 		    }
 		    Line {
-		    ZOrder		    14
+		    ZOrder		    21
 		    SrcBlock		    " SFunction "
 		    SrcPort		    1
 		    DstBlock		    " Demux "
@@ -5032,6 +5587,9 @@ Model {
 		Name			"UDP_OUT2"
 		Location		[155, 97, 1761, 965]
 		Open			off
+		PortBlocksUseCompactNotation off
+		SetExecutionDomain	off
+		ExecutionDomainType	"Deduce"
 		ModelBrowserVisibility	on
 		ModelBrowserWidth	200
 		ScreenColor		"white"
@@ -5114,16 +5672,11 @@ Model {
 		  Ports			  [1]
 		  Position		  [500, 219, 530, 251]
 		  ZOrder		  494
-		  Floating		  off
-		  Location		  [188, 365, 512, 604]
-		  Open			  off
+		  ScopeSpecificationString "C++SS(StrPVP('Location','[188, 365, 512, 604]'),StrPVP('Open','off'),MxPVP('AxesTitles',"
+		  "53,'struct(''axes1'',''%<SignalLabel>'')'),StrPVP('ShowLegends','off'),StrPVP('ScrollMode','off'),StrPVP('LimitDat"
+		  "aPoints','on'),StrPVP('DataFormat','Array'),StrPVP('Decimation','1'),StrPVP('BlockParamSampleInput','off'))"
 		  NumInputPorts		  "1"
-		  List {
-		    ListType		    AxesTitles
-		    axes1		    "%<SignalLabel>"
-		  }
-		  ShowLegends		  off
-		  ScrollMode		  off
+		  Floating		  off
 		}
 		Block {
 		  BlockType		  Reference
@@ -5136,6 +5689,8 @@ Model {
 		  FontName		  "arial"
 		  SourceBlock		  "dspnetwork/UDP Send"
 		  SourceType		  "UDP Send"
+		  SourceProductName	  "DSP System Toolbox"
+		  SourceProductBaseCode	  "DS"
 		  remoteURL		  "'localhost'"
 		  remotePort		  "9999"
 		  localURL		  "'0.0.0.0'"
@@ -5156,6 +5711,8 @@ Model {
 		  FontName		  "arial"
 		  SourceBlock		  "dspnetwork/UDP Send"
 		  SourceType		  "UDP Send"
+		  SourceProductName	  "DSP System Toolbox"
+		  SourceProductBaseCode	  "DS"
 		  remoteURL		  "'localhost'"
 		  remotePort		  "9999"
 		  localURL		  "'0.0.0.0'"
@@ -5177,6 +5734,9 @@ Model {
 		    Name		    "XYZToUDP1"
 		    Location		    [-8, -8, 1928, 1048]
 		    Open		    off
+		    PortBlocksUseCompactNotation off
+		    SetExecutionDomain	    off
+		    ExecutionDomainType	    "Deduce"
 		    ModelBrowserVisibility  on
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -5240,6 +5800,9 @@ Model {
 		    Name		    "PrepareUDP_XYZ"
 		    Location		    [223, 338, 826, 833]
 		    Open		    off
+		    PortBlocksUseCompactNotation off
+		    SetExecutionDomain	    off
+		    ExecutionDomainType	    "Deduce"
 		    ModelBrowserVisibility  on
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -5251,7 +5814,7 @@ Model {
 		    TiledPageScale	    1
 		    ShowPageBoundaries	    off
 		    ZoomFactor		    "100"
-		    SIDHighWatermark	    "68"
+		    SIDHighWatermark	    "71"
 		    Block {
 		    BlockType		    Inport
 		    Name		    "DataX"
@@ -5290,36 +5853,36 @@ Model {
 		    Block {
 		    BlockType		    Demux
 		    Name		    " Demux "
-		    SID			    "228::67"
+		    SID			    "228::70"
 		    Ports		    [1, 1]
 		    Position		    [270, 230, 320, 270]
-		    ZOrder		    23
+		    ZOrder		    26
 		    Outputs		    "1"
 		    }
 		    Block {
 		    BlockType		    S-Function
 		    Name		    " SFunction "
-		    SID			    "228::66"
+		    SID			    "228::69"
 		    Tag			    "Stateflow S-Function Aufgabe_4_Vorlage 4"
 		    Ports		    [4, 2]
 		    Position		    [180, 102, 230, 203]
-		    ZOrder		    22
+		    ZOrder		    25
 		    FunctionName	    "sf_sfun"
 		    PortCounts		    "[4 2]"
-		    EnableBusSupport	    on
+		    SFunctionDeploymentMode off
+		    EnableBusSupport	    off
+		    SFcnIsStateOwnerBlock   off
 		    Port {
 		    PortNumber		    2
 		    Name		    "UDPData"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    }
 		    Block {
 		    BlockType		    Terminator
 		    Name		    " Terminator "
-		    SID			    "228::68"
+		    SID			    "228::71"
 		    Position		    [460, 241, 480, 259]
-		    ZOrder		    24
+		    ZOrder		    27
 		    }
 		    Block {
 		    BlockType		    Outport
@@ -5330,28 +5893,28 @@ Model {
 		    IconDisplay		    "Port number"
 		    }
 		    Line {
-		    ZOrder		    8
+		    ZOrder		    15
 		    SrcBlock		    "DataX"
 		    SrcPort		    1
 		    DstBlock		    " SFunction "
 		    DstPort		    1
 		    }
 		    Line {
-		    ZOrder		    9
+		    ZOrder		    16
 		    SrcBlock		    "DataY"
 		    SrcPort		    1
 		    DstBlock		    " SFunction "
 		    DstPort		    2
 		    }
 		    Line {
-		    ZOrder		    10
+		    ZOrder		    17
 		    SrcBlock		    "DataZ"
 		    SrcPort		    1
 		    DstBlock		    " SFunction "
 		    DstPort		    3
 		    }
 		    Line {
-		    ZOrder		    11
+		    ZOrder		    18
 		    SrcBlock		    "TnName"
 		    SrcPort		    1
 		    DstBlock		    " SFunction "
@@ -5359,7 +5922,7 @@ Model {
 		    }
 		    Line {
 		    Name		    "UDPData"
-		    ZOrder		    12
+		    ZOrder		    19
 		    Labels		    [0, 0]
 		    SrcBlock		    " SFunction "
 		    SrcPort		    2
@@ -5367,14 +5930,14 @@ Model {
 		    DstPort		    1
 		    }
 		    Line {
-		    ZOrder		    13
+		    ZOrder		    20
 		    SrcBlock		    " Demux "
 		    SrcPort		    1
 		    DstBlock		    " Terminator "
 		    DstPort		    1
 		    }
 		    Line {
-		    ZOrder		    14
+		    ZOrder		    21
 		    SrcBlock		    " SFunction "
 		    SrcPort		    1
 		    DstBlock		    " Demux "
@@ -5439,6 +6002,9 @@ Model {
 		    Name		    "XYZToUDP3"
 		    Location		    [-8, -8, 1928, 1048]
 		    Open		    off
+		    PortBlocksUseCompactNotation off
+		    SetExecutionDomain	    off
+		    ExecutionDomainType	    "Deduce"
 		    ModelBrowserVisibility  on
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -5502,6 +6068,9 @@ Model {
 		    Name		    "PrepareUDP_XYZ"
 		    Location		    [223, 338, 826, 833]
 		    Open		    off
+		    PortBlocksUseCompactNotation off
+		    SetExecutionDomain	    off
+		    ExecutionDomainType	    "Deduce"
 		    ModelBrowserVisibility  on
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -5513,7 +6082,7 @@ Model {
 		    TiledPageScale	    1
 		    ShowPageBoundaries	    off
 		    ZoomFactor		    "100"
-		    SIDHighWatermark	    "68"
+		    SIDHighWatermark	    "71"
 		    Block {
 		    BlockType		    Inport
 		    Name		    "DataX"
@@ -5552,36 +6121,36 @@ Model {
 		    Block {
 		    BlockType		    Demux
 		    Name		    " Demux "
-		    SID			    "235::67"
+		    SID			    "235::70"
 		    Ports		    [1, 1]
 		    Position		    [270, 230, 320, 270]
-		    ZOrder		    23
+		    ZOrder		    26
 		    Outputs		    "1"
 		    }
 		    Block {
 		    BlockType		    S-Function
 		    Name		    " SFunction "
-		    SID			    "235::66"
+		    SID			    "235::69"
 		    Tag			    "Stateflow S-Function Aufgabe_4_Vorlage 3"
 		    Ports		    [4, 2]
 		    Position		    [180, 102, 230, 203]
-		    ZOrder		    22
+		    ZOrder		    25
 		    FunctionName	    "sf_sfun"
 		    PortCounts		    "[4 2]"
-		    EnableBusSupport	    on
+		    SFunctionDeploymentMode off
+		    EnableBusSupport	    off
+		    SFcnIsStateOwnerBlock   off
 		    Port {
 		    PortNumber		    2
 		    Name		    "UDPData"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
 		    }
 		    }
 		    Block {
 		    BlockType		    Terminator
 		    Name		    " Terminator "
-		    SID			    "235::68"
+		    SID			    "235::71"
 		    Position		    [460, 241, 480, 259]
-		    ZOrder		    24
+		    ZOrder		    27
 		    }
 		    Block {
 		    BlockType		    Outport
@@ -5592,28 +6161,28 @@ Model {
 		    IconDisplay		    "Port number"
 		    }
 		    Line {
-		    ZOrder		    8
+		    ZOrder		    15
 		    SrcBlock		    "DataX"
 		    SrcPort		    1
 		    DstBlock		    " SFunction "
 		    DstPort		    1
 		    }
 		    Line {
-		    ZOrder		    9
+		    ZOrder		    16
 		    SrcBlock		    "DataY"
 		    SrcPort		    1
 		    DstBlock		    " SFunction "
 		    DstPort		    2
 		    }
 		    Line {
-		    ZOrder		    10
+		    ZOrder		    17
 		    SrcBlock		    "DataZ"
 		    SrcPort		    1
 		    DstBlock		    " SFunction "
 		    DstPort		    3
 		    }
 		    Line {
-		    ZOrder		    11
+		    ZOrder		    18
 		    SrcBlock		    "TnName"
 		    SrcPort		    1
 		    DstBlock		    " SFunction "
@@ -5621,7 +6190,7 @@ Model {
 		    }
 		    Line {
 		    Name		    "UDPData"
-		    ZOrder		    12
+		    ZOrder		    19
 		    Labels		    [0, 0]
 		    SrcBlock		    " SFunction "
 		    SrcPort		    2
@@ -5629,14 +6198,14 @@ Model {
 		    DstPort		    1
 		    }
 		    Line {
-		    ZOrder		    13
+		    ZOrder		    20
 		    SrcBlock		    " Demux "
 		    SrcPort		    1
 		    DstBlock		    " Terminator "
 		    DstPort		    1
 		    }
 		    Line {
-		    ZOrder		    14
+		    ZOrder		    21
 		    SrcBlock		    " SFunction "
 		    SrcPort		    1
 		    DstBlock		    " Demux "
@@ -6057,7 +6626,7 @@ Model {
 }
 #Finite State Machines
 #
-#   Stateflow 80000001
+#   Stateflow 80000014
 #
 #
 Stateflow {
@@ -6066,29 +6635,29 @@ Stateflow {
     name		    "Aufgabe_4_Vorlage"
     created		    "01-Jun-2016 19:47:15"
     isLibrary		    0
+    sfVersion		    80000014
     firstTarget		    97
-    sfVersion		    80000001
   }
   chart {
     id			    2
+    machine		    1
     name		    "Visualisierung/Visualisierung\n/UDP_OUT1/XYZToUDP3/PrepareUDP_XYZ"
     windowPosition	    [357.331 483.407 167 391]
     viewLimits		    [0 156.75 0 153.75]
     screen		    [1 1 1280 1024 1.041050272174191]
     treeNode		    [0 3 0 0]
-    firstTransition	    10
-    firstJunction	    9
     viewObj		    2
-    machine		    1
     ssIdHighWaterMark	    8
     decomposition	    CLUSTER_CHART
     type		    EML_CHART
-    firstData		    4
     chartFileNumber	    1
     disableImplicitCasting  1
     eml {
       name		      "XYZToBlenderUdpConversion"
     }
+    firstData		    4
+    firstTransition	    10
+    firstJunction	    9
   }
   state {
     id			    3
@@ -6114,7 +6683,6 @@ Stateflow {
     id			    4
     ssIdNumber		    4
     name		    "DataX"
-    linkNode		    [2 0 5]
     scope		    INPUT_DATA
     machine		    1
     props {
@@ -6126,14 +6694,17 @@ Stateflow {
 	primitive		SF_DOUBLE_TYPE
       }
       complexity	      SF_COMPLEX_INHERITED
+      unit {
+	name			"inherit"
+      }
     }
     dataType		    "Inherit: Same as Simulink"
+    linkNode		    [2 0 5]
   }
   data {
     id			    5
     ssIdNumber		    7
     name		    "DataY"
-    linkNode		    [2 4 6]
     scope		    INPUT_DATA
     machine		    1
     props {
@@ -6148,14 +6719,17 @@ Stateflow {
       }
       complexity	      SF_COMPLEX_INHERITED
       frame		      SF_FRAME_INHERITED
+      unit {
+	name			"inherit"
+      }
     }
     dataType		    "Inherit: Same as Simulink"
+    linkNode		    [2 4 6]
   }
   data {
     id			    6
     ssIdNumber		    8
     name		    "DataZ"
-    linkNode		    [2 5 7]
     scope		    INPUT_DATA
     machine		    1
     props {
@@ -6170,14 +6744,17 @@ Stateflow {
       }
       complexity	      SF_COMPLEX_INHERITED
       frame		      SF_FRAME_INHERITED
+      unit {
+	name			"inherit"
+      }
     }
     dataType		    "Inherit: Same as Simulink"
+    linkNode		    [2 5 7]
   }
   data {
     id			    7
     ssIdNumber		    5
     name		    "UDPData"
-    linkNode		    [2 6 8]
     scope		    OUTPUT_DATA
     machine		    1
     props {
@@ -6190,14 +6767,17 @@ Stateflow {
       }
       complexity	      SF_COMPLEX_INHERITED
       frame		      SF_FRAME_NO
+      unit {
+	name			"inherit"
+      }
     }
     dataType		    "Inherit: Same as Simulink"
+    linkNode		    [2 6 8]
   }
   data {
     id			    8
     ssIdNumber		    6
     name		    "TnName"
-    linkNode		    [2 7 0]
     scope		    INPUT_DATA
     machine		    1
     props {
@@ -6212,17 +6792,21 @@ Stateflow {
       }
       complexity	      SF_COMPLEX_INHERITED
       frame		      SF_FRAME_INHERITED
+      unit {
+	name			"inherit"
+      }
     }
     dataType		    "Inherit: Same as Simulink"
+    linkNode		    [2 7 0]
   }
   junction {
     id			    9
     position		    [23.5747 49.5747 7]
     chart		    2
-    linkNode		    [2 0 0]
     subviewer		    2
     ssIdNumber		    3
     type		    CONNECTIVE_JUNCTION
+    linkNode		    [2 0 0]
   }
   transition {
     id			    10
@@ -6238,7 +6822,6 @@ Stateflow {
     }
     midPoint		    [23.5747 24.9468]
     chart		    2
-    linkNode		    [2 0 0]
     dataLimits		    [21.175 25.975 14.625 42.575]
     subviewer		    2
     drawStyle		    SMART
@@ -6247,24 +6830,23 @@ Stateflow {
     }
     executionOrder	    1
     ssIdNumber		    2
+    linkNode		    [2 0 0]
   }
   instance {
     id			    11
-    name		    "Visualisierung/Visualisierung\n/UDP_OUT1/XYZToUDP3/PrepareUDP_XYZ"
     machine		    1
+    name		    "Visualisierung/Visualisierung\n/UDP_OUT1/XYZToUDP3/PrepareUDP_XYZ"
     chart		    2
   }
   chart {
     id			    12
+    machine		    1
     name		    "Einstellungen durch \nDoppelklick anpassen"
     windowPosition	    [341 332 213 385]
     viewLimits		    [0 156.75 0 153.75]
     screen		    [1 1 1920 1080 1.333333333333333]
     treeNode		    [0 13 0 0]
-    firstTransition	    15
-    firstJunction	    14
     viewObj		    12
-    machine		    1
     ssIdHighWaterMark	    5
     decomposition	    CLUSTER_CHART
     type		    EML_CHART
@@ -6275,6 +6857,8 @@ Stateflow {
     eml {
       name		      "Auswahl"
     }
+    firstTransition	    15
+    firstJunction	    14
   }
   state {
     id			    13
@@ -6300,10 +6884,10 @@ Stateflow {
     id			    14
     position		    [23.5747 49.5747 7]
     chart		    12
-    linkNode		    [12 0 0]
     subviewer		    12
     ssIdNumber		    3
     type		    CONNECTIVE_JUNCTION
+    linkNode		    [12 0 0]
   }
   transition {
     id			    15
@@ -6319,7 +6903,6 @@ Stateflow {
     }
     midPoint		    [23.5747 24.9468]
     chart		    12
-    linkNode		    [12 0 0]
     dataLimits		    [21.175 25.975 14.625 42.575]
     subviewer		    12
     drawStyle		    SMART
@@ -6328,33 +6911,34 @@ Stateflow {
     }
     executionOrder	    1
     ssIdNumber		    2
+    linkNode		    [12 0 0]
   }
   instance {
     id			    16
-    name		    "Einstellungen durch \nDoppelklick anpassen"
     machine		    1
+    name		    "Einstellungen durch \nDoppelklick anpassen"
     chart		    12
   }
   chart {
     id			    17
+    machine		    1
     name		    "Visualisierung/Visualisierung\n/UDP_OUT2/XYZToUDP3/PrepareUDP_XYZ"
     windowPosition	    [357.331 483.407 167 391]
     viewLimits		    [0 156.75 0 153.75]
     screen		    [1 1 1280 1024 1.041050272174191]
     treeNode		    [0 18 0 0]
-    firstTransition	    25
-    firstJunction	    24
     viewObj		    17
-    machine		    1
     ssIdHighWaterMark	    8
     decomposition	    CLUSTER_CHART
     type		    EML_CHART
-    firstData		    19
     chartFileNumber	    3
     disableImplicitCasting  1
     eml {
       name		      "XYZToBlenderUdpConversion"
     }
+    firstData		    19
+    firstTransition	    25
+    firstJunction	    24
   }
   state {
     id			    18
@@ -6380,7 +6964,6 @@ Stateflow {
     id			    19
     ssIdNumber		    4
     name		    "DataX"
-    linkNode		    [17 0 20]
     scope		    INPUT_DATA
     machine		    1
     props {
@@ -6392,14 +6975,17 @@ Stateflow {
 	primitive		SF_DOUBLE_TYPE
       }
       complexity	      SF_COMPLEX_INHERITED
+      unit {
+	name			"inherit"
+      }
     }
     dataType		    "Inherit: Same as Simulink"
+    linkNode		    [17 0 20]
   }
   data {
     id			    20
     ssIdNumber		    7
     name		    "DataY"
-    linkNode		    [17 19 21]
     scope		    INPUT_DATA
     machine		    1
     props {
@@ -6414,14 +7000,17 @@ Stateflow {
       }
       complexity	      SF_COMPLEX_INHERITED
       frame		      SF_FRAME_INHERITED
+      unit {
+	name			"inherit"
+      }
     }
     dataType		    "Inherit: Same as Simulink"
+    linkNode		    [17 19 21]
   }
   data {
     id			    21
     ssIdNumber		    8
     name		    "DataZ"
-    linkNode		    [17 20 22]
     scope		    INPUT_DATA
     machine		    1
     props {
@@ -6436,14 +7025,17 @@ Stateflow {
       }
       complexity	      SF_COMPLEX_INHERITED
       frame		      SF_FRAME_INHERITED
+      unit {
+	name			"inherit"
+      }
     }
     dataType		    "Inherit: Same as Simulink"
+    linkNode		    [17 20 22]
   }
   data {
     id			    22
     ssIdNumber		    5
     name		    "UDPData"
-    linkNode		    [17 21 23]
     scope		    OUTPUT_DATA
     machine		    1
     props {
@@ -6456,14 +7048,17 @@ Stateflow {
       }
       complexity	      SF_COMPLEX_INHERITED
       frame		      SF_FRAME_NO
+      unit {
+	name			"inherit"
+      }
     }
     dataType		    "Inherit: Same as Simulink"
+    linkNode		    [17 21 23]
   }
   data {
     id			    23
     ssIdNumber		    6
     name		    "TnName"
-    linkNode		    [17 22 0]
     scope		    INPUT_DATA
     machine		    1
     props {
@@ -6478,17 +7073,21 @@ Stateflow {
       }
       complexity	      SF_COMPLEX_INHERITED
       frame		      SF_FRAME_INHERITED
+      unit {
+	name			"inherit"
+      }
     }
     dataType		    "Inherit: Same as Simulink"
+    linkNode		    [17 22 0]
   }
   junction {
     id			    24
     position		    [23.5747 49.5747 7]
     chart		    17
-    linkNode		    [17 0 0]
     subviewer		    17
     ssIdNumber		    3
     type		    CONNECTIVE_JUNCTION
+    linkNode		    [17 0 0]
   }
   transition {
     id			    25
@@ -6504,7 +7103,6 @@ Stateflow {
     }
     midPoint		    [23.5747 24.9468]
     chart		    17
-    linkNode		    [17 0 0]
     dataLimits		    [21.175 25.975 14.625 42.575]
     subviewer		    17
     drawStyle		    SMART
@@ -6513,33 +7111,34 @@ Stateflow {
     }
     executionOrder	    1
     ssIdNumber		    2
+    linkNode		    [17 0 0]
   }
   instance {
     id			    26
-    name		    "Visualisierung/Visualisierung\n/UDP_OUT2/XYZToUDP3/PrepareUDP_XYZ"
     machine		    1
+    name		    "Visualisierung/Visualisierung\n/UDP_OUT2/XYZToUDP3/PrepareUDP_XYZ"
     chart		    17
   }
   chart {
     id			    27
+    machine		    1
     name		    "Visualisierung/Visualisierung\n/UDP_OUT2/XYZToUDP1/PrepareUDP_XYZ"
     windowPosition	    [357.331 483.407 167 391]
     viewLimits		    [0 156.75 0 153.75]
     screen		    [1 1 1280 1024 1.041050272174191]
     treeNode		    [0 28 0 0]
-    firstTransition	    35
-    firstJunction	    34
     viewObj		    27
-    machine		    1
     ssIdHighWaterMark	    8
     decomposition	    CLUSTER_CHART
     type		    EML_CHART
-    firstData		    29
     chartFileNumber	    4
     disableImplicitCasting  1
     eml {
       name		      "XYZToBlenderUdpConversion"
     }
+    firstData		    29
+    firstTransition	    35
+    firstJunction	    34
   }
   state {
     id			    28
@@ -6565,7 +7164,6 @@ Stateflow {
     id			    29
     ssIdNumber		    4
     name		    "DataX"
-    linkNode		    [27 0 30]
     scope		    INPUT_DATA
     machine		    1
     props {
@@ -6577,14 +7175,17 @@ Stateflow {
 	primitive		SF_DOUBLE_TYPE
       }
       complexity	      SF_COMPLEX_INHERITED
+      unit {
+	name			"inherit"
+      }
     }
     dataType		    "Inherit: Same as Simulink"
+    linkNode		    [27 0 30]
   }
   data {
     id			    30
     ssIdNumber		    7
     name		    "DataY"
-    linkNode		    [27 29 31]
     scope		    INPUT_DATA
     machine		    1
     props {
@@ -6599,14 +7200,17 @@ Stateflow {
       }
       complexity	      SF_COMPLEX_INHERITED
       frame		      SF_FRAME_INHERITED
+      unit {
+	name			"inherit"
+      }
     }
     dataType		    "Inherit: Same as Simulink"
+    linkNode		    [27 29 31]
   }
   data {
     id			    31
     ssIdNumber		    8
     name		    "DataZ"
-    linkNode		    [27 30 32]
     scope		    INPUT_DATA
     machine		    1
     props {
@@ -6621,14 +7225,17 @@ Stateflow {
       }
       complexity	      SF_COMPLEX_INHERITED
       frame		      SF_FRAME_INHERITED
+      unit {
+	name			"inherit"
+      }
     }
     dataType		    "Inherit: Same as Simulink"
+    linkNode		    [27 30 32]
   }
   data {
     id			    32
     ssIdNumber		    5
     name		    "UDPData"
-    linkNode		    [27 31 33]
     scope		    OUTPUT_DATA
     machine		    1
     props {
@@ -6641,14 +7248,17 @@ Stateflow {
       }
       complexity	      SF_COMPLEX_INHERITED
       frame		      SF_FRAME_NO
+      unit {
+	name			"inherit"
+      }
     }
     dataType		    "Inherit: Same as Simulink"
+    linkNode		    [27 31 33]
   }
   data {
     id			    33
     ssIdNumber		    6
     name		    "TnName"
-    linkNode		    [27 32 0]
     scope		    INPUT_DATA
     machine		    1
     props {
@@ -6663,17 +7273,21 @@ Stateflow {
       }
       complexity	      SF_COMPLEX_INHERITED
       frame		      SF_FRAME_INHERITED
+      unit {
+	name			"inherit"
+      }
     }
     dataType		    "Inherit: Same as Simulink"
+    linkNode		    [27 32 0]
   }
   junction {
     id			    34
     position		    [23.5747 49.5747 7]
     chart		    27
-    linkNode		    [27 0 0]
     subviewer		    27
     ssIdNumber		    3
     type		    CONNECTIVE_JUNCTION
+    linkNode		    [27 0 0]
   }
   transition {
     id			    35
@@ -6689,7 +7303,6 @@ Stateflow {
     }
     midPoint		    [23.5747 24.9468]
     chart		    27
-    linkNode		    [27 0 0]
     dataLimits		    [21.175 25.975 14.625 42.575]
     subviewer		    27
     drawStyle		    SMART
@@ -6698,33 +7311,34 @@ Stateflow {
     }
     executionOrder	    1
     ssIdNumber		    2
+    linkNode		    [27 0 0]
   }
   instance {
     id			    36
-    name		    "Visualisierung/Visualisierung\n/UDP_OUT2/XYZToUDP1/PrepareUDP_XYZ"
     machine		    1
+    name		    "Visualisierung/Visualisierung\n/UDP_OUT2/XYZToUDP1/PrepareUDP_XYZ"
     chart		    27
   }
   chart {
     id			    37
+    machine		    1
     name		    "Visualisierung/Visualisierung\n/UDP_OUT1/XYZToUDP1/PrepareUDP_XYZ"
     windowPosition	    [357.331 483.407 167 391]
     viewLimits		    [0 156.75 0 153.75]
     screen		    [1 1 1280 1024 1.041050272174191]
     treeNode		    [0 38 0 0]
-    firstTransition	    45
-    firstJunction	    44
     viewObj		    37
-    machine		    1
     ssIdHighWaterMark	    8
     decomposition	    CLUSTER_CHART
     type		    EML_CHART
-    firstData		    39
     chartFileNumber	    5
     disableImplicitCasting  1
     eml {
       name		      "XYZToBlenderUdpConversion"
     }
+    firstData		    39
+    firstTransition	    45
+    firstJunction	    44
   }
   state {
     id			    38
@@ -6750,7 +7364,6 @@ Stateflow {
     id			    39
     ssIdNumber		    4
     name		    "DataX"
-    linkNode		    [37 0 40]
     scope		    INPUT_DATA
     machine		    1
     props {
@@ -6762,14 +7375,17 @@ Stateflow {
 	primitive		SF_DOUBLE_TYPE
       }
       complexity	      SF_COMPLEX_INHERITED
+      unit {
+	name			"inherit"
+      }
     }
     dataType		    "Inherit: Same as Simulink"
+    linkNode		    [37 0 40]
   }
   data {
     id			    40
     ssIdNumber		    7
     name		    "DataY"
-    linkNode		    [37 39 41]
     scope		    INPUT_DATA
     machine		    1
     props {
@@ -6784,14 +7400,17 @@ Stateflow {
       }
       complexity	      SF_COMPLEX_INHERITED
       frame		      SF_FRAME_INHERITED
+      unit {
+	name			"inherit"
+      }
     }
     dataType		    "Inherit: Same as Simulink"
+    linkNode		    [37 39 41]
   }
   data {
     id			    41
     ssIdNumber		    8
     name		    "DataZ"
-    linkNode		    [37 40 42]
     scope		    INPUT_DATA
     machine		    1
     props {
@@ -6806,14 +7425,17 @@ Stateflow {
       }
       complexity	      SF_COMPLEX_INHERITED
       frame		      SF_FRAME_INHERITED
+      unit {
+	name			"inherit"
+      }
     }
     dataType		    "Inherit: Same as Simulink"
+    linkNode		    [37 40 42]
   }
   data {
     id			    42
     ssIdNumber		    5
     name		    "UDPData"
-    linkNode		    [37 41 43]
     scope		    OUTPUT_DATA
     machine		    1
     props {
@@ -6826,14 +7448,17 @@ Stateflow {
       }
       complexity	      SF_COMPLEX_INHERITED
       frame		      SF_FRAME_NO
+      unit {
+	name			"inherit"
+      }
     }
     dataType		    "Inherit: Same as Simulink"
+    linkNode		    [37 41 43]
   }
   data {
     id			    43
     ssIdNumber		    6
     name		    "TnName"
-    linkNode		    [37 42 0]
     scope		    INPUT_DATA
     machine		    1
     props {
@@ -6848,17 +7473,21 @@ Stateflow {
       }
       complexity	      SF_COMPLEX_INHERITED
       frame		      SF_FRAME_INHERITED
+      unit {
+	name			"inherit"
+      }
     }
     dataType		    "Inherit: Same as Simulink"
+    linkNode		    [37 42 0]
   }
   junction {
     id			    44
     position		    [23.5747 49.5747 7]
     chart		    37
-    linkNode		    [37 0 0]
     subviewer		    37
     ssIdNumber		    3
     type		    CONNECTIVE_JUNCTION
+    linkNode		    [37 0 0]
   }
   transition {
     id			    45
@@ -6874,7 +7503,6 @@ Stateflow {
     }
     midPoint		    [23.5747 24.9468]
     chart		    37
-    linkNode		    [37 0 0]
     dataLimits		    [21.175 25.975 14.625 42.575]
     subviewer		    37
     drawStyle		    SMART
@@ -6883,33 +7511,34 @@ Stateflow {
     }
     executionOrder	    1
     ssIdNumber		    2
+    linkNode		    [37 0 0]
   }
   instance {
     id			    46
-    name		    "Visualisierung/Visualisierung\n/UDP_OUT1/XYZToUDP1/PrepareUDP_XYZ"
     machine		    1
+    name		    "Visualisierung/Visualisierung\n/UDP_OUT1/XYZToUDP1/PrepareUDP_XYZ"
     chart		    37
   }
   chart {
     id			    47
+    machine		    1
     name		    "Visualisierung/Visualisierung\n/UDP_OUT/XYZToUDP3/PrepareUDP_XYZ"
     windowPosition	    [357.331 483.407 167 391]
     viewLimits		    [0 156.75 0 153.75]
     screen		    [1 1 1280 1024 1.041050272174191]
     treeNode		    [0 48 0 0]
-    firstTransition	    55
-    firstJunction	    54
     viewObj		    47
-    machine		    1
     ssIdHighWaterMark	    8
     decomposition	    CLUSTER_CHART
     type		    EML_CHART
-    firstData		    49
     chartFileNumber	    6
     disableImplicitCasting  1
     eml {
       name		      "XYZToBlenderUdpConversion"
     }
+    firstData		    49
+    firstTransition	    55
+    firstJunction	    54
   }
   state {
     id			    48
@@ -6935,7 +7564,6 @@ Stateflow {
     id			    49
     ssIdNumber		    4
     name		    "DataX"
-    linkNode		    [47 0 50]
     scope		    INPUT_DATA
     machine		    1
     props {
@@ -6947,14 +7575,17 @@ Stateflow {
 	primitive		SF_DOUBLE_TYPE
       }
       complexity	      SF_COMPLEX_INHERITED
+      unit {
+	name			"inherit"
+      }
     }
     dataType		    "Inherit: Same as Simulink"
+    linkNode		    [47 0 50]
   }
   data {
     id			    50
     ssIdNumber		    7
     name		    "DataY"
-    linkNode		    [47 49 51]
     scope		    INPUT_DATA
     machine		    1
     props {
@@ -6969,14 +7600,17 @@ Stateflow {
       }
       complexity	      SF_COMPLEX_INHERITED
       frame		      SF_FRAME_INHERITED
+      unit {
+	name			"inherit"
+      }
     }
     dataType		    "Inherit: Same as Simulink"
+    linkNode		    [47 49 51]
   }
   data {
     id			    51
     ssIdNumber		    8
     name		    "DataZ"
-    linkNode		    [47 50 52]
     scope		    INPUT_DATA
     machine		    1
     props {
@@ -6991,14 +7625,17 @@ Stateflow {
       }
       complexity	      SF_COMPLEX_INHERITED
       frame		      SF_FRAME_INHERITED
+      unit {
+	name			"inherit"
+      }
     }
     dataType		    "Inherit: Same as Simulink"
+    linkNode		    [47 50 52]
   }
   data {
     id			    52
     ssIdNumber		    5
     name		    "UDPData"
-    linkNode		    [47 51 53]
     scope		    OUTPUT_DATA
     machine		    1
     props {
@@ -7011,14 +7648,17 @@ Stateflow {
       }
       complexity	      SF_COMPLEX_INHERITED
       frame		      SF_FRAME_NO
+      unit {
+	name			"inherit"
+      }
     }
     dataType		    "Inherit: Same as Simulink"
+    linkNode		    [47 51 53]
   }
   data {
     id			    53
     ssIdNumber		    6
     name		    "TnName"
-    linkNode		    [47 52 0]
     scope		    INPUT_DATA
     machine		    1
     props {
@@ -7033,17 +7673,21 @@ Stateflow {
       }
       complexity	      SF_COMPLEX_INHERITED
       frame		      SF_FRAME_INHERITED
+      unit {
+	name			"inherit"
+      }
     }
     dataType		    "Inherit: Same as Simulink"
+    linkNode		    [47 52 0]
   }
   junction {
     id			    54
     position		    [23.5747 49.5747 7]
     chart		    47
-    linkNode		    [47 0 0]
     subviewer		    47
     ssIdNumber		    3
     type		    CONNECTIVE_JUNCTION
+    linkNode		    [47 0 0]
   }
   transition {
     id			    55
@@ -7059,7 +7703,6 @@ Stateflow {
     }
     midPoint		    [23.5747 24.9468]
     chart		    47
-    linkNode		    [47 0 0]
     dataLimits		    [21.175 25.975 14.625 42.575]
     subviewer		    47
     drawStyle		    SMART
@@ -7068,33 +7711,34 @@ Stateflow {
     }
     executionOrder	    1
     ssIdNumber		    2
+    linkNode		    [47 0 0]
   }
   instance {
     id			    56
-    name		    "Visualisierung/Visualisierung\n/UDP_OUT/XYZToUDP3/PrepareUDP_XYZ"
     machine		    1
+    name		    "Visualisierung/Visualisierung\n/UDP_OUT/XYZToUDP3/PrepareUDP_XYZ"
     chart		    47
   }
   chart {
     id			    57
+    machine		    1
     name		    "Visualisierung/Visualisierung\n/UDP_OUT/XYZToUDP1/PrepareUDP_XYZ"
     windowPosition	    [357.331 483.407 167 391]
     viewLimits		    [0 156.75 0 153.75]
     screen		    [1 1 1280 1024 1.041050272174191]
     treeNode		    [0 58 0 0]
-    firstTransition	    65
-    firstJunction	    64
     viewObj		    57
-    machine		    1
     ssIdHighWaterMark	    8
     decomposition	    CLUSTER_CHART
     type		    EML_CHART
-    firstData		    59
     chartFileNumber	    7
     disableImplicitCasting  1
     eml {
       name		      "XYZToBlenderUdpConversion"
     }
+    firstData		    59
+    firstTransition	    65
+    firstJunction	    64
   }
   state {
     id			    58
@@ -7120,7 +7764,6 @@ Stateflow {
     id			    59
     ssIdNumber		    4
     name		    "DataX"
-    linkNode		    [57 0 60]
     scope		    INPUT_DATA
     machine		    1
     props {
@@ -7132,14 +7775,17 @@ Stateflow {
 	primitive		SF_DOUBLE_TYPE
       }
       complexity	      SF_COMPLEX_INHERITED
+      unit {
+	name			"inherit"
+      }
     }
     dataType		    "Inherit: Same as Simulink"
+    linkNode		    [57 0 60]
   }
   data {
     id			    60
     ssIdNumber		    7
     name		    "DataY"
-    linkNode		    [57 59 61]
     scope		    INPUT_DATA
     machine		    1
     props {
@@ -7154,14 +7800,17 @@ Stateflow {
       }
       complexity	      SF_COMPLEX_INHERITED
       frame		      SF_FRAME_INHERITED
+      unit {
+	name			"inherit"
+      }
     }
     dataType		    "Inherit: Same as Simulink"
+    linkNode		    [57 59 61]
   }
   data {
     id			    61
     ssIdNumber		    8
     name		    "DataZ"
-    linkNode		    [57 60 62]
     scope		    INPUT_DATA
     machine		    1
     props {
@@ -7176,14 +7825,17 @@ Stateflow {
       }
       complexity	      SF_COMPLEX_INHERITED
       frame		      SF_FRAME_INHERITED
+      unit {
+	name			"inherit"
+      }
     }
     dataType		    "Inherit: Same as Simulink"
+    linkNode		    [57 60 62]
   }
   data {
     id			    62
     ssIdNumber		    5
     name		    "UDPData"
-    linkNode		    [57 61 63]
     scope		    OUTPUT_DATA
     machine		    1
     props {
@@ -7196,14 +7848,17 @@ Stateflow {
       }
       complexity	      SF_COMPLEX_INHERITED
       frame		      SF_FRAME_NO
+      unit {
+	name			"inherit"
+      }
     }
     dataType		    "Inherit: Same as Simulink"
+    linkNode		    [57 61 63]
   }
   data {
     id			    63
     ssIdNumber		    6
     name		    "TnName"
-    linkNode		    [57 62 0]
     scope		    INPUT_DATA
     machine		    1
     props {
@@ -7218,17 +7873,21 @@ Stateflow {
       }
       complexity	      SF_COMPLEX_INHERITED
       frame		      SF_FRAME_INHERITED
+      unit {
+	name			"inherit"
+      }
     }
     dataType		    "Inherit: Same as Simulink"
+    linkNode		    [57 62 0]
   }
   junction {
     id			    64
     position		    [23.5747 49.5747 7]
     chart		    57
-    linkNode		    [57 0 0]
     subviewer		    57
     ssIdNumber		    3
     type		    CONNECTIVE_JUNCTION
+    linkNode		    [57 0 0]
   }
   transition {
     id			    65
@@ -7244,7 +7903,6 @@ Stateflow {
     }
     midPoint		    [23.5747 24.9468]
     chart		    57
-    linkNode		    [57 0 0]
     dataLimits		    [21.175 25.975 14.625 42.575]
     subviewer		    57
     drawStyle		    SMART
@@ -7253,33 +7911,34 @@ Stateflow {
     }
     executionOrder	    1
     ssIdNumber		    2
+    linkNode		    [57 0 0]
   }
   instance {
     id			    66
-    name		    "Visualisierung/Visualisierung\n/UDP_OUT/XYZToUDP1/PrepareUDP_XYZ"
     machine		    1
+    name		    "Visualisierung/Visualisierung\n/UDP_OUT/XYZToUDP1/PrepareUDP_XYZ"
     chart		    57
   }
   chart {
     id			    67
+    machine		    1
     name		    "Visualisierung/Simulation/XYZToUDP1/PrepareUDP_XYZ"
     windowPosition	    [357.331 483.407 167 391]
     viewLimits		    [0 156.75 0 153.75]
     screen		    [1 1 1280 1024 1.041050272174191]
     treeNode		    [0 68 0 0]
-    firstTransition	    75
-    firstJunction	    74
     viewObj		    67
-    machine		    1
     ssIdHighWaterMark	    8
     decomposition	    CLUSTER_CHART
     type		    EML_CHART
-    firstData		    69
     chartFileNumber	    8
     disableImplicitCasting  1
     eml {
       name		      "XYZToBlenderUdpConversion"
     }
+    firstData		    69
+    firstTransition	    75
+    firstJunction	    74
   }
   state {
     id			    68
@@ -7305,7 +7964,6 @@ Stateflow {
     id			    69
     ssIdNumber		    4
     name		    "DataX"
-    linkNode		    [67 0 70]
     scope		    INPUT_DATA
     machine		    1
     props {
@@ -7317,14 +7975,17 @@ Stateflow {
 	primitive		SF_DOUBLE_TYPE
       }
       complexity	      SF_COMPLEX_INHERITED
+      unit {
+	name			"inherit"
+      }
     }
     dataType		    "Inherit: Same as Simulink"
+    linkNode		    [67 0 70]
   }
   data {
     id			    70
     ssIdNumber		    7
     name		    "DataY"
-    linkNode		    [67 69 71]
     scope		    INPUT_DATA
     machine		    1
     props {
@@ -7339,14 +8000,17 @@ Stateflow {
       }
       complexity	      SF_COMPLEX_INHERITED
       frame		      SF_FRAME_INHERITED
+      unit {
+	name			"inherit"
+      }
     }
     dataType		    "Inherit: Same as Simulink"
+    linkNode		    [67 69 71]
   }
   data {
     id			    71
     ssIdNumber		    8
     name		    "DataZ"
-    linkNode		    [67 70 72]
     scope		    INPUT_DATA
     machine		    1
     props {
@@ -7361,14 +8025,17 @@ Stateflow {
       }
       complexity	      SF_COMPLEX_INHERITED
       frame		      SF_FRAME_INHERITED
+      unit {
+	name			"inherit"
+      }
     }
     dataType		    "Inherit: Same as Simulink"
+    linkNode		    [67 70 72]
   }
   data {
     id			    72
     ssIdNumber		    5
     name		    "UDPData"
-    linkNode		    [67 71 73]
     scope		    OUTPUT_DATA
     machine		    1
     props {
@@ -7381,14 +8048,17 @@ Stateflow {
       }
       complexity	      SF_COMPLEX_INHERITED
       frame		      SF_FRAME_NO
+      unit {
+	name			"inherit"
+      }
     }
     dataType		    "Inherit: Same as Simulink"
+    linkNode		    [67 71 73]
   }
   data {
     id			    73
     ssIdNumber		    6
     name		    "TnName"
-    linkNode		    [67 72 0]
     scope		    INPUT_DATA
     machine		    1
     props {
@@ -7403,17 +8073,21 @@ Stateflow {
       }
       complexity	      SF_COMPLEX_INHERITED
       frame		      SF_FRAME_INHERITED
+      unit {
+	name			"inherit"
+      }
     }
     dataType		    "Inherit: Same as Simulink"
+    linkNode		    [67 72 0]
   }
   junction {
     id			    74
     position		    [23.5747 49.5747 7]
     chart		    67
-    linkNode		    [67 0 0]
     subviewer		    67
     ssIdNumber		    3
     type		    CONNECTIVE_JUNCTION
+    linkNode		    [67 0 0]
   }
   transition {
     id			    75
@@ -7429,7 +8103,6 @@ Stateflow {
     }
     midPoint		    [23.5747 24.9468]
     chart		    67
-    linkNode		    [67 0 0]
     dataLimits		    [21.175 25.975 14.625 42.575]
     subviewer		    67
     drawStyle		    SMART
@@ -7438,33 +8111,34 @@ Stateflow {
     }
     executionOrder	    1
     ssIdNumber		    2
+    linkNode		    [67 0 0]
   }
   instance {
     id			    76
-    name		    "Visualisierung/Simulation/XYZToUDP1/PrepareUDP_XYZ"
     machine		    1
+    name		    "Visualisierung/Simulation/XYZToUDP1/PrepareUDP_XYZ"
     chart		    67
   }
   chart {
     id			    77
+    machine		    1
     name		    "Visualisierung/Simulation1/XYZToUDP1/PrepareUDP_XYZ"
     windowPosition	    [357.331 483.407 167 391]
     viewLimits		    [0 156.75 0 153.75]
     screen		    [1 1 1280 1024 1.041050272174191]
     treeNode		    [0 78 0 0]
-    firstTransition	    85
-    firstJunction	    84
     viewObj		    77
-    machine		    1
     ssIdHighWaterMark	    8
     decomposition	    CLUSTER_CHART
     type		    EML_CHART
-    firstData		    79
     chartFileNumber	    9
     disableImplicitCasting  1
     eml {
       name		      "XYZToBlenderUdpConversion"
     }
+    firstData		    79
+    firstTransition	    85
+    firstJunction	    84
   }
   state {
     id			    78
@@ -7490,7 +8164,6 @@ Stateflow {
     id			    79
     ssIdNumber		    4
     name		    "DataX"
-    linkNode		    [77 0 80]
     scope		    INPUT_DATA
     machine		    1
     props {
@@ -7502,14 +8175,17 @@ Stateflow {
 	primitive		SF_DOUBLE_TYPE
       }
       complexity	      SF_COMPLEX_INHERITED
+      unit {
+	name			"inherit"
+      }
     }
     dataType		    "Inherit: Same as Simulink"
+    linkNode		    [77 0 80]
   }
   data {
     id			    80
     ssIdNumber		    7
     name		    "DataY"
-    linkNode		    [77 79 81]
     scope		    INPUT_DATA
     machine		    1
     props {
@@ -7524,14 +8200,17 @@ Stateflow {
       }
       complexity	      SF_COMPLEX_INHERITED
       frame		      SF_FRAME_INHERITED
+      unit {
+	name			"inherit"
+      }
     }
     dataType		    "Inherit: Same as Simulink"
+    linkNode		    [77 79 81]
   }
   data {
     id			    81
     ssIdNumber		    8
     name		    "DataZ"
-    linkNode		    [77 80 82]
     scope		    INPUT_DATA
     machine		    1
     props {
@@ -7546,14 +8225,17 @@ Stateflow {
       }
       complexity	      SF_COMPLEX_INHERITED
       frame		      SF_FRAME_INHERITED
+      unit {
+	name			"inherit"
+      }
     }
     dataType		    "Inherit: Same as Simulink"
+    linkNode		    [77 80 82]
   }
   data {
     id			    82
     ssIdNumber		    5
     name		    "UDPData"
-    linkNode		    [77 81 83]
     scope		    OUTPUT_DATA
     machine		    1
     props {
@@ -7566,14 +8248,17 @@ Stateflow {
       }
       complexity	      SF_COMPLEX_INHERITED
       frame		      SF_FRAME_NO
+      unit {
+	name			"inherit"
+      }
     }
     dataType		    "Inherit: Same as Simulink"
+    linkNode		    [77 81 83]
   }
   data {
     id			    83
     ssIdNumber		    6
     name		    "TnName"
-    linkNode		    [77 82 0]
     scope		    INPUT_DATA
     machine		    1
     props {
@@ -7588,17 +8273,21 @@ Stateflow {
       }
       complexity	      SF_COMPLEX_INHERITED
       frame		      SF_FRAME_INHERITED
+      unit {
+	name			"inherit"
+      }
     }
     dataType		    "Inherit: Same as Simulink"
+    linkNode		    [77 82 0]
   }
   junction {
     id			    84
     position		    [23.5747 49.5747 7]
     chart		    77
-    linkNode		    [77 0 0]
     subviewer		    77
     ssIdNumber		    3
     type		    CONNECTIVE_JUNCTION
+    linkNode		    [77 0 0]
   }
   transition {
     id			    85
@@ -7614,7 +8303,6 @@ Stateflow {
     }
     midPoint		    [23.5747 24.9468]
     chart		    77
-    linkNode		    [77 0 0]
     dataLimits		    [21.175 25.975 14.625 42.575]
     subviewer		    77
     drawStyle		    SMART
@@ -7623,33 +8311,34 @@ Stateflow {
     }
     executionOrder	    1
     ssIdNumber		    2
+    linkNode		    [77 0 0]
   }
   instance {
     id			    86
-    name		    "Visualisierung/Simulation1/XYZToUDP1/PrepareUDP_XYZ"
     machine		    1
+    name		    "Visualisierung/Simulation1/XYZToUDP1/PrepareUDP_XYZ"
     chart		    77
   }
   chart {
     id			    87
+    machine		    1
     name		    "Visualisierung/Simulation2/XYZToUDP1/PrepareUDP_XYZ"
     windowPosition	    [357.331 483.407 167 391]
     viewLimits		    [0 156.75 0 153.75]
     screen		    [1 1 1280 1024 1.041050272174191]
     treeNode		    [0 88 0 0]
-    firstTransition	    95
-    firstJunction	    94
     viewObj		    87
-    machine		    1
     ssIdHighWaterMark	    8
     decomposition	    CLUSTER_CHART
     type		    EML_CHART
-    firstData		    89
     chartFileNumber	    10
     disableImplicitCasting  1
     eml {
       name		      "XYZToBlenderUdpConversion"
     }
+    firstData		    89
+    firstTransition	    95
+    firstJunction	    94
   }
   state {
     id			    88
@@ -7675,7 +8364,6 @@ Stateflow {
     id			    89
     ssIdNumber		    4
     name		    "DataX"
-    linkNode		    [87 0 90]
     scope		    INPUT_DATA
     machine		    1
     props {
@@ -7687,14 +8375,17 @@ Stateflow {
 	primitive		SF_DOUBLE_TYPE
       }
       complexity	      SF_COMPLEX_INHERITED
+      unit {
+	name			"inherit"
+      }
     }
     dataType		    "Inherit: Same as Simulink"
+    linkNode		    [87 0 90]
   }
   data {
     id			    90
     ssIdNumber		    7
     name		    "DataY"
-    linkNode		    [87 89 91]
     scope		    INPUT_DATA
     machine		    1
     props {
@@ -7709,14 +8400,17 @@ Stateflow {
       }
       complexity	      SF_COMPLEX_INHERITED
       frame		      SF_FRAME_INHERITED
+      unit {
+	name			"inherit"
+      }
     }
     dataType		    "Inherit: Same as Simulink"
+    linkNode		    [87 89 91]
   }
   data {
     id			    91
     ssIdNumber		    8
     name		    "DataZ"
-    linkNode		    [87 90 92]
     scope		    INPUT_DATA
     machine		    1
     props {
@@ -7731,14 +8425,17 @@ Stateflow {
       }
       complexity	      SF_COMPLEX_INHERITED
       frame		      SF_FRAME_INHERITED
+      unit {
+	name			"inherit"
+      }
     }
     dataType		    "Inherit: Same as Simulink"
+    linkNode		    [87 90 92]
   }
   data {
     id			    92
     ssIdNumber		    5
     name		    "UDPData"
-    linkNode		    [87 91 93]
     scope		    OUTPUT_DATA
     machine		    1
     props {
@@ -7751,14 +8448,17 @@ Stateflow {
       }
       complexity	      SF_COMPLEX_INHERITED
       frame		      SF_FRAME_NO
+      unit {
+	name			"inherit"
+      }
     }
     dataType		    "Inherit: Same as Simulink"
+    linkNode		    [87 91 93]
   }
   data {
     id			    93
     ssIdNumber		    6
     name		    "TnName"
-    linkNode		    [87 92 0]
     scope		    INPUT_DATA
     machine		    1
     props {
@@ -7773,17 +8473,21 @@ Stateflow {
       }
       complexity	      SF_COMPLEX_INHERITED
       frame		      SF_FRAME_INHERITED
+      unit {
+	name			"inherit"
+      }
     }
     dataType		    "Inherit: Same as Simulink"
+    linkNode		    [87 92 0]
   }
   junction {
     id			    94
     position		    [23.5747 49.5747 7]
     chart		    87
-    linkNode		    [87 0 0]
     subviewer		    87
     ssIdNumber		    3
     type		    CONNECTIVE_JUNCTION
+    linkNode		    [87 0 0]
   }
   transition {
     id			    95
@@ -7799,7 +8503,6 @@ Stateflow {
     }
     midPoint		    [23.5747 24.9468]
     chart		    87
-    linkNode		    [87 0 0]
     dataLimits		    [21.175 25.975 14.625 42.575]
     subviewer		    87
     drawStyle		    SMART
@@ -7808,18 +8511,19 @@ Stateflow {
     }
     executionOrder	    1
     ssIdNumber		    2
+    linkNode		    [87 0 0]
   }
   instance {
     id			    96
-    name		    "Visualisierung/Simulation2/XYZToUDP1/PrepareUDP_XYZ"
     machine		    1
+    name		    "Visualisierung/Simulation2/XYZToUDP1/PrepareUDP_XYZ"
     chart		    87
   }
   target {
     id			    97
+    machine		    1
     name		    "sfun"
     description		    "Default Simulink S-Function Target."
-    machine		    1
     linkNode		    [1 0 0]
   }
 }
