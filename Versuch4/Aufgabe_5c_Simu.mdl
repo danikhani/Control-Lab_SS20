@@ -1,12 +1,12 @@
 Model {
-  Name			  "Aufgabe_4_Vorlage"
+  Name			  "Aufgabe_5c_Simu"
   Version		  9.2
   SavedCharacterEncoding  "windows-1252"
   GraphicalInterface {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.80"
+    ComputedModelVersion    "1.81"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -20,55 +20,55 @@ Model {
     NumExternalFileReferences 9
     ExternalFileReference {
       Reference		      "dspnetwork/UDP Send"
-      Path		      "Aufgabe_4_Vorlage/Visualisierung/Simulation/UDP Send1"
+      Path		      "Aufgabe_5c_Simu/Visualisierung/Simulation/UDP Send1"
       SID		      "122"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
       Reference		      "dspnetwork/UDP Send"
-      Path		      "Aufgabe_4_Vorlage/Visualisierung/Simulation1/UDP Send1"
+      Path		      "Aufgabe_5c_Simu/Visualisierung/Simulation1/UDP Send1"
       SID		      "136"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
       Reference		      "dspnetwork/UDP Send"
-      Path		      "Aufgabe_4_Vorlage/Visualisierung/Simulation2/UDP Send1"
+      Path		      "Aufgabe_5c_Simu/Visualisierung/Simulation2/UDP Send1"
       SID		      "150"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
       Reference		      "dspnetwork/UDP Send"
-      Path		      "Aufgabe_4_Vorlage/Visualisierung/Visualisierung /UDP_OUT/UDP Send1"
+      Path		      "Aufgabe_5c_Simu/Visualisierung/Visualisierung /UDP_OUT/UDP Send1"
       SID		      "171"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
       Reference		      "dspnetwork/UDP Send"
-      Path		      "Aufgabe_4_Vorlage/Visualisierung/Visualisierung /UDP_OUT/UDP Send6"
+      Path		      "Aufgabe_5c_Simu/Visualisierung/Visualisierung /UDP_OUT/UDP Send6"
       SID		      "172"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
       Reference		      "dspnetwork/UDP Send"
-      Path		      "Aufgabe_4_Vorlage/Visualisierung/Visualisierung /UDP_OUT1/UDP Send1"
+      Path		      "Aufgabe_5c_Simu/Visualisierung/Visualisierung /UDP_OUT1/UDP Send1"
       SID		      "196"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
       Reference		      "dspnetwork/UDP Send"
-      Path		      "Aufgabe_4_Vorlage/Visualisierung/Visualisierung /UDP_OUT1/UDP Send6"
+      Path		      "Aufgabe_5c_Simu/Visualisierung/Visualisierung /UDP_OUT1/UDP Send6"
       SID		      "197"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
       Reference		      "dspnetwork/UDP Send"
-      Path		      "Aufgabe_4_Vorlage/Visualisierung/Visualisierung /UDP_OUT2/UDP Send1"
+      Path		      "Aufgabe_5c_Simu/Visualisierung/Visualisierung /UDP_OUT2/UDP Send1"
       SID		      "221"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
       Reference		      "dspnetwork/UDP Send"
-      Path		      "Aufgabe_4_Vorlage/Visualisierung/Visualisierung /UDP_OUT2/UDP Send6"
+      Path		      "Aufgabe_5c_Simu/Visualisierung/Visualisierung /UDP_OUT2/UDP Send6"
       SID		      "222"
       Type		      "LIBRARY_BLOCK"
     }
@@ -159,9 +159,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "danial"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Thu May 07 16:58:44 2020"
-  RTWModifiedTimeStamp	  510770138
-  ModelVersionFormat	  "1.%<AutoIncrement:80>"
+  LastModifiedDate	  "Thu May 07 17:02:16 2020"
+  RTWModifiedTimeStamp	  510771721
+  ModelVersionFormat	  "1.%<AutoIncrement:81>"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
   LibraryLinkDisplay	  "disabled"
@@ -218,12 +218,12 @@ Model {
     $PropName		    "DataLoggingOverride"
     $ObjectID		    7
     $ClassName		    "Simulink.SimulationData.ModelLoggingInfo"
-    model_		    "Aufgabe_4_Vorlage"
+    model_		    "Aufgabe_5c_Simu"
     overrideMode_	    [0.0]
     Array {
       Type		      "Cell"
       Dimension		      1
-      Cell		      "Aufgabe_4_Vorlage"
+      Cell		      "Aufgabe_5c_Simu"
       PropName		      "logAsSpecifiedByModels_"
     }
     Array {
@@ -1312,7 +1312,7 @@ Model {
     }
   }
   System {
-    Name		    "Aufgabe_4_Vorlage"
+    Name		    "Aufgabe_5c_Simu"
     Location		    [-7, -7, 1543, 831]
     Open		    on
     PortBlocksUseCompactNotation off
@@ -1410,7 +1410,7 @@ Model {
 	    Type		    "edit"
 	    Name		    "Querschnitt_Rohr_B102_B103"
 	    Prompt		    "Rohrquerschnitt zwischen Behälter B102 und B103 in m^2"
-	    Value		    "500*10^-6"
+	    Value		    "550*10^-6"
 	    Tunable		    "off"
 	  }
 	  Object {
@@ -1418,7 +1418,7 @@ Model {
 	    Type		    "edit"
 	    Name		    "Querschnitt_Rohr_B103_B104"
 	    Prompt		    "Rohrquerschnitt zwischen Behälter B103 und B104 in m^2"
-	    Value		    "500*10^-6"
+	    Value		    "550*10^-6"
 	    Tunable		    "off"
 	  }
 	  Object {
@@ -1426,7 +1426,7 @@ Model {
 	    Type		    "edit"
 	    Name		    "Flaeche_Behaelter"
 	    Prompt		    "Fläche der Behälter in m^2"
-	    Value		    "0.045"
+	    Value		    "0.0287"
 	    Tunable		    "off"
 	  }
 	  PropName		  "Parameters"
@@ -2800,7 +2800,7 @@ Model {
 	  }
 	  Name			  "Auswahl"
 	  Prompt		  "Auswahl"
-	  Value			  "Mit Lösung vergleichen"
+	  Value			  "Bearbeiten"
 	  Evaluate		  "off"
 	  Callback		  "maskStr = get_param(gcb,'Auswahl');\n\nif strcmp(maskStr(1),'I')\n     assignin('base','Testen',0)\nel"
 	  "se if strcmp(maskStr(1),'M')\n        assignin('base','Testen',1)\n    else\n        assignin('base','Testen',2)\n "
@@ -2871,7 +2871,7 @@ Model {
 	  BlockType		  S-Function
 	  Name			  " SFunction "
 	  SID			  "365::35"
-	  Tag			  "Stateflow S-Function Aufgabe_4_Vorlage 2"
+	  Tag			  "Stateflow S-Function Aufgabe_5c_Simu 2"
 	  Ports			  [1, 1]
 	  Position		  [180, 100, 230, 140]
 	  ZOrder		  13
@@ -2953,15 +2953,15 @@ Model {
       ScopeSpecificationString "Simulink.scopes.TimeScopeBlockCfg('CurrentConfiguration', extmgr.ConfigurationSet(extm"
       "gr.Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration('S"
       "ources','WiredSimulink',true,'DataLoggingSaveFormat','Array','DataLoggingDecimation','1','DataLoggingDecimateDat"
-      "a',true),extmgr.Configuration('Visuals','Time Domain',true,'SerializedDisplays',{struct('MinYLimReal','0.0029','"
-      "MaxYLimReal','0.01043','YLabelReal','','MinYLimMag','0.0029','MaxYLimMag','0.01043','LegendVisibility','off','XG"
+      "a',true),extmgr.Configuration('Visuals','Time Domain',true,'SerializedDisplays',{struct('MinYLimReal','0.00452',"
+      "'MaxYLimReal','0.0085','YLabelReal','','MinYLimMag','0.00452','MaxYLimMag','0.0085','LegendVisibility','off','XG"
       "rid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.68627450980"
       "3922 0.686274509803922],'ColorOrder',[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.41176470"
       "5882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921"
       "569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],'Title','%<SignalLabel>','LinePropertiesCac"
       "he',{{}},'UserDefinedChannelNames',{{}},'NumLines',3,'LineNames',{{'Dreitank-System/1','Dreitank-System/2','Drei"
-      "tank-System/3'}},'ShowContent',true,'Placement',1)},'DisplayPropertyDefaults',struct('MinYLimReal','0.0029','Max"
-      "YLimReal','0.01043','YLabelReal','','MinYLimMag','0.0029','MaxYLimMag','0.01043','LegendVisibility','off','XGrid"
+      "tank-System/3'}},'ShowContent',true,'Placement',1)},'DisplayPropertyDefaults',struct('MinYLimReal','0.00452','Ma"
+      "xYLimReal','0.0085','YLabelReal','','MinYLimMag','0.00452','MaxYLimMag','0.0085','LegendVisibility','off','XGrid"
       "',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.68627450980392"
       "2 0.686274509803922],'ColorOrder',[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.41176470588"
       "2353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569"
@@ -3391,7 +3391,7 @@ Model {
 		    BlockType		    S-Function
 		    Name		    " SFunction "
 		    SID			    "128::69"
-		    Tag			    "Stateflow S-Function Aufgabe_4_Vorlage 8"
+		    Tag			    "Stateflow S-Function Aufgabe_5c_Simu 8"
 		    Ports		    [4, 2]
 		    Position		    [180, 102, 230, 203]
 		    ZOrder		    25
@@ -3818,7 +3818,7 @@ Model {
 		    BlockType		    S-Function
 		    Name		    " SFunction "
 		    SID			    "142::69"
-		    Tag			    "Stateflow S-Function Aufgabe_4_Vorlage 9"
+		    Tag			    "Stateflow S-Function Aufgabe_5c_Simu 9"
 		    Ports		    [4, 2]
 		    Position		    [180, 102, 230, 203]
 		    ZOrder		    25
@@ -4245,7 +4245,7 @@ Model {
 		    BlockType		    S-Function
 		    Name		    " SFunction "
 		    SID			    "156::69"
-		    Tag			    "Stateflow S-Function Aufgabe_4_Vorlage 10"
+		    Tag			    "Stateflow S-Function Aufgabe_5c_Simu 10"
 		    Ports		    [4, 2]
 		    Position		    [180, 102, 230, 203]
 		    ZOrder		    25
@@ -4780,7 +4780,7 @@ Model {
 		    BlockType		    S-Function
 		    Name		    " SFunction "
 		    SID			    "178::69"
-		    Tag			    "Stateflow S-Function Aufgabe_4_Vorlage 7"
+		    Tag			    "Stateflow S-Function Aufgabe_5c_Simu 7"
 		    Ports		    [4, 2]
 		    Position		    [180, 102, 230, 203]
 		    ZOrder		    25
@@ -5048,7 +5048,7 @@ Model {
 		    BlockType		    S-Function
 		    Name		    " SFunction "
 		    SID			    "185::69"
-		    Tag			    "Stateflow S-Function Aufgabe_4_Vorlage 6"
+		    Tag			    "Stateflow S-Function Aufgabe_5c_Simu 6"
 		    Ports		    [4, 2]
 		    Position		    [180, 102, 230, 203]
 		    ZOrder		    25
@@ -5571,7 +5571,7 @@ Model {
 		    BlockType		    S-Function
 		    Name		    " SFunction "
 		    SID			    "203::69"
-		    Tag			    "Stateflow S-Function Aufgabe_4_Vorlage 5"
+		    Tag			    "Stateflow S-Function Aufgabe_5c_Simu 5"
 		    Ports		    [4, 2]
 		    Position		    [180, 102, 230, 203]
 		    ZOrder		    25
@@ -5839,7 +5839,7 @@ Model {
 		    BlockType		    S-Function
 		    Name		    " SFunction "
 		    SID			    "210::69"
-		    Tag			    "Stateflow S-Function Aufgabe_4_Vorlage 1"
+		    Tag			    "Stateflow S-Function Aufgabe_5c_Simu 1"
 		    Ports		    [4, 2]
 		    Position		    [180, 102, 230, 203]
 		    ZOrder		    25
@@ -6362,7 +6362,7 @@ Model {
 		    BlockType		    S-Function
 		    Name		    " SFunction "
 		    SID			    "228::69"
-		    Tag			    "Stateflow S-Function Aufgabe_4_Vorlage 4"
+		    Tag			    "Stateflow S-Function Aufgabe_5c_Simu 4"
 		    Ports		    [4, 2]
 		    Position		    [180, 102, 230, 203]
 		    ZOrder		    25
@@ -6630,7 +6630,7 @@ Model {
 		    BlockType		    S-Function
 		    Name		    " SFunction "
 		    SID			    "235::69"
-		    Tag			    "Stateflow S-Function Aufgabe_4_Vorlage 3"
+		    Tag			    "Stateflow S-Function Aufgabe_5c_Simu 3"
 		    Ports		    [4, 2]
 		    Position		    [180, 102, 230, 203]
 		    ZOrder		    25
@@ -7131,7 +7131,7 @@ Model {
 Stateflow {
   machine {
     id			    1
-    name		    "Aufgabe_4_Vorlage"
+    name		    "Aufgabe_5c_Simu"
     created		    "01-Jun-2016 19:47:15"
     isLibrary		    0
     sfVersion		    80000014
