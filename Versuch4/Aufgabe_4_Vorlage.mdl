@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.71"
+    ComputedModelVersion    "1.78"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -121,11 +121,11 @@ Model {
 	$ObjectID		5
 	$ClassName		"Simulink.EditorInfo"
 	IsActive		[1]
-	ViewObjType		"SimulinkSubsys"
-	LoadSaveID		"67"
+	ViewObjType		"SimulinkTopLevel"
+	LoadSaveID		"0"
 	Extents			[1681.0, 833.0]
 	ZoomFactor		[1.0]
-	Offset			[-64.175217929262885, -16.388252878778871]
+	Offset			[-4.5, -48.299999999999955]
       }
       Object {
 	$PropName		"DockComponentsInfo"
@@ -159,9 +159,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "danial"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Wed May 06 20:04:26 2020"
-  RTWModifiedTimeStamp	  510696201
-  ModelVersionFormat	  "1.%<AutoIncrement:71>"
+  LastModifiedDate	  "Thu May 07 11:50:51 2020"
+  RTWModifiedTimeStamp	  510753039
+  ModelVersionFormat	  "1.%<AutoIncrement:78>"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
   LibraryLinkDisplay	  "disabled"
@@ -964,7 +964,7 @@ Model {
       Name		      "Configuration"
       ExtraOptions	      ""
       CurrentDlgPage	      "Solver"
-      ConfigPrmDlgPosition    [ 414, 165, 1510, 871 ]
+      ConfigPrmDlgPosition    [ 370, 88, 1466, 794 ]
     }
     PropName		    "ConfigurationSets"
   }
@@ -1192,6 +1192,21 @@ Model {
       VectorParamsAs1DForOutWhenUnconnected off
     }
     Block {
+      BlockType		      Product
+      Inputs		      "2"
+      Multiplication	      "Element-wise(.*)"
+      CollapseMode	      "All dimensions"
+      CollapseDim	      "1"
+      InputSameDT	      on
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Same as first input"
+      LockScale		      off
+      RndMeth		      "Zero"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+    Block {
       BlockType		      S-Function
       FunctionName	      "system"
       SFunctionModules	      "''"
@@ -1201,6 +1216,21 @@ Model {
     Block {
       BlockType		      Scope
       DefaultConfigurationName "Simulink.scopes.TimeScopeBlockCfg"
+    }
+    Block {
+      BlockType		      Sqrt
+      Operator		      "sqrt"
+      OutputSignalType	      "auto"
+      SampleTime	      "-1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Same as first input"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      IntermediateResultsDataTypeStr "Inherit: Inherit via internal rule"
+      AlgorithmType	      "Exact"
+      Iterations	      "3"
     }
     Block {
       BlockType		      Step
@@ -1284,7 +1314,7 @@ Model {
   System {
     Name		    "Aufgabe_4_Vorlage"
     Location		    [-7, -7, 1543, 831]
-    Open		    off
+    Open		    on
     PortBlocksUseCompactNotation off
     SetExecutionDomain	    off
     ExecutionDomainType	    "Deduce"
@@ -1300,7 +1330,7 @@ Model {
     ShowPageBoundaries	    off
     ZoomFactor		    "100"
     ReportName		    "simulink-default.rpt"
-    SIDHighWatermark	    "371"
+    SIDHighWatermark	    "410"
     Block {
       BlockType		      Constant
       Name		      "Constant"
@@ -1405,7 +1435,7 @@ Model {
       System {
 	Name			"Dreitank-System"
 	Location		[-7, -7, 1543, 831]
-	Open			on
+	Open			off
 	PortBlocksUseCompactNotation off
 	SetExecutionDomain	off
 	ExecutionDomainType	"Deduce"
@@ -1432,7 +1462,7 @@ Model {
 	  BlockType		  Inport
 	  Name			  "U_V101 "
 	  SID			  "304"
-	  Position		  [205, 43, 235, 57]
+	  Position		  [530, 33, 560, 47]
 	  ZOrder		  46
 	  Port			  "2"
 	  IconDisplay		  "Port number"
@@ -1441,7 +1471,7 @@ Model {
 	  BlockType		  Inport
 	  Name			  "U_V106"
 	  SID			  "305"
-	  Position		  [65, 373, 95, 387]
+	  Position		  [30, 368, 60, 382]
 	  ZOrder		  48
 	  Port			  "3"
 	  IconDisplay		  "Port number"
@@ -1460,7 +1490,7 @@ Model {
 	  Name			  "B102"
 	  SID			  "307"
 	  Ports			  [2, 1]
-	  Position		  [450, 101, 555, 179]
+	  Position		  [395, 101, 500, 179]
 	  ZOrder		  38
 	  BackgroundColor	  "lightBlue"
 	  RequestExecContextInheritance	off
@@ -1516,11 +1546,11 @@ Model {
 	    }
 	    Block {
 	      BlockType		      Integrator
-	      Name		      "Integrator"
-	      SID		      "367"
+	      Name		      "Integrator2"
+	      SID		      "405"
 	      Ports		      [1, 1]
-	      Position		      [265, 55, 295, 85]
-	      ZOrder		      17
+	      Position		      [270, 55, 300, 85]
+	      ZOrder		      19
 	    }
 	    Block {
 	      BlockType		      Sum
@@ -1560,15 +1590,15 @@ Model {
 	      DstPort		      2
 	    }
 	    Line {
-	      ZOrder		      6
+	      ZOrder		      10
 	      SrcBlock		      "Sum1"
 	      SrcPort		      1
-	      DstBlock		      "Integrator"
+	      DstBlock		      "Integrator2"
 	      DstPort		      1
 	    }
 	    Line {
-	      ZOrder		      7
-	      SrcBlock		      "Integrator"
+	      ZOrder		      11
+	      SrcBlock		      "Integrator2"
 	      SrcPort		      1
 	      DstBlock		      "V [m^3]"
 	      DstPort		      1
@@ -1580,7 +1610,7 @@ Model {
 	  Name			  "B103"
 	  SID			  "313"
 	  Ports			  [2, 1]
-	  Position		  [450, 226, 555, 304]
+	  Position		  [955, 161, 1060, 239]
 	  ZOrder		  39
 	  BackgroundColor	  "lightBlue"
 	  RequestExecContextInheritance	off
@@ -1636,11 +1666,11 @@ Model {
 	    }
 	    Block {
 	      BlockType		      Integrator
-	      Name		      "Integrator"
-	      SID		      "368"
+	      Name		      "Integrator2"
+	      SID		      "407"
 	      Ports		      [1, 1]
-	      Position		      [265, 55, 295, 85]
-	      ZOrder		      19
+	      Position		      [270, 55, 300, 85]
+	      ZOrder		      21
 	    }
 	    Block {
 	      BlockType		      Sum
@@ -1672,17 +1702,17 @@ Model {
 	      DstPort		      1
 	    }
 	    Line {
-	      ZOrder		      7
-	      SrcBlock		      "Integrator"
+	      ZOrder		      12
+	      SrcBlock		      "Integrator2"
 	      SrcPort		      1
 	      DstBlock		      "V [m^3]"
 	      DstPort		      1
 	    }
 	    Line {
-	      ZOrder		      3
+	      ZOrder		      13
 	      SrcBlock		      "Sum1"
 	      SrcPort		      1
-	      DstBlock		      "Integrator"
+	      DstBlock		      "Integrator2"
 	      DstPort		      1
 	    }
 	    Line {
@@ -1700,7 +1730,7 @@ Model {
 	  Name			  "B104"
 	  SID			  "319"
 	  Ports			  [2, 1]
-	  Position		  [450, 341, 555, 419]
+	  Position		  [1365, 271, 1470, 349]
 	  ZOrder		  41
 	  BackgroundColor	  "lightBlue"
 	  RequestExecContextInheritance	off
@@ -1756,11 +1786,11 @@ Model {
 	    }
 	    Block {
 	      BlockType		      Integrator
-	      Name		      "Integrator"
-	      SID		      "370"
+	      Name		      "Integrator1"
+	      SID		      "408"
 	      Ports		      [1, 1]
 	      Position		      [265, 55, 295, 85]
-	      ZOrder		      19
+	      ZOrder		      20
 	    }
 	    Block {
 	      BlockType		      Sum
@@ -1792,17 +1822,17 @@ Model {
 	      DstPort		      1
 	    }
 	    Line {
-	      ZOrder		      7
-	      SrcBlock		      "Integrator"
+	      ZOrder		      13
+	      SrcBlock		      "Integrator1"
 	      SrcPort		      1
 	      DstBlock		      "V [m^3]"
 	      DstPort		      1
 	    }
 	    Line {
-	      ZOrder		      3
+	      ZOrder		      12
 	      SrcBlock		      "Sum1"
 	      SrcPort		      1
-	      DstBlock		      "Integrator"
+	      DstBlock		      "Integrator1"
 	      DstPort		      1
 	    }
 	    Line {
@@ -1816,11 +1846,21 @@ Model {
 	  }
 	}
 	Block {
+	  BlockType		  Constant
+	  Name			  "Constant"
+	  SID			  "400"
+	  Position		  [1150, 200, 1180, 230]
+	  ZOrder		  54
+	  BlockMirror		  on
+	  NamePlacement		  "alternate"
+	  Value			  "100"
+	}
+	Block {
 	  BlockType		  SubSystem
 	  Name			  "Drossel B102 -> B103"
 	  SID			  "326"
 	  Ports			  [3, 1]
-	  Position		  [645, 157, 790, 243]
+	  Position		  [740, 137, 885, 223]
 	  ZOrder		  37
 	  BackgroundColor	  "yellow"
 	  RequestExecContextInheritance	off
@@ -1874,6 +1914,7 @@ Model {
 	      SID		      "327"
 	      Position		      [100, 433, 130, 447]
 	      ZOrder		      -3
+	      NamePlacement	      "alternate"
 	      IconDisplay	      "Port number"
 	    }
 	    Block {
@@ -1895,6 +1936,41 @@ Model {
 	      IconDisplay	      "Port number"
 	    }
 	    Block {
+	      BlockType		      Gain
+	      Name		      "\n"
+	      SID		      "381"
+	      Position		      [175, 275, 205, 305]
+	      ZOrder		      27
+	      Gain		      "2"
+	      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Gain
+	      Name		      "\nnegative2"
+	      SID		      "401"
+	      Position		      [230, 425, 290, 455]
+	      ZOrder		      35
+	      Gain		      "0.01"
+	      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "Divide"
+	      SID		      "382"
+	      Ports		      [2, 1]
+	      Position		      [300, 202, 330, 233]
+	      ZOrder		      28
+	      Inputs		      "*/"
+	      InputSameDT	      off
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      RndMeth		      "Floor"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
 	      BlockType		      Constant
 	      Name		      "Erdbeschleunigung m/s^2"
 	      SID		      "332"
@@ -1913,6 +1989,42 @@ Model {
 	      OutDataTypeStr	      "double"
 	    }
 	    Block {
+	      BlockType		      Product
+	      Name		      "Product1"
+	      SID		      "377"
+	      Ports		      [2, 1]
+	      Position		      [340, 292, 370, 323]
+	      ZOrder		      23
+	      InputSameDT	      off
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      RndMeth		      "Floor"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "Product2"
+	      SID		      "383"
+	      Ports		      [2, 1]
+	      Position		      [540, 157, 570, 188]
+	      ZOrder		      29
+	      InputSameDT	      off
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      RndMeth		      "Floor"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "Product3"
+	      SID		      "385"
+	      Ports		      [2, 1]
+	      Position		      [350, 147, 380, 178]
+	      ZOrder		      31
+	      InputSameDT	      off
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      RndMeth		      "Floor"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
 	      BlockType		      Constant
 	      Name		      "Querschnitt Rohr m^2"
 	      SID		      "337"
@@ -1922,12 +2034,139 @@ Model {
 	      OutDataTypeStr	      "double"
 	    }
 	    Block {
+	      BlockType		      Sqrt
+	      Name		      "Signed\nSqrt"
+	      SID		      "397"
+	      Position		      [440, 150, 470, 180]
+	      ZOrder		      33
+	      Operator		      "signedSqrt"
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "Sum2"
+	      SID		      "378"
+	      Ports		      [2, 1]
+	      Position		      [210, 65, 230, 85]
+	      ZOrder		      24
+	      ShowName		      off
+	      IconShape		      "round"
+	      Inputs		      "|+-"
+	      InputSameDT	      off
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
 	      BlockType		      Outport
 	      Name		      "Q [m^3/s]"
 	      SID		      "340"
-	      Position		      [645, 88, 675, 102]
+	      Position		      [745, 168, 775, 182]
 	      ZOrder		      -16
 	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      ZOrder		      14
+	      SrcBlock		      "Querschnitt Rohr m^2"
+	      SrcPort		      1
+	      Points		      [105, 0; 0, -65]
+	      DstBlock		      "Product1"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      15
+	      SrcBlock		      "Stellwert Ventil [%]"
+	      SrcPort		      1
+	      DstBlock		      "\nnegative2"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      17
+	      SrcBlock		      "V_Zufluss[m^3]"
+	      SrcPort		      1
+	      DstBlock		      "Sum2"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      18
+	      SrcBlock		      "V_Abfluss [m^3]"
+	      SrcPort		      1
+	      Points		      [85, 0]
+	      DstBlock		      "Sum2"
+	      DstPort		      2
+	    }
+	    Line {
+	      ZOrder		      26
+	      SrcBlock		      "Erdbeschleunigung m/s^2"
+	      SrcPort		      1
+	      DstBlock		      "\n"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      25
+	      SrcBlock		      "Fläche Behälter m^2"
+	      SrcPort		      1
+	      DstBlock		      "Divide"
+	      DstPort		      2
+	    }
+	    Line {
+	      ZOrder		      27
+	      SrcBlock		      "\n"
+	      SrcPort		      1
+	      Points		      [28, 0; 0, -80]
+	      DstBlock		      "Divide"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      49
+	      SrcBlock		      "Signed\nSqrt"
+	      SrcPort		      1
+	      DstBlock		      "Product2"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      36
+	      SrcBlock		      "Sum2"
+	      SrcPort		      1
+	      Points		      [55, 0; 0, 80]
+	      DstBlock		      "Product3"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      37
+	      SrcBlock		      "Divide"
+	      SrcPort		      1
+	      Points		      [5, 0; 0, -50]
+	      DstBlock		      "Product3"
+	      DstPort		      2
+	    }
+	    Line {
+	      ZOrder		      48
+	      SrcBlock		      "Product3"
+	      SrcPort		      1
+	      DstBlock		      "Signed\nSqrt"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      40
+	      SrcBlock		      "Product1"
+	      SrcPort		      1
+	      Points		      [125, 0; 0, -130]
+	      DstBlock		      "Product2"
+	      DstPort		      2
+	    }
+	    Line {
+	      ZOrder		      52
+	      SrcBlock		      "\nnegative2"
+	      SrcPort		      1
+	      Points		      [14, 0; 0, -125]
+	      DstBlock		      "Product1"
+	      DstPort		      2
+	    }
+	    Line {
+	      ZOrder		      66
+	      SrcBlock		      "Product2"
+	      SrcPort		      1
+	      DstBlock		      "Q [m^3/s]"
+	      DstPort		      1
 	    }
 	  }
 	}
@@ -1936,7 +2175,7 @@ Model {
 	  Name			  "Drossel B103 -> B104"
 	  SID			  "341"
 	  Ports			  [3, 1]
-	  Position		  [645, 292, 790, 378]
+	  Position		  [1120, 247, 1265, 333]
 	  ZOrder		  40
 	  BackgroundColor	  "yellow"
 	  RequestExecContextInheritance	off
@@ -1968,7 +2207,7 @@ Model {
 	  }
 	  System {
 	    Name		    "Drossel B103 -> B104"
-	    Location		    [225, 182, 1532, 1007]
+	    Location		    [-7, -7, 1543, 831]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
 	    SetExecutionDomain	    off
@@ -2011,6 +2250,41 @@ Model {
 	      IconDisplay	      "Port number"
 	    }
 	    Block {
+	      BlockType		      Gain
+	      Name		      "\n"
+	      SID		      "387"
+	      Position		      [205, 255, 235, 285]
+	      ZOrder		      36
+	      Gain		      "2"
+	      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Gain
+	      Name		      "\npercent\n"
+	      SID		      "403"
+	      Position		      [225, 425, 280, 455]
+	      ZOrder		      42
+	      Gain		      "0.01"
+	      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "Divide"
+	      SID		      "389"
+	      Ports		      [2, 1]
+	      Position		      [340, 207, 370, 238]
+	      ZOrder		      37
+	      Inputs		      "*/"
+	      InputSameDT	      off
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      RndMeth		      "Floor"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
 	      BlockType		      Constant
 	      Name		      "Erdbeschleunigung m/s^2"
 	      SID		      "347"
@@ -2029,6 +2303,42 @@ Model {
 	      OutDataTypeStr	      "double"
 	    }
 	    Block {
+	      BlockType		      Product
+	      Name		      "Product1"
+	      SID		      "391"
+	      Ports		      [2, 1]
+	      Position		      [380, 297, 410, 328]
+	      ZOrder		      34
+	      InputSameDT	      off
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      RndMeth		      "Floor"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "Product2"
+	      SID		      "392"
+	      Ports		      [2, 1]
+	      Position		      [580, 162, 610, 193]
+	      ZOrder		      38
+	      InputSameDT	      off
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      RndMeth		      "Floor"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "Product3"
+	      SID		      "393"
+	      Ports		      [2, 1]
+	      Position		      [390, 152, 420, 183]
+	      ZOrder		      40
+	      InputSameDT	      off
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      RndMeth		      "Floor"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
 	      BlockType		      Constant
 	      Name		      "Querschnitt Rohr m^2"
 	      SID		      "352"
@@ -2038,12 +2348,142 @@ Model {
 	      OutDataTypeStr	      "double"
 	    }
 	    Block {
+	      BlockType		      Sqrt
+	      Name		      "Signed\nSqrt"
+	      SID		      "398"
+	      Position		      [470, 155, 500, 185]
+	      ZOrder		      41
+	      Operator		      "signedSqrt"
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "Sum2"
+	      SID		      "395"
+	      Ports		      [2, 1]
+	      Position		      [250, 70, 270, 90]
+	      ZOrder		      35
+	      ShowName		      off
+	      IconShape		      "round"
+	      Inputs		      "|+-"
+	      InputSameDT	      off
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
 	      BlockType		      Outport
 	      Name		      "Q [m^3/s]"
 	      SID		      "355"
-	      Position		      [645, 88, 675, 102]
+	      Position		      [755, 173, 785, 187]
 	      ZOrder		      -16
 	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      ZOrder		      1
+	      SrcBlock		      "Divide"
+	      SrcPort		      1
+	      Points		      [5, 0; 0, -50]
+	      DstBlock		      "Product3"
+	      DstPort		      2
+	    }
+	    Line {
+	      ZOrder		      40
+	      SrcBlock		      "Product2"
+	      SrcPort		      1
+	      DstBlock		      "Q [m^3/s]"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      4
+	      SrcBlock		      "\n"
+	      SrcPort		      1
+	      Points		      [38, 0; 0, -55]
+	      DstBlock		      "Divide"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      5
+	      SrcBlock		      "Sum2"
+	      SrcPort		      1
+	      Points		      [55, 0; 0, 80]
+	      DstBlock		      "Product3"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      17
+	      SrcBlock		      "Fläche Behälter m^2"
+	      SrcPort		      1
+	      Points		      [69, 0; 0, 5]
+	      DstBlock		      "Divide"
+	      DstPort		      2
+	    }
+	    Line {
+	      ZOrder		      19
+	      SrcBlock		      "Querschnitt Rohr m^2"
+	      SrcPort		      1
+	      Points		      [124, 0; 0, -60]
+	      DstBlock		      "Product1"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      34
+	      SrcBlock		      "Signed\nSqrt"
+	      SrcPort		      1
+	      DstBlock		      "Product2"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      37
+	      SrcBlock		      "V_Abfluss [m^3]"
+	      SrcPort		      1
+	      Points		      [41, 0; 0, 20; 84, 0]
+	      DstBlock		      "Sum2"
+	      DstPort		      2
+	    }
+	    Line {
+	      ZOrder		      20
+	      SrcBlock		      "Stellwert Ventil [%]"
+	      SrcPort		      1
+	      DstBlock		      "\npercent\n"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      38
+	      SrcBlock		      "V_Zufluss[m^3]"
+	      SrcPort		      1
+	      Points		      [55, 0; 0, 5]
+	      DstBlock		      "Sum2"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      12
+	      SrcBlock		      "Product1"
+	      SrcPort		      1
+	      Points		      [125, 0; 0, -130]
+	      DstBlock		      "Product2"
+	      DstPort		      2
+	    }
+	    Line {
+	      ZOrder		      35
+	      SrcBlock		      "Product3"
+	      SrcPort		      1
+	      DstBlock		      "Signed\nSqrt"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      18
+	      SrcBlock		      "Erdbeschleunigung m/s^2"
+	      SrcPort		      1
+	      Points		      [33, 0; 0, -25]
+	      DstBlock		      "\n"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      39
+	      SrcBlock		      "\npercent\n"
+	      SrcPort		      1
+	      Points		      [35, 0; 0, -120]
+	      DstBlock		      "Product1"
+	      DstPort		      2
 	    }
 	  }
 	}
@@ -2088,7 +2528,7 @@ Model {
 	  BlockType		  Lookup
 	  Name			  "Lookup Table V101"
 	  SID			  "358"
-	  Position		  [280, 16, 365, 84]
+	  Position		  [605, 6, 690, 74]
 	  ZOrder		  44
 	  InputValues		  "[0,20,25,30,35,40,45,50,55,60,65,70,75,80,85,90,100]"
 	  Table			  "[100,96,90,88,84,76,68,60,49,41,34,27,22,19,16,12,0]"
@@ -2099,7 +2539,7 @@ Model {
 	  BlockType		  Outport
 	  Name			  "V2 [m^3]"
 	  SID			  "359"
-	  Position		  [625, 43, 655, 57]
+	  Position		  [555, 133, 580, 147]
 	  ZOrder		  49
 	  IconDisplay		  "Port number"
 	}
@@ -2107,7 +2547,7 @@ Model {
 	  BlockType		  Outport
 	  Name			  "V3 [m^3]"
 	  SID			  "360"
-	  Position		  [695, 43, 725, 57]
+	  Position		  [1110, 138, 1140, 152]
 	  ZOrder		  50
 	  Port			  "2"
 	  IconDisplay		  "Port number"
@@ -2116,7 +2556,7 @@ Model {
 	  BlockType		  Outport
 	  Name			  "V4 [m^3]"
 	  SID			  "361"
-	  Position		  [760, 43, 790, 57]
+	  Position		  [1560, 303, 1590, 317]
 	  ZOrder		  51
 	  Port			  "3"
 	  IconDisplay		  "Port number"
@@ -2149,6 +2589,7 @@ Model {
 	  ZOrder		  97
 	  SrcBlock		  "U_V106"
 	  SrcPort		  1
+	  Points		  [30, 0; 0, 5]
 	  DstBlock		  "Lookup\nTable (2-D) V106"
 	  DstPort		  1
 	}
@@ -2179,108 +2620,135 @@ Model {
 	  }
 	}
 	Line {
-	  Name			  "Q_ab_B104 [m^3/s]"
-	  ZOrder		  132
-	  Labels		  [1, 1]
-	  SrcBlock		  "Lookup\nTable (2-D) V106"
-	  SrcPort		  1
-	  DstBlock		  "B104"
-	  DstPort		  2
-	}
-	Line {
 	  ZOrder		  126
 	  SrcBlock		  "B102"
 	  SrcPort		  1
-	  Points		  [19, 0]
+	  Points		  [25, 0]
 	  Branch {
-	    ZOrder		    134
-	    Points		    [0, 60]
+	    ZOrder		    202
+	    Points		    [0, 40]
 	    DstBlock		    "Drossel B102 -> B103"
 	    DstPort		    2
 	  }
 	  Branch {
-	    ZOrder		    133
-	    Points		    [10, 0; 0, -90]
+	    ZOrder		    198
 	    DstBlock		    "V2 [m^3]"
 	    DstPort		    1
 	  }
 	}
 	Line {
-	  ZOrder		  127
-	  SrcBlock		  "Drossel B102 -> B103"
+	  ZOrder		  179
+	  SrcBlock		  "Lookup Table V101"
 	  SrcPort		  1
-	  Points		  [9, 0; 0, 69; -232, 0; 0, -53; -148, 0; 0, 29]
-	  DstBlock		  "B103"
+	  Points		  [20, 0; 0, 110]
+	  DstBlock		  "Drossel B102 -> B103"
 	  DstPort		  1
 	}
 	Line {
-	  ZOrder		  128
+	  ZOrder		  187
+	  SrcBlock		  "Constant"
+	  SrcPort		  1
+	  Points		  [-42, 0; 0, 45]
+	  DstBlock		  "Drossel B103 -> B104"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  213
+	  SrcBlock		  "Drossel B102 -> B103"
+	  SrcPort		  1
+	  Points		  [14, 0]
+	  Branch {
+	    ZOrder		    215
+	    Points		    [0, 69; -524, 0]
+	    DstBlock		    "B102"
+	    DstPort		    2
+	  }
+	  Branch {
+	    ZOrder		    214
+	    DstBlock		    "B103"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  ZOrder		  216
+	  SrcBlock		  "B103"
+	  SrcPort		  1
+	  Points		  [12, 0]
+	  Branch {
+	    ZOrder		    221
+	    Points		    [0, -55]
+	    DstBlock		    "V3 [m^3]"
+	    DstPort		    1
+	  }
+	  Branch {
+	    ZOrder		    217
+	    Points		    [12, 0; 0, 68]
+	    Branch {
+	      ZOrder		      225
+	      Points		      [-381, 0; 0, -58]
+	      DstBlock		      "Drossel B102 -> B103"
+	      DstPort		      3
+	    }
+	    Branch {
+	      ZOrder		      224
+	      Points		      [0, 22]
+	      DstBlock		      "Drossel B103 -> B104"
+	      DstPort		      2
+	    }
+	  }
+	}
+	Line {
+	  ZOrder		  219
+	  SrcBlock		  "B104"
+	  SrcPort		  1
+	  Points		  [23, 0]
+	  Branch {
+	    ZOrder		    223
+	    Points		    [0, 65; -194, 0]
+	    Branch {
+	      ZOrder		      228
+	      Points		      [0, 94; -1195, 0; 0, -54]
+	      DstBlock		      "Lookup\nTable (2-D) V106"
+	      DstPort		      2
+	    }
+	    Branch {
+	      ZOrder		      227
+	      Points		      [-201, 0; 0, -55]
+	      DstBlock		      "Drossel B103 -> B104"
+	      DstPort		      3
+	    }
+	  }
+	  Branch {
+	    ZOrder		    222
+	    DstBlock		    "V4 [m^3]"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  ZOrder		  220
 	  SrcBlock		  "Drossel B103 -> B104"
 	  SrcPort		  1
-	  Points		  [9, 0; 0, 69; -222, 0; 0, -68; -158, 0]
+	  Points		  [61, 0]
 	  Branch {
-	    ZOrder		    142
-	    Points		    [0, -51]
+	    ZOrder		    230
+	    Points		    [0, -187; -412, 0; 0, 117]
 	    DstBlock		    "B103"
 	    DstPort		    2
 	  }
 	  Branch {
-	    ZOrder		    141
-	    Points		    [0, 24]
+	    ZOrder		    229
 	    DstBlock		    "B104"
 	    DstPort		    1
 	  }
 	}
 	Line {
-	  ZOrder		  135
-	  SrcBlock		  "B103"
+	  Name			  "Q_ab_B104 [m^3/s]"
+	  ZOrder		  226
+	  Labels		  [0, 0]
+	  SrcBlock		  "Lookup\nTable (2-D) V106"
 	  SrcPort		  1
-	  Points		  [4, 0]
-	  Branch {
-	    ZOrder		    139
-	    Points		    [0, -35; 32, 0]
-	    Branch {
-	      ZOrder		      145
-	      Points		      [0, -117; 79, 0; 0, -63]
-	      DstBlock		      "V3 [m^3]"
-	      DstPort		      1
-	    }
-	    Branch {
-	      ZOrder		      144
-	      DstBlock		      "Drossel B102 -> B103"
-	      DstPort		      3
-	    }
-	  }
-	  Branch {
-	    ZOrder		    137
-	    Points		    [0, 54; 66, 0]
-	    DstBlock		    "Drossel B103 -> B104"
-	    DstPort		    2
-	  }
-	}
-	Line {
-	  ZOrder		  138
-	  SrcBlock		  "B104"
-	  SrcPort		  1
-	  Points		  [54, 0; 0, -15]
-	  Branch {
-	    ZOrder		    147
-	    Points		    [0, -230; 129, 0; 0, -85]
-	    DstBlock		    "V4 [m^3]"
-	    DstPort		    1
-	  }
-	  Branch {
-	    ZOrder		    146
-	    DstBlock		    "Drossel B103 -> B104"
-	    DstPort		    3
-	  }
-	}
-	Line {
-	  ZOrder		  140
-	  SrcBlock		  "Lookup Table V101"
-	  SrcPort		  1
-	  Points		  [38, 0; 0, 110]
-	  DstBlock		  "B102"
+	  Points		  [0, -40; 1095, 0; 0, -30]
+	  DstBlock		  "B104"
 	  DstPort		  2
 	}
       }
@@ -2323,7 +2791,7 @@ Model {
 	  }
 	  Name			  "Auswahl"
 	  Prompt		  "Auswahl"
-	  Value			  "Bearbeiten"
+	  Value			  "Mit Lösung vergleichen"
 	  Evaluate		  "off"
 	  Callback		  "maskStr = get_param(gcb,'Auswahl');\n\nif strcmp(maskStr(1),'I')\n     assignin('base','Testen',0)\nel"
 	  "se if strcmp(maskStr(1),'M')\n        assignin('base','Testen',1)\n    else\n        assignin('base','Testen',2)\n "
@@ -2401,7 +2869,7 @@ Model {
 	  FunctionName		  "sf_sfun"
 	  PortCounts		  "[1 1]"
 	  SFunctionDeploymentMode off
-	  EnableBusSupport	  off
+	  EnableBusSupport	  on
 	  SFcnIsStateOwnerBlock	  off
 	}
 	Block {
@@ -2473,12 +2941,25 @@ Model {
       Ports		      [1]
       Position		      [870, 254, 900, 286]
       ZOrder		      12
-      ScopeSpecificationString "C++SS(StrPVP('Location','[-6, 60, 1914, 1181]'),StrPVP('Open','off'),MxPVP('AxesTitles"
-      "',53,'struct(''axes1'',''%<SignalLabel>'')'),MxPVP('ScopeGraphics',56,'struct(''FigureColor'',''[0.5 0.5 0.5]'',"
-      "''AxesColor'',''[0 0 0]'',''AxesTickColor'',''[1 1 1]'',''LineColors'',''[1 1 0;1 0 1;0 1 1;1 0 0;0 1 0;0 0 1]''"
-      ",''LineStyles'',''-|-|-|-|-|-'',''LineWidths'',''[0.5 0.5 0.5 0.5 0.5 0.5]'',''MarkerStyles'',''none|none|none|n"
-      "one|none|none'')'),StrPVP('ShowLegends','off'),StrPVP('LimitDataPoints','off'),StrPVP('ScrollMode','off'),StrPVP"
-      "('DataFormat','Array'),StrPVP('Decimation','1'),StrPVP('BlockParamSampleInput','off'))"
+      ScopeSpecificationString "Simulink.scopes.TimeScopeBlockCfg('CurrentConfiguration', extmgr.ConfigurationSet(extm"
+      "gr.Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration('S"
+      "ources','WiredSimulink',true,'DataLoggingSaveFormat','Array','DataLoggingDecimation','1','DataLoggingDecimateDat"
+      "a',true),extmgr.Configuration('Visuals','Time Domain',true,'SerializedDisplays',{struct('MinYLimReal','-0.00106'"
+      ",'MaxYLimReal','0.00957','YLabelReal','','MinYLimMag','0.00000','MaxYLimMag','0.00957','LegendVisibility','off',"
+      "'XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.68627450"
+      "9803922 0.686274509803922],'ColorOrder',[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.41176"
+      "4705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803"
+      "921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],'Title','%<SignalLabel>','LineProperties"
+      "Cache',{{}},'UserDefinedChannelNames',{{}},'NumLines',3,'LineNames',{{'Dreitank-System/1','Dreitank-System/2','D"
+      "reitank-System/3'}},'ShowContent',true,'Placement',1)},'DisplayPropertyDefaults',struct('MinYLimReal','-0.00106'"
+      ",'MaxYLimReal','0.00957','YLabelReal','','MinYLimMag','0.00000','MaxYLimMag','0.00957','LegendVisibility','off',"
+      "'XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.68627450"
+      "9803922 0.686274509803922],'ColorOrder',[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.41176"
+      "4705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803"
+      "921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],'Title','%<SignalLabel>','LineProperties"
+      "Cache',{{}},'UserDefinedChannelNames',{{}},'NumLines',0,'LineNames',{{[]}},'ShowContent',true,'Placement',1)),ex"
+      "tmgr.Configuration('Tools','Plot Navigation',true),extmgr.Configuration('Tools','Measurements',true,'Version','2"
+      "018b')),'Version','2018b','Location',[1 74.1999999999999 1537 823])"
       NumInputPorts	      "1"
       Floating		      off
     }
@@ -2744,12 +3225,13 @@ Model {
 	      Ports		      [1]
 	      Position		      [585, 140, 695, 200]
 	      ZOrder		      501
-	      LibraryVersion	      "1.105"
+	      LibraryVersion	      "1.112"
 	      FontName		      "arial"
 	      SourceBlock	      "dspnetwork/UDP Send"
 	      SourceType	      "UDP Send"
 	      SourceProductName	      "DSP System Toolbox"
 	      SourceProductBaseCode   "DS"
+	      MultiThreadCoSim	      "auto"
 	      remoteURL		      "'localhost'"
 	      remotePort	      "9999"
 	      localURL		      "'0.0.0.0'"
@@ -2907,7 +3389,7 @@ Model {
 		    FunctionName	    "sf_sfun"
 		    PortCounts		    "[4 2]"
 		    SFunctionDeploymentMode off
-		    EnableBusSupport	    off
+		    EnableBusSupport	    on
 		    SFcnIsStateOwnerBlock   off
 		    Port {
 		    PortNumber		    2
@@ -3170,12 +3652,13 @@ Model {
 	      Ports		      [1]
 	      Position		      [585, 140, 695, 200]
 	      ZOrder		      501
-	      LibraryVersion	      "1.105"
+	      LibraryVersion	      "1.112"
 	      FontName		      "arial"
 	      SourceBlock	      "dspnetwork/UDP Send"
 	      SourceType	      "UDP Send"
 	      SourceProductName	      "DSP System Toolbox"
 	      SourceProductBaseCode   "DS"
+	      MultiThreadCoSim	      "auto"
 	      remoteURL		      "'localhost'"
 	      remotePort	      "9999"
 	      localURL		      "'0.0.0.0'"
@@ -3333,7 +3816,7 @@ Model {
 		    FunctionName	    "sf_sfun"
 		    PortCounts		    "[4 2]"
 		    SFunctionDeploymentMode off
-		    EnableBusSupport	    off
+		    EnableBusSupport	    on
 		    SFcnIsStateOwnerBlock   off
 		    Port {
 		    PortNumber		    2
@@ -3596,12 +4079,13 @@ Model {
 	      Ports		      [1]
 	      Position		      [585, 140, 695, 200]
 	      ZOrder		      501
-	      LibraryVersion	      "1.105"
+	      LibraryVersion	      "1.112"
 	      FontName		      "arial"
 	      SourceBlock	      "dspnetwork/UDP Send"
 	      SourceType	      "UDP Send"
 	      SourceProductName	      "DSP System Toolbox"
 	      SourceProductBaseCode   "DS"
+	      MultiThreadCoSim	      "auto"
 	      remoteURL		      "'localhost'"
 	      remotePort	      "9999"
 	      localURL		      "'0.0.0.0'"
@@ -3759,7 +4243,7 @@ Model {
 		    FunctionName	    "sf_sfun"
 		    PortCounts		    "[4 2]"
 		    SFunctionDeploymentMode off
-		    EnableBusSupport	    off
+		    EnableBusSupport	    on
 		    SFcnIsStateOwnerBlock   off
 		    Port {
 		    PortNumber		    2
@@ -4107,12 +4591,13 @@ Model {
 		  Ports			  [1]
 		  Position		  [535, 385, 645, 445]
 		  ZOrder		  501
-		  LibraryVersion	  "1.105"
+		  LibraryVersion	  "1.112"
 		  FontName		  "arial"
 		  SourceBlock		  "dspnetwork/UDP Send"
 		  SourceType		  "UDP Send"
 		  SourceProductName	  "DSP System Toolbox"
 		  SourceProductBaseCode	  "DS"
+		  MultiThreadCoSim	  "auto"
 		  remoteURL		  "'localhost'"
 		  remotePort		  "9999"
 		  localURL		  "'0.0.0.0'"
@@ -4129,12 +4614,13 @@ Model {
 		  Ports			  [1]
 		  Position		  [510, 65, 620, 125]
 		  ZOrder		  482
-		  LibraryVersion	  "1.105"
+		  LibraryVersion	  "1.112"
 		  FontName		  "arial"
 		  SourceBlock		  "dspnetwork/UDP Send"
 		  SourceType		  "UDP Send"
 		  SourceProductName	  "DSP System Toolbox"
 		  SourceProductBaseCode	  "DS"
+		  MultiThreadCoSim	  "auto"
 		  remoteURL		  "'localhost'"
 		  remotePort		  "9999"
 		  localURL		  "'0.0.0.0'"
@@ -4292,7 +4778,7 @@ Model {
 		    FunctionName	    "sf_sfun"
 		    PortCounts		    "[4 2]"
 		    SFunctionDeploymentMode off
-		    EnableBusSupport	    off
+		    EnableBusSupport	    on
 		    SFcnIsStateOwnerBlock   off
 		    Port {
 		    PortNumber		    2
@@ -4560,7 +5046,7 @@ Model {
 		    FunctionName	    "sf_sfun"
 		    PortCounts		    "[4 2]"
 		    SFunctionDeploymentMode off
-		    EnableBusSupport	    off
+		    EnableBusSupport	    on
 		    SFcnIsStateOwnerBlock   off
 		    Port {
 		    PortNumber		    2
@@ -4896,12 +5382,13 @@ Model {
 		  Ports			  [1]
 		  Position		  [525, 370, 635, 430]
 		  ZOrder		  501
-		  LibraryVersion	  "1.105"
+		  LibraryVersion	  "1.112"
 		  FontName		  "arial"
 		  SourceBlock		  "dspnetwork/UDP Send"
 		  SourceType		  "UDP Send"
 		  SourceProductName	  "DSP System Toolbox"
 		  SourceProductBaseCode	  "DS"
+		  MultiThreadCoSim	  "auto"
 		  remoteURL		  "'localhost'"
 		  remotePort		  "9999"
 		  localURL		  "'0.0.0.0'"
@@ -4918,12 +5405,13 @@ Model {
 		  Ports			  [1]
 		  Position		  [510, 65, 620, 125]
 		  ZOrder		  482
-		  LibraryVersion	  "1.105"
+		  LibraryVersion	  "1.112"
 		  FontName		  "arial"
 		  SourceBlock		  "dspnetwork/UDP Send"
 		  SourceType		  "UDP Send"
 		  SourceProductName	  "DSP System Toolbox"
 		  SourceProductBaseCode	  "DS"
+		  MultiThreadCoSim	  "auto"
 		  remoteURL		  "'localhost'"
 		  remotePort		  "9999"
 		  localURL		  "'0.0.0.0'"
@@ -5081,7 +5569,7 @@ Model {
 		    FunctionName	    "sf_sfun"
 		    PortCounts		    "[4 2]"
 		    SFunctionDeploymentMode off
-		    EnableBusSupport	    off
+		    EnableBusSupport	    on
 		    SFcnIsStateOwnerBlock   off
 		    Port {
 		    PortNumber		    2
@@ -5349,7 +5837,7 @@ Model {
 		    FunctionName	    "sf_sfun"
 		    PortCounts		    "[4 2]"
 		    SFunctionDeploymentMode off
-		    EnableBusSupport	    off
+		    EnableBusSupport	    on
 		    SFcnIsStateOwnerBlock   off
 		    Port {
 		    PortNumber		    2
@@ -5685,12 +6173,13 @@ Model {
 		  Ports			  [1]
 		  Position		  [540, 325, 650, 385]
 		  ZOrder		  495
-		  LibraryVersion	  "1.105"
+		  LibraryVersion	  "1.112"
 		  FontName		  "arial"
 		  SourceBlock		  "dspnetwork/UDP Send"
 		  SourceType		  "UDP Send"
 		  SourceProductName	  "DSP System Toolbox"
 		  SourceProductBaseCode	  "DS"
+		  MultiThreadCoSim	  "auto"
 		  remoteURL		  "'localhost'"
 		  remotePort		  "9999"
 		  localURL		  "'0.0.0.0'"
@@ -5707,12 +6196,13 @@ Model {
 		  Ports			  [1]
 		  Position		  [510, 65, 620, 125]
 		  ZOrder		  482
-		  LibraryVersion	  "1.105"
+		  LibraryVersion	  "1.112"
 		  FontName		  "arial"
 		  SourceBlock		  "dspnetwork/UDP Send"
 		  SourceType		  "UDP Send"
 		  SourceProductName	  "DSP System Toolbox"
 		  SourceProductBaseCode	  "DS"
+		  MultiThreadCoSim	  "auto"
 		  remoteURL		  "'localhost'"
 		  remotePort		  "9999"
 		  localURL		  "'0.0.0.0'"
@@ -5870,7 +6360,7 @@ Model {
 		    FunctionName	    "sf_sfun"
 		    PortCounts		    "[4 2]"
 		    SFunctionDeploymentMode off
-		    EnableBusSupport	    off
+		    EnableBusSupport	    on
 		    SFcnIsStateOwnerBlock   off
 		    Port {
 		    PortNumber		    2
@@ -6138,7 +6628,7 @@ Model {
 		    FunctionName	    "sf_sfun"
 		    PortCounts		    "[4 2]"
 		    SFunctionDeploymentMode off
-		    EnableBusSupport	    off
+		    EnableBusSupport	    on
 		    SFcnIsStateOwnerBlock   off
 		    Port {
 		    PortNumber		    2
