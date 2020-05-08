@@ -1,4 +1,4 @@
-
+clear all;
 %% Messdaten einlesen
 load('Aufgabe_8_Sprungantwort_Pumpe.mat');
 %y = cell2mat(Sprungantwort_Pumpe.OutputData);
@@ -24,6 +24,7 @@ opt = stepDataOptions('InputOffset',50,'StepAmplitude',30);
 [y,t] = step(sys,opt);
 figure(2);
 plot(y);
+grid on
 
 
 
