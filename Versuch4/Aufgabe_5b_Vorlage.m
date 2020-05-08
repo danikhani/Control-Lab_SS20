@@ -37,4 +37,4 @@ xlabel('Zeit /s');
 
 % Simu-Modell wurde angepasst. Es müssen so lange iteraiert werden bis die
 % beiden geraphen passen 
-% -> Arohr = 550*10-6
+% -> Arohr = 550*10^-6
