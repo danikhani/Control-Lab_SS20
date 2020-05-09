@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.84"
+    ComputedModelVersion    "1.85"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -17,7 +17,13 @@ Model {
     PreCompExecutionDomainType "Unset"
     IsExportFunctionModel   0
     NumParameterArguments   0
-    NumExternalFileReferences 9
+    NumExternalFileReferences 10
+    ExternalFileReference {
+      Reference		      "cstblocks/LTI System"
+      Path		      "Aufgabe_7_Simu/LTI System"
+      SID		      "461"
+      Type		      "LIBRARY_BLOCK"
+    }
     ExternalFileReference {
       Reference		      "dspnetwork/UDP Send"
       Path		      "Aufgabe_7_Simu/Visualisierung/Simulation/UDP Send1"
@@ -124,8 +130,8 @@ Model {
 	ViewObjType		"SimulinkTopLevel"
 	LoadSaveID		"0"
 	Extents			[1681.0, 833.0]
-	ZoomFactor		[1.0]
-	Offset			[68.879283944909048, 86.960358027545681]
+	ZoomFactor		[0.99999999999999978]
+	Offset			[-10.795774365748684, 2.1120586540401973]
       }
       Object {
 	$PropName		"DockComponentsInfo"
@@ -159,9 +165,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "danial"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Fri May 08 14:19:29 2020"
-  RTWModifiedTimeStamp	  510847953
-  ModelVersionFormat	  "1.%<AutoIncrement:84>"
+  LastModifiedDate	  "Sat May 09 16:03:22 2020"
+  RTWModifiedTimeStamp	  510940937
+  ModelVersionFormat	  "1.%<AutoIncrement:85>"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
   LibraryLinkDisplay	  "disabled"
@@ -1233,17 +1239,6 @@ Model {
       Iterations	      "3"
     }
     Block {
-      BlockType		      StateSpace
-      A			      "1"
-      B			      "1"
-      C			      "1"
-      D			      "1"
-      InitialCondition	      "0.0"
-      AbsoluteTolerance	      "auto"
-      ContinuousStateAttributes	"''"
-      Realization	      "auto"
-    }
-    Block {
       BlockType		      Step
       Time		      "1"
       Before		      "0"
@@ -1341,7 +1336,7 @@ Model {
     ShowPageBoundaries	    off
     ZoomFactor		    "100"
     ReportName		    "simulink-default.rpt"
-    SIDHighWatermark	    "460"
+    SIDHighWatermark	    "463"
     Block {
       BlockType		      Constant
       Name		      "Constant"
@@ -2629,6 +2624,7 @@ Model {
 	  Points		  [12, 0; 0, -70]
 	  Branch {
 	    ZOrder		    124
+	    Labels		    [2, 1]
 	    Points		    [0, -40]
 	    DstBlock		    "B102"
 	    DstPort		    1
@@ -2923,17 +2919,20 @@ Model {
       }
     }
     Block {
-      BlockType		      StateSpace
-      Name		      "Internal"
-      SID		      "454"
+      BlockType		      Reference
+      Name		      "LTI System"
+      SID		      "461"
       Ports		      [1, 1]
-      Position		      [500, 670, 560, 700]
-      ZOrder		      789
-      ShowName		      off
-      A			      "linsys1.A"
-      B			      "linsys1.B"
-      C			      "linsys1.C"
-      D			      "linsys1.D"
+      Position		      [625, 617, 720, 653]
+      ZOrder		      795
+      LibraryVersion	      "1.341"
+      SourceBlock	      "cstblocks/LTI System"
+      SourceType	      "LTI Block"
+      SourceProductName	      "Control System Toolbox"
+      SourceProductBaseCode   "CT"
+      ContentPreviewEnabled   on
+      sys		      "linsys2"
+      IC		      "[8*10^-3; 6*10^-3;5*10^-3]"
     }
     Block {
       BlockType		      ManualSwitch
@@ -2941,6 +2940,7 @@ Model {
       SID		      "101"
       Position		      [365, 267, 395, 303]
       ZOrder		      30
+      CurrentSetting	      "0"
     }
     Block {
       BlockType		      ManualSwitch
@@ -2948,6 +2948,7 @@ Model {
       SID		      "103"
       Position		      [365, 377, 395, 413]
       ZOrder		      32
+      CurrentSetting	      "0"
     }
     Block {
       BlockType		      ManualSwitch
@@ -2955,6 +2956,7 @@ Model {
       SID		      "363"
       Position		      [365, 147, 395, 183]
       ZOrder		      513
+      CurrentSetting	      "0"
     }
     Block {
       BlockType		      Mux
@@ -2963,17 +2965,6 @@ Model {
       Ports		      [3, 1]
       Position		      [820, 228, 825, 312]
       ZOrder		      13
-      ShowName		      off
-      Inputs		      "3"
-      DisplayOption	      "bar"
-    }
-    Block {
-      BlockType		      Mux
-      Name		      "Mux1"
-      SID		      "449"
-      Ports		      [3, 1]
-      Position		      [680, 643, 685, 727]
-      ZOrder		      532
       ShowName		      off
       Inputs		      "3"
       DisplayOption	      "bar"
@@ -2988,22 +2979,22 @@ Model {
       ScopeSpecificationString "Simulink.scopes.TimeScopeBlockCfg('CurrentConfiguration', extmgr.ConfigurationSet(extm"
       "gr.Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration('S"
       "ources','WiredSimulink',true,'DataLoggingSaveFormat','Array','DataLoggingDecimation','1','DataLoggingDecimateDat"
-      "a',true),extmgr.Configuration('Visuals','Time Domain',true,'SerializedDisplays',{struct('MinYLimReal','-0.00101'"
-      ",'MaxYLimReal','0.00911','YLabelReal','','MinYLimMag','0.00000','MaxYLimMag','0.00911','LegendVisibility','off',"
+      "a',true),extmgr.Configuration('Visuals','Time Domain',true,'SerializedDisplays',{struct('MinYLimReal','-0.00125'"
+      ",'MaxYLimReal','0.01125','YLabelReal','','MinYLimMag','0.00000','MaxYLimMag','0.01125','LegendVisibility','off',"
       "'XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.68627450"
       "9803922 0.686274509803922],'ColorOrder',[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.41176"
       "4705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803"
       "921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],'Title','%<SignalLabel>','LineProperties"
       "Cache',{{}},'UserDefinedChannelNames',{{}},'NumLines',4,'LineNames',{{'Dreitank-System/1','Dreitank-System/2','D"
       "reitank-System/3','Channel 4'}},'ShowContent',true,'Placement',1)},'DisplayPropertyDefaults',struct('MinYLimReal"
-      "','-0.00101','MaxYLimReal','0.00911','YLabelReal','','MinYLimMag','0.00000','MaxYLimMag','0.00911','LegendVisibi"
+      "','-0.00125','MaxYLimReal','0.01125','YLabelReal','','MinYLimMag','0.00000','MaxYLimMag','0.01125','LegendVisibi"
       "lity','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.68627450980392"
       "2 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706"
       " 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529"
       " 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],'Title','%<SignalLabel>','Li"
       "nePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumLines',0,'LineNames',{{[]}},'ShowContent',true,'Place"
       "ment',1)),extmgr.Configuration('Tools','Plot Navigation',true),extmgr.Configuration('Tools','Measurements',true,"
-      "'Version','2018b')),'Version','2018b','Location',[-142.2 283 1393.8 1031.8])"
+      "'Version','2018b')),'Version','2018b','Location',[1 74.1999999999999 1537 823])"
       NumInputPorts	      "2"
       Floating		      off
     }
@@ -3026,31 +3017,30 @@ Model {
     Block {
       BlockType		      Scope
       Name		      "Scope2"
-      SID		      "450"
-      Ports		      [2]
-      Position		      [730, 671, 760, 704]
-      ZOrder		      531
+      SID		      "462"
+      Ports		      [1]
+      Position		      [770, 619, 800, 651]
+      ZOrder		      796
       ScopeSpecificationString "Simulink.scopes.TimeScopeBlockCfg('CurrentConfiguration', extmgr.ConfigurationSet(extm"
       "gr.Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration('S"
       "ources','WiredSimulink',true,'DataLoggingSaveFormat','Array','DataLoggingDecimation','1','DataLoggingDecimateDat"
       "a',true,'DataLoggingVariableName','ScopeData1'),extmgr.Configuration('Visuals','Time Domain',true,'SerializedDis"
-      "plays',{struct('MinYLimReal','-0.00186','MaxYLimReal','0.0092','YLabelReal','','MinYLimMag','0.00000','MaxYLimMa"
-      "g','0.0092','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTic"
-      "kColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.0666666666666667;0.074509803"
-      "9215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.074509803"
-      "9215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],'Ti"
-      "tle','%<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumLines',8,'LineNames',{{'Drei"
-      "tank-System/1','Dreitank-System/2','Dreitank-System/3','Channel 4','Internal:1','Internal:2','Internal:3','Chann"
-      "el 8'}},'ShowContent',true,'Placement',1)},'DisplayPropertyDefaults',struct('MinYLimReal','-0.00186','MaxYLimRea"
-      "l','0.0092','YLabelReal','','MinYLimMag','0.00000','MaxYLimMag','0.0092','LegendVisibility','off','XGrid',true,'"
-      "YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.6862"
-      "74509803922],'ColorOrder',[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.1"
-      "6078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.058"
-      "8235294117647 1 1;1 0.0745098039215686 0.650980392156863],'Title','%<SignalLabel>','LinePropertiesCache',{{}},'U"
-      "serDefinedChannelNames',{{}},'NumLines',0,'LineNames',{{[]}},'ShowContent',true,'Placement',1)),extmgr.Configura"
-      "tion('Tools','Plot Navigation',true,'PreviousZoomMode','ZoomOut'),extmgr.Configuration('Tools','Measurements',tr"
-      "ue,'Version','2018b')),'Version','2018b','Location',[1 74.1999999999999 1537 823])"
-      NumInputPorts	      "2"
+      "plays',{struct('MinYLimReal','-0.00502','MaxYLimReal','0.02258','YLabelReal','','MinYLimMag','0.00000','MaxYLimM"
+      "ag','0.02258','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesT"
+      "ickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.0666666666666667;0.0745098"
+      "039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098"
+      "039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],'"
+      "Title','%<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumLines',3,'LineNames',{{'LT"
+      "I System:1','LTI System:2','LTI System:3'}},'ShowContent',true,'Placement',1)},'DisplayPropertyDefaults',struct("
+      "'MinYLimReal','-0.00502','MaxYLimReal','0.02258','YLabelReal','','MinYLimMag','0.00000','MaxYLimMag','0.02258','"
+      "LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.68"
+      "6274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.0666666666666667;0.0745098039215686 0.623"
+      "529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.717"
+      "647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],'Title','%<Signa"
+      "lLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumLines',0,'LineNames',{{[]}},'ShowContent'"
+      ",true,'Placement',1)),extmgr.Configuration('Tools','Plot Navigation',true),extmgr.Configuration('Tools','Measure"
+      "ments',true,'Version','2018b')),'Version','2018b','Location',[188.2 378.2 954.6 702.2])"
+      NumInputPorts	      "1"
       Floating		      off
     }
     Block {
@@ -3090,12 +3080,13 @@ Model {
     Block {
       BlockType		      Step
       Name		      "Step3"
-      SID		      "460"
-      Position		      [400, 670, 430, 700]
-      ZOrder		      794
-      After		      "x_0"
+      SID		      "463"
+      Position		      [505, 620, 535, 650]
+      ZOrder		      797
+      BackgroundColor	      "orange"
+      Before		      "[70.7,43.3,44.7]"
+      After		      "[80.7,53.3,54.7]"
       SampleTime	      "0"
-      VectorParams1D	      off
     }
     Block {
       BlockType		      ToWorkspace
@@ -7086,36 +7077,9 @@ Model {
       ZOrder		      10
       SrcBlock		      "Mux"
       SrcPort		      1
-      Points		      [16, 0]
-      Branch {
-	ZOrder			109
-	Points			[0, 52; -130, 0; 0, 358]
-	DstBlock		"Scope2"
-	DstPort			1
-      }
-      Branch {
-	ZOrder			108
-	Points			[2, 0; 0, -5]
-	DstBlock		"Scope"
-	DstPort			1
-      }
-    }
-    Line {
-      ZOrder		      14
-      SrcBlock		      "Manual Switch1"
-      SrcPort		      1
-      Points		      [37, 0]
-      Branch {
-	ZOrder			61
-	DstBlock		"Dreitank-System"
-	DstPort			2
-      }
-      Branch {
-	ZOrder			28
-	Points			[0, 215]
-	DstBlock		"Visualisierung"
-	DstPort			5
-      }
+      Points		      [18, 0; 0, -5]
+      DstBlock		      "Scope"
+      DstPort		      1
     }
     Line {
       ZOrder		      15
@@ -7208,25 +7172,34 @@ Model {
       DstPort		      1
     }
     Line {
-      ZOrder		      90
-      SrcBlock		      "Mux1"
+      ZOrder		      130
+      SrcBlock		      "LTI System"
       SrcPort		      1
-      Points		      [18, 0; 0, 10]
       DstBlock		      "Scope2"
-      DstPort		      2
+      DstPort		      1
     }
     Line {
-      ZOrder		      99
-      SrcBlock		      "Internal"
+      ZOrder		      135
+      SrcBlock		      "Manual Switch1"
       SrcPort		      1
-      DstBlock		      "Mux1"
-      DstPort		      2
+      Points		      [31, 0]
+      Branch {
+	ZOrder			137
+	Points			[0, 215]
+	DstBlock		"Visualisierung"
+	DstPort			5
+      }
+      Branch {
+	ZOrder			136
+	DstBlock		"Dreitank-System"
+	DstPort			2
+      }
     }
     Line {
-      ZOrder		      105
+      ZOrder		      138
       SrcBlock		      "Step3"
       SrcPort		      1
-      DstBlock		      "Internal"
+      DstBlock		      "LTI System"
       DstPort		      1
     }
   }

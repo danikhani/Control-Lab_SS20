@@ -21,4 +21,6 @@ B_zahl = subs(B, {diff(f(U_P101),U_P101), diff(f(U_V101), U_V101), diff(f(U_V106
                  {0.0159, -0.016, 0.0228, 8e-3, 6e-3, 5e-3, c_zahl});
 B_rounded = vpa(B_zahl)
 
+linsys1
+
 x_0 = [8*10^-3; 6*10^-3;5*10^-3]
