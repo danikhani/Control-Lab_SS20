@@ -1,12 +1,12 @@
 Model {
-  Name			  "Aufgabe_10"
+  Name			  "Aufgabe_11"
   Version		  9.2
   SavedCharacterEncoding  "windows-1252"
   GraphicalInterface {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.52"
+    ComputedModelVersion    "1.53"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -19,74 +19,74 @@ Model {
     NumParameterArguments   0
     NumExternalFileReferences 12
     ExternalFileReference {
-      Reference		      "simulink/Logic and Bit\nOperations/Compare\nTo Constant"
-      Path		      "Aufgabe_10/Compare To Constant"
-      SID		      "249"
+      Reference		      "simulink/Continuous/PID Controller"
+      Path		      "Aufgabe_11/PID Controller1"
+      SID		      "260"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
       Reference		      "simulink/Continuous/PID Controller"
-      Path		      "Aufgabe_10/PID Controller2"
+      Path		      "Aufgabe_11/PID Controller2"
       SID		      "244"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
       Reference		      "simulink/Continuous/PID Controller"
-      Path		      "Aufgabe_10/PID Controller3"
-      SID		      "245"
+      Path		      "Aufgabe_11/PID Controller3"
+      SID		      "266"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
       Reference		      "dspnetwork/UDP Send"
-      Path		      "Aufgabe_10/Visualisierung/Simulation/UDP Send1"
+      Path		      "Aufgabe_11/Visualisierung/Simulation/UDP Send1"
       SID		      "123"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
       Reference		      "dspnetwork/UDP Send"
-      Path		      "Aufgabe_10/Visualisierung/Simulation1/UDP Send1"
+      Path		      "Aufgabe_11/Visualisierung/Simulation1/UDP Send1"
       SID		      "137"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
       Reference		      "dspnetwork/UDP Send"
-      Path		      "Aufgabe_10/Visualisierung/Simulation2/UDP Send1"
+      Path		      "Aufgabe_11/Visualisierung/Simulation2/UDP Send1"
       SID		      "151"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
       Reference		      "dspnetwork/UDP Send"
-      Path		      "Aufgabe_10/Visualisierung/Visualisierung /UDP_OUT/UDP Send1"
+      Path		      "Aufgabe_11/Visualisierung/Visualisierung /UDP_OUT/UDP Send1"
       SID		      "172"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
       Reference		      "dspnetwork/UDP Send"
-      Path		      "Aufgabe_10/Visualisierung/Visualisierung /UDP_OUT/UDP Send6"
+      Path		      "Aufgabe_11/Visualisierung/Visualisierung /UDP_OUT/UDP Send6"
       SID		      "173"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
       Reference		      "dspnetwork/UDP Send"
-      Path		      "Aufgabe_10/Visualisierung/Visualisierung /UDP_OUT1/UDP Send1"
+      Path		      "Aufgabe_11/Visualisierung/Visualisierung /UDP_OUT1/UDP Send1"
       SID		      "197"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
       Reference		      "dspnetwork/UDP Send"
-      Path		      "Aufgabe_10/Visualisierung/Visualisierung /UDP_OUT1/UDP Send6"
+      Path		      "Aufgabe_11/Visualisierung/Visualisierung /UDP_OUT1/UDP Send6"
       SID		      "198"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
       Reference		      "dspnetwork/UDP Send"
-      Path		      "Aufgabe_10/Visualisierung/Visualisierung /UDP_OUT2/UDP Send1"
+      Path		      "Aufgabe_11/Visualisierung/Visualisierung /UDP_OUT2/UDP Send1"
       SID		      "222"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
       Reference		      "dspnetwork/UDP Send"
-      Path		      "Aufgabe_10/Visualisierung/Visualisierung /UDP_OUT2/UDP Send6"
+      Path		      "Aufgabe_11/Visualisierung/Visualisierung /UDP_OUT2/UDP Send6"
       SID		      "223"
       Type		      "LIBRARY_BLOCK"
     }
@@ -143,7 +143,7 @@ Model {
 	LoadSaveID		"0"
 	Extents			[1681.0, 833.0]
 	ZoomFactor		[0.8]
-	Offset			[-392.45201966011359, -271.19318781960476]
+	Offset			[-341.61569501278791, -0.047650313177655335]
       }
       Object {
 	$PropName		"DockComponentsInfo"
@@ -177,9 +177,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "danial"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Tue Jun 16 09:42:56 2020"
-  RTWModifiedTimeStamp	  514201355
-  ModelVersionFormat	  "1.%<AutoIncrement:52>"
+  LastModifiedDate	  "Tue Jun 16 09:47:50 2020"
+  RTWModifiedTimeStamp	  514201650
+  ModelVersionFormat	  "1.%<AutoIncrement:53>"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
   LibraryLinkDisplay	  "disabled"
@@ -236,12 +236,12 @@ Model {
     $PropName		    "DataLoggingOverride"
     $ObjectID		    7
     $ClassName		    "Simulink.SimulationData.ModelLoggingInfo"
-    model_		    "Aufgabe_10"
+    model_		    "Aufgabe_11"
     overrideMode_	    [0.0]
     Array {
       Type		      "Cell"
       Dimension		      1
-      Cell		      "Aufgabe_10"
+      Cell		      "Aufgabe_11"
       PropName		      "logAsSpecifiedByModels_"
     }
     Array {
@@ -1315,21 +1315,6 @@ Model {
       SampleTime	      "-1"
     }
     Block {
-      BlockType		      Switch
-      Criteria		      "u2 >= Threshold"
-      Threshold		      "0"
-      InputSameDT	      on
-      OutMin		      "[]"
-      OutMax		      "[]"
-      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-      LockScale		      off
-      RndMeth		      "Floor"
-      SaturateOnIntegerOverflow	on
-      ZeroCross		      on
-      SampleTime	      "-1"
-      AllowDiffInputSizes     off
-    }
-    Block {
       BlockType		      Terminator
     }
     Block {
@@ -1362,7 +1347,7 @@ Model {
     }
   }
   System {
-    Name		    "Aufgabe_10"
+    Name		    "Aufgabe_11"
     Location		    [-7, -7, 1543, 831]
     Open		    on
     PortBlocksUseCompactNotation off
@@ -1380,14 +1365,14 @@ Model {
     ShowPageBoundaries	    off
     ZoomFactor		    "80"
     ReportName		    "simulink-default.rpt"
-    SIDHighWatermark	    "257"
+    SIDHighWatermark	    "266"
     Block {
       BlockType		      Sum
       Name		      "Add1"
-      SID		      "246"
+      SID		      "258"
       Ports		      [2, 1]
-      Position		      [420, -208, 455, -177]
-      ZOrder		      533
+      Position		      [45, 122, 80, 153]
+      ZOrder		      543
       Inputs		      "+-"
       InputSameDT	      off
       OutDataTypeStr	      "Inherit: Inherit via internal rule"
@@ -1398,7 +1383,7 @@ Model {
       Name		      "Add2"
       SID		      "247"
       Ports		      [2, 1]
-      Position		      [235, -93, 270, -62]
+      Position		      [60, 312, 95, 343]
       ZOrder		      534
       Inputs		      "+-"
       InputSameDT	      off
@@ -1406,30 +1391,22 @@ Model {
       SaturateOnIntegerOverflow	off
     }
     Block {
-      BlockType		      Reference
-      Name		      "Compare\nTo Constant"
-      SID		      "249"
-      Ports		      [1, 1]
-      Position		      [650, 4, 795, 36]
-      ZOrder		      536
-      BlockMirror	      on
-      NamePlacement	      "alternate"
-      LibraryVersion	      "1.444"
-      SourceBlock	      "simulink/Logic and Bit\nOperations/Compare\nTo Constant"
-      SourceType	      "Compare To Constant"
-      SourceProductName	      "Simulink"
-      SourceProductBaseCode   "SL"
-      ContentPreviewEnabled   on
-      relop		      "<="
-      const		      "9*10^-3"
-      OutDataTypeStr	      "boolean"
-      ZeroCross		      on
+      BlockType		      Sum
+      Name		      "Add3"
+      SID		      "264"
+      Ports		      [2, 1]
+      Position		      [45, 187, 80, 218]
+      ZOrder		      549
+      Inputs		      "+-"
+      InputSameDT	      off
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
     }
     Block {
       BlockType		      Constant
       Name		      "Constant"
       SID		      "76"
-      Position		      [95, 20, 125, 50]
+      Position		      [-555, 35, -525, 65]
       ZOrder		      14
       BackgroundColor	      "orange"
       Value		      "70.7"
@@ -1438,7 +1415,7 @@ Model {
       BlockType		      Constant
       Name		      "Constant1"
       SID		      "85"
-      Position		      [95, 140, 125, 170]
+      Position		      [-555, 155, -525, 185]
       ZOrder		      21
       BackgroundColor	      "orange"
       Value		      "43.3"
@@ -1447,7 +1424,7 @@ Model {
       BlockType		      Constant
       Name		      "Constant2"
       SID		      "78"
-      Position		      [95, 265, 125, 295]
+      Position		      [-555, 280, -525, 310]
       ZOrder		      16
       BackgroundColor	      "orange"
       Value		      "44.7"
@@ -1456,19 +1433,25 @@ Model {
       BlockType		      Constant
       Name		      "Constant3"
       SID		      "248"
-      Position		      [25, -103, 100, -67]
+      Position		      [-115, 302, -40, 338]
       ZOrder		      535
-      Value		      "6*10^-3"
+      Value		      "V4_soll"
     }
     Block {
       BlockType		      Constant
       Name		      "Constant4"
-      SID		      "257"
-      Position		      [730, -61, 760, -29]
-      ZOrder		      541
-      BlockMirror	      on
-      NamePlacement	      "alternate"
-      Value		      "0"
+      SID		      "259"
+      Position		      [-115, 112, -40, 148]
+      ZOrder		      544
+      Value		      "V2_soll"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Constant5"
+      SID		      "265"
+      Position		      [-115, 177, -40, 213]
+      ZOrder		      550
+      Value		      "V3_soll"
     }
     Block {
       BlockType		      SubSystem
@@ -2961,7 +2944,7 @@ Model {
 	  BlockType		  S-Function
 	  Name			  " SFunction "
 	  SID			  "238::39"
-	  Tag			  "Stateflow S-Function Aufgabe_10 11"
+	  Tag			  "Stateflow S-Function Aufgabe_11 11"
 	  Ports			  [1, 1]
 	  Position		  [180, 100, 230, 140]
 	  ZOrder		  17
@@ -3005,21 +2988,21 @@ Model {
       BlockType		      ManualSwitch
       Name		      "Manual Switch"
       SID		      "99"
-      Position		      [200, 52, 230, 88]
+      Position		      [-450, 67, -420, 103]
       ZOrder		      28
     }
     Block {
       BlockType		      ManualSwitch
       Name		      "Manual Switch1"
       SID		      "101"
-      Position		      [200, 162, 230, 198]
+      Position		      [-450, 177, -420, 213]
       ZOrder		      30
     }
     Block {
       BlockType		      ManualSwitch
       Name		      "Manual Switch2"
       SID		      "103"
-      Position		      [200, 272, 230, 308]
+      Position		      [-450, 287, -420, 323]
       ZOrder		      32
     }
     Block {
@@ -3035,10 +3018,180 @@ Model {
     }
     Block {
       BlockType		      Reference
+      Name		      "PID Controller1"
+      SID		      "260"
+      Ports		      [1, 1]
+      Position		      [140, 122, 205, 158]
+      ZOrder		      542
+      LibraryVersion	      "1.444"
+      SourceBlock	      "simulink/Continuous/PID Controller"
+      SourceType	      "PID 1dof"
+      SourceProductName	      "Simulink"
+      SourceProductBaseCode   "SL"
+      ContentPreviewEnabled   on
+      Controller	      "PID"
+      Form		      "Parallel"
+      TimeDomain	      "Continuous-time"
+      SampleTime	      "-1"
+      IntegratorMethod	      "Forward Euler"
+      FilterMethod	      "Forward Euler"
+      ControllerParametersSource "internal"
+      P			      "60"
+      I			      "1"
+      D			      "0"
+      UseFilter		      on
+      N			      "100"
+      TunerSelectOption	      "Transfer Function Based (PID Tuner App)"
+      ZeroCross		      on
+      InitialConditionSource  "internal"
+      InitialConditionForIntegrator "0"
+      InitialConditionForFilter	"0"
+      DifferentiatorICPrevScaledInput "0"
+      ExternalReset	      "none"
+      IgnoreLimit	      off
+      TrackingMode	      off
+      Kt		      "1"
+      LimitOutput	      on
+      UpperSaturationLimit    "inf"
+      LowerSaturationLimit    "-inf"
+      LinearizeAsGain	      on
+      AntiWindupMode	      "clamping"
+      Kb		      "1"
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	off
+      LockScale		      off
+      PGainOutDataTypeStr     "Inherit: Inherit via internal rule"
+      PProdOutDataTypeStr     "Inherit: Inherit via internal rule"
+      POutMin		      "[]"
+      POutMax		      "[]"
+      IGainOutDataTypeStr     "Inherit: Inherit via internal rule"
+      IProdOutDataTypeStr     "Inherit: Inherit via internal rule"
+      IOutMin		      "[]"
+      IOutMax		      "[]"
+      DGainOutDataTypeStr     "Inherit: Inherit via internal rule"
+      DProdOutDataTypeStr     "Inherit: Inherit via internal rule"
+      DOutMin		      "[]"
+      DOutMax		      "[]"
+      NGainOutDataTypeStr     "Inherit: Inherit via internal rule"
+      NProdOutDataTypeStr     "Inherit: Inherit via internal rule"
+      NOutMin		      "[]"
+      NOutMax		      "[]"
+      SumOutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SumOutMin		      "[]"
+      SumOutMax		      "[]"
+      SaturationOutDataTypeStr "Inherit: Same as input"
+      SaturationOutMin	      "[]"
+      SaturationOutMax	      "[]"
+      PParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      PParamMin		      "[]"
+      PParamMax		      "[]"
+      IParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      IParamMin		      "[]"
+      IParamMax		      "[]"
+      DParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      DParamMin		      "[]"
+      DParamMax		      "[]"
+      NParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      NParamMin		      "[]"
+      NParamMax		      "[]"
+      KbParamDataTypeStr      "Inherit: Inherit via internal rule"
+      KbParamMin	      "[]"
+      KbParamMax	      "[]"
+      KtParamDataTypeStr      "Inherit: Inherit via internal rule"
+      KtParamMin	      "[]"
+      KtParamMax	      "[]"
+      KbOutDataTypeStr	      "Inherit: Inherit via internal rule"
+      KbOutMin		      "[]"
+      KbOutMax		      "[]"
+      KtOutDataTypeStr	      "Inherit: Inherit via internal rule"
+      KtOutMin		      "[]"
+      KtOutMax		      "[]"
+      IntegratorOutDataTypeStr "Inherit: Inherit via internal rule"
+      IntegratorOutMin	      "[]"
+      IntegratorOutMax	      "[]"
+      FilterOutDataTypeStr    "Inherit: Inherit via internal rule"
+      FilterOutMin	      "[]"
+      FilterOutMax	      "[]"
+      SumI1OutDataTypeStr     "Inherit: Inherit via internal rule"
+      SumI1OutMin	      "[]"
+      SumI1OutMax	      "[]"
+      SumI2OutDataTypeStr     "Inherit: Inherit via internal rule"
+      SumI2OutMin	      "[]"
+      SumI2OutMax	      "[]"
+      SumI3OutDataTypeStr     "Inherit: Inherit via internal rule"
+      SumI3OutMin	      "[]"
+      SumI3OutMax	      "[]"
+      SumI4OutDataTypeStr     "Inherit: Inherit via internal rule"
+      SumI4OutMin	      "[]"
+      SumI4OutMax	      "[]"
+      SumDOutDataTypeStr      "Inherit: Inherit via internal rule"
+      SumDOutMin	      "[]"
+      SumDOutMax	      "[]"
+      SumAccumDataTypeStr     "Inherit: Inherit via internal rule"
+      SumI1AccumDataTypeStr   "Inherit: Inherit via internal rule"
+      SumI2AccumDataTypeStr   "Inherit: Inherit via internal rule"
+      SumI3AccumDataTypeStr   "Inherit: Inherit via internal rule"
+      SumI4AccumDataTypeStr   "Inherit: Inherit via internal rule"
+      SumDAccumDataTypeStr    "Inherit: Inherit via internal rule"
+      DifferentiatorOutDataTypeStr "Inherit: Inherit via internal rule"
+      DifferentiatorOutMin    "[]"
+      DifferentiatorOutMax    "[]"
+      FilterDiffNumProductOutputDataTypeStr "Inherit: Inherit via internal rule"
+      FilterDiffDenProductOutputDataTypeStr "Inherit: Inherit via internal rule"
+      FilterDiffNumAccumDataTypeStr "Inherit: Inherit via internal rule"
+      FilterDiffDenAccumDataTypeStr "Inherit: Inherit via internal rule"
+      FilterDiffOutCoefDataTypeStr "Inherit: Inherit via internal rule"
+      FilterDiffOutCoefMin    "[]"
+      FilterDiffOutCoefMax    "[]"
+      ReciprocalOutDataTypeStr "Inherit: Inherit via internal rule"
+      ReciprocalOutMin	      "[]"
+      ReciprocalOutMax	      "[]"
+      SumDenOutDataTypeStr    "Inherit: Inherit via internal rule"
+      SumDenOutMin	      "[]"
+      SumDenOutMax	      "[]"
+      SumNumOutDataTypeStr    "Inherit: Inherit via internal rule"
+      SumNumOutMin	      "[]"
+      SumNumOutMax	      "[]"
+      SumDenAccumDataTypeStr  "Inherit: Inherit via internal rule"
+      SumNumAccumDataTypeStr  "Inherit: Inherit via internal rule"
+      DivideOutDataTypeStr    "Inherit: Inherit via internal rule"
+      DivideOutMin	      "[]"
+      DivideOutMax	      "[]"
+      IntegratorContinuousStateAttributes "''"
+      IntegratorStateMustResolveToSignalObject off
+      IntegratorRTWStateStorageClass "Auto"
+      FilterContinuousStateAttributes "''"
+      FilterStateMustResolveToSignalObject off
+      FilterRTWStateStorageClass "Auto"
+      ParallelPVariant	      "InternalParameters"
+      IdealPVariant	      "Disabled"
+      IVariant		      "InternalParameters"
+      DVariant		      "InternalParameters"
+      IntegratorVariant	      "Continuous"
+      SatVariant	      "Enabled"
+      AWVariant		      "ContClampingParallel"
+      PCopyVariant	      "Disabled"
+      TRVariant		      "Disabled"
+      FdbkBlocksVariant	      "Forward"
+      IdealPFdbkVariant	      "Disabled"
+      SatFdbkVariant	      "Disabled"
+      DerivativeFilterVariant "ContFilter"
+      NVariant		      "InternalParameters"
+      NCopyVariant	      "Disabled"
+      FilterICVariant	      "InternalICsFilter"
+      IntegratorICVariant     "InternalICs"
+      ExternalResetVariant    "Disabled"
+      TRSumVariant	      "Passthrough"
+      SumFdbkVariant	      "Disabled"
+      SumVariant	      "Sum_PID"
+      InitialConditionSetting "Auto"
+    }
+    Block {
+      BlockType		      Reference
       Name		      "PID Controller2"
       SID		      "244"
       Ports		      [1, 1]
-      Position		      [315, -93, 380, -57]
+      Position		      [175, 312, 240, 348]
       ZOrder		      531
       LibraryVersion	      "1.444"
       SourceBlock	      "simulink/Continuous/PID Controller"
@@ -3206,10 +3359,10 @@ Model {
     Block {
       BlockType		      Reference
       Name		      "PID Controller3"
-      SID		      "245"
+      SID		      "266"
       Ports		      [1, 1]
-      Position		      [510, -213, 550, -177]
-      ZOrder		      532
+      Position		      [160, 177, 225, 213]
+      ZOrder		      548
       LibraryVersion	      "1.444"
       SourceBlock	      "simulink/Continuous/PID Controller"
       SourceType	      "PID 1dof"
@@ -3223,8 +3376,8 @@ Model {
       IntegratorMethod	      "Forward Euler"
       FilterMethod	      "Forward Euler"
       ControllerParametersSource "internal"
-      P			      "469*50"
-      I			      "469"
+      P			      "60"
+      I			      "1"
       D			      "0"
       UseFilter		      on
       N			      "100"
@@ -3238,11 +3391,11 @@ Model {
       IgnoreLimit	      off
       TrackingMode	      off
       Kt		      "1"
-      LimitOutput	      off
+      LimitOutput	      on
       UpperSaturationLimit    "inf"
       LowerSaturationLimit    "-inf"
       LinearizeAsGain	      on
-      AntiWindupMode	      "none"
+      AntiWindupMode	      "clamping"
       Kb		      "1"
       RndMeth		      "Floor"
       SaturateOnIntegerOverflow	off
@@ -3355,8 +3508,8 @@ Model {
       IVariant		      "InternalParameters"
       DVariant		      "InternalParameters"
       IntegratorVariant	      "Continuous"
-      SatVariant	      "Disabled"
-      AWVariant		      "Passthrough"
+      SatVariant	      "Enabled"
+      AWVariant		      "ContClampingParallel"
       PCopyVariant	      "Disabled"
       TRVariant		      "Disabled"
       FdbkBlocksVariant	      "Forward"
@@ -3406,7 +3559,7 @@ Model {
       BlockType		      Step
       Name		      "Step"
       SID		      "100"
-      Position		      [95, 80, 125, 110]
+      Position		      [-555, 95, -525, 125]
       ZOrder		      29
       BackgroundColor	      "orange"
       Before		      "70.7"
@@ -3417,7 +3570,7 @@ Model {
       BlockType		      Step
       Name		      "Step1"
       SID		      "102"
-      Position		      [95, 195, 125, 225]
+      Position		      [-555, 210, -525, 240]
       ZOrder		      31
       BackgroundColor	      "orange"
       Before		      "43.3"
@@ -3428,24 +3581,12 @@ Model {
       BlockType		      Step
       Name		      "Step2"
       SID		      "104"
-      Position		      [95, 340, 125, 370]
+      Position		      [-555, 355, -525, 385]
       ZOrder		      33
       BackgroundColor	      "orange"
       Before		      "44.7"
       After		      "54.7"
       SampleTime	      "0"
-    }
-    Block {
-      BlockType		      Switch
-      Name		      "Switch"
-      SID		      "255"
-      Position		      [620, -135, 665, -25]
-      ZOrder		      539
-      BlockMirror	      on
-      NamePlacement	      "alternate"
-      Criteria		      "u2 > Threshold"
-      InputSameDT	      off
-      SaturateOnIntegerOverflow	off
     }
     Block {
       BlockType		      ToWorkspace
@@ -3817,7 +3958,7 @@ Model {
 		    BlockType		    S-Function
 		    Name		    " SFunction "
 		    SID			    "129::66"
-		    Tag			    "Stateflow S-Function Aufgabe_10 8"
+		    Tag			    "Stateflow S-Function Aufgabe_11 8"
 		    Ports		    [4, 2]
 		    Position		    [180, 102, 230, 203]
 		    ZOrder		    22
@@ -4247,7 +4388,7 @@ Model {
 		    BlockType		    S-Function
 		    Name		    " SFunction "
 		    SID			    "143::66"
-		    Tag			    "Stateflow S-Function Aufgabe_10 9"
+		    Tag			    "Stateflow S-Function Aufgabe_11 9"
 		    Ports		    [4, 2]
 		    Position		    [180, 102, 230, 203]
 		    ZOrder		    22
@@ -4677,7 +4818,7 @@ Model {
 		    BlockType		    S-Function
 		    Name		    " SFunction "
 		    SID			    "157::66"
-		    Tag			    "Stateflow S-Function Aufgabe_10 10"
+		    Tag			    "Stateflow S-Function Aufgabe_11 10"
 		    Ports		    [4, 2]
 		    Position		    [180, 102, 230, 203]
 		    ZOrder		    22
@@ -5216,7 +5357,7 @@ Model {
 		    BlockType		    S-Function
 		    Name		    " SFunction "
 		    SID			    "179::66"
-		    Tag			    "Stateflow S-Function Aufgabe_10 7"
+		    Tag			    "Stateflow S-Function Aufgabe_11 7"
 		    Ports		    [4, 2]
 		    Position		    [180, 102, 230, 203]
 		    ZOrder		    22
@@ -5484,7 +5625,7 @@ Model {
 		    BlockType		    S-Function
 		    Name		    " SFunction "
 		    SID			    "186::66"
-		    Tag			    "Stateflow S-Function Aufgabe_10 6"
+		    Tag			    "Stateflow S-Function Aufgabe_11 6"
 		    Ports		    [4, 2]
 		    Position		    [180, 102, 230, 203]
 		    ZOrder		    22
@@ -6011,7 +6152,7 @@ Model {
 		    BlockType		    S-Function
 		    Name		    " SFunction "
 		    SID			    "204::66"
-		    Tag			    "Stateflow S-Function Aufgabe_10 5"
+		    Tag			    "Stateflow S-Function Aufgabe_11 5"
 		    Ports		    [4, 2]
 		    Position		    [180, 102, 230, 203]
 		    ZOrder		    22
@@ -6279,7 +6420,7 @@ Model {
 		    BlockType		    S-Function
 		    Name		    " SFunction "
 		    SID			    "211::66"
-		    Tag			    "Stateflow S-Function Aufgabe_10 1"
+		    Tag			    "Stateflow S-Function Aufgabe_11 1"
 		    Ports		    [4, 2]
 		    Position		    [180, 102, 230, 203]
 		    ZOrder		    22
@@ -6806,7 +6947,7 @@ Model {
 		    BlockType		    S-Function
 		    Name		    " SFunction "
 		    SID			    "229::66"
-		    Tag			    "Stateflow S-Function Aufgabe_10 4"
+		    Tag			    "Stateflow S-Function Aufgabe_11 4"
 		    Ports		    [4, 2]
 		    Position		    [180, 102, 230, 203]
 		    ZOrder		    22
@@ -7074,7 +7215,7 @@ Model {
 		    BlockType		    S-Function
 		    Name		    " SFunction "
 		    SID			    "236::66"
-		    Tag			    "Stateflow S-Function Aufgabe_10 3"
+		    Tag			    "Stateflow S-Function Aufgabe_11 3"
 		    Ports		    [4, 2]
 		    Position		    [180, 102, 230, 203]
 		    ZOrder		    22
@@ -7386,16 +7527,16 @@ Model {
       ZOrder		      1
       SrcBlock		      "Dreitank-System"
       SrcPort		      1
-      Points		      [89, 0]
+      Points		      [61, 0]
       Branch {
-	ZOrder			99
-	Points			[0, -73; 204, 0; 0, -42]
-	DstBlock		"Compare\nTo Constant"
-	DstPort			1
+	ZOrder			158
+	Points			[0, -55; -575, 0; 0, 65]
+	DstBlock		"Add1"
+	DstPort			2
       }
       Branch {
-	ZOrder			98
-	Points			[24, 0]
+	ZOrder			157
+	Points			[52, 0]
 	Branch {
 	  ZOrder		  2
 	  Points		  [0, 130]
@@ -7422,42 +7563,52 @@ Model {
       ZOrder		      4
       SrcBlock		      "Dreitank-System"
       SrcPort		      2
-      Points		      [95, 0]
+      Points		      [33, 0]
       Branch {
-	ZOrder			5
-	Points			[0, 160]
-	Branch {
-	  ZOrder		  24
-	  Points		  [0, 155]
-	  DstBlock		  "Visualisierung"
-	  DstPort		  2
-	}
-	Branch {
-	  ZOrder		  23
-	  DstBlock		  "To Workspace1"
-	  DstPort		  1
-	}
+	ZOrder			163
+	Points			[0, 105; -540, 0; 0, -60]
+	DstBlock		"Add3"
+	DstPort			2
       }
       Branch {
-	ZOrder			6
-	DstBlock		"Mux"
-	DstPort			2
+	ZOrder			162
+	Points			[62, 0]
+	Branch {
+	  ZOrder		  5
+	  Points		  [0, 160]
+	  Branch {
+	    ZOrder		    24
+	    Points		    [0, 155]
+	    DstBlock		    "Visualisierung"
+	    DstPort		    2
+	  }
+	  Branch {
+	    ZOrder		    23
+	    DstBlock		    "To Workspace1"
+	    DstPort		    1
+	  }
+	}
+	Branch {
+	  ZOrder		  6
+	  DstBlock		  "Mux"
+	  DstPort		  2
+	}
       }
     }
     Line {
       ZOrder		      7
       SrcBlock		      "Dreitank-System"
       SrcPort		      3
-      Points		      [58, 0]
+      Points		      [49, 0]
       Branch {
-	ZOrder			71
-	Points			[0, -336; -395, 0; 0, 71]
+	ZOrder			167
+	Points			[0, 167; -530, 0; 0, -27]
 	DstBlock		"Add2"
 	DstPort			2
       }
       Branch {
-	ZOrder			70
-	Points			[15, 0]
+	ZOrder			166
+	Points			[24, 0]
 	Branch {
 	  ZOrder		  8
 	  Points		  [0, 190]
@@ -7504,23 +7655,6 @@ Model {
       DstPort		      2
     }
     Line {
-      ZOrder		      14
-      SrcBlock		      "Manual Switch1"
-      SrcPort		      1
-      Points		      [39, 0]
-      Branch {
-	ZOrder			37
-	DstBlock		"Dreitank-System"
-	DstPort			2
-      }
-      Branch {
-	ZOrder			33
-	Points			[0, 360]
-	DstBlock		"Visualisierung"
-	DstPort			5
-      }
-    }
-    Line {
       ZOrder		      15
       SrcBlock		      "Constant1"
       SrcPort		      1
@@ -7552,55 +7686,6 @@ Model {
       DstPort		      2
     }
     Line {
-      ZOrder		      17
-      SrcBlock		      "Manual Switch2"
-      SrcPort		      1
-      Points		      [13, 0; 0, -70; 11, 0]
-      Branch {
-	ZOrder			36
-	Points			[0, 340]
-	DstBlock		"Visualisierung"
-	DstPort			6
-      }
-      Branch {
-	ZOrder			35
-	DstBlock		"Dreitank-System"
-	DstPort			3
-      }
-    }
-    Line {
-      ZOrder		      64
-      SrcBlock		      "Add1"
-      SrcPort		      1
-      Points		      [23, 0; 0, -5]
-      DstBlock		      "PID Controller3"
-      DstPort		      1
-    }
-    Line {
-      ZOrder		      65
-      SrcBlock		      "PID Controller2"
-      SrcPort		      1
-      Points		      [3, 0; 0, -125]
-      DstBlock		      "Add1"
-      DstPort		      1
-    }
-    Line {
-      ZOrder		      66
-      SrcBlock		      "Dreitank-System"
-      SrcPort		      4
-      Points		      [16, 0; 0, -302; -140, 0; 0, -108]
-      DstBlock		      "Add1"
-      DstPort		      2
-    }
-    Line {
-      ZOrder		      68
-      SrcBlock		      "PID Controller3"
-      SrcPort		      1
-      Points		      [125, 0]
-      DstBlock		      "Switch"
-      DstPort		      1
-    }
-    Line {
       ZOrder		      69
       SrcBlock		      "Add2"
       SrcPort		      1
@@ -7615,36 +7700,56 @@ Model {
       DstPort		      1
     }
     Line {
-      ZOrder		      101
-      SrcBlock		      "Compare\nTo Constant"
+      ZOrder		      141
+      SrcBlock		      "Constant4"
       SrcPort		      1
-      Points		      [-9, 0; 0, -31; 171, 0; 0, -69]
-      DstBlock		      "Switch"
+      DstBlock		      "Add1"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      142
+      SrcBlock		      "Add1"
+      SrcPort		      1
+      DstBlock		      "PID Controller1"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      159
+      SrcBlock		      "PID Controller1"
+      SrcPort		      1
+      DstBlock		      "Dreitank-System"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      160
+      SrcBlock		      "Constant5"
+      SrcPort		      1
+      DstBlock		      "Add3"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      161
+      SrcBlock		      "Add3"
+      SrcPort		      1
+      Points		      [35, 0; 0, -10]
+      DstBlock		      "PID Controller3"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      164
+      SrcBlock		      "PID Controller3"
+      SrcPort		      1
+      Points		      [35, 0; 0, -15]
+      DstBlock		      "Dreitank-System"
       DstPort		      2
     }
     Line {
-      ZOrder		      106
-      SrcBlock		      "Constant4"
+      ZOrder		      165
+      SrcBlock		      "PID Controller2"
       SrcPort		      1
-      DstBlock		      "Switch"
+      Points		      [28, 0; 0, -110]
+      DstBlock		      "Dreitank-System"
       DstPort		      3
-    }
-    Line {
-      ZOrder		      107
-      SrcBlock		      "Switch"
-      SrcPort		      1
-      Points		      [-16, 0; 0, 75; -323, 0; 0, 145; 6, 0]
-      Branch {
-	ZOrder			109
-	Points			[0, 380]
-	DstBlock		"Visualisierung"
-	DstPort			4
-      }
-      Branch {
-	ZOrder			108
-	DstBlock		"Dreitank-System"
-	DstPort			1
-      }
     }
   }
 }
@@ -7656,7 +7761,7 @@ Model {
 Stateflow {
   machine {
     id			    1
-    name		    "Aufgabe_10"
+    name		    "Aufgabe_11"
     created		    "28-Jan-2016 19:58:12"
     isLibrary		    0
     sfVersion		    80000014
