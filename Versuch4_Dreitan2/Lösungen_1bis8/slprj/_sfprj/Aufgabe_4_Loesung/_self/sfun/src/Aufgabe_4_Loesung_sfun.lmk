@@ -1,0 +1,65 @@
+CC     = "C:\Program Files (x86)\MATLAB\R2015b\sys\lcc\bin\lcc.exe"
+LD     = "C:\Program Files (x86)\MATLAB\R2015b\sys\lcc\bin\lcclnk.exe"
+LIBCMD = "C:\Program Files (x86)\MATLAB\R2015b\sys\lcc\bin\lcclib.exe"
+CFLAGS = -c -Zp8 -DMATLAB_MEX_FILE -noregistrylookup 
+LDFLAGS = -s -dll -L"C:\Program Files (x86)\MATLAB\R2015b\sys\lcc\lib" 
+LIBFLAGS = 
+
+OBJECTS = \
+	"Aufgabe_4_Loesung_sfun.obj"\
+	"c1_Aufgabe_4_Loesung.obj"\
+	"c3_Aufgabe_4_Loesung.obj"\
+	"c4_Aufgabe_4_Loesung.obj"\
+	"c5_Aufgabe_4_Loesung.obj"\
+	"c6_Aufgabe_4_Loesung.obj"\
+	"c7_Aufgabe_4_Loesung.obj"\
+	"c8_Aufgabe_4_Loesung.obj"\
+	"c9_Aufgabe_4_Loesung.obj"\
+	"c10_Aufgabe_4_Loesung.obj"\
+	"Aufgabe_4_Loesung_sfun_registry.obj"\
+	"lccstub.obj"\
+	"C:\Program Files (x86)\MATLAB\R2015b\sys\lcc\mex\lccdef.def"\
+	"C:\Program Files (x86)\MATLAB\R2015b\extern\lib\win32\lcc\sf_runtime.lib"\
+	"C:\Program Files (x86)\MATLAB\R2015b\extern\lib\win32\lcc\libmwblas.lib"\
+	"C:\Program Files (x86)\MATLAB\R2015b\extern\lib\win32\lcc\libmwlapack.lib"\
+	"C:\Program Files (x86)\MATLAB\R2015b\extern\lib\win32\lcc\libmx.lib"\
+	"C:\Program Files (x86)\MATLAB\R2015b\extern\lib\win32\lcc\libmex.lib"\
+	"C:\Program Files (x86)\MATLAB\R2015b\extern\lib\win32\lcc\libmat.lib"\
+	"C:\Program Files (x86)\MATLAB\R2015b\extern\lib\win32\lcc\libfixedpoint.lib"\
+	"C:\Program Files (x86)\MATLAB\R2015b\extern\lib\win32\lcc\libut.lib"\
+	"C:\Program Files (x86)\MATLAB\R2015b\extern\lib\win32\lcc\libmwmathutil.lib"\
+	"C:\Program Files (x86)\MATLAB\R2015b\extern\lib\win32\lcc\libemlrt.lib"\
+	"C:\Program Files (x86)\MATLAB\R2015b\extern\lib\win32\lcc\libmwsl_log_load_blocks.lib"\
+	"C:\Program Files (x86)\MATLAB\R2015b\extern\lib\win32\lcc\libmwsimulink.lib"\
+	"C:\Program Files (x86)\MATLAB\R2015b\extern\lib\win32\lcc\libmwsl_sfcn_cov_bridge.lib"\
+	"C:\Program Files (x86)\MATLAB\R2015b\lib\win32\libmwipp.lib"\
+
+INCLUDE_PATH= -I"C:\Program Files (x86)\MATLAB\R2015b\sys\lcc\include"  -I"C:\Program Files (x86)\MATLAB\R2015b\extern\include"  -I"C:\Program Files (x86)\MATLAB\R2015b\simulink\include"  -I"C:\Program Files (x86)\MATLAB\R2015b\stateflow\c\mex\include"  -I"C:\Program Files (x86)\MATLAB\R2015b\rtw\c\src"  -I"C:\Users\se\Desktop\RT\04 Dreitank\04 Lösungen\slprj\_sfprj\Aufgabe_4_Loesung\_self\sfun\src" 
+ 
+
+Aufgabe_4_Loesung_sfun.mexw32 : $(MAKEFILE) $(OBJECTS)
+	$(LD) $(LDFLAGS) -o Aufgabe_4_Loesung_sfun.mexw32 @Aufgabe_4_Loesung_sfun.lmko
+Aufgabe_4_Loesung_sfun.obj :	"Aufgabe_4_Loesung_sfun.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "Aufgabe_4_Loesung_sfun.c"
+c1_Aufgabe_4_Loesung.obj :	"c1_Aufgabe_4_Loesung.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c1_Aufgabe_4_Loesung.c"
+c3_Aufgabe_4_Loesung.obj :	"c3_Aufgabe_4_Loesung.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c3_Aufgabe_4_Loesung.c"
+c4_Aufgabe_4_Loesung.obj :	"c4_Aufgabe_4_Loesung.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c4_Aufgabe_4_Loesung.c"
+c5_Aufgabe_4_Loesung.obj :	"c5_Aufgabe_4_Loesung.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c5_Aufgabe_4_Loesung.c"
+c6_Aufgabe_4_Loesung.obj :	"c6_Aufgabe_4_Loesung.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c6_Aufgabe_4_Loesung.c"
+c7_Aufgabe_4_Loesung.obj :	"c7_Aufgabe_4_Loesung.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c7_Aufgabe_4_Loesung.c"
+c8_Aufgabe_4_Loesung.obj :	"c8_Aufgabe_4_Loesung.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c8_Aufgabe_4_Loesung.c"
+c9_Aufgabe_4_Loesung.obj :	"c9_Aufgabe_4_Loesung.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c9_Aufgabe_4_Loesung.c"
+c10_Aufgabe_4_Loesung.obj :	"c10_Aufgabe_4_Loesung.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c10_Aufgabe_4_Loesung.c"
+Aufgabe_4_Loesung_sfun_registry.obj :	"Aufgabe_4_Loesung_sfun_registry.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "Aufgabe_4_Loesung_sfun_registry.c"
+lccstub.obj :	"C:\Program Files (x86)\MATLAB\R2015b\sys\lcc\mex\lccstub.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "C:\Program Files (x86)\MATLAB\R2015b\sys\lcc\mex\lccstub.c"
