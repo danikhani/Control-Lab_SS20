@@ -12,9 +12,11 @@ D = [0;0];
 sys = ss(A,B,C,D);
 
 %% Regelungsnormalform für Sliding-Mode-Regler berechnen
-
 [sysR,Tr] = transformation_RNF(sys)
 
+%sysR: Zustandsraummodell in Regelungsnormalform
+%Tr: Transformationsmatrix zum Überführen eines linearen
+%           Zustandsraummodells in Regelungsnormalform
 
 
 
