@@ -35,15 +35,15 @@ A = [0 1 0 0;
      0 m_p*l_p/(2*J_d*T1) m_p*g*l_p/(2*J_d) -mu/J_d;
      ];
  
-b = [0 K/T1 0 -m_p*l_p*K/(2*J_d*T1)]';
+B = [0 K/T1 0 -m_p*l_p*K/(2*J_d*T1)]';
 
 C = [1 0 0 0; 
      0 0 1 0 
      ];
 
-d = 0;
+D = 0;
 
-sys = ss(A,b,C,d)
+sys = ss(A,B,C,D)
 
 
 %% Zum Vergleich: Linearisierung mit Linmod

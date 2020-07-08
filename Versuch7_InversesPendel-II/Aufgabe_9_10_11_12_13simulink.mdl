@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.424"
+    ComputedModelVersion    "1.429"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -96,7 +96,7 @@ Model {
 	LoadSaveID		"0"
 	Extents			[1875.0, 833.0]
 	ZoomFactor		[1.0]
-	Offset			[-144.12301183795694, 61.80196607789037]
+	Offset			[-213.39843659734743, 58.999994563452049]
       }
       Object {
 	$PropName		"DockComponentsInfo"
@@ -130,9 +130,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "danial"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Sat Jul 04 18:16:22 2020"
-  RTWModifiedTimeStamp	  515786971
-  ModelVersionFormat	  "1.%<AutoIncrement:424>"
+  LastModifiedDate	  "Tue Jul 07 21:36:54 2020"
+  RTWModifiedTimeStamp	  516057872
+  ModelVersionFormat	  "1.%<AutoIncrement:429>"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
   LibraryLinkDisplay	  "disabled"
@@ -997,7 +997,7 @@ Model {
       Name		      "Configuration"
       ExtraOptions	      ""
       CurrentDlgPage	      "Solver"
-      ConfigPrmDlgPosition    [ 71, 71, 1243, 795 ]
+      ConfigPrmDlgPosition    [ 71, 70, 1243, 794 ]
     }
     PropName		    "ConfigurationSets"
   }
@@ -1376,7 +1376,7 @@ Model {
     ShowPageBoundaries	    off
     ZoomFactor		    "100"
     ReportName		    "simulink-default.rpt"
-    SIDHighWatermark	    "257"
+    SIDHighWatermark	    "400"
     Block {
       BlockType		      SubSystem
       Name		      "Aufschwingen"
@@ -1653,10 +1653,10 @@ Model {
     Block {
       BlockType		      SubSystem
       Name		      "Inverses Pendel"
-      SID		      "31"
+      SID		      "372"
       Ports		      [1, 4]
-      Position		      [530, 295, 730, 430]
-      ZOrder		      28
+      Position		      [535, 295, 735, 430]
+      ZOrder		      548
       TreatAsAtomicUnit	      on
       RequestExecContextInheritance off
       Object {
@@ -1752,24 +1752,24 @@ Model {
 	ScreenColor		"white"
 	PaperOrientation	"landscape"
 	PaperPositionMode	"auto"
-	PaperType		"A4"
-	PaperUnits		"centimeters"
-	TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
 	TiledPageScale		1
 	ShowPageBoundaries	off
-	ZoomFactor		"100"
+	ZoomFactor		"80"
 	Block {
 	  BlockType		  Inport
 	  Name			  "u [m/s]"
-	  SID			  "32"
-	  Position		  [-130, 68, -100, 82]
-	  ZOrder		  289
+	  SID			  "373"
+	  Position		  [-280, 53, -250, 67]
+	  ZOrder		  28
 	  IconDisplay		  "Port number"
 	}
 	Block {
 	  BlockType		  Trigonometry
 	  Name			  "Cos"
-	  SID			  "241"
+	  SID			  "374"
 	  Ports			  [1, 1]
 	  Position		  [855, 540, 885, 570]
 	  ZOrder		  282
@@ -1780,10 +1780,10 @@ Model {
 	Block {
 	  BlockType		  Gain
 	  Name			  "Gain"
-	  SID			  "225"
+	  SID			  "375"
 	  Position		  [230, 45, 280, 85]
 	  ZOrder		  70
-	  Gain			  "1/0.02"
+	  Gain			  "1/0.043"
 	  ParamDataTypeStr	  "Inherit: Inherit via internal rule"
 	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
 	  SaturateOnIntegerOverflow off
@@ -1791,12 +1791,12 @@ Model {
 	Block {
 	  BlockType		  Gain
 	  Name			  "Gain1"
-	  SID			  "237"
+	  SID			  "376"
 	  Position		  [475, 139, 515, 181]
 	  ZOrder		  83
 	  BlockMirror		  on
 	  NamePlacement		  "alternate"
-	  Gain			  "1/0.02"
+	  Gain			  "1/0.043"
 	  ParamDataTypeStr	  "Inherit: Inherit via internal rule"
 	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
 	  SaturateOnIntegerOverflow off
@@ -1804,12 +1804,12 @@ Model {
 	Block {
 	  BlockType		  Gain
 	  Name			  "Gain2"
-	  SID			  "239"
+	  SID			  "377"
 	  Position		  [675, 397, 725, 443]
 	  ZOrder		  85
 	  BlockMirror		  on
 	  NamePlacement		  "alternate"
-	  Gain			  "(0.0804*9.81*0.147)/(2*0.58134*10^-3)"
+	  Gain			  "(0.0804*9.81*0.147)/(2*5.8134e-4)"
 	  ParamDataTypeStr	  "Inherit: Inherit via internal rule"
 	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
 	  SaturateOnIntegerOverflow off
@@ -1817,7 +1817,7 @@ Model {
 	Block {
 	  BlockType		  Gain
 	  Name			  "Gain3"
-	  SID			  "243"
+	  SID			  "378"
 	  Position		  [625, 590, 655, 620]
 	  ZOrder		  284
 	  BlockMirror		  on
@@ -1830,12 +1830,12 @@ Model {
 	Block {
 	  BlockType		  Gain
 	  Name			  "Gain4"
-	  SID			  "245"
+	  SID			  "379"
 	  Position		  [600, 512, 640, 548]
 	  ZOrder		  286
 	  BlockMirror		  on
 	  NamePlacement		  "alternate"
-	  Gain			  "2.2/(0.58134)"
+	  Gain			  "8.5e-6/5.8134e-4"
 	  ParamDataTypeStr	  "Inherit: Inherit via internal rule"
 	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
 	  SaturateOnIntegerOverflow off
@@ -1843,7 +1843,7 @@ Model {
 	Block {
 	  BlockType		  Integrator
 	  Name			  "Integrator\nLimited1"
-	  SID			  "234"
+	  SID			  "380"
 	  Ports			  [1, 1]
 	  Position		  [735, 60, 765, 90]
 	  ZOrder		  80
@@ -1855,7 +1855,7 @@ Model {
 	Block {
 	  BlockType		  Integrator
 	  Name			  "Integrator\nLimited2"
-	  SID			  "235"
+	  SID			  "381"
 	  Ports			  [1, 1]
 	  Position		  [430, 245, 460, 275]
 	  ZOrder		  81
@@ -1866,7 +1866,7 @@ Model {
 	Block {
 	  BlockType		  Integrator
 	  Name			  "Integrator\nLimited3"
-	  SID			  "230"
+	  SID			  "382"
 	  Ports			  [1, 1]
 	  Position		  [465, 60, 495, 90]
 	  ZOrder		  79
@@ -1878,7 +1878,7 @@ Model {
 	Block {
 	  BlockType		  Integrator
 	  Name			  "Integrator\nLimited4"
-	  SID			  "236"
+	  SID			  "383"
 	  Ports			  [1, 1]
 	  Position		  [735, 245, 765, 275]
 	  ZOrder		  82
@@ -1889,14 +1889,14 @@ Model {
 	Block {
 	  BlockType		  ManualSwitch
 	  Name			  "Manual Switch"
-	  SID			  "247"
-	  Position		  [135, 47, 165, 83]
-	  ZOrder		  287
+	  SID			  "396"
+	  Position		  [105, 47, 135, 83]
+	  ZOrder		  291
 	}
 	Block {
 	  BlockType		  Product
 	  Name			  "Multiply"
-	  SID			  "242"
+	  SID			  "384"
 	  Ports			  [2, 1]
 	  Position		  [735, 587, 765, 618]
 	  ZOrder		  283
@@ -1910,7 +1910,7 @@ Model {
 	Block {
 	  BlockType		  Sum
 	  Name			  "Subtract"
-	  SID			  "244"
+	  SID			  "385"
 	  Ports			  [3, 1]
 	  Position		  [520, 504, 550, 536]
 	  ZOrder		  285
@@ -1924,7 +1924,7 @@ Model {
 	Block {
 	  BlockType		  Sum
 	  Name			  "Subtract1"
-	  SID			  "238"
+	  SID			  "386"
 	  Ports			  [2, 1]
 	  Position		  [355, 57, 385, 88]
 	  ZOrder		  84
@@ -1936,16 +1936,16 @@ Model {
 	Block {
 	  BlockType		  TransportDelay
 	  Name			  "Transport\nDelay"
-	  SID			  "248"
+	  SID			  "397"
 	  Ports			  [1, 1]
-	  Position		  [55, 60, 85, 90]
-	  ZOrder		  288
-	  DelayTime		  "0.005/2"
+	  Position		  [5, 60, 35, 90]
+	  ZOrder		  292
+	  DelayTime		  "0.03"
 	}
 	Block {
 	  BlockType		  Trigonometry
 	  Name			  "Trigonometric\nFunction"
-	  SID			  "222"
+	  SID			  "387"
 	  Ports			  [1, 1]
 	  Position		  [845, 405, 875, 435]
 	  ZOrder		  67
@@ -1955,7 +1955,7 @@ Model {
 	Block {
 	  BlockType		  Outport
 	  Name			  "x [m]"
-	  SID			  "33"
+	  SID			  "388"
 	  Position		  [970, 68, 1000, 82]
 	  ZOrder		  29
 	  IconDisplay		  "Port number"
@@ -1963,7 +1963,7 @@ Model {
 	Block {
 	  BlockType		  Outport
 	  Name			  "dx [m/s]"
-	  SID			  "103"
+	  SID			  "389"
 	  Position		  [610, -22, 640, -8]
 	  ZOrder		  62
 	  Port			  "2"
@@ -1972,7 +1972,7 @@ Model {
 	Block {
 	  BlockType		  Outport
 	  Name			  "phi [rad]"
-	  SID			  "34"
+	  SID			  "390"
 	  Position		  [970, 253, 1000, 267]
 	  ZOrder		  30
 	  Port			  "3"
@@ -1981,33 +1981,33 @@ Model {
 	Block {
 	  BlockType		  Outport
 	  Name			  "dphi [rad/s]"
-	  SID			  "104"
+	  SID			  "391"
 	  Position		  [600, 363, 630, 377]
 	  ZOrder		  63
 	  Port			  "4"
 	  IconDisplay		  "Port number"
 	}
 	Line {
-	  ZOrder		  27
+	  ZOrder		  1
 	  SrcBlock		  "Integrator\nLimited3"
 	  SrcPort		  1
 	  Points		  [32, 0]
 	  Branch {
-	    ZOrder		    29
+	    ZOrder		    2
 	    Points		    [0, -90]
 	    DstBlock		    "dx [m/s]"
 	    DstPort		    1
 	  }
 	  Branch {
-	    ZOrder		    28
+	    ZOrder		    3
 	    Points		    [122, 0]
 	    Branch {
-	      ZOrder		      43
+	      ZOrder		      4
 	      DstBlock		      "Integrator\nLimited1"
 	      DstPort		      1
 	    }
 	    Branch {
-	      ZOrder		      39
+	      ZOrder		      5
 	      Points		      [0, 85]
 	      DstBlock		      "Gain1"
 	      DstPort		      1
@@ -2015,60 +2015,60 @@ Model {
 	  }
 	}
 	Line {
-	  ZOrder		  31
+	  ZOrder		  6
 	  SrcBlock		  "Integrator\nLimited1"
 	  SrcPort		  1
 	  DstBlock		  "x [m]"
 	  DstPort		  1
 	}
 	Line {
-	  ZOrder		  32
+	  ZOrder		  7
 	  SrcBlock		  "Integrator\nLimited4"
 	  SrcPort		  1
 	  Points		  [131, 0]
 	  Branch {
-	    ZOrder		    52
+	    ZOrder		    8
 	    Points		    [0, 160]
 	    DstBlock		    "Trigonometric\nFunction"
 	    DstPort		    1
 	  }
 	  Branch {
-	    ZOrder		    48
+	    ZOrder		    9
 	    Points		    [48, 0]
 	    Branch {
-	      ZOrder		      56
+	      ZOrder		      10
 	      Points		      [0, 295]
 	      DstBlock		      "Cos"
 	      DstPort		      1
 	    }
 	    Branch {
-	      ZOrder		      55
+	      ZOrder		      11
 	      DstBlock		      "phi [rad]"
 	      DstPort		      1
 	    }
 	  }
 	}
 	Line {
-	  ZOrder		  33
+	  ZOrder		  12
 	  SrcBlock		  "Integrator\nLimited2"
 	  SrcPort		  1
 	  Points		  [59, 0]
 	  Branch {
-	    ZOrder		    35
+	    ZOrder		    13
 	    Points		    [0, 110]
 	    DstBlock		    "dphi [rad/s]"
 	    DstPort		    1
 	  }
 	  Branch {
-	    ZOrder		    34
+	    ZOrder		    14
 	    Points		    [132, 0]
 	    Branch {
-	      ZOrder		      72
+	      ZOrder		      15
 	      DstBlock		      "Integrator\nLimited4"
 	      DstPort		      1
 	    }
 	    Branch {
-	      ZOrder		      71
+	      ZOrder		      16
 	      Points		      [0, 270]
 	      DstBlock		      "Gain4"
 	      DstPort		      1
@@ -2076,7 +2076,7 @@ Model {
 	  }
 	}
 	Line {
-	  ZOrder		  40
+	  ZOrder		  18
 	  SrcBlock		  "Gain1"
 	  SrcPort		  1
 	  Points		  [-161, 0; 0, -80]
@@ -2084,38 +2084,38 @@ Model {
 	  DstPort		  2
 	}
 	Line {
-	  ZOrder		  41
+	  ZOrder		  19
 	  SrcBlock		  "Gain"
 	  SrcPort		  1
 	  DstBlock		  "Subtract1"
 	  DstPort		  1
 	}
 	Line {
-	  ZOrder		  42
+	  ZOrder		  20
 	  SrcBlock		  "Subtract1"
 	  SrcPort		  1
 	  Points		  [37, 0]
 	  Branch {
-	    ZOrder		    60
+	    ZOrder		    21
 	    Points		    [0, -151; 632, 0; 0, 686]
 	    DstBlock		    "Multiply"
 	    DstPort		    2
 	  }
 	  Branch {
-	    ZOrder		    57
+	    ZOrder		    22
 	    DstBlock		    "Integrator\nLimited3"
 	    DstPort		    1
 	  }
 	}
 	Line {
-	  ZOrder		  53
+	  ZOrder		  23
 	  SrcBlock		  "Trigonometric\nFunction"
 	  SrcPort		  1
 	  DstBlock		  "Gain2"
 	  DstPort		  1
 	}
 	Line {
-	  ZOrder		  59
+	  ZOrder		  24
 	  SrcBlock		  "Cos"
 	  SrcPort		  1
 	  Points		  [-70, 0]
@@ -2123,14 +2123,14 @@ Model {
 	  DstPort		  1
 	}
 	Line {
-	  ZOrder		  61
+	  ZOrder		  25
 	  SrcBlock		  "Multiply"
 	  SrcPort		  1
 	  DstBlock		  "Gain3"
 	  DstPort		  1
 	}
 	Line {
-	  ZOrder		  62
+	  ZOrder		  26
 	  SrcBlock		  "Gain2"
 	  SrcPort		  1
 	  Points		  [-105, 0]
@@ -2138,7 +2138,7 @@ Model {
 	  DstPort		  1
 	}
 	Line {
-	  ZOrder		  63
+	  ZOrder		  27
 	  SrcBlock		  "Gain3"
 	  SrcPort		  1
 	  Points		  [-55, 0]
@@ -2146,14 +2146,14 @@ Model {
 	  DstPort		  2
 	}
 	Line {
-	  ZOrder		  69
+	  ZOrder		  28
 	  SrcBlock		  "Gain4"
 	  SrcPort		  1
 	  DstBlock		  "Subtract"
 	  DstPort		  3
 	}
 	Line {
-	  ZOrder		  73
+	  ZOrder		  29
 	  SrcBlock		  "Subtract"
 	  SrcPort		  1
 	  Points		  [-150, 0; 0, -260]
@@ -2161,35 +2161,36 @@ Model {
 	  DstPort		  1
 	}
 	Line {
-	  ZOrder		  87
+	  ZOrder		  51
+	  SrcBlock		  "u [m/s]"
+	  SrcPort		  1
+	  Points		  [192, 0]
+	  Branch {
+	    ZOrder		    52
+	    Points		    [0, 15]
+	    DstBlock		    "Transport\nDelay"
+	    DstPort		    1
+	  }
+	  Branch {
+	    ZOrder		    47
+	    Points		    [0, -43; 123, 0; 0, 38]
+	    DstBlock		    "Manual Switch"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  ZOrder		  49
 	  SrcBlock		  "Transport\nDelay"
 	  SrcPort		  1
 	  DstBlock		  "Manual Switch"
 	  DstPort		  2
 	}
 	Line {
-	  ZOrder		  93
+	  ZOrder		  50
 	  SrcBlock		  "Manual Switch"
 	  SrcPort		  1
 	  DstBlock		  "Gain"
 	  DstPort		  1
-	}
-	Line {
-	  ZOrder		  94
-	  SrcBlock		  "u [m/s]"
-	  SrcPort		  1
-	  Points		  [105, 0]
-	  Branch {
-	    ZOrder		    96
-	    Points		    [0, -58; 110, 0]
-	    DstBlock		    "Manual Switch"
-	    DstPort		    1
-	  }
-	  Branch {
-	    ZOrder		    95
-	    DstBlock		    "Transport\nDelay"
-	    DstPort		    1
-	  }
 	}
       }
     }
@@ -2469,7 +2470,7 @@ Model {
       Name		      "Scope2"
       SID		      "126"
       Ports		      [1]
-      Position		      [970, 448, 1000, 482]
+      Position		      [960, 448, 990, 482]
       ZOrder		      66
       ScopeSpecificationString "Simulink.scopes.TimeScopeBlockCfg('CurrentConfiguration', extmgr.ConfigurationSet(extm"
       "gr.Configuration('Core','General UI',true,'FigureColor',[0.156862745098039 0.156862745098039 0.156862745098039])"
@@ -2482,28 +2483,28 @@ Model {
       " 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.2"
       "74509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],'Title','%<SignalLabel>','LinePr"
       "opertiesCache',{{struct('Visible','on','Color',[1 1 0],'LineStyle','-','LineWidth',0.5,'Marker','none'),struct('"
-      "Visible','on','Color',[1 0 1],'LineStyle','-','LineWidth',0.5,'Marker','none'),struct('Visible','off','Color',[0"
-      " 1 1],'LineStyle','-','LineWidth',0.5,'Marker','none'),struct('Visible','off','Color',[1 0 0],'LineStyle','-','L"
-      "ineWidth',0.5,'Marker','none'),struct('Color',[0 1 0],'LineStyle','-','LineWidth',0.5,'Marker','none','Visible',"
-      "'on'),struct('Color',[0 0 1],'LineStyle','-','LineWidth',0.5,'Marker','none','Visible','on')}},'UserDefinedChann"
-      "elNames',{{}},'NumLines',4,'LineNames',{{'Inverses Pendel/1','Inverses Pendel/2','Inverses Pendel/3','Inverses P"
-      "endel/4'}},'ShowContent',true,'Placement',1)},'DisplayPropertyDefaults',struct('MinYLimReal','-1.08877','MaxYLim"
-      "Real','0.88139','YLabelReal','','MinYLimMag','0.00000','MaxYLimMag','1.08877','LegendVisibility','On','XGrid',tr"
-      "ue,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0."
-      "686274509803922],'ColorOrder',[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353"
-      " 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0"
-      ".0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],'Title','%<SignalLabel>','LinePropertiesCache',{{s"
-      "truct('Color',[1 1 0],'LineStyle','-','LineWidth',0.5,'Marker','none','Visible','on'),struct('Color',[1 0 1],'Li"
-      "neStyle','-','LineWidth',0.5,'Marker','none','Visible','on'),struct('Color',[0 1 1],'LineStyle','-','LineWidth',"
-      "0.5,'Marker','none','Visible','on'),struct('Color',[1 0 0],'LineStyle','-','LineWidth',0.5,'Marker','none','Visi"
-      "ble','on'),struct('Color',[0 1 0],'LineStyle','-','LineWidth',0.5,'Marker','none','Visible','on'),struct('Color'"
-      ",[0 0 1],'LineStyle','-','LineWidth',0.5,'Marker','none','Visible','on')}},'UserDefinedChannelNames',{{}},'NumLi"
-      "nes',0,'LineNames',{{[]}},'ShowContent',true,'Placement',1)),extmgr.Configuration('Tools','Plot Navigation',true"
-      ",'OnceAtStop',false,'PreviousZoomMode','Pan'),extmgr.Configuration('Tools','Measurements',true,'Version','2018b'"
-      ",'Measurements',struct('traceselector',struct('Line',1),'tcursors',struct('XCoordinates',[7.48401704848164 22.48"
-      "40170484817],'YCoordinates',[NaN NaN],'CursorChannels',[1 1],'WaveformCursors',true,'ShowHorizontal',false,'Show"
-      "Vertical',true,'LockCursorSpacing',false,'SnapToData',false,'SettingsPanelOpen',0,'MeasurementsPanelOpen',1)))),"
-      "'Version','2018b','Location',[1 74.1999999999999 1537 823])"
+      "Visible','off','Color',[1 0 1],'LineStyle','-','LineWidth',0.5,'Marker','none'),struct('Visible','off','Color',["
+      "0 1 1],'LineStyle','-','LineWidth',0.5,'Marker','none'),struct('Visible','off','Color',[1 0 0],'LineStyle','-','"
+      "LineWidth',0.5,'Marker','none'),struct('Color',[0 1 0],'LineStyle','-','LineWidth',0.5,'Marker','none','Visible'"
+      ",'on'),struct('Color',[0 0 1],'LineStyle','-','LineWidth',0.5,'Marker','none','Visible','on')}},'UserDefinedChan"
+      "nelNames',{{}},'NumLines',4,'LineNames',{{'Inverses Pendel/1','Inverses Pendel/2','Inverses Pendel/3','Inverses "
+      "Pendel/4'}},'ShowContent',true,'Placement',1)},'DisplayPropertyDefaults',struct('MinYLimReal','-1.08877','MaxYLi"
+      "mReal','0.88139','YLabelReal','','MinYLimMag','0.00000','MaxYLimMag','1.08877','LegendVisibility','On','XGrid',t"
+      "rue,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0"
+      ".686274509803922],'ColorOrder',[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.41176470588235"
+      "3 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;"
+      "0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],'Title','%<SignalLabel>','LinePropertiesCache',{{"
+      "struct('Color',[1 1 0],'LineStyle','-','LineWidth',0.5,'Marker','none','Visible','on'),struct('Color',[1 0 1],'L"
+      "ineStyle','-','LineWidth',0.5,'Marker','none','Visible','on'),struct('Color',[0 1 1],'LineStyle','-','LineWidth'"
+      ",0.5,'Marker','none','Visible','on'),struct('Color',[1 0 0],'LineStyle','-','LineWidth',0.5,'Marker','none','Vis"
+      "ible','on'),struct('Color',[0 1 0],'LineStyle','-','LineWidth',0.5,'Marker','none','Visible','on'),struct('Color"
+      "',[0 0 1],'LineStyle','-','LineWidth',0.5,'Marker','none','Visible','on')}},'UserDefinedChannelNames',{{}},'NumL"
+      "ines',0,'LineNames',{{[]}},'ShowContent',true,'Placement',1)),extmgr.Configuration('Tools','Plot Navigation',tru"
+      "e,'OnceAtStop',false,'PreviousZoomMode','Pan'),extmgr.Configuration('Tools','Measurements',true,'Version','2018b"
+      "','Measurements',struct('traceselector',struct('Line',1),'tcursors',struct('XCoordinates',[7.48401704848164 22.4"
+      "840170484817],'YCoordinates',[NaN NaN],'CursorChannels',[1 1],'WaveformCursors',true,'ShowHorizontal',false,'Sho"
+      "wVertical',true,'LockCursorSpacing',false,'SnapToData',false,'SettingsPanelOpen',0,'MeasurementsPanelOpen',1))))"
+      ",'Version','2018b','Location',[1 74.1999999999999 1537 823])"
       NumInputPorts	      "1"
       Floating		      off
     }
@@ -2683,10 +2684,10 @@ Model {
     }
     Block {
       BlockType		      UnitDelay
-      Name		      "Unit Delay"
-      SID		      "256"
-      Position		      [680, 683, 715, 717]
-      ZOrder		      546
+      Name		      "Unit Delay1"
+      SID		      "398"
+      Position		      [635, 683, 670, 717]
+      ZOrder		      549
       BlockMirror	      on
       NamePlacement	      "alternate"
       InputProcessing	      "Elements as channels (sample based)"
@@ -4689,10 +4690,10 @@ Model {
       }
     }
     Line {
-      ZOrder		      1
+      ZOrder		      370
       SrcBlock		      "Inverses Pendel"
       SrcPort		      1
-      Points		      [48, 0]
+      Points		      [43, 0]
       Branch {
 	ZOrder			177
 	Points			[0, 55]
@@ -4725,10 +4726,10 @@ Model {
       }
     }
     Line {
-      ZOrder		      5
+      ZOrder		      381
       SrcBlock		      "Inverses Pendel"
       SrcPort		      3
-      Points		      [17, 0]
+      Points		      [12, 0]
       Branch {
 	ZOrder			6
 	Points			[58, 0; 0, -70]
@@ -4781,10 +4782,10 @@ Model {
       DstPort		      4
     }
     Line {
-      ZOrder		      13
+      ZOrder		      371
       SrcBlock		      "Inverses Pendel"
       SrcPort		      2
-      Points		      [34, 0; 0, 110]
+      Points		      [29, 0; 0, 110]
       Branch {
 	ZOrder			283
 	Points			[0, 145]
@@ -4798,10 +4799,10 @@ Model {
       }
     }
     Line {
-      ZOrder		      14
+      ZOrder		      380
       SrcBlock		      "Inverses Pendel"
       SrcPort		      4
-      Points		      [-1, 0; 0, 80]
+      Points		      [4, 0; 0, 22; -10, 0; 0, 58]
       Branch {
 	ZOrder			287
 	Points			[0, 45]
@@ -4927,14 +4928,21 @@ Model {
       }
     }
     Line {
+      ZOrder		      369
+      SrcBlock		      "Zero-Order\nHold2"
+      SrcPort		      1
+      DstBlock		      "Inverses Pendel"
+      DstPort		      1
+    }
+    Line {
       ZOrder		      20
       SrcBlock		      "Mux"
       SrcPort		      1
       Points		      [28, 0]
       Branch {
-	ZOrder			363
+	ZOrder			421
 	Points			[0, 235]
-	DstBlock		"Unit Delay"
+	DstBlock		"Unit Delay1"
 	DstPort			1
       }
       Branch {
@@ -4944,15 +4952,8 @@ Model {
       }
     }
     Line {
-      ZOrder		      362
-      SrcBlock		      "Zero-Order\nHold2"
-      SrcPort		      1
-      DstBlock		      "Inverses Pendel"
-      DstPort		      1
-    }
-    Line {
-      ZOrder		      364
-      SrcBlock		      "Unit Delay"
+      ZOrder		      422
+      SrcBlock		      "Unit Delay1"
       SrcPort		      1
       DstBlock		      "initial conditions"
       DstPort		      1
@@ -5008,8 +5009,8 @@ Stateflow {
     decomposition	    CLUSTER_STATE
     eml {
       isEML		      1
-      script		      "function u = Zustandsregler(x) %#codegen\n%% Polvorgabe\nK = [-0.1774,   -1.2889,   -1.4313,   -0"
-      ".1056];\nu = -K*x;\n\n\n"
+      script		      "function u = Zustandsregler(x) %#codegen\n%% Polvorgabe\nK = [-0.3814,   -1.6067,   -2.8471,   -0"
+      ".2415];\nu = -K*x;\n\n\n"
       editorLayout	      "100 M4x1[10 5 700 500]"
     }
   }
@@ -5217,7 +5218,7 @@ Stateflow {
     eml {
       isEML		      1
       script		      "function u = Zustandsregler_LQR(x) %#codegen\n\n%% Implementierung des Zustandsreglers mit LQR\nK"
-      " = [-0.0955,   -1.9807,   -2.7690,   -0.2304];\nu = -K*x;"
+      " = [-0.0949,   -1.9733,   -2.7982,   -0.2800];\nu = -K*x;"
       editorLayout	      "100 M4x1[10 5 700 500]"
     }
   }
@@ -5352,22 +5353,19 @@ Stateflow {
       "t den Wert der Schaltfläche vom letzen Aufruf\n                    % zur Behandlung des Falls s=0 der Signum-Fun"
       "ktion\n\nif isempty(s_alt)   % Beim ersten Aufruf wird die Variable initialisiert \n    s_alt = 0;\nend\n\n%% Be"
       "nötigte Größen der Regelungsnormalform berechnen\n\n% Letzte Zeile der Regelungsnormalform (Berechnung mit der F"
-      "unktion \n% 'transformation_RNF')\nf = [0,    4986,   -89.5,  -53.78];\n\n\n% Transformationsmatrix zum Überführ"
+      "unktion \n% 'transformation_RNF')\nf = [0,    2319,   99.38,  -23.27];\n\n\n% Transformationsmatrix zum Überführ"
       "en der linearen Zustandsraumdarstellung\n% in die Regelungsnormalform (Berechnung mit der Funktion \n% 'transfor"
-      "mation_RNF')\n\nTR = [  -0.0002,   -4.25e-5,   -4.24e-5,   -1.61e-6;\n            0,   -0.0002,   -0.0001,   1.7"
-      "3e-18;\n            0,   1.73e-18,   -0.0020,    2.98e-19;\n            0,         -2.78e-17,    3.12e-17,   -0."
-      "0020;\n     ];\n% Zustände in Regelungsnormalform überführen\nx = TR*x_in;\n\n\n%% Implementierung des Sliding-M"
-      "ode-Reglers\n\n% Reglerparameter\nLAMBDA = 2;\nETA = 0.06;\n\n% Breite des linearen Bereichs für die Begrenzung "
-      "(sat-Funktion)\nSCHLAUCH = 0.004;\n\n%Definition der Schaltfläche\n%(a+b)^3 = (a3 + 3a2b + 3ab2 + b3)\n% x_p = x"
-      "2, x_pp = x3, x_ppp = x4\ns = x(4) + 3*LAMBDA*x(3) + 3*LAMBDA^2*x(2) + LAMBDA^3*x(1);\n% s_p = x4_p + 3*x3_p*lam"
-      "bda + 3*x2_p*lambda^2 + x1_p*lambda^3\n%mit:\n% x1_p = x2, x2_p = x3, x3_p = x4, \n% x4_p = f(1)*x(1) + f(2)*x(2"
-      ") + f(3)*x(3) + f(4)*x(4) + u\n%wird:\n%s_p = f(1)*x(1) + f(2)*x(2) + f(3)*x(3) + f(4)*x(4) + u + 3*lambda*x(4) "
-      "+...\n    %3*lambda^2*x(3) + lambda^3*x(2)\nu_subt = -(f(1)*x(1) + f(2)*x(2) + f(3)*x(3) + f(4)*x(4) + 3*LAMBDA*"
-      "x(4) +...\n    3*LAMBDA^2*x(3) + LAMBDA^3*x(2));\n\n\nif auswahl == 1  \n    % Sign-Funktion:\n    if (s < 0)\n "
-      "       sign = -1;\n    elseif (s > 0)\n        sign = 1;\n    else\n        if (s_alt < 0)\n            sign = 1"
-      ";\n        else\n            sign = -1;\n        end \n    end\n    s_alt = s;\n    u = u_subt - ETA*sign;  \nel"
-      "se\n    % Sat-Funktion:\n    if (s < -SCHLAUCH)\n        sat = -1;\n    elseif (s > SCHLAUCH)\n        sat = 1;\n"
-      "    else\n        sat = s/SCHLAUCH;\n    end\n    % Regelgesetz\n    u = u_subt - ETA*sat;\nend\n  "
+      "mation_RNF')\n\nTR = [-0.0004,   -0.0000,   -0.0000,   -0.0000;\n         0,   -0.0004,   -0.0000,   -0.0000;\n "
+      "        0,    0.0000,   -0.0042,   -0.0000;\n         0,   -0.0000,   -0.0000,   -0.0042;\n     ];\n% Zustände i"
+      "n Regelungsnormalform überführen\nx = TR*x_in;\n\n\n%% Implementierung des Sliding-Mode-Reglers\n\n% Reglerparam"
+      "eter\nLAMBDA = 10;\nETA = 0.001;\n\n% Breite des linearen Bereichs für die Begrenzung (sat-Funktion)\nSCHLAUCH ="
+      " 0.004;\n\n%Definition der Schaltfläche\ns = x(4) + 3*LAMBDA*x(3) + 3*LAMBDA^2*x(2) + LAMBDA^3*x(1);\n   \nif au"
+      "swahl == 2 % Sat-Funktion\n    if (s < -SCHLAUCH)\n        sat = -1;\n    elseif (s > SCHLAUCH)\n        sat = 1"
+      ";\n    else\n        sat = s/SCHLAUCH;\n    end\n    % Regelgesetz\n    u = -(f(1)*x(1) + (f(2)+LAMBDA^3)*x(2) +"
+      " (f(3)+3*LAMBDA^2)*x(3) + (f(4)+3*LAMBDA)*x(4)) - ETA*sat;\nelse % Sign-Funktion\n    if (s < 0)\n        sign ="
+      " -1;\n    elseif (s > 0)\n        sign = 1;\n    else\n        if (s_alt < 0) %falls s=0 springt sign um\n      "
+      "      sign = 1;\n        else\n            sign = -1;\n        end\n    end\n\n    % Regelgesetz\n    u = -(f(1)"
+      "*x(1) + (f(2)+LAMBDA^3)*x(2) + (f(3)+3*LAMBDA^2)*x(3) + (f(4)+3*LAMBDA)*x(4)) - ETA*sign;\nend"
       editorLayout	      "100 M4x1[10 5 700 500]"
     }
   }
