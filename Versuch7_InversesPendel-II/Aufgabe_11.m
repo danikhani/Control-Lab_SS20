@@ -1,5 +1,4 @@
 clear all;
-clear all;
 %% Modellparameter laden
 
 g = 9.81;               % [m/s^2]
@@ -46,13 +45,14 @@ C = [1 0 0 0;
 D = 0;
 
 sys = ss(A,B,C,D)
+sys.inputdelay = 0.3;
 
 %% Zustandsregler mit LQR
 Ts = 0.005;
 
 %Gewichte
-Q = diag([1, 0.1, 10, 0.1]);
-R = 100;
+Q = diag([10, 1, 10, 0.1]);
+R = 5;
 
 [K,S,E] = lqrd(A,B,Q,R,Ts)
 
