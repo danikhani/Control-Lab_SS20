@@ -48,9 +48,6 @@ sys = ss(A,B,C,D)
 %% Slidingmode:
 [sysR,Tr] = transformation_RNF(sys)
 
-%sysR: Zustandsraummodell in Regelungsnormalform
-%Tr: Transformationsmatrix zum Überführen eines linearen
-%           Zustandsraummodells in Regelungsnormalform
 
 
 

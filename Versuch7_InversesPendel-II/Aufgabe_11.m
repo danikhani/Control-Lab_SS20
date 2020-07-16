@@ -46,14 +46,19 @@ D = 0;
 
 sys = ss(A,B,C,D)
 
-%%LQR
+%% LQR
 Ts = 0.005;
 
 %Gewichte
-Q = diag([10, 1, 10, 0.1]);
+Q = diag([1, 10, 10, 0.1]);
 R = 1;
 
-[K,S,E] = lqrd(A,B,Q,R,Ts)
+[K,S]  = lqrd(A,B,Q,R,Ts)
+
+%Eigenwerte des Systems überprüfen:
+Eigenwert = eig(A-B*K)
+
+
 
 
 

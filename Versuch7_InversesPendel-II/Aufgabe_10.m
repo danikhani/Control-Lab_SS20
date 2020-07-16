@@ -44,10 +44,11 @@ C = [1 0 0 0;
 
 D = 0;
 
-sys = ss(A,B,C,D)
+sys = ss(A,B,C,D);
 %% Diskretiesirung ohne Totzeit
 sys_z = c2d(sys,Ts)
 %% Diskretiesirung mit Totzeit
-sys.inputdelay = 0.3;
-sys_zt = c2d(sys,Ts)
+sys_Tt = ss(A,B,C,D,'InputDelay',Tt);
+sys_zTt = c2d(sys_Tt,Ts)
+
 

@@ -1,12 +1,12 @@
 Model {
-  Name			  "Aufgabe_13_simulink_"
+  Name			  "Aufgabe_10_11_12_simulink"
   Version		  9.2
   SavedCharacterEncoding  "windows-1252"
   GraphicalInterface {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.442"
+    ComputedModelVersion    "1.452"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -20,25 +20,25 @@ Model {
     NumExternalFileReferences 4
     ExternalFileReference {
       Reference		      "dspnetwork/UDP Send"
-      Path		      "Aufgabe_13_simulink_/Visualisierung/UDP Send1"
+      Path		      "Aufgabe_10_11_12_simulink/Visualisierung/UDP Send1"
       SID		      "155"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
       Reference		      "dspnetwork/UDP Send"
-      Path		      "Aufgabe_13_simulink_/Visualisierung/UDP Send2"
+      Path		      "Aufgabe_10_11_12_simulink/Visualisierung/UDP Send2"
       SID		      "156"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
       Reference		      "dspnetwork/UDP Send"
-      Path		      "Aufgabe_13_simulink_/Visualisierung/UDP Send3"
+      Path		      "Aufgabe_10_11_12_simulink/Visualisierung/UDP Send3"
       SID		      "157"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
       Reference		      "dspnetwork/UDP Send"
-      Path		      "Aufgabe_13_simulink_/Visualisierung/UDP Send4"
+      Path		      "Aufgabe_10_11_12_simulink/Visualisierung/UDP Send4"
       SID		      "158"
       Type		      "LIBRARY_BLOCK"
     }
@@ -70,7 +70,7 @@ Model {
       $ObjectID		      2
       $ClassName	      "Simulink.WindowInfo"
       IsActive		      [1]
-      Location		      [-7.0, -7.0, 1550.0, 838.0]
+      Location		      [-1927.0, -7.0, 1934.0, 1054.0]
       Object {
 	$PropName		"ModelBrowserInfo"
 	$ObjectID		3
@@ -94,9 +94,9 @@ Model {
 	IsActive		[1]
 	ViewObjType		"SimulinkTopLevel"
 	LoadSaveID		"0"
-	Extents			[1875.0, 833.0]
-	ZoomFactor		[0.99999999999999978]
-	Offset			[21.65885416666697, 40.94611508449043]
+	Extents			[2355.0, 1103.0]
+	ZoomFactor		[1.0]
+	Offset			[-46.607812499999909, 49.200000000000045]
       }
       Object {
 	$PropName		"DockComponentsInfo"
@@ -116,7 +116,7 @@ Model {
       "AAAAAAA+wAAABYARABvAGMAawBXAGkAZABnAGUAdAA0AAAAAAD/////AAAAAAAAAAD7AAAAUgBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0Ac"
       "ABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQAAAAAAP////8AAAB5AP///wAAAAEAAAAAAAAAAPwCA"
       "AAAAfsAAABUAEcATABVAEUAMgA6AFAAcgBvAHAAZQByAHQAeQBJAG4AcwBwAGUAYwB0AG8AcgAvAFAAcgBvAHAAZQByAHQAeQAgAEkAbgBzAHAAZ"
-      "QBjAHQAbwByAAAAAAD/////AAAARgD///8AAAeAAAADhgAAAAEAAAACAAAAAQAAAAL8AAAAAQAAAAIAAAAP/////wAAAAAA/////wAAAAAAAAAA/"
+      "QBjAHQAbwByAAAAAAD/////AAAARgD///8AAAlgAAAElAAAAAEAAAACAAAAAQAAAAL8AAAAAQAAAAIAAAAP/////wAAAAAA/////wAAAAAAAAAA/"
       "////wEAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/"
       "////wEAAACR/////wAAAAAAAAAA/////wEAAAEE/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAAGV/////wAAAAAAAAAA/"
       "////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAAON/////wAAAAAAAAAA/"
@@ -130,9 +130,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "danial"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Thu Jul 16 16:14:59 2020"
-  RTWModifiedTimeStamp	  516816870
-  ModelVersionFormat	  "1.%<AutoIncrement:442>"
+  LastModifiedDate	  "Thu Jul 16 22:49:52 2020"
+  RTWModifiedTimeStamp	  516840590
+  ModelVersionFormat	  "1.%<AutoIncrement:452>"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
   LibraryLinkDisplay	  "disabled"
@@ -189,12 +189,12 @@ Model {
     $PropName		    "DataLoggingOverride"
     $ObjectID		    7
     $ClassName		    "Simulink.SimulationData.ModelLoggingInfo"
-    model_		    "Aufgabe_13_simulink_"
+    model_		    "Aufgabe_10_11_12_simulink"
     overrideMode_	    [0.0]
     Array {
       Type		      "Cell"
       Dimension		      1
-      Cell		      "Aufgabe_13_simulink_"
+      Cell		      "Aufgabe_10_11_12_simulink"
       PropName		      "logAsSpecifiedByModels_"
     }
     Array {
@@ -996,7 +996,7 @@ Model {
       }
       Name		      "Configuration"
       ExtraOptions	      ""
-      CurrentDlgPage	      "Model Referencing"
+      CurrentDlgPage	      "Data Import//Export"
       ConfigPrmDlgPosition    [ 71, 70, 1243, 794 ]
     }
     PropName		    "ConfigurationSets"
@@ -1250,6 +1250,21 @@ Model {
       MultiThreadCoSim	      "auto"
     }
     Block {
+      BlockType		      Saturate
+      UpperLimitSource	      "Dialog"
+      UpperLimit	      "0.5"
+      LowerLimitSource	      "Dialog"
+      LowerLimit	      "-0.5"
+      LinearizeAsGain	      on
+      ZeroCross		      on
+      SampleTime	      "-1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Same as input"
+      LockScale		      off
+      RndMeth		      "Floor"
+    }
+    Block {
       BlockType		      Scope
       DefaultConfigurationName "Simulink.scopes.TimeScopeBlockCfg"
     }
@@ -1358,8 +1373,8 @@ Model {
     }
   }
   System {
-    Name		    "Aufgabe_13_simulink_"
-    Location		    [-7, -7, 1543, 831]
+    Name		    "Aufgabe_10_11_12_simulink"
+    Location		    [-1927, -7, 7, 1047]
     Open		    on
     PortBlocksUseCompactNotation off
     SetExecutionDomain	    off
@@ -1376,7 +1391,7 @@ Model {
     ShowPageBoundaries	    off
     ZoomFactor		    "100"
     ReportName		    "simulink-default.rpt"
-    SIDHighWatermark	    "444"
+    SIDHighWatermark	    "469"
     Block {
       BlockType		      SubSystem
       Name		      "Aufschwingen"
@@ -1430,7 +1445,7 @@ Model {
 	  BlockType		  S-Function
 	  Name			  " SFunction "
 	  SID			  "114::38"
-	  Tag			  "Stateflow S-Function Aufgabe_13_simulink_ 5"
+	  Tag			  "Stateflow S-Function Aufgabe_10_11_12_simulink 5"
 	  Ports			  [1, 2]
 	  Position		  [180, 100, 230, 160]
 	  ZOrder		  24
@@ -1498,7 +1513,7 @@ Model {
       Position		      [275, 135, 305, 165]
       ZOrder		      47
       BackgroundColor	      "orange"
-      Value		      "4"
+      Value		      "3"
       SampleTime	      "-1"
     }
     Block {
@@ -1610,7 +1625,7 @@ Model {
 	  BlockType		  S-Function
 	  Name			  " SFunction "
 	  SID			  "208::47"
-	  Tag			  "Stateflow S-Function Aufgabe_13_simulink_ 2"
+	  Tag			  "Stateflow S-Function Aufgabe_10_11_12_simulink 2"
 	  Ports			  [1, 1]
 	  Position		  [180, 100, 230, 140]
 	  ZOrder		  25
@@ -1651,6 +1666,21 @@ Model {
       }
     }
     Block {
+      BlockType		      Saturate
+      Name		      "Geom. \nBegrenzung1"
+      SID		      "462"
+      Ports		      [1, 1]
+      Position		      [580, 360, 610, 390]
+      ZOrder		      555
+      InputPortMap	      "u0"
+      UpperLimit	      "0.73"
+      LowerLimit	      "-0.73"
+      Port {
+	PortNumber		1
+	Name			"x"
+      }
+    }
+    Block {
       BlockType		      SubSystem
       Name		      "Inverses Pendel"
       SID		      "372"
@@ -1678,7 +1708,7 @@ Model {
 	    Type		    "edit"
 	    Name		    "dx0"
 	    Prompt		    "Startgeschwindigkeit Wagen [m/s]"
-	    Value		    "0.2"
+	    Value		    "0"
 	  }
 	  Object {
 	    $ObjectID		    30
@@ -1692,7 +1722,7 @@ Model {
 	    Type		    "edit"
 	    Name		    "dphi0"
 	    Prompt		    "Startwinkelgeschwindigkeit Pendel [rad/s]"
-	    Value		    "0"
+	    Value		    "0.2"
 	  }
 	  PropName		  "Parameters"
 	}
@@ -1742,7 +1772,7 @@ Model {
       }
       System {
 	Name			"Inverses Pendel"
-	Location		[-7, -7, 1543, 831]
+	Location		[-1927, -7, 7, 1047]
 	Open			off
 	PortBlocksUseCompactNotation off
 	SetExecutionDomain	off
@@ -1757,12 +1787,12 @@ Model {
 	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
 	TiledPageScale		1
 	ShowPageBoundaries	off
-	ZoomFactor		"60"
+	ZoomFactor		"80"
 	Block {
 	  BlockType		  Inport
 	  Name			  "u [m/s]"
 	  SID			  "373"
-	  Position		  [-280, 53, -250, 67]
+	  Position		  [-110, 63, -80, 77]
 	  ZOrder		  28
 	  IconDisplay		  "Port number"
 	}
@@ -1781,9 +1811,9 @@ Model {
 	  BlockType		  Gain
 	  Name			  "Gain5"
 	  SID			  "424"
-	  Position		  [260, 40, 310, 80]
+	  Position		  [250, 45, 300, 85]
 	  ZOrder		  343
-	  Gain			  "1/0.014"
+	  Gain			  "1/0.043"
 	  ParamDataTypeStr	  "Inherit: Inherit via internal rule"
 	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
 	  SaturateOnIntegerOverflow off
@@ -1796,7 +1826,7 @@ Model {
 	  ZOrder		  348
 	  BlockMirror		  on
 	  NamePlacement		  "alternate"
-	  Gain			  "1/0.014"
+	  Gain			  "1/0.043"
 	  ParamDataTypeStr	  "Inherit: Inherit via internal rule"
 	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
 	  SaturateOnIntegerOverflow off
@@ -1842,6 +1872,17 @@ Model {
 	}
 	Block {
 	  BlockType		  Integrator
+	  Name			  "Integrator\nLimited1"
+	  SID			  "464"
+	  Ports			  [1, 1]
+	  Position		  [515, 60, 545, 90]
+	  ZOrder		  381
+	  InitialCondition	  "dx0"
+	  UpperSaturationLimit	  "1"
+	  LowerSaturationLimit	  "0"
+	}
+	Block {
+	  BlockType		  Integrator
 	  Name			  "Integrator\nLimited5"
 	  SID			  "429"
 	  Ports			  [1, 1]
@@ -1865,18 +1906,6 @@ Model {
 	}
 	Block {
 	  BlockType		  Integrator
-	  Name			  "Integrator\nLimited7"
-	  SID			  "431"
-	  Ports			  [1, 1]
-	  Position		  [495, 60, 525, 90]
-	  ZOrder		  344
-	  InitialCondition	  "dx0"
-	  LimitOutput		  on
-	  UpperSaturationLimit	  "0.73"
-	  LowerSaturationLimit	  "-0.73"
-	}
-	Block {
-	  BlockType		  Integrator
 	  Name			  "Integrator\nLimited8"
 	  SID			  "432"
 	  Ports			  [1, 1]
@@ -1885,6 +1914,14 @@ Model {
 	  InitialCondition	  "phi0"
 	  UpperSaturationLimit	  "1"
 	  LowerSaturationLimit	  "0"
+	}
+	Block {
+	  BlockType		  ManualSwitch
+	  Name			  "Manual Switch"
+	  SID			  "469"
+	  Position		  [135, 47, 165, 83]
+	  ZOrder		  558
+	  CurrentSetting	  "0"
 	}
 	Block {
 	  BlockType		  Product
@@ -1925,14 +1962,18 @@ Model {
 	  InputSameDT		  off
 	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
 	  SaturateOnIntegerOverflow off
+	  Port {
+	    PortNumber		    1
+	    Name		    "x"
+	  }
 	}
 	Block {
 	  BlockType		  TransportDelay
 	  Name			  "Transport\nDelay"
-	  SID			  "444"
+	  SID			  "467"
 	  Ports			  [1, 1]
-	  Position		  [10, 40, 50, 80]
-	  ZOrder		  356
+	  Position		  [15, -50, 55, -10]
+	  ZOrder		  556
 	  DelayTime		  "0.03"
 	}
 	Block {
@@ -2005,23 +2046,6 @@ Model {
 	      DstBlock		      "Cos1"
 	      DstPort		      1
 	    }
-	  }
-	}
-	Line {
-	  ZOrder		  159
-	  SrcBlock		  "Subtract3"
-	  SrcPort		  1
-	  Points		  [37, 0]
-	  Branch {
-	    ZOrder		    158
-	    Points		    [0, -151; 632, 0; 0, 686]
-	    DstBlock		    "Multiply1"
-	    DstPort		    2
-	  }
-	  Branch {
-	    ZOrder		    157
-	    DstBlock		    "Integrator\nLimited7"
-	    DstPort		    1
 	  }
 	}
 	Line {
@@ -2101,7 +2125,6 @@ Model {
 	  ZOrder		  171
 	  SrcBlock		  "Gain5"
 	  SrcPort		  1
-	  Points		  [33, 0; 0, 5]
 	  DstBlock		  "Subtract3"
 	  DstPort		  1
 	}
@@ -2128,10 +2151,30 @@ Model {
 	  DstPort		  3
 	}
 	Line {
-	  ZOrder		  179
-	  SrcBlock		  "Integrator\nLimited7"
+	  Name			  "x"
+	  ZOrder		  266
+	  Labels		  [0, 0]
+	  SrcBlock		  "Subtract3"
 	  SrcPort		  1
-	  Points		  [32, 0]
+	  Points		  [35, 0]
+	  Branch {
+	    ZOrder		    269
+	    DstBlock		    "Integrator\nLimited1"
+	    DstPort		    1
+	  }
+	  Branch {
+	    ZOrder		    158
+	    Labels		    [0, 0]
+	    Points		    [0, -151; 634, 0; 0, 686]
+	    DstBlock		    "Multiply1"
+	    DstPort		    2
+	  }
+	}
+	Line {
+	  ZOrder		  271
+	  SrcBlock		  "Integrator\nLimited1"
+	  SrcPort		  1
+	  Points		  [83, 0]
 	  Branch {
 	    ZOrder		    182
 	    Points		    [0, -80]
@@ -2140,7 +2183,7 @@ Model {
 	  }
 	  Branch {
 	    ZOrder		    177
-	    Points		    [122, 0]
+	    Points		    [51, 0]
 	    Branch {
 	      ZOrder		      176
 	      DstBlock		      "Integrator\nLimited5"
@@ -2155,15 +2198,34 @@ Model {
 	  }
 	}
 	Line {
-	  ZOrder		  217
-	  SrcBlock		  "u [m/s]"
+	  ZOrder		  289
+	  SrcBlock		  "Transport\nDelay"
 	  SrcPort		  1
-	  DstBlock		  "Transport\nDelay"
+	  Points		  [35, 0; 0, 85]
+	  DstBlock		  "Manual Switch"
 	  DstPort		  1
 	}
 	Line {
-	  ZOrder		  218
-	  SrcBlock		  "Transport\nDelay"
+	  ZOrder		  288
+	  SrcBlock		  "u [m/s]"
+	  SrcPort		  1
+	  Points		  [35, 0]
+	  Branch {
+	    ZOrder		    291
+	    Points		    [0, 5]
+	    DstBlock		    "Manual Switch"
+	    DstPort		    2
+	  }
+	  Branch {
+	    ZOrder		    290
+	    Points		    [2, 0; 0, -100]
+	    DstBlock		    "Transport\nDelay"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  ZOrder		  292
+	  SrcBlock		  "Manual Switch"
 	  SrcPort		  1
 	  DstBlock		  "Gain5"
 	  DstPort		  1
@@ -2249,7 +2311,7 @@ Model {
 	  BlockType		  S-Function
 	  Name			  " SFunction "
 	  SID			  "115::39"
-	  Tag			  "Stateflow S-Function Aufgabe_13_simulink_ 6"
+	  Tag			  "Stateflow S-Function Aufgabe_10_11_12_simulink 6"
 	  Ports			  [2, 2]
 	  Position		  [180, 100, 230, 160]
 	  ZOrder		  25
@@ -2330,6 +2392,10 @@ Model {
       DiagnosticForDefault    "Warning"
       InputSameDT	      off
       SaturateOnIntegerOverflow	off
+      Port {
+	PortNumber		1
+	Name			"x"
+      }
     }
     Block {
       BlockType		      Mux
@@ -2357,7 +2423,7 @@ Model {
       Position		      [65, 55, 95, 85]
       ZOrder		      70
       BackgroundColor	      "orange"
-      Value		      "4"
+      Value		      "5"
       SampleTime	      "-1"
     }
     Block {
@@ -2462,7 +2528,7 @@ Model {
       ",extmgr.Configuration('Core','Source UI',true),extmgr.Configuration('Sources','WiredSimulink',true,'DataLoggingV"
       "ariableName','ScopeData2','DataLoggingSaveFormat','StructureWithTime','DataLoggingDecimation','1','DataLoggingDe"
       "cimateData',true),extmgr.Configuration('Visuals','Time Domain',true,'SerializedDisplays',{struct('MinYLimReal','"
-      "-1.13354','MaxYLimReal','0.62171','YLabelReal','','MinYLimMag','0.00000','MaxYLimMag','1.13354','LegendVisibilit"
+      "-0.02541','MaxYLimReal','0.00993','YLabelReal','','MinYLimMag','0.00000','MaxYLimMag','0.02541','LegendVisibilit"
       "y','On','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0."
       "686274509803922 0.686274509803922],'ColorOrder',[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1"
       " 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.2"
@@ -2470,11 +2536,11 @@ Model {
       "opertiesCache',{{struct('Visible','on','Color',[1 1 0],'LineStyle','-','LineWidth',0.5,'Marker','none'),struct('"
       "Visible','on','Color',[1 0 1],'LineStyle','-','LineWidth',0.5,'Marker','none'),struct('Visible','on','Color',[0 "
       "1 1],'LineStyle','-','LineWidth',0.5,'Marker','none'),struct('Visible','off','Color',[1 0 0],'LineStyle','-','Li"
-      "neWidth',0.5,'Marker','none'),struct('Color',[0 1 0],'LineStyle','-','LineWidth',0.5,'Marker','none','Visible','"
-      "on'),struct('Color',[0 0 1],'LineStyle','-','LineWidth',0.5,'Marker','none','Visible','on')}},'UserDefinedChanne"
+      "neWidth',0.5,'Marker','none'),struct('Visible','on','Color',[0 1 0],'LineStyle','-','LineWidth',0.5,'Marker','no"
+      "ne'),struct('Color',[0 0 1],'LineStyle','-','LineWidth',0.5,'Marker','none','Visible','on')}},'UserDefinedChanne"
       "lNames',{{}},'NumLines',4,'LineNames',{{'Inverses Pendel/1','Inverses Pendel/2','Inverses Pendel/3','Inverses Pe"
-      "ndel/4'}},'ShowContent',true,'Placement',1)},'DisplayPropertyDefaults',struct('MinYLimReal','-1.13354','MaxYLimR"
-      "eal','0.62171','YLabelReal','','MinYLimMag','0.00000','MaxYLimMag','1.13354','LegendVisibility','On','XGrid',tru"
+      "ndel/4'}},'ShowContent',true,'Placement',1)},'DisplayPropertyDefaults',struct('MinYLimReal','-0.02541','MaxYLimR"
+      "eal','0.00993','YLabelReal','','MinYLimMag','0.00000','MaxYLimMag','0.02541','LegendVisibility','On','XGrid',tru"
       "e,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.6"
       "86274509803922],'ColorOrder',[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 "
       "0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0."
@@ -2485,11 +2551,8 @@ Model {
       "le','on'),struct('Color',[0 1 0],'LineStyle','-','LineWidth',0.5,'Marker','none','Visible','on'),struct('Color',"
       "[0 0 1],'LineStyle','-','LineWidth',0.5,'Marker','none','Visible','on')}},'UserDefinedChannelNames',{{}},'NumLin"
       "es',0,'LineNames',{{[]}},'ShowContent',true,'Placement',1)),extmgr.Configuration('Tools','Plot Navigation',true,"
-      "'OnceAtStop',false),extmgr.Configuration('Tools','Measurements',true,'Version','2018b','Measurements',struct('tr"
-      "aceselector',struct('Line',3),'tcursors',struct('XCoordinates',[NaN NaN],'YCoordinates',[NaN NaN],'CursorChannel"
-      "s',[3 3],'WaveformCursors',false,'ShowHorizontal',false,'ShowVertical',true,'LockCursorSpacing',false,'SnapToDat"
-      "a',false,'SettingsPanelOpen',1,'MeasurementsPanelOpen',1)))),'Version','2018b','Location',[1 74.1999999999999 15"
-      "37 823])"
+      "'OnceAtStop',false),extmgr.Configuration('Tools','Measurements',true,'Version','2018b')),'Version','2018b','Loca"
+      "tion',[-1919 74.1999999999999 1 1039],'VisibleAtModelOpen','on')"
       NumInputPorts	      "1"
       Floating		      off
     }
@@ -2555,7 +2618,7 @@ Model {
 	  BlockType		  S-Function
 	  Name			  " SFunction "
 	  SID			  "113::38"
-	  Tag			  "Stateflow S-Function Aufgabe_13_simulink_ 4"
+	  Tag			  "Stateflow S-Function Aufgabe_10_11_12_simulink 4"
 	  Ports			  [2, 3]
 	  Position		  [180, 100, 230, 180]
 	  ZOrder		  24
@@ -2961,7 +3024,7 @@ Model {
 	      BlockType		      S-Function
 	      Name		      " SFunction "
 	      SID		      "149::35"
-	      Tag		      "Stateflow S-Function Aufgabe_13_simulink_ 7"
+	      Tag		      "Stateflow S-Function Aufgabe_10_11_12_simulink 7"
 	      Ports		      [3, 2]
 	      Position		      [180, 100, 230, 180]
 	      ZOrder		      21
@@ -3142,7 +3205,7 @@ Model {
 		  BlockType		  S-Function
 		  Name			  " SFunction "
 		  SID			  "153::120"
-		  Tag			  "Stateflow S-Function Aufgabe_13_simulink_ 9"
+		  Tag			  "Stateflow S-Function Aufgabe_10_11_12_simulink 9"
 		  Ports			  [2, 2]
 		  Position		  [180, 100, 230, 160]
 		  ZOrder		  34
@@ -3475,7 +3538,7 @@ Model {
 		  BlockType		  S-Function
 		  Name			  " SFunction "
 		  SID			  "164::72"
-		  Tag			  "Stateflow S-Function Aufgabe_13_simulink_ 8"
+		  Tag			  "Stateflow S-Function Aufgabe_10_11_12_simulink 8"
 		  Ports			  [4, 2]
 		  Position		  [180, 102, 230, 203]
 		  ZOrder		  28
@@ -3743,7 +3806,7 @@ Model {
 		  BlockType		  S-Function
 		  Name			  " SFunction "
 		  SID			  "171::72"
-		  Tag			  "Stateflow S-Function Aufgabe_13_simulink_ 11"
+		  Tag			  "Stateflow S-Function Aufgabe_10_11_12_simulink 11"
 		  Ports			  [4, 2]
 		  Position		  [180, 102, 230, 203]
 		  ZOrder		  28
@@ -4011,7 +4074,7 @@ Model {
 		  BlockType		  S-Function
 		  Name			  " SFunction "
 		  SID			  "178::72"
-		  Tag			  "Stateflow S-Function Aufgabe_13_simulink_ 10"
+		  Tag			  "Stateflow S-Function Aufgabe_10_11_12_simulink 10"
 		  Ports			  [4, 2]
 		  Position		  [180, 102, 230, 203]
 		  ZOrder		  28
@@ -4414,7 +4477,7 @@ Model {
 	  BlockType		  S-Function
 	  Name			  " SFunction "
 	  SID			  "111::38"
-	  Tag			  "Stateflow S-Function Aufgabe_13_simulink_ 3"
+	  Tag			  "Stateflow S-Function Aufgabe_10_11_12_simulink 3"
 	  Ports			  [1, 2]
 	  Position		  [180, 100, 230, 160]
 	  ZOrder		  24
@@ -4528,7 +4591,7 @@ Model {
 	  BlockType		  S-Function
 	  Name			  " SFunction "
 	  SID			  "107::38"
-	  Tag			  "Stateflow S-Function Aufgabe_13_simulink_ 1"
+	  Tag			  "Stateflow S-Function Aufgabe_10_11_12_simulink 1"
 	  Ports			  [1, 2]
 	  Position		  [180, 100, 230, 160]
 	  ZOrder		  24
@@ -4969,14 +5032,16 @@ Model {
       DstPort		      2
     }
     Line {
+      Name		      "x"
       ZOrder		      23
       SrcBlock		      "Multiport\nSwitch"
       SrcPort		      1
       Points		      [5, 0]
       Branch {
-	ZOrder			530
+	ZOrder			584
+	Labels			[2, 1]
 	Points			[0, 10]
-	DstBlock		"Inverses Pendel"
+	DstBlock		"Geom. \nBegrenzung1"
 	DstPort			1
       }
       Branch {
@@ -4985,6 +5050,15 @@ Model {
 	DstBlock		"Scope1"
 	DstPort			2
       }
+    }
+    Line {
+      Name		      "x"
+      ZOrder		      585
+      Labels		      [0, 0]
+      SrcBlock		      "Geom. \nBegrenzung1"
+      SrcPort		      1
+      DstBlock		      "Inverses Pendel"
+      DstPort		      1
     }
   }
 }
@@ -4996,7 +5070,7 @@ Model {
 Stateflow {
   machine {
     id			    1
-    name		    "Aufgabe_13_simulink_"
+    name		    "Aufgabe_10_11_12_simulink"
     created		    "17-Jun-2014 14:18:32"
     isLibrary		    0
     sfVersion		    80000014
@@ -5037,8 +5111,9 @@ Stateflow {
     decomposition	    CLUSTER_STATE
     eml {
       isEML		      1
-      script		      "function u = Zustandsregler(x) %#codegen\n%% Polvorgabe\nK = [-0.3814,   -1.6067,   -2.8471,   -0"
-      ".2415];\nu = -K*x;\n\n\n"
+      script		      "function u = Zustandsregler(x) %#codegen\n%% Polvorgabe\n% K für stabile Polplatzierung:\nK = [-0"
+      ".3814,   -1.6067,   -2.8471,   -0.2415];\n% K für instabile Polplatzierung:\n%K = [0.9535,   -0.1508,   -1.4996,"
+      "   -0.0687];\nu = -K*x;\n\n\n"
       editorLayout	      "100 M4x1[10 5 700 500]"
     }
   }
@@ -5245,10 +5320,8 @@ Stateflow {
     decomposition	    CLUSTER_STATE
     eml {
       isEML		      1
-      script		      "function u = Zustandsregler_LQR(x) %#codegen\n\n%% Implementierung des Zustandsreglers mit LQR\n%"
-      "K = [-0.0949,   -1.9733,   -2.7982,   -0.2800];\n%K = [-0.9304,   -2.2265,   -3.3567,   -0.3359];\n%K =[-0.8337,"
-      "   -3.9484,   -6.6079,   -0.6612];\nK =[-2.6537,   -3.0531,   -5.6334,   -0.5636];\n%K = [-0.3489,   -4.6508,   "
-      "-8.1286,   -0.8134];\n\nu = -K*x;"
+      script		      "function u = Zustandsregler_LQR(x) %#codegen\n\n%% Implementierung des Zustandsreglers mit LQR\nK"
+      " = [-0.7912,   -3.8223,   -7.1391,   -0.7143];\n\nu = -K*x;"
       editorLayout	      "100 M4x1[10 5 700 500]"
     }
   }
@@ -5382,18 +5455,18 @@ Stateflow {
       "\n                \n%% Definitionen und Initialisierung interner Variablen                 \n% Speichert den Wer"
       "t der Schaltfläche vom letzen Aufruf zur Behandlung des Falls s=0 der Signum-Funktion\n\nif (s_alt == -2)   % Be"
       "im ersten Aufruf wird die Variable 0 initialisiert \n    s_alt = 0;\nend\n\n%% Regelungsnormalform Variabeln:\n%"
-      "Die letzte Zeile der Matriz A:\n\na_ll = [0,    2319,   99.38,  -23.27];\n\nTR = [-0.0004,   -0.0000,   -0.0000,"
-      "   -0.0000;\n         0,   -0.0004,   -0.0000,   -0.0000;\n         0,    0.0000,   -0.0042,   -0.0000;\n       "
-      "  0,   -0.0000,   -0.0000,   -0.0042;\n     ];\n %Zustände in Normalform\n x_n = TR*x;\n \n %% Slidingmode Regle"
-      "r\n \n %eta und lambda parameter\n eta = 0.02;\n lambda = 12;\n phi = 0.001;\n % berechnung von s und s_punkt\n "
-      "s = x_n(4) + 3*lambda*x_n(3) + 3*lambda^2*x_n(2) + lambda^3*x_n(1);\n u_von_s_p = -3*lambda*x_n(4) - 3*lambda^2*"
-      "x_n(3) - lambda^3*x_n(2) ...\n     -a_ll(1)*x_n(1) - a_ll(2)*x_n(2) - a_ll(3)*x_n(3) - a_ll(4)*x_n(4);\n \n \n %"
-      " sign funktion:\n if auswahl == 1\n     if (s<0)\n         sign_s = -1;       \n     elseif( s>0)\n         sign"
-      "_s = 1;\n     else % wenn s = 0 dann benutze s vom letzten zyklus um die vorzeichnen zu wechseln\n         if(s_"
-      "alt < 0)\n             sign_s = 1;\n         else\n             sign_s = -1;\n         end\n     end\n     u = u"
-      "_von_s_p - eta*sign_s;\n else\n     if (s < -phi)\n        sat = -1;\n    elseif (s > phi)\n        sat = 1;\n  "
-      "  else\n        sat = s/phi;\n     end\n    u = u_von_s_p - eta*sat;\n end\n s_neu = s;\n \n             \n     "
-      "    \n     	\n     \n\n"
+      "Die letzte Zeile der Matriz A:\n\na_ll = [0,    2319,   99.38,  -23.27];\n\nTR = [-4.3121e-4,   -6.3226e-08,   -"
+      "4.2420e-5,   -6.2198e-09;\n         0,   -4.3121e-4,   -6.20242904270482e-07,   -4.24202364668939e-05;\n        "
+      " 0,    1.73472347597681e-18,   -0.0042,   -6.56450534122083e-21;\n         0,   -2.77555756156289e-17,   -6.3696"
+      "8776335234e-19,   -0.0042;\n     ];\n %Zustände in Normalform\n x_n = TR*x;\n \n %% Slidingmode Regler\n \n %eta"
+      " und lambda parameter\n eta = 0.05;\n lambda = 10;\n phi = 0.005;\n % berechnung von s und s_punkt\n s = x_n(4) "
+      "+ 3*lambda*x_n(3) + 3*lambda^2*x_n(2) + lambda^3*x_n(1);\n u_von_s_p = -3*lambda*x_n(4) - 3*lambda^2*x_n(3) - la"
+      "mbda^3*x_n(2) ...\n     -a_ll(1)*x_n(1) - a_ll(2)*x_n(2) - a_ll(3)*x_n(3) - a_ll(4)*x_n(4);\n \n \n % sign funkt"
+      "ion:\n if auswahl == 1\n     if (s<0)\n         sign_s = -1;       \n     elseif( s>0)\n         sign_s = 1;\n  "
+      "   else % wenn s = 0 dann benutze s vom letzten zyklus um die vorzeichnen zu wechseln\n         if(s_alt < 0)\n "
+      "            sign_s = 1;\n         else\n             sign_s = -1;\n         end\n     end\n     u = u_von_s_p - "
+      "eta*sign_s;\n else\n     if (s < -phi)\n        sat = -1;\n    elseif (s > phi)\n        sat = 1;\n    else\n   "
+      "     sat = s/phi;\n     end\n    u = u_von_s_p - eta*sat;\n end\n s_neu = s;\n \n             \n\n"
       editorLayout	      "100 M4x1[10 5 700 500]"
     }
   }
@@ -5543,6 +5616,9 @@ Stateflow {
     screen		    [1 1 1280 1024 1.041050272174191]
     treeNode		    [0 31 0 0]
     viewObj		    30
+    visible		    1
+    subviewS {
+    }
     ssIdHighWaterMark	    6
     decomposition	    CLUSTER_CHART
     type		    EML_CHART

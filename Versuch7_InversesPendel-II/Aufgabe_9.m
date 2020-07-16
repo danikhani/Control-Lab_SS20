@@ -48,12 +48,17 @@ sys = ss(A,B,C,D)
 
 
 %% Polvorgabe
-p=[-2, -1, -20-6.5j, -20+6.5j]
-K = place(A,B,p)
+%Stabile Pole:
+p_stabil=[-2, -1, -20-6.5j, -20+6.5j]
+K_stabil = place(A,B,p_stabil)
+
+%instabile Pole:
+p_stabil=[5, -1, -20-6.5j, -20+6.5j]
+K_unstabil = place(A,B,p_stabil)
 
 %% Validierung
 s = tf('s');
-G = C*(s*eye(4)-(A-B*K))^-1*B;
+G = C*(s*eye(4)-(A-B*K_stabil))^-1*B;
 pzmap(G)
 
 
