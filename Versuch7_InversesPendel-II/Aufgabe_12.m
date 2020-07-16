@@ -8,7 +8,6 @@ m_p = 0.0804;           % Masse ab Drehpunkt [kg]
 l_p = 0.147;            % Pendellänge [m]
 J_d = 5.8134e-4;        % Trägheitsmoment mit Steineranteil [kgm^2]
 mu = 8.5e-6;            % Reibwert [Nms]
-
 l_s = 0.5;              % Schienenlänge [m]
 
 % Abstastzeit der Regelung
@@ -46,7 +45,7 @@ D = 0;
 
 sys = ss(A,B,C,D)
 
-%% Regelungsnormalform für Sliding-Mode-Regler berechnen
+%% Slidingmode:
 [sysR,Tr] = transformation_RNF(sys)
 
 %sysR: Zustandsraummodell in Regelungsnormalform

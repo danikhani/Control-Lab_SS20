@@ -45,9 +45,9 @@ C = [1 0 0 0;
 D = 0;
 
 sys = ss(A,B,C,D)
-%% Diskretierieren ohne Totzeit
+%% Diskretiesirung ohne Totzeit
 sys_z = c2d(sys,Ts)
-%% Diskretierieren mit Totzeit
+%% Diskretiesirung mit Totzeit
 sys.inputdelay = 0.3;
 sys_zt = c2d(sys,Ts)
 

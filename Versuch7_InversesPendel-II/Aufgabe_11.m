@@ -45,14 +45,13 @@ C = [1 0 0 0;
 D = 0;
 
 sys = ss(A,B,C,D)
-sys.inputdelay = 0.3;
 
-%% Zustandsregler mit LQR
+%%LQR
 Ts = 0.005;
 
 %Gewichte
 Q = diag([10, 1, 10, 0.1]);
-R = 5;
+R = 1;
 
 [K,S,E] = lqrd(A,B,Q,R,Ts)
 
